@@ -16,17 +16,39 @@
 <body>
 	<div class="container-fluid limeback penis">
 	<div class="container ten nonePadding penis">
+	<!-- Навбар -->
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Навигация</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+        <a class="navbar-brand" href="#"></a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="#kakie">Виды сайтов</a></li>
+          <li><a href="#whatican">Что я умею</a></li>
+          <li><a href="#howiamworking">Как я работаю</a></li>
+          <li><a href="#contactme">Как со мной связаться</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
 	<!-- Хедер -->
 			<div class="container-fluid paddingVerh whiteback textcentr">
-				<div class="col-md-3"><h2>Веб-разработчик Денис Камоцкий</h2></div>
-				<div class="col-md-6 col-md-offset-3 right poyav">
-					<div class="col-md-6">
-					<a href="tel:+79177811107" class="ssylka"><h2>+7(917)78-111-07</h2></a>
-					</div>
-					<div class="col-md-6">
-					<h2></h2><button type="button" class="btn btn-success btn-xs" data-toggle="modal" data-placement="bottom" title="Я перезвоню Вам в ближайшее время" data-target="#myModal">	<h4><span class="glyphicon glyphicon-earphone"></span>    Заказать звонок</h4></button>
-							
-					</div>
+				<div class="col-md-4"><h1>Денис Камоцкий<br> <small>Веб-разработчик</small></h1></div>
+				<div class="col-md-4 col-md-offset-4 textcentr">
+					
+					<a href="tel:+79177811107" class="ssylka"><h2><span class="glyphicon glyphicon-earphone"></span> +7(917)78-111-07</h2></a>
+					
+					
 				</div>
 
 			</div>
@@ -39,24 +61,11 @@
 				<div class="col-md-3"><a href="#howiamworking" class="ssylka">Как я работаю</a></div>
 				<div class="col-md-3"><a href="#contactme" class="ssylka">Как со мной связаться</a></div>
 			</div>
-<!--Кнопка-->
-			<div class="container-fluid textcentr whiteback propaga">
-				<div class="btn-group width">
-  					<button type="button" class="btn btn-default dropdown-toggle width" data-toggle="dropdown">Меню сайта <span class="caret"></span></button>
-  					<a href="tel:+79177811107" class="ssylka" id="numberOnCarousel"><h2>+7(917)78-111-07</h2></a>
-  					<ul class="dropdown-menu width" role="menu">
-    					<li class="width"><a href="#kakie">Какие сайты я сделаю для Вас</a></li>
-    					<li><a href="#whatican">Что я умею</a></li>
-    					<li><a href="#howiamworking">Как я работаю</a></li>
-    					<li><a href="#contactme">Как со мной связаться</a></li>
-    					<li class="divider"></li>
-    					<li><a href="#block" class="btn-success">Заказать звонок</a></li>
-  					</ul>
-</div>
-			</div>
+
 
 <!--разделитель-->
 			<div class="container-fluid paddingVerh whiteback"></div>
+
 
 <!--Карусель-->
 		<div class="container-fluid nonePadding">
@@ -67,7 +76,7 @@
 	    			<li data-target="#carousel-example-generic" data-slide-to="1"></li>
 	    			<li data-target="#carousel-example-generic" data-slide-to="2"></li> 			
 	  			</ol>
-	  			<button type="button" class="btn btn-danger btn-xs" data-toggle="tooltip" data-placement="bottom" title="Я перезвоню Вам в ближайшее время" id="buttonOnCarousel">	<h4><span class="glyphicon glyphicon-earphone"></span>    Заказать звонок</h4></button>
+	  			
 				<!-- Wrapper for slides -->
 				<div class="carousel-inner">
 					<div class="item active">
@@ -96,13 +105,14 @@
 				<p>Корпоративный сайт — содержит полную информацию о компании-владельце, услугах/продукции, событиях в жизни компании. Отличается от сайта-визитки и представительского сайта полнотой представленной информации, зачастую содержит различные функциональные инструменты для работы с контентом (поиск и фильтры, календари событий, фотогалереи, корпоративные блоги, форумы)</p><br>
 			</div>
 		</div>
+
 <!--Что я умею-->
 		<div class="container-fluid textcentr paddingVerh whiteback paddingNiz" id="whatican">
 			<h1 class="scrollp">Что я умею</h1><br><br>
 					<div class="container-fluid">
 						<div class="col-md-4 hoverGray scrollb">
 							<span class="glyphicon glyphicon-ok-circle fifty"></span>
-							<p class="justify paddingVerh">Верстаю адаптивные лендинги на HTML5/CSS3 с применением Bootstrap-сетки и элементов. Верстаю из psd-макета (при желании, даже из jpg) :). Отрисую макет в Photoshop с нуля и согласую его с вами. Сделаю лендинг "невесомым". Добавлю анимацию jQuery и компоненты JavaScript. Установлю форму "Заказать звонок"/"Перезвонить мне"/"Рассчитать стоимость", отправляющую Вам E-mail с заданным содержимым прямо из браузера, без PHP и сторонних платных сервисов</p>
+							<p class="justify paddingVerh">Верстаю адаптивные лендинги на HTML5/CSS3 с применением Bootstrap-сетки и элементов. Верстаю из psd-макета (при желании, даже из jpg) :). Отрисую макет в Photoshop с нуля и согласую его с вами. Сделаю лендинг "невесомым". Добавлю анимацию jQuery и компоненты JavaScript. Установлю форму "Заказать звонок"/"Перезвонить мне"/"Отправить мне сообщение", отправляющую Вам E-mail с заданным содержимым прямо из браузера без привлечения платных сервисов</p>
 						</div>
 						<div class="col-md-4 hoverGray scrollb">
 							<span class="glyphicon glyphicon-ok-circle fifty"></span>
@@ -139,39 +149,19 @@
 			</div>
 		</div>
 <!--Как со мной связаться-->
-		<div class="container-fluid whiteback textcentr paddingVerh paddingNiz" id="contactme">
+		<div class="container-fluid whiteback paddingVerh paddingNiz" id="contactme">
 			<h1>Как со мной связаться</h1><br><br>
 			<div class="container-fluid">
-				<div class="col-md-8 left size">
-				На данный момент времени я проживаю в городе Уфа, республика Башкортостан, Россия. Связаться со мной в любое удобное время можно, оставив заявку в форме "Заказать звонок", либо по указанным ниже контактам:<br><br>
+				<blockquote>На данный момент времени я проживаю в городе Уфа, республика Башкортостан, Россия. Связаться со мной в любое удобное время можно по указанным ниже контактам:</blockquote><br>
+				<p class="contacts">
 				<i class="icon-phone"></i><a href="tel:+79177811107" class="ssylka"> 8(917)78-111-07</a></br><br>
 				<i class="icon-vk"></i><a href="https://www.vk.com/denis49" class="ssylka" target="_blank"> vk.com/denis49</a></br><br>
 				<i class="icon-envelope-open"></i> <a href="mailto:deniskamotskiy@ro.ru" class="ssylka">deniskamotskiy@ro.ru</a><br><br>
-				<i class="icon-envelope-open"></i> <a href="https://www.fl.ru/users/deniskamotskiy/" class="ssylka" target="_blank">FL.ru</a><br><br>
+				<i class="icon-envelope-open"></i> <a href="https://www.fl.ru/users/deniskamotskiy/" class="ssylka" target="_blank">FL.ru - аккаунт на fl.ru</a><br><br><br></p>
+				<blockquote class="blockquote-reverse">Кроме того, любой интересующий Вас вопрос Вы можете оставить в форме "Задать вопрос" внизу сайта (необходимо лишь корректно указать адрес электронной почты, куда я могу прислать ответ), а также, заказать обратный звонок кнопкой справа и я перезвоню Вам практически мгновенно!</blockquote>
+				
 
-				</div>
-				<div class="col-md-4" id="block">
-					<br>
-					<h2 class="shadow">Перезвоните мне</h2>
-					<br>
-					<form class="form-horizontal" role="form">
-						<div class="form-group">
-	    					<label for="inputEmail3" class="col-sm-2 control-label">Имя</label>
-	    					<div class="col-sm-10">
-	      						<input type="name" class="form-control" id="inputEmail3" placeholder="Как я могу к Вам обращаться">
-	    					</div>
-	  					</div>
-	  					<div class="form-group">
-	    					<label for="inputPassword3" class="col-sm-2 control-label">Номер телефона</label>
-	    					<div class="col-sm-10">
-	      						<input type="password" class="form-control" id="inputPassword3" placeholder="В любом удобном формате">
-	    					</div>
-	  					</div>
-	  					
-					</form>
-					<button type="button" class="btn btn-success btn-xs">	<h4><span class="glyphicon glyphicon-earphone"></span>    Заказать звонок</h4></button>
-					<br><br>
-				</div>
+
 			</div>
 			<br><br>
 			
@@ -184,38 +174,7 @@
 			</div>
 		</div>
 	
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content" id="modalBack">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h4 class="modal-title textcentr" id="myModalLabel">Заказать обратный звонок</h4>
-      </div>
-      <div class="modal-body textcentr">
-        Оставьте свой контактный номер телефона и имя, по которому я могу к Вам обращаться, в поле ниже, и я Вам перезвоню в ближайшее время<br><br><br>
-        <form class="form-horizontal" role="form">
-					<div class="form-group">
-	    					<label for="inputEmail3" class="col-sm-2 control-label">Имя</label>
-	    					<div class="col-sm-10">
-	      						<input type="name" class="form-control" id="inputEmail3" placeholder="Как я могу к Вам обращаться">
-	    					</div>
-	  					</div>
-	  					<div class="form-group">
-	    					<label for="inputPassword3" class="col-sm-2 control-label">Номер телефона</label>
-	    					<div class="col-sm-10">
-	      						<input type="password" class="form-control" id="inputPassword3" placeholder="В любом удобном формате">
-	    					</div>
-	  					</div>	
-	  					
-					</form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
-        <button type="button" class="btn btn-success">Заказать звонок</button>
-      </div>
-    </div>
-  </div>
-</div>
+<div id="top"><span class="glyphicon glyphicon-chevron-up"></span></div>
 
 
 <!-- RedConnect -->

@@ -91,24 +91,18 @@ span {
 .ssylka {
 	text-decoration: none;
 	color: #000000;
+	text-align: center;
+	line-height: 1;
+	display: inline-block;
+	cursor: pointer;
 }
 
-.ssylka:hover {
-	text-decoration: none;
-}
 
-.ssylka:visited {
-	text-decoration: none;
-	color: #000000;	
-}
 
 .size {
 	font-size: 20px;
 }
 
-.right {
-	text-align: right;
-}
 
 .width {
 	width:100%;
@@ -165,23 +159,6 @@ span {
 
 
 
-/*Блок адаптивности*/
-
-@media screen and (max-width:1000px) {
-	.propaga {
-		display: block;
-		}
-	.poyav {
-		display: none;
-		}
-	.penis {
-		width: 100%;
-		padding-left: 0;
-		padding-right: 0;
-		margin-left: 0;
-		margin-right: 0;
-	}
-}
 
 
 
@@ -205,39 +182,100 @@ span {
 	margin-top: 0;
 }
 
-/*Кнопка и номер телефона на Карусели*/
 
-#buttonOnCarousel {
-	position: absolute;
-	z-index: 999;
-	right:10px;
-	bottom: 10px;
-	display: none;
-}
-
-@media screen and (max-width:1000px) {
-	#buttonOnCarousel {
-		display: block;
-	}
-}
-
-#numberOnCarousel {
-	position: absolute;
-	z-index: 9991;
-	right:0px;
-	top: 30px;
-	display: none;
-	color: #fff;
-	text-shadow: 1px 1px 2px black, 0 0 1em black;
-}
-
-@media screen and (max-width:1000px) {
-	#numberOnCarousel {
-		display: block;
-	}
-}
 
 #modalBack {
 	background: url(../img/backmodal-copy.jpg);
 	color: #fff;
+}
+
+#contactme div {
+	font-size: 16px;
+}
+
+.blockquote-reverse {
+	font-size: 20px;
+}
+
+#contactme h1 {
+	text-align: center;
+}
+
+.contacts {
+	text-align: center;
+	font-size: 18px;
+}
+
+/*Плавное подчеркивание ссылок*/
+
+.ssylka:hover {
+	text-decoration: none;
+	color: #000;
+}
+
+.ssylka:visited {
+	text-decoration: none;
+	color: #000000;	
+}
+
+.ssylka:after {
+    display: block;
+    content: "";
+    height: 2px;
+    width: 0%;
+    background-color: #b4f000;
+    transition: width .3s ease-in-out;
+}
+.ssylka:hover:after, .ssylka:focus:after {
+    width: 100%;
+}
+
+.page-header {
+	margin: 0px;
+}
+
+.navbar-brand span {
+	color: inherit;
+}
+
+.navbar {
+	margin-bottom: 0px;
+	display: none;
+}
+
+/*Блок адаптивности*/
+
+@media screen and (max-width:1000px) {
+	.propaga {
+		display: block;
+		}
+	.poyav {
+		display: none;
+		}
+	.penis {
+		width: 100%;
+		padding-left: 0;
+		padding-right: 0;
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.navbar {
+		display: block;
+	}
+}
+
+/*Кнопка Наверх*/
+
+#top {
+  top: 10px;
+  cursor: pointer;
+  display: none;
+  font-size: 150%;
+  position: fixed;
+  right: 10px;
+}
+
+#top span {
+	  color: black;
+	  font-size: 22px;
 }
