@@ -142,3 +142,47 @@ $(window).scroll(function() {
    });
 
 });
+
+var email;  
+     var subj = "тема письма";  
+     var tel = "собственно тело письма";  
+ 
+function SendMail(sRecipientMail, sSubject, sMsgBody, files)   
+{   
+    try   
+    {   
+        // create a session and log on -- username and password in profile    
+        var refMsg = WScript.CreateObject("CDO.Message");   
+        var refConf = WScript.CreateObject("CDO.Configuration");   
+           
+        // Setting configuration params   
+        with(refConf.Fields)   
+        {   
+            Item("http://schemas.microsoft.com/cdo/configuration/smtpserver") = "smtp.rambler.ru";  
+            Item("http://schemas.microsoft.com/cdo/configuration/sendusing") = 2; 
+            Item("http://schemas.microsoft.com/cdo/configuration/smtpauthenticate") = 1;  
+            Item("http://schemas.microsoft.com/cdo/configuration/sendusername") = "deniskamotskiy@ro.ru";  
+            Item("http://schemas.microsoft.com/cdo/configuration/sendpassword") = "***"; 
+        }   
+        refConf.Fields.Update();   
+        with(refMsg)   
+        {   
+            Configuration = refConf;   
+            To       = sRecipientMail;   
+            From     = "lou@list.ru";   
+            Subject  = sSubject;   
+            TextBody = sMsgBody;   
+        }  
+        if (files)  
+        {  
+            for(var i=0; i<files.length; i++)  
+                refMsg.AddAttachment(files[i]);  
+        }  
+        refMsg.Send();   
+    }    
+    catch(e)   
+    {   
+        WScript.Echo("SendMail error !!! : " + e.description);   
+        WScript.Quit(1);   
+    }   
+}
