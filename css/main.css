@@ -552,6 +552,7 @@ td p {
 #politika {
 	font-family: OfficinaSansBook;
 	font-size: 15px;
+	z-index: 99999999999;
 }
 
 #politika p,h1 {
