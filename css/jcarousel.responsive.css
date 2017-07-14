@@ -1,4 +1,4 @@
-.jcarousel-wrappertwo {
+.jcarousel-wrapper {
     margin: 20px auto;
     position: relative;
     border: 10px solid #fff;
@@ -27,7 +27,7 @@
 }
 
 .jcarousel li {
-    width: 150px;
+    width: 200px;
     float: left;
     border: 1px solid #fff;
     -moz-box-sizing: border-box;
