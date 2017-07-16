@@ -92,9 +92,16 @@ $( "#vtoroch" ).click(function() {
 // zamena-klassa-bloka-three
 // zamena-klassa-bloka-four
 
-
+$(document).ready(function(){
+	$("#ipotekaknopka").attr("style","background: #E8E8E8;");
+});
 
 $( "#stoproplata" ).click(function() {
+	$("#ipotekaknopka").attr("style","background: #fff;");
+	$("#stoproplata").attr("style","background: #E8E8E8;");
+	$("#matkapital").attr("style","background: #fff;");
+	$("#voenipoteka").attr("style","background: #fff;");
+	$("#subsidii").attr("style","background: #fff;");	
 	$("#zamena-oplata-zagolovok").html("100% ОПЛАТА");
 	$("#zamena-oplata-carousel").attr("style","display:none");
 	$("#vznos").attr("style","display:none");
@@ -105,6 +112,11 @@ $( "#stoproplata" ).click(function() {
 });
 
 $( "#matkapital" ).click(function() {
+	$("#ipotekaknopka").attr("style","background: #fff;");
+	$("#stoproplata").attr("style","background: #fff;");
+	$("#matkapital").attr("style","background: #E8E8E8;");
+	$("#voenipoteka").attr("style","background: #fff;");
+	$("#subsidii").attr("style","background: #fff;");	
 	$("#zamena-oplata-zagolovok").html("МАТЕРИНСКИЙ КАПИТАЛ");
 	$("#zamena-oplata-carousel").attr("style","display:none");
 	$("#vznos").attr("style","display:none");
@@ -115,6 +127,11 @@ $( "#matkapital" ).click(function() {
 });
 
 $( "#voenipoteka" ).click(function() {
+	$("#ipotekaknopka").attr("style","background: #fff;");
+	$("#stoproplata").attr("style","background: #fff;");
+	$("#matkapital").attr("style","background: #fff;");
+	$("#voenipoteka").attr("style","background: #E8E8E8;");
+	$("#subsidii").attr("style","background: #fff;");	
 	$("#zamena-oplata-zagolovok").html("ВОЕННАЯ ИПОТЕКА");
 	$("#zamena-oplata-carousel").attr("style","display:none");
 	$("#vznos").attr("style","display:none");
@@ -125,6 +142,11 @@ $( "#voenipoteka" ).click(function() {
 });
 
 $( "#subsidii" ).click(function() {
+	$("#ipotekaknopka").attr("style","background: #fff;");
+	$("#stoproplata").attr("style","background: #fff;");
+	$("#matkapital").attr("style","background: #fff;");
+	$("#voenipoteka").attr("style","background: #fff;");
+	$("#subsidii").attr("style","background: #e8e8e8;");	
 	$("#zamena-oplata-zagolovok").html("СУБСИДИИ");
 	$("#zamena-oplata-carousel").attr("style","display:none");
 	$("#vznos").attr("style","display:none");
@@ -135,6 +157,11 @@ $( "#subsidii" ).click(function() {
 });
 
 $( "#ipotekaknopka" ).click(function() {
+	$("#ipotekaknopka").attr("style","background: #E8E8E8;");
+	$("#stoproplata").attr("style","background: #fff;");
+	$("#matkapital").attr("style","background: #fff;");
+	$("#voenipoteka").attr("style","background: #fff;");
+	$("#subsidii").attr("style","background: #fff;");
 	$("#zamena-oplata-zagolovok").html("УЗНАЙТЕ СУММУ ЕЖЕМЕСЯЧНОГО ПЛАТЕЖА ПРИ ПОКУПКЕ В ИПОТЕКУ");
 	$("#zamena-oplata-carousel").attr("style","display:block");
 	$("#vznos").attr("style","display:block");
@@ -150,3 +177,44 @@ $(document).ready(function(){
 		$(this).remove();
 	});
 });
+
+// Выезд картинок слева и справа
+//viezdsleva1
+//viezdsprava2
+//viezdsleva3
+//viezdsprava4
+if ($(window).width() > 1000) {
+$("#viezdsleva1").animate({left:-700},1);
+$("#viezdsprava2").animate({left:700},1);
+$("#viezdsleva3").animate({left:-700},1);
+$("#viezdsprava4").animate({left:700},1);
+
+$(document).ready(function(){
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 2200) {
+	$("#viezdsleva1").animate({left:0},1000);}	 
+   });
+
+});
+$(document).ready(function(){
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 2500) {
+	$("#viezdsprava2").animate({left:0},1000);}	 
+   });
+
+});
+$(document).ready(function(){
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 2800) {
+	$("#viezdsleva3").animate({left:0},1000);}	 
+   });
+
+});
+$(document).ready(function(){
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 3100) {
+	$("#viezdsprava4").animate({left:0},1000);}	 
+   });
+
+});
+}

@@ -153,6 +153,15 @@
 	padding-top: 33px;
 }
 
+@media screen and (max-width:1000px) {
+	.title {
+		font-size: 30px;
+	}
+	.subtitle {
+		font-size: 20px;
+	}
+}
+
 #verhPrimary .video {
     display: inline-block;
     vertical-align: top;
@@ -733,6 +742,12 @@ td p {
 	height:80px;
 }
 
+@media screen and (max-width:770px) {
+	.nav-justified li a {
+		height:auto;
+}
+}
+
 #etapy .licarousel {
  	max-height: 380px;
  }
@@ -763,7 +778,9 @@ td p {
 	font-size: 20px;
 }
 
-
+.margpyat {
+	margin-top: 100px;
+}
 
 
 
@@ -859,9 +876,14 @@ td p {
 		display: none;
 	}
 	.grayadaptive {
-		background: #707070;
-		border-radius: 10px;
+		background-color: #fff;
+		color: #000;
+		text-shadow: none;
+		border-radius:10px;
 		box-shadow: 0 0 10px rgba(255,255,255,0.5);
+		margin-left: 0px;
+		margin-right: 0px;
+		width: 100%;
 	}
 }
 
@@ -872,5 +894,9 @@ td p {
 	#header {
 		display: block;
 	}	
+}
+
+#viezdsleva1, #viezdsprava2, #viezdsleva3, #viezdsprava4 {
+	position: relative;
 }
 

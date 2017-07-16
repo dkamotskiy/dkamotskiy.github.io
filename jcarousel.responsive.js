@@ -8,9 +8,9 @@
                     width = carousel.innerWidth();
 
                 if (width >= 600) {
-                    width = width / 3;
+                    width = 180;
                 } else if (width >= 350) {
-                    width = width / 2;
+                    width = 180;
                 }
 
                 carousel.jcarousel('items').css('width', Math.ceil(width) + 'px');
