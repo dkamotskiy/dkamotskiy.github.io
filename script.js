@@ -14,21 +14,40 @@ $('body,html').animate({scrollTop: top}, 1000);
 
 //замена содержимого в блока акции
 
+$(document).ready(function(){
+	$("#skidka").attr("style","background: #ff6600; color: #fff;");
+});
+
 $( "#skidka" ).click(function() {
-  $("#zamenaJavascript").html("<h1>Скидка 5%</h1><br><p>При единовременной оплате квартиры Вы можете получить скидку в размере 5% от стоимости</p>")
+	$("#skidka").attr("style","background: #ff6600");
+	$("#pervvznos").attr("style","background: none");
+	$("#stavki").attr("style","background: none");
+	$("#zamenaJavascript").html("<h1>Скидка 5%</h1><br><p>При единовременной оплате квартиры Вы можете получить скидку в размере 5% от стоимости</p>")
 });
 
 $( "#pervvznos" ).click(function() {
-  $("#zamenaJavascript").html("<h1>Первоначальный взнос 0%</h1><br><p>от банков Возрождение Банк, Банк Санкт-Петербург, Альфа Банк, Райффайзен Банк</p>")
+	$("#skidka").attr("style","background: none");
+	$("#pervvznos").attr("style","background: #ff6600");
+	$("#stavki").attr("style","background: none");
+	$("#zamenaJavascript").html("<h1>Первоначальный взнос 0%</h1><br><p>от банков Возрождение Банк, Банк Санкт-Петербург, Альфа Банк, Райффайзен Банк</p>")
 });
 
 $( "#stavki" ).click(function() {
+	$("#skidka").attr("style","background: none");
+	$("#pervvznos").attr("style","background: none");
+	$("#stavki").attr("style","background: #ff6600");
   $("#zamenaJavascript").html("<h1>Сниженные ставки по ипотеке от ведущих банков-партнеров</h1><br><p>ПАО «Сбербанк»: ставка 8,7% годовых, первоначальный взнос от 15%, срок кредита 7 лет. ПАО «АК БАРС» Банк: ставка 9,9% годовых, первоначальный взнос от 20%, срок кредита 15 лет. ПАО «Банк «Санкт-Петербург»: ставка 10,5% годовых, первоначальный взнос от 15%, срок кредита 15 лет.ПАО «Промсвязьбанк»: ставка 11,5% годовых, первоначальный взнос от 15%, срок кредита 25 лет</p>")
 });
 
 //замена содержимого в блоке слайдер Этапы
 
+$(document).ready(function(){
+	$("#pervoch").attr("style","background: #ff6600; color: #fff;");
+});
+
 $( "#pervoch" ).click(function() {
+	$("#pervoch").attr("style","background: #ff6600; color: #fff;");
+	$("#vtoroch").attr("style","background: none; color: #000;");
 	$("#zamena-one").attr("src","img/hod_stroitelstva/pervaya_ochered/1oDkq2pBZw8.jpg");
 	$("#zamena-two").attr("src","img/hod_stroitelstva/pervaya_ochered/Ga1p0EnsjdA.jpg");
 	$("#zamena-three").attr("src","img/hod_stroitelstva/pervaya_ochered/qwx0bMvGSoU.jpg");
@@ -42,6 +61,8 @@ $( "#pervoch" ).click(function() {
 });
 
 $( "#vtoroch" ).click(function() {
+	$("#pervoch").attr("style","background: none; color: #000;");
+	$("#vtoroch").attr("style","background: #ff6600; color: #fff;");
 	$("#zamena-one").attr("src","img/hod_stroitelstva/vtoraya_ochered/1.jpg");
 	$("#zamena-two").attr("src","img/hod_stroitelstva/vtoraya_ochered/2.jpg");
 	$("#zamena-three").attr("src","img/hod_stroitelstva/vtoraya_ochered/3.jpg");
@@ -121,4 +142,11 @@ $( "#ipotekaknopka" ).click(function() {
 	$("#zamena-klassa-bloka-two").attr("class","col-md-3");
 	$("#zamena-klassa-bloka-three").attr("class","col-md-3");
 	$("#zamena-klassa-bloka-four").attr("class","col-md-3");
+});
+
+// Разрешение прокрутки фрейма после нажатия
+$(document).ready(function(){
+	$('.overlay').click(function() {
+		$(this).remove();
+	});
 });

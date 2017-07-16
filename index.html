@@ -31,8 +31,8 @@
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
           <li><a href="#">Главная</a></li>
-          <li><a href="#podbor">Планировки</a></li>
           <li><a href="#numbers">Преимущества</a></li>
+          <li><a href="#podbor">Планировки</a></li>
           <li><a href="#akcia">Акции и скидки</a></li>
           <li><a href="#payment">Ипотека и рассрочки</a></li>
         </ul>
@@ -45,8 +45,8 @@
 			<div class="container">
 				<div class="col-md-9">
 					<div class="col-md-2"><a href="#verhPrimary" class="linkHeader">Главная</a></div>
-					<div class="col-md-2"><a href="#podbor" class="linkHeader">Планировки</a></div>
 					<div class="col-md-2"><a href="#numbers" class="linkHeader">Преимущества</a></div>
+					<div class="col-md-2"><a href="#podbor" class="linkHeader">Планировки</a></div>
 					<div class="col-md-3"><a href="#akcia" class="linkHeader">Акции и скидки</a></div>
 					<div class="col-md-3"><a href="#payment" class="linkHeader">Ипотека и рассрочки</a></div>
 				</div>
@@ -83,7 +83,9 @@
 	<!-- Карта -->
 	<div class="container">
 		<div id="yandexMap">
-			<iframe src="https://yandex.ru/map-widget/v1/-/CBQ85OhUpC" width="100%" height="500" frameborder="0"></iframe>	
+			<!-- Запрет прокрутки фрейма -->
+			<div class="overlay" onClick="style.pointerEvents='none'"></div> 
+			<iframe src="https://yandex.ru/map-widget/v1/-/CBQkZ0BrSC" width="100%" height="500" frameborder="0" scroll="false"></iframe>
 		</div>
 	</div>
 	</div>
@@ -114,7 +116,7 @@
 </div>
 <!-- А также на территории -->
 <div class="container" id="atakje">
-	<h3>А также на территории жилого комплекса работает несколько школ, супермаркеты "Пятерочка" и "Эврика", поликлиника. За 20 минут по Шлиссельбургскому проспекту и КАД можно добраться до ТРК "Мега-Дыбенко". В 10 минутах автобусом находятся станция метро и ж/д вокзал.</h3>
+	<h3>А также на территории жилого комплекса будут работать несколько школ, супермаркеты "Пятерочка" и "Эврика", поликлиника. За 20 минут по Шлиссельбургскому проспекту и КАД можно добраться до ТРК "Мега-Дыбенко". В 10 минутах автобусом находятся станция метро и ж/д вокзал.</h3>
 </div>
 <!-- Описание жилого косплекса -->
 <div class="container" id="opisanie">
@@ -264,7 +266,7 @@
 				<td>Жилая площадь:<p>от 14,18 м²</p></td>
 			</tr>
 			<tr>
-				<td><span class="glyphicon glyphicon-usd"></span></td>
+				<td><span class="glyphicon glyphicon-asterisk"></span></td>
 				<td>Стоимость от:<p>1,5 млн руб.</p></td>
 			</tr>
 			<tr>
@@ -289,31 +291,31 @@
 		<!-- Wrapper for slides -->
 			<div class="carousel-inner">
 				<div class="item active">
-					<img src="img/studio/2.png" alt="...">
+					<a href="img/studio/2.png" data-lity><img src="img/studio/2.png" alt="..."></a>
 				</div>
 				<div class="item">
-					<img src="img/studio/3.png" alt="...">
+					<a href="img/studio/3.png" data-lity><img src="img/studio/3.png" alt="..."></a>
 				</div>	
 				<div class="item">
-					<img src="img/studio/4.png" alt="...">
+					<a href="img/studio/4.png" data-lity><img src="img/studio/4.png" alt="..."></a>
 				</div>
 				<div class="item">
-					<img src="img/studio/5.png" alt="...">
+					<a href="img/studio/5.png" data-lity><img src="img/studio/5.png" alt="..."></a>
 				</div>
 				<div class="item">
-					<img src="img/studio/6.png" alt="...">
+					<a href="img/studio/6.png" data-lity><img src="img/studio/6.png" alt="..."></a>
 				</div>
 				<div class="item">
-					<img src="img/studio/7.png" alt="...">
+					<a href="img/studio/7.png" data-lity><img src="img/studio/7.png" alt="..."></a>
 				</div>
 				<div class="item">
-					<img src="img/studio/8.png" alt="...">
+					<a href="img/studio/8.png" data-lity><img src="img/studio/8.png" alt="..."></a>
 				</div>
 				<div class="item">
-					<img src="img/studio/9.png" alt="...">
+					<a href="img/studio/9.png" data-lity><img src="img/studio/9.png" alt="..."></a>
 				</div>
 				<div class="item">
-					<img src="img/studio/10.png" alt="...">
+					<a href="img/studio/10.png" data-lity><img src="img/studio/10.png" alt="..."></a>
 				</div>
 			</div>
 			  <!-- Controls -->
@@ -344,7 +346,7 @@
 				<td>Жилая площадь:<p>от 14,12 м²</p></td>
 			</tr>
 			<tr>
-				<td><span class="glyphicon glyphicon-usd"></span></td>
+				<td><span class="glyphicon glyphicon-asterisk"></span></td>
 				<td>Стоимость от:<p>2 млн руб.</p></td>
 			</tr>
 			<tr>
@@ -369,34 +371,34 @@
 		<!-- Wrapper for slides -->
 			<div class="carousel-inner">
 				<div class="item active">
-					<img src="img/1k/1(1).png" alt="...">
+					<a href="img/1k/1(1).png" data-lity><img src="img/1k/1(1).png" alt="..."></a>
 				</div>
 				<div class="item">
-					<img src="img/1k/2(1).png" alt="...">
+					<a href="img/1k/2(1).png" data-lity><img src="img/1k/2(1).png" alt="..."></a>
 				</div>	
 				<div class="item">
-					<img src="img/1k/3(1).png" alt="...">
+					<a href="img/1k/3(1).png" data-lity><img src="img/1k/3(1).png" alt="..."></a>
 				</div>
 				<div class="item">
-					<img src="img/1k/4(1).png" alt="...">
+					<a href="img/1k/4(1).png" data-lity><img src="img/1k/4(1).png" alt="..."></a>
 				</div>
 				<div class="item">
-					<img src="img/1k/5(1).png" alt="...">
+					<a href="img/1k/5(1).png" data-lity><img src="img/1k/5(1).png" alt="..."></a>
 				</div>
 				<div class="item">
-					<img src="img/1k/6(1).png" alt="...">
+					<a href="img/1k/6(1).png" data-lity><img src="img/1k/6(1).png" alt="..."></a>
 				</div>
 				<div class="item">
-					<img src="img/1k/7(1).png" alt="...">
+					<a href="img/1k/7(1).png" data-lity><img src="img/1k/7(1).png" alt="..."></a>
 				</div>
 				<div class="item">
-					<img src="img/1k/8(1).png" alt="...">
+					<a href="img/1k/8(1).png" data-lity><img src="img/1k/8(1).png" alt="..."></a>
 				</div>
 				<div class="item">
-					<img src="img/1k/9(1).png" alt="...">
+					<a href="img/1k/9(1).png" data-lity><img src="img/1k/9(1).png" alt="..."></a>
 				</div>
 				<div class="item">
-					<img src="img/1k/10(1).png" alt="...">
+					<a href="img/1k/10(1).png" data-lity><img src="img/1k/10(1).png" alt="..."></a>
 				</div>
 			</div>
 			<!-- Controls -->
@@ -427,7 +429,7 @@
 				<td>Жилая площадь:<p>от 28,37 м²</p></td>
 			</tr>
 			<tr>
-				<td><span class="glyphicon glyphicon-usd"></span></td>
+				<td><span class="glyphicon glyphicon-asterisk"></span></td>
 				<td>Стоимость от:<p>3,5 млн руб.</p></td>
 			</tr>
 			<tr>
@@ -452,37 +454,37 @@
 		<!-- Wrapper for slides -->
 			<div class="carousel-inner">
 				<div class="item active">
-					<img src="img/2k/1.png" alt="...">
+					<a href="img/2k/1.png" data-lity><img src="img/2k/1.png" alt="..."></a>
 				</div>
 				<div class="item">
-					<img src="img/2k/2.png" alt="...">
+					<a href="img/2k/2.png" data-lity><img src="img/2k/2.png" alt="..."></a>
 				</div>	
 				<div class="item">
-					<img src="img/2k/3.png" alt="...">
+					<a href="img/2k/3.png" data-lity><img src="img/2k/3.png" alt="..."></a>
 				</div>
 				<div class="item">
-					<img src="img/2k/4.png" alt="...">
+					<a href="img/2k/4.png" data-lity><img src="img/2k/4.png" alt="..."></a>
 				</div>
 				<div class="item">
-					<img src="img/2k/5.png" alt="...">
+					<a href="img/2k/5.png" data-lity><img src="img/2k/5.png" alt="..."></a>
 				</div>
 				<div class="item">
-					<img src="img/2k/6.png" alt="...">
+					<a href="img/2k/6.png" data-lity><img src="img/2k/6.png" alt="..."></a>
 				</div>
 				<div class="item">
-					<img src="img/2k/7.png" alt="...">
+					<a href="img/2k/7.png" data-lity><img src="img/2k/7.png" alt="..."></a>
 				</div>
 				<div class="item">
-					<img src="img/2k/8.png" alt="...">
+					<a href="img/2k/8.png" data-lity><img src="img/2k/8.png" alt="..."></a>
 				</div>
 				<div class="item">
-					<img src="img/2k/9.png" alt="...">
+					<a href="img/2k/9.png" data-lity><img src="img/2k/9.png" alt="..."></a>
 				</div>
 				<div class="item">
-					<img src="img/2k/10.png" alt="...">
+					<a href="img/2k/10.png" data-lity><img src="img/2k/10.png" alt="..."></a>
 				</div>
 				<div class="item">
-					<img src="img/2k/11.png" alt="...">
+					<a href="img/2k/11.png" data-lity><img src="img/2k/11.png" alt="..."></a>
 				</div>
 			</div>
 			<!-- Controls -->
@@ -513,7 +515,7 @@
 				<td>Жилая площадь:<p>от 42,53 м²</p></td>
 			</tr>
 			<tr>
-				<td><span class="glyphicon glyphicon-usd"></span></td>
+				<td><span class="glyphicon glyphicon-asterisk"></span></td>
 				<td>Стоимость от:<p>4,5 млн руб.</p></td>
 			</tr>
 			<tr>
@@ -538,34 +540,34 @@
 		<!-- Wrapper for slides -->
 			<div class="carousel-inner">
 				<div class="item active">
-					<img src="img/3k/1(3).png" alt="...">
+					<a href="img/3k/1(3).png" data-lity><img src="img/3k/1(3).png" alt="..."></a>
 				</div>
 				<div class="item">
-					<img src="img/3k/2(3).png" alt="...">
+					<a href="img/3k/2(3).png" data-lity><img src="img/3k/2(3).png" alt="..."></a>
 				</div>	
 				<div class="item">
-					<img src="img/3k/3(3).png" alt="...">
+					<a href="img/3k/3(3).png" data-lity><img src="img/3k/3(3).png" alt="..."></a>
 				</div>
 				<div class="item">
-					<img src="img/3k/4(3).png" alt="...">
+					<a href="img/3k/4(3).png" data-lity><img src="img/3k/4(3).png" alt="..."></a>
 				</div>
 				<div class="item">
-					<img src="img/3k/5(3).png" alt="...">
+					<a href="img/3k/5(3).png" data-lity><img src="img/3k/5(3).png" alt="..."></a>
 				</div>
 				<div class="item">
-					<img src="img/3k/6(3).png" alt="...">
+					<a href="img/3k/6(3).png" data-lity><img src="img/3k/6(3).png" alt="..."></a>
 				</div>
 				<div class="item">
-					<img src="img/3k/7(3).png" alt="...">
+					<a href="img/3k/7(3).png" data-lity><img src="img/3k/7(3).png" alt="..."></a>
 				</div>
 				<div class="item">
-					<img src="img/3k/8(3).png" alt="...">
+					<a href="img/3k/8(3).png" data-lity><img src="img/3k/8(3).png" alt="..."></a>
 				</div>
 				<div class="item">
-					<img src="img/3k/9(3).png" alt="...">
+					<a href="img/3k/9(3).png" data-lity><img src="img/3k/9(3).png" alt="..."></a>
 				</div>
 				<div class="item">
-					<img src="img/3k/10(3).png" alt="...">
+					<a href="img/3k/10(3).png" data-lity><img src="img/3k/10(3).png" alt="..."></a>
 				</div>
 			</div>
 			<!-- Controls -->
