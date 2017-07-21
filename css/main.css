@@ -129,9 +129,9 @@ h4 {
 	border-radius: 10px;
 }
 
-#contacts:hover {
+/*#contacts:hover {
 	border: 3px solid #E8E8E8;
-}
+}*/
 
 @media screen and (max-width:1000px) {
 	.fading {
