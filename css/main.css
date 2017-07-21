@@ -211,3 +211,7 @@ h4 {
 #main-block .jcarousel-control-prev, #main-block .jcarousel-control-next {
 	color: #fff;
 }
+
+.margin {
+	margin: 0 auto;
+}
