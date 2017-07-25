@@ -75,6 +75,9 @@ navbar.less:475
 #slider {
 	margin-top: 20px;
 }
+#header h3 {
+	font-size: 16px;
+}
 }
 
 /*Меню*/
