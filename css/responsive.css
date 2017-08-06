@@ -1,0 +1,94 @@
+@media (max-width: 992px) {
+	#header {
+		height:auto;
+	}
+	.fishka {
+		display: none;
+	}
+	.img-1 img, .img-2 img, .img-3 img, .img-4 img, .img-5 img, .img-6 img, .img-7 img, .img-8 img {
+		width:100%;
+	}
+	.img-3 span img {
+		width:auto;
+	}
+	.img-1, .img-5, .img-4, .img-8 {
+		display: none;
+	}
+	#header .col-md-5 {
+		text-align: center;
+		font-size: 22px;
+		line-height: 20px;
+	}
+	#phone {
+		font-size: 22px;	
+	}
+	.header-line {
+		line-height: 30px;
+		margin-top: 20px;
+		font-size: 30px;	
+	}
+	#try {
+		margin-top: -1px;	
+	}
+	#buttons-image img {
+		margin-right: 0px;
+	}
+	#our-partners {
+		margin-top: -1px;
+	}
+	#our-partners h3 {
+		text-align: center;
+	}
+	.partners {
+		padding-left: 0;
+		padding-right: 	0;
+	}
+	#type-us h3 {
+		text-align: center;
+	}
+	.my-input, .my-input2 {
+		width:100%;
+	}
+	.my-input, .my-input2 {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	#footer-left-block {
+		padding-right: 0px;
+	}
+	.message {
+		padding:10px;
+		margin-top: 35px;
+	}
+	.col-md-1 {
+		display: none;
+	}
+	#footer-info button {
+		margin-bottom: 20px;
+	}
+}
+@media (max-width: 1200px) {
+	#try .img-4 .span-left4 {
+		display: none;
+	}
+	#buttons-image {
+    margin-top: -14px;
+	}
+	#buttons-image img {
+    margin-right: 0px;
+	}
+	#buttons-image button {
+	margin-right: 0px;
+	font-size: 14px;
+	}
+	
+
+}
+@media screen and (max-width: 1200px) and (min-width: 1000px) {
+	.span-left {
+		left:3%;
+	}
+	#try .col-md-6 .span-right {
+		right:2%;
+	}
+}
