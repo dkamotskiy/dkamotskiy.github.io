@@ -126,4 +126,10 @@
 	#try .col-md-6 .span-right {
 		right:4%;
 	}
+	#header .col-md-3 {
+		padding-right: 15px;
+	}
+	#phone {
+		font-size: 20px;
+	}
 }
