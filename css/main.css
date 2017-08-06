@@ -120,6 +120,12 @@ body{
 .img-2,.img-3,.img-6,.img-7,.img-8, .img-4 {
 	position: relative;
 }
+.img-1 img, .img-2 img, .img-3 img, .img-4 img, .img-5 img, .img-6 img, .img-7 img, .img-8 img {
+	width: 100%;
+}
+.img-3 span img {
+	width:auto;
+}
 #images .col-md-6 span {
 	position: absolute;
 	display: block;
@@ -363,6 +369,7 @@ h3 {
 	border:none;
 	min-height: 35px;
 	padding: 10px;
+	border-radius: 0px;
 }
 #zakaz textarea {
 	min-height: 100px;
@@ -375,6 +382,7 @@ h3 {
 	margin-top: 15px;
 	float: right;
 	color:#149d34;
+	background-color: transparent;
 }
 .form-button:hover {
 	color:#fff;
@@ -384,6 +392,11 @@ h3 {
 /*Заказать звонок*/
 #zakaz-zvonok .form-button {
 	margin-bottom: 50px;
+	background-color: transparent;
+}
+#zakaz-zvonok .form-button:hover{
+	background-color: #149d34;
+	color: #fff;
 }
 /*Расчет стоимости*/
 .checkbox {
@@ -502,6 +515,12 @@ input[class="input-fff"]::-webkit-input-placeholder {
 	color: #fff;
 }
 textarea[class="input-fff"]::-webkit-input-placeholder {
+	color: #fff;
+}
+input[class="form-control input-fff"]::-webkit-input-placeholder {
+	color: #fff;
+}
+input[class="form-control input-fff phone-number"]::-webkit-input-placeholder {
 	color: #fff;
 }
 /*Стрелки типа number*/

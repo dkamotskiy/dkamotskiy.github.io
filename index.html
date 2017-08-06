@@ -129,7 +129,7 @@
 							<input type="text" placeholder="Ваше ФИО" class="1d1d1d">
 						</div>
 						<div class="col-md-6 my-input2">
-							<input type="text" class="my-input your-email 1d1d1d" placeholder="Ваш e-mail или телефон">
+							<input type="text" class="my-input your-email 1d1d1d phone-number" placeholder="Ваш e-mail или телефон">
 						</div>
 					</div>
 					<textarea type="text" class="my-input message 1d1d1d" placeholder="Ваше сообщение"></textarea>
@@ -144,7 +144,7 @@
 				<div class="col-md-8 col-xs-8" id="footer-info">
 					<p>2006-2017 &copy "В РЕМОНТЕ.РУ"</p>
 					<p>Мы отремонтируем вашу квартиру!</p>
-					<button type="button" class="btn btn-link knopka" data-toggle="modal" data-target="#politika-modal">Политика конфеденциальности</button>
+					<button type="button" class="btn btn-link knopka" data-toggle="modal" data-target="#politika-modal">Политика конфиденциальности</button>
 				</div>
 				<div class="col-md-4 col-xs-4" id="metric">
 					<p><img src="img/metric.jpg" alt=""></p>
@@ -184,10 +184,20 @@
       			</div>
       		<div class="modal-body">
         		<p class="text-justify bold">Наш менеджер свяжется с вами в течение часа</p>
-        		<input type="text" placeholder="Вашe ФИО" class="input-fff">
-        		<input type="text" placeholder="Ваш телефон" class="input-fff">
-        		<textarea placeholder="Ваши пожелания" class="input-fff"></textarea>
-        		<a href="#" class="form-button">Отправить</a>
+        		<form data-toggle="validator" role="form">
+	        			<div class="form-group">
+	        				<input type="text" class="form-control input-fff" id="inputName" placeholder="Ваше ФИО" required>
+	        			</div>
+	        			<div class="form-group">
+	        				<input class="form-control input-fff phone-number" placeholder="Номер телефона" required data-error="Bruh, that email address is invalid">
+	        			</div>
+ 						<div class="form-group">
+ 							<textarea placeholder="Ваши пожелания" class="input-fff"></textarea>
+ 						</div>
+ 						<div class="form-group">
+    						<button type="submit" class="form-button">Отправить</button>
+ 						</div>
+	        	</form>
       		</div>
     		</div>
  		</div>
@@ -202,10 +212,17 @@
       			</div>
       		<div class="modal-body">
         		<p class="text-center bold">Наш менеджер свяжется с вами в течение часа</p>
-	        			<input type="text" class="input-fff" placeholder="Ваше ФИО"> 
-	        			<input type="number" class="input-fff" placeholder="Телефон">
-	        			
-        		<a href="#" class="form-button">Отправить</a>
+	        			<form data-toggle="validator" role="form">
+	        				<div class="form-group">
+	        					<input type="text" class="form-control input-fff" placeholder="Ваше ФИО" required>
+	        				</div>
+	        				<div class="form-group">
+	        					<input class="form-control input-fff phone-number" placeholder="Номер телефона" required data-error="Bruh, that email address is invalid">
+	        				</div>
+	        				<div class="form-group">
+    							<button type="submit" class="form-button">Отправить</button>
+ 							</div>
+	        			</form>
       		</div>
     		</div>
  		</div>
@@ -263,5 +280,6 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<script src="js/script.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
 </body>
 </html>
