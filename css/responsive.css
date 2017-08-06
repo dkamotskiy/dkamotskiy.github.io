@@ -19,13 +19,34 @@
 		font-size: 22px;
 		line-height: 20px;
 	}
+	#header-back {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	#header div {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	#try .col-md-6 .span-left3 {
+		top:20%;
+	}
 	#phone {
 		font-size: 22px;	
+	}
+	.modal-body {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	#zakaz-zvonok .modal-content, #stoimost .modal-content, #zakaz .modal-content{
+		width:auto;
+	}
+	.fading-of-margin{
+		margin-top: -30px;
 	}
 	.header-line {
 		line-height: 30px;
 		margin-top: 20px;
-		font-size: 30px;	
+		font-size: 20px;	
 	}
 	#try {
 		margin-top: -1px;	
