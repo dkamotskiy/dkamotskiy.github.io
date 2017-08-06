@@ -361,7 +361,7 @@ h3 {
 	width:488px;
 	margin: 0 auto;
 }
-#zakaz input, #zakaz textarea, #zakaz-zvonok input {
+#zakaz input, #zakaz textarea, #zakaz-zvonok input, #stoimost input, #stoimost textarea {
 	width:100%;
 	margin-top: 15px;
 	background-color: #666666;
@@ -436,9 +436,6 @@ h3 {
 /*Секбоксы*/
 label {
 	position: relative;
-}
-#stoimost input {
-	display: none;
 }
 label:before {
 	content:"";

@@ -21,6 +21,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
 </head>
 <body>
+<!-- Меню -->
 	<div class="container-fluid" id="header-back">
 		<div class="container" id="header">
 		<div class="col-md-5 col-xs-12">
@@ -40,7 +41,32 @@
 		</div>
 	</div>
 	</div>
-<!-- Попытка -->
+<!-- Меню - адаптивная версия -->
+	<div class="container-fluid" id="header-back-responsive">
+		<div class="container" id="header-responsive">
+		<div class="container-fluid">
+			<p class="header-line prof" style="font-family: GilroyBold;text-align: center;">Профессиональный ремонт квартир</p>
+		</div>
+		<div class="row" id="for-js">
+			<div class="col-xs-6">
+			<p class="header-line"><img src="img/header-logo.png" alt="Времонте-Отремонтируем Вашу квартиру" class="img-responsive"></p>
+		</div>
+		<div class="col-xs-6" id="for-js-2">
+			<p>
+				<img src="img/instagram.png" alt="Instagram">
+				<img src="img/vk.png" alt="Vk.com">
+				<img src="img/fb.png" alt="Facebook">
+			</p>
+		</div>
+		</div>
+		
+		<div class="container-fluid"
+			<p id="phone" style="text-align: center; font-family: GilroyBold;"><a href="tel:84872588608">+7 (4872) 588-608</a></p>
+			<button type="button" class="btn btn-link knopka" data-toggle="modal" data-target="#zakaz-zvonok" id="zz" style="float:none;">заказать звонок</button>
+		</div>
+	</div>
+	</div>
+<!-- Картинки -->
 	<div class="back">
 	<div class="container-fluid row" id="try" style="margin-left: 0;margin-right: 0;">
 		<div class="col-md-1">
@@ -69,6 +95,14 @@
 							<button type="button" class="btn btn-link knopka" data-toggle="modal" data-target="#stoimost">РАССЧИТАТЬ</button>
 						</p>
 					</span>
+					<p id="buttons-image-responsive">
+							<img src="img/button1.png" alt=""><!-- <a href="#">ЗАКАЗАТЬ ПРОЕКТ</a> -->
+							<button type="button" class="btn btn-link knopka" data-toggle="modal" data-target="#zakaz">ЗАКАЗАТЬ ПРОЕКТ</button><br>
+							<img src="img/button2.png" alt="">
+							<button type="button" class="btn btn-link knopka" data-toggle="modal" data-target="#zakaz-zvonok">ПОЗВОНИТЬ</button><br>
+							<img src="img/button3.png" alt="">
+							<button type="button" class="btn btn-link knopka" data-toggle="modal" data-target="#stoimost">РАССЧИТАТЬ</button>
+					</p>
 				</div>
 				<div class="img-4">
 					<img src="img/img4.jpg" alt="" class="img-responsive img1">
@@ -236,43 +270,18 @@
         			<h4 class="modal-title">Рассчитать стоимость</h4>
       			</div>
       		<div class="modal-body">
-        		<p class="bold">ТИП ДОМА:</p>
-        		<div class="row">
-        			<div class="col-md-6">
-	        			<input type="checkbox" id="novostroyka">
-						<label for="novostroyka"> новостройка</label>
-        			</div>
-        			<div class="col-md-6">
-        				<input type="checkbox" id="vtorichka">
-						<label for="vtorichka"> вторичка</label>
-        			</div>
-        		</div>
-        		<br><p class="bold">ТИП РЕМОНТА:</p>
-        		<div class="row">
-        			<div class="col-md-6">
-        				<input type="checkbox" id="ekonom">
-						<label for="ekonom"> эконом</label>
-        			</div>
-        			<div class="col-md-6">
-        				<input type="checkbox" id="standart">
-						<label for="standart"> стандарт</label>
-        			</div>
-        		</div>
-        		<div class="row">
-        			<div class="col-md-6 fading-of-margin">
-        				<input type="checkbox" id="kapital">
-						<label for="kapital"> капитальный</label>
-        			</div>
-        			<div class="col-md-6">
-        				<input type="checkbox" id="designer">
-						<label for="designer"> дизайнерский</label>
-        			</div>
-        		</div>
-        		<br><p class="bold">ПЛОЩАДЬ КВАРТИРЫ:</p>
-        		<div class="ploshad-kvartiry">105</div><div class="ploshad-kvartiry ploshad-kvartiry2">м.кв.</div>
-        		<div id="slider" class="ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content" style="margin-top: 50px; height:6px; background-color: #666666; border-radius:0px;border:none;"><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 0%; background-color: #666666; border:none; width:14px; height:14px; border-radius: 7px;"></span></div>
-        		<br><br><br><p class="stoimost-remonta bold">СТОИМОСТЬ РЕМОНТА: <span>0 руб.</span></p>
-        		<p class="text-center" style="margin-top: 30px;"><a href="#" class="form-button">Рассчитать</a></p>
+	        			<div class="form-group">
+	        				<input type="text" class="form-control input-fff" id="inputName2" placeholder="Ваше ФИО" required>
+	        			</div>
+	        			<div class="form-group">
+	        				<input class="form-control input-fff phone-number" placeholder="Номер телефона" required data-error="Bruh, that email address is invalid">
+	        			</div>
+ 						<div class="form-group">
+ 							<textarea placeholder="Ваши пожелания" class="input-fff"></textarea>
+ 						</div>
+ 						<div class="form-group">
+    						<button type="submit" class="form-button">Рассчитать стоимость</button>
+ 						</div>
       		</div>
     		</div>
  		</div>

@@ -132,4 +132,54 @@
 	#phone {
 		font-size: 20px;
 	}
+	#header-back-responsive {
+		padding-left: 0;
+		padding-right: 0;
+		display: block;
+	}
+	#header-responsive {
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+	#header-responsive #for-js-2 {
+		position: relative;
+	}
+	#header-responsive #for-js-2 p {
+		position: absolute;
+		right:15px;
+		top:50%;
+		margin-top: -15px;
+	}
+	#header-back {
+		display: none;
+	}
+	#buttons-image {
+		display: none;
+	}
+	#buttons-image-responsive {
+		display: block;
+		position: absolute;
+		right:0px;
+		text-align: right;
+		top:20%;
+
+	}
+	#buttons-image-responsive img {
+		width: auto;
+		margin-right: -5px;
+	}
+	#buttons-image-responsive button {
+		text-decoration: underline;
+		color: #000;
+		font-family: GilroyBold;
+	}
 }
+@media (min-width: 701px) {
+	#header-back-responsive {
+		display: none;
+	}
+	#buttons-image-responsive {
+		display: none;
+	}
+}
+

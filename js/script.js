@@ -1,8 +1,9 @@
+$(document).ready(function() {
 $('#try').each(function(){
 var height = $(this).height();
 $(this).find('.col-md-1').css('min-height', height);
 });
-
+});
 $(window).resize(function() {
 $('#try').each(function(){
 var height = $(this).height();
@@ -12,6 +13,7 @@ $(this).find('.col-md-1').css('min-height', height);
 $(document).ready(function() {
 	$(".phone-number").mask("8(999) 999-9999");
 });
-$(function(){
-  
+$('#for-js').each(function(){
+var height = $(this).height();
+$(this).find('#for-js-2').css('min-height', height);
 });
