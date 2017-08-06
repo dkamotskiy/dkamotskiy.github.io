@@ -120,4 +120,10 @@
 	#try .col-md-6 .span-right {
 		font-size: 24px;
 	}
+	.span-left {
+		left:3%;
+	}
+	#try .col-md-6 .span-right {
+		right:2%;
+	}
 }
