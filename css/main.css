@@ -22,6 +22,10 @@ body{
 ::-moz-placeholder {color:#1d1d1d;}/* Firefox 19+ */
 :-moz-placeholder {color:#1d1d1d;}/* Firefox 18- */
 :-ms-input-placeholder {color:#1d1d1d;}
+table {
+	width:100%;
+	border:0px;
+}
 .span-left {
 	color: #fff;
 	left: 6%;
@@ -85,16 +89,16 @@ body{
 #header .col-md-3 img {
 	margin-top: 25px;
 }
-#phone {
+.phone {
 	font-size: 26px;
 	margin-top: 10px;
 	margin-bottom: 0;
 	padding-bottom: 0;
 }
-#phone a {
+.phone a {
 	color:#000;
 }
-#zz {
+.zz {
 	font-family: GilroyRegular;
 	margin-top: -1px;
 	text-decoration: none;
@@ -103,11 +107,11 @@ body{
 	color:#000;
 	font-size: 22px;
 }
-#zz:hover {
+.zz:hover {
 	text-decoration: underline;
 }
 /*Картинки*/
-#images-back {
+.back .col-md-1 {
 	background-image: url(../img/bg-center.jpg);
 	position: relative;
 }
@@ -298,7 +302,7 @@ h3 {
 #try .col-md-6 .span-left4 {
 	top:73%;
 }
-#images-back {
+.back .col-md-1 {
 	background-image: url(../img/bg-center.jpg);
 	position: relative;
 }
@@ -316,9 +320,6 @@ h3 {
 	display: block;
 	z-index: 9999;
 	top:40%;
-}
-.back {
-	background-image: url(../img/bg-center.jpg);
 }
 #try, #try .col-md-1, #try .col-md-10 {
 	padding-right: 0;
@@ -489,6 +490,7 @@ input:checked + label:after {
 	bottom:50px;
 	background-image: url(../img/strelka.png);
 	opacity:0.6;
+	cursor: pointer;
 }
 .strelka:hover {
 	opacity: 0.9;
@@ -506,7 +508,7 @@ input[class="my-input your-email 1d1d1d"]::-webkit-input-placeholder {
 	color: #1d1d1d;
 }
 textarea[class="my-input message 1d1d1d"]::-webkit-input-placeholder {
-	color: #1d1d1d;
+	color: #C8C8C8;
 }
 input[class="input-fff"]::-webkit-input-placeholder {
 	color: #fff;

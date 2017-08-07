@@ -173,6 +173,10 @@
 		color: #000;
 		font-family: GilroyBold;
 	}
+	.zz {
+		text-align: center;
+		margin: 0 auto;
+	}
 }
 @media (min-width: 701px) {
 	#header-back-responsive {

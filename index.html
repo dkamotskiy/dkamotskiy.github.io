@@ -8,15 +8,9 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/responsive.css">
-	<script src="js/script.js"></script>
 	<link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <script>
-  $( function() {
-    $( "#slider" ).slider();
-  } );
-  </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
 </head>
@@ -36,8 +30,8 @@
 				<a href="https://vk.com/vremonte_ru" target="_blank"><img src="img/vk.png" alt="Vk.com"></a>
 				<a href="https://www.facebook.com/vremonte.ru/" target="_blank"><img src="img/fb.png" alt="Facebook"></a>
 			</p>
-			<p id="phone"><a href="tel:84872588608">+7 (4872) 588-608</a></p>
-			<button type="button" class="btn btn-link knopka" data-toggle="modal" data-target="#zakaz-zvonok" id="zz">заказать звонок</button>
+			<p class="phone"><a href="tel:84872588608">+7 (4872) 588-608</a></p>
+			<button type="button" class="btn btn-link knopka zz" data-toggle="modal" data-target="#zakaz-zvonok">заказать звонок</button>
 		</div>
 	</div>
 	</div>
@@ -45,7 +39,7 @@
 	<div class="container-fluid" id="header-back-responsive">
 		<div class="container" id="header-responsive">
 		<div class="container-fluid">
-			<p class="header-line prof" style="font-family: GilroyBold;text-align: center;">Профессиональный ремонт квартир</p>
+			<p class="header-line prof" style="font-family: GilroyBold; text-align: center;">Профессиональный ремонт квартир</p>
 		</div>
 		<div class="row" id="for-js">
 			<div class="col-xs-6">
@@ -59,9 +53,9 @@
 		</div>
 		</div>
 		
-		<div class="container-fluid"
-			<p id="phone" style="text-align: center; font-family: GilroyBold;"><a href="tel:84872588608">+7 (4872) 588-608</a></p>
-			<button type="button" class="btn btn-link knopka" data-toggle="modal" data-target="#zakaz-zvonok" id="zz" style="float:none;">заказать звонок</button>
+		<div class="container-fluid">
+			<p class="phone" style="text-align: center; font-family: GilroyBold;"><a href="tel:84872588608">+7 (4872) 588-608</a></p>
+			<p class="text-center"><button type="button" class="btn btn-link knopka zz" data-toggle="modal" data-target="#zakaz-zvonok" style="float:none;">заказать звонок</button></p>
 		</div>
 	</div>
 	</div>
@@ -71,7 +65,7 @@
 		<div class="col-md-1">
 			<img src="img/ended.png" alt="" class="fishka">
 		</div>
-		<div class="col-md-10">
+		<div class="col-md-10" id="colonka">
 			<div class="col-md-6">
 				<div class="img-1">
 					<img src="img/img1.jpg" alt="" class="img-responsive img1">
@@ -123,7 +117,6 @@
 				<div class="img-8">
 					<img src="img/img8.jpg" alt="" class="img-responsive img1">
 					<span class="span-right span-right3">Офис 108 кв.м<p>на ул. Комсомольской</p></span>
-					<img src="img/inwork.pnd" alt="" class="fishka2">
 				</div>
 			</div>
 		</div>
@@ -137,7 +130,7 @@
 		<div class="container">
 			<h3>Наши партнеры и компаньоны</h3>
 			<div class="partners">
-				<table width="100%" border="0">
+				<table>
 					<tr>
 						<td><img src="img/comfort.jpg" alt="" class="first-img img-responsive" style="max-width: 100%;margin-left: 0px;"></td>
 						<td><img src="img/hager.jpg" alt="" class="first-img img-responsive" style="max-width: 100%;margin-left: 0px;"></td>
@@ -148,7 +141,7 @@
 						<td><img src="img/volma.jpg" alt="" class="first-img img-responsive" style="max-width: 100%;margin-left: 0px;"></td>
 					</tr>
 				</table>
-				<a href="#" class="strelka"></a>
+				<div class="strelka" id="top"></div>
 			</div>
 		</div>
 	</div>
@@ -157,16 +150,25 @@
 		<div class="container">
 			<div class="col-md-6" id="footer-left-block">
 				<h3>Напишите нам</h3>
+					<form data-toggle="validator" role="form">
 					<div id="input-group">
 						<div class="col-md-6 my-input">
-							<input type="text" placeholder="Ваше ФИО" class="1d1d1d">
+							<div class="form-group">
+								<input type="text" placeholder="Ваше ФИО" class="form-control 1d1d1d" required style="border-radius: 0px;">
+							</div>	
 						</div>
 						<div class="col-md-6 my-input2">
-							<input type="text" class="my-input your-email 1d1d1d phone-number" placeholder="Ваш e-mail или телефон">
+							<div class="form-group">
+								<input type="number" class="form-control my-input your-email 1d1d1d" placeholder="Ваш e-mail или телефон" required style="border-radius: 0px;"> 
+							</div>						
 						</div>
 					</div>
-					<textarea type="text" class="my-input message 1d1d1d" placeholder="Ваше сообщение"></textarea>
-					<a href="#" id="send">Отправить</a>
+					<textarea class="my-input message 1d1d1d" placeholder="Ваше сообщение"></textarea>
+					<div class="form-group">
+						<button type="submit" class="form-button" id="send">Отправить</button>
+<!-- 						<a href="#" id="send">Отправить</a> -->
+					</div>
+					</form>
 			</div>
 			<div class="col-md-6">
 				<div id="footer-contacts">
@@ -175,7 +177,7 @@
 					<!-- <h4 class="text-center"><a href="#">заказать звонок</a></h4> -->
 				</div>
 				<div class="col-md-8 col-xs-8" id="footer-info">
-					<p>2006-2017 &copy "В РЕМОНТЕ.РУ"</p>
+					<p>2006-2017 &copy; "В РЕМОНТЕ.РУ"</p>
 					<p>Мы отремонтируем вашу квартиру!</p>
 					<button type="button" class="btn btn-link knopka" data-toggle="modal" data-target="#politika-modal">Политика конфиденциальности</button>
 				</div>
@@ -217,7 +219,7 @@
       			</div>
       		<div class="modal-body">
         		<p class="text-center bold">Наш специалист свяжется с вами в течение 15 минут</p>
-        		<form data-toggle="validator" role="form">
+<!--         		<form data-toggle="validator" role="form">
 	        			<div class="form-group">
 	        				<input type="text" class="form-control input-fff" id="inputName" placeholder="Ваше ФИО" required>
 	        			</div>
@@ -230,7 +232,23 @@
  						<div class="form-group">
     						<button type="submit" class="form-button">Отправить</button>
  						</div>
-	        	</form>
+	        	</form> -->
+	        			<form data-toggle="validator" role="form">
+  							<div class="form-group">
+    							<input type="text" class="form-control input-fff" id="inputName" placeholder="Ваше ФИО" data-error="Пожалуйста, введите Ваше ФИО" required>
+    							<div class="help-block with-errors"></div>
+  							</div>
+  							<div class="form-group">
+  								<input type="number" class="form-control input-fff" placeholder="Номер телефона" data-error="Номер телефона введен некорректно" required>
+  								<div class="help-block with-errors"></div>
+  							</div>
+  							<br>
+								<textarea placeholder="Ваши пожелания" class="input-fff"></textarea>
+  							<br>
+  							<div class="form-group">
+  								<button type="submit" class="form-button">Отправить</button>
+  							</div>
+  						</form>
       		</div>
     		</div>
  		</div>
@@ -245,7 +263,7 @@
       			</div>
       		<div class="modal-body">
         		<p class="text-center bold">Наш специалист свяжется с вами в течение 15 минут</p>
-	        			<form data-toggle="validator" role="form">
+	        			<!-- <form data-toggle="validator" role="form">
 	        				<div class="form-group">
 	        					<input type="text" class="form-control input-fff" placeholder="Ваше ФИО" required>
 	        				</div>
@@ -255,7 +273,21 @@
 	        				<div class="form-group">
     							<button type="submit" class="form-button">Отправить</button>
  							</div>
-	        			</form>
+	        			</form> -->
+	        			<form data-toggle="validator" role="form">
+  							<div class="form-group">
+    							<input type="text" class="form-control input-fff" id="inputName3" placeholder="Ваше ФИО" data-error="Пожалуйста, введите Ваше ФИО" required>
+    							<div class="help-block with-errors"></div>
+  							</div>
+  							<div class="form-group">
+  								<input type="number" class="form-control input-fff" placeholder="Номер телефона" data-error="Номер телефона введен некорректно" required>
+  								<div class="help-block with-errors"></div>
+  							</div>
+  							<br><br>
+  							<div class="form-group">
+  								<button type="submit" class="form-button">Отправить</button>
+  							</div>
+  						</form>
       		</div>
     		</div>
  		</div>
@@ -269,18 +301,20 @@
         			<h4 class="modal-title">Рассчитать стоимость</h4>
       			</div>
       		<div class="modal-body">
-	        			<div class="form-group">
-	        				<input type="text" class="form-control input-fff" id="inputName2" placeholder="Ваше ФИО" required>
-	        			</div>
-	        			<div class="form-group">
-	        				<input class="form-control input-fff phone-number" placeholder="Номер телефона" required data-error="Bruh, that email address is invalid">
-	        			</div>
- 						<div class="form-group">
- 							<textarea placeholder="Ваши пожелания" class="input-fff"></textarea>
- 						</div>
- 						<div class="form-group">
-    						<button type="submit" class="form-button">Рассчитать стоимость</button>
- 						</div>
+						<form data-toggle="validator" role="form">
+  							<div class="form-group">
+    							<input type="text" class="form-control input-fff" id="inputName2" placeholder="Ваше ФИО" data-error="Пожалуйста, введите Ваше ФИО" required>
+    							<div class="help-block with-errors"></div>
+  							</div>
+  							<div class="form-group">
+  								<input type="number" class="form-control input-fff" placeholder="Номер телефона" data-error="Номер телефона введен некорректно" required>
+  								<div class="help-block with-errors"></div>
+  							</div>
+  							<br><br>
+  							<div class="form-group">
+  								<button type="submit" class="form-button">Рассчитать стоимость</button>
+  							</div>
+  						</form>
       		</div>
     		</div>
  		</div>
@@ -298,7 +332,6 @@
     		</div>
  		</div>
 	</div>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<script src="js/script.js"></script>
 	<script src="js/jquery.maskedinput.min.js"></script>
