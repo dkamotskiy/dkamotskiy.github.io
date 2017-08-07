@@ -1,8 +1,6 @@
-$(document).ready(function() {
   $('#try').each(function(){
 	var height1 = $(this).height();
 	$(this).find('.col-md-1').css('height', height1);
-});
 });
 $(window).resize(function() {
 	$('#try').each(function(){
