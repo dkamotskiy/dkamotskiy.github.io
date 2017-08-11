@@ -61,10 +61,10 @@
 	}
 	/*НАСТРОЙКА ВСПЛЫВАЮЩЕГО МЕНЮ*/
 	.navbar-collapse {
-		width: 60%;
+		width: 80%;
 		position: absolute;
 		z-index: 9999;
-		left:20%;
+		left:14%;
 	}
 	.navbar-nav {
 		background-color: #899e00;
@@ -73,6 +73,7 @@
 		padding: 10px;
 		color: #fff;
 		text-shadow: none;
+		padding-left: 30px;
 	}
 	#header-responsive .nav>.active>a {
 		background-image: none;
@@ -98,7 +99,11 @@
 		font-size: 16px;
 		color: #899e00;
 	}
-
+}
+@media (min-width: 400px) {
+	.navbar-collapse {
+		left:12%;
+	}
 }
 @media (min-width: 992px) {
 	/*ШАПКА--------------------------------*/
