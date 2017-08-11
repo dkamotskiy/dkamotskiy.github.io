@@ -1,12 +1,107 @@
-@media (min-width: 1200px) {
+@media (max-width: 992px) {
+	/*ШАПКА----------------------------------------------------*/
+	#header-responsive {
+		display:block;
+		font-family: RobotoSlab-Bold;
+	}
+	#header {
+		display:none;
+	}
+	#menu {
+		display: none;
+	}
+	.navbar-toogle {
+		border:1px solid #000;
+		background-color: #899e00;
+	}
+	#knopka-adaptive {
+		margin: 0 auto;
+		float: right;
+		width:70px;
+		height: 70px;
+		background-color: #899e00;
+		color: #fff;
+		margin-top:8px;
+	}
+	#knopka-adaptive span {
+		color: #fff;
+		width:100%;
+		background-color: #fff;
+		margin-top: 10px;
+	}
+	#knopka-adaptive span:nth-child(2) {
+	margin-top:0px;
+	}
+	.navbar-header {
+		padding:10px 20px;
+	}
+	.navbar-header img {
+		max-width:50px;
+		margin-left: 25px;
+	}
+	#navbar-header-name {
+		font-size: 12px;
+		color: #899e00;
+		margin-bottom: 0;
+	}
+	.navbar-header .col-xs-6 {
+		padding:0px;
+	}
+	#responsive-header-text .p1 {
+		font-size: 16px;
+	}
+	#responsive-header-text .p2 a {
+		font-size: 20px;
+		color: #000;
+		text-decoration: none;
+	}
+	#responsive-header-text .p3 button {
+		color: #899e00;
+		font-size: 20px;
+	}
+	/*ФУТЕР--------------------------------*/
+	#footer-responsive {
+		display: block;
+	}
+	#footer {
+		display: none;
+	}
+	.pf1 {
+		color: #fff;
+		font-size: 18px;
+	}
+	.pf2 a {
+		color: #fff;
+		font-size: 22px;
+	}
+	.pf3 a {
+		font-size: 16px;
+		color: #899e00;
+	}
 
 }
 @media (min-width: 992px) {
-	
+	/*ШАПКА--------------------------------*/
+	#header-responsive {
+		display:none;
+	}
+	#header {
+		display:block;
+	}
+	#menu {
+		display: block;
+	}
+	/*ФУтЕР-------------------------------*/
+	#footer-responsive {
+		display: none;
+	}
+	#footer {
+		display: block;
+	}
 }
-@media (min-width: 768px) {
-	
-}
-@media (max-width: 992px) {
-	
+/*Настройка меню в десктопной версии*/
+@media (max-width: 1200px) {
+	.nav>li>a {
+		padding: 20px 24px;
+	}
 }

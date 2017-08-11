@@ -1,167 +1,439 @@
-body {
-	font-family: Tahoma;
+@font-face {
+    font-family: RobotoSlab-Bold; /* Имя шрифта */
+    src: url(../fonts/RobotoSlab-Bold.ttf); /* Путь к файлу со шрифтом */
+   }
+@font-face {
+    font-family: RobotoSlab-Light; /* Имя шрифта */
+    src: url(../fonts/RobotoSlab-Light.ttf); /* Путь к файлу со шрифтом */
+   }
+@font-face {
+    font-family: RobotoSlab-Thin.ttf; /* Имя шрифта */
+    src: url(../fonts/RobotoSlab-Thin.ttf); /* Путь к файлу со шрифтом */
+   }
+@font-face {
+    font-family: RobotoSlab-Regular; /* Имя шрифта */
+    src: url(../fonts/RobotoSlab-Regular.ttf); /* Путь к файлу со шрифтом */
+   }
+/*
+@import url('../fonts/GilroyRegular.otf');*/
+.green-font {
+	color: #899e00;
 }
-.container-fluid {
-	padding-right: 0px;
-	padding-left: 0px;
+.btn-link {
+	padding: 0px;
+	color: inherit;
 }
-.btn-link{
+.regular {
+	font-family: RobotoSlab-Regular;
+}
+.btn-success, .btn-default {
 	background-image: none;
-	padding: 0;
-	border: none;
-	color: #400800;
-	font-size: 20px;
-	-webkit-box-shadow: none;
+	min-width: 120px;
+	padding: 10px 20px;
+	border-width: 0px;
+}
+.btn-success {
+	background-color: #899e00;
+}
+.bold {
+	font-family: RobotoSlab-Bold;
+}
+.upper {
+	text-transform: uppercase;
+}
+/*------------------------О НАС-----------------------------*/
+/*HEADER*/
+#header {
+	padding-top: 15px;
+	font-family: RobotoSlab-Bold;
+	padding-bottom: 15px;
+}
+#header-logo img {
+	max-width: 54px;
+	margin-left: 35px;
+}
+#header-logo p {
+	font-size: 14px;
+}
+#header-text {
+	font-size: 22px;
+	padding-top:20px;
+}
+.phone-number {
+	font-size: 25px;
+}
+.zakaz-zvonok {
+	font-size: 15px;
+	border-bottom: 1px dashed #899e00;
+	margin-top: -10px;
+	font-family: RobotoSlab-Regular;
+}
+.zakaz-zvonok:hover {
+	color: inherit;
+	border-bottom: 0px;
+	text-decoration: none;
+}
+#menu {
+	background-color: #899e00;
+	font-family: RobotoSlab-Regular;
+	padding-left:0px;
+	padding-right: 0; 
+}
+#menu .container {
+	padding-left:0px;
+	padding-right: 0; 
+}
+#menu a {
+	color: #fff;
+}
+.navbar-default {
+	background-image: none;
+	background-color: transparent;
+	border-width: 0px;
 	box-shadow: none;
 }
-.btn-link:hover {
-	background-color: transparent;
+.navbar {
+	margin-bottom: 0px;
 }
-input[type='number'] {
-    -moz-appearance:textfield;
+.nav>li>a {
+	padding: 20px 30px;
 }
-
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
+#menu .active a {
+	background-image: none;
+	background-color: rgba(0,0,0,0.3);
 }
-#forma-zakaza input {
-	border-radius: 0px;
-}
-span {
-	font-size: 40px;
-}
-/*Хедер*/
-#header {
-	background-image: url(../img/header-bg.jpg);
-	min-height: 800px;
-	background-position: top center;
+/*Заголовок*/
+#zagolovok {
+	background-image: url(../img/bg-1.jpg);
 	-webkit-background-size: cover;
 	background-size: cover;
+	background-position: center center;
+	font-family: RobotoSlab-Bold;
 }
-#header-menu {
-	background-image: url(../img/header-menu-bg.jpg);
+#zagolovok .col-md-8 {
+	padding-left: 30px;
+	padding-top: 140px;
 }
-#header-menu a {
-	margin-left:15px;
-	text-transform: uppercase;
-	color: #400800;
-	font-weight: bold;
-	font-size: 16px;
+#zagolovok .col-md-8 h1 {
+	font-size: 40px;
 }
-#header-menu .row {
-	min-height: 40px;
-	line-height: 40px;
-}
-#header .col-md-2 .btn-link {
-	width:100%;
-}
-#header .col-md-2 {
-	background-image: none;
-	background-color: #fdbe01;
-}
-#header-menu p {
-	margin:0px;
-	font-size: 16px;
-}
-#header h1 {
-	margin-top: 100px;
-	font-weight: bold;
-	color: #400800;
-	line-height: 50px;
-}
-#zakazat {
-	background-color: #974112;
-	padding:10px 30px;
-	text-transform: uppercase;
-	font-weight: bold;
-	color: #fff;
-	margin-top: 30px;
-}
-#zakazat:hover {
-
-}
-.myi, .cena, .dostavka {
-	margin-top: 20px;
-	font-weight: bold;
-}
-.myi {
+#zagolovok .col-md-8 p {
 	font-size: 20px;
-}
-.cena {
-	font-size: 22px;
-}
-.cena span {
-	font-size: 26px;
-}
-/*Наша продукция*/
-#production {
-	background-color: #e7e3da;
-	padding-bottom: 50px;
-}
-#production h1, #o-nas h1, #documents h1, #zakaz-meda h1 {
-	text-transform: uppercase;
-	font-weight: bold;
-	margin-top: 50px;
-}
-#production .col-md-7, #production .col-md-5 {
-	border:1px solid #000;
-	min-height: 300px;
-	padding:30px;
-}
-/*О нас*/
-#o-nas, #documents {
-	padding-bottom: 50px;
-}
-/*Наши документы*/
-#documents {
-	background-color: #e7e3da;
-}
-#documents p {
 	margin-top: 20px;
 }
-#documents a img:hover {
-	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+#zagolovok .col-md-4 {
+	background-color: rgba(137,158,0,0.5);
+	padding-top: 30px;
+	padding-bottom: 40px;
 }
-/*Форма заказа*/
-#forma-zakaza .col-md-4, #forma-zakaza .col-md-8 {
-	padding: 20px;
+#zagolovok .col-md-4 p {
+	font-size: 20px;
+	margin-bottom: 30px;
 }
-#forma-zakaza {
-	background-color: #e7e3da;
+#zagolovok .col-md-4 .numbers-about-us-number {
+	font-size: 50px;
+	margin-bottom: 0;
 }
-#forma-zakaza .col-md-8 {
-	background-image: url(../img/header-menu-bg.jpg);
+#zagolovok .col-md-4 .number-about-us-text {
+	margin-top: -10px;
+	font-family: RobotoSlab-Regular;
+	font-size: 15px;
 }
-#forma-zakaza .col-xs-6 {
+#zagolovok .btn-success, #zagolovok .btn-default {
+	margin-top:20px;
+}
+#zagolovok .btn-default {
+	margin-left: 20px;
+}
+/*РЕМОНТ В ВИДНОМ - ЭТО...*/
+#remont-v-vidnom-eto {
+	padding-top: 50px;
+	padding-bottom: 70px;
+	padding-left: 250px;
+	padding-right: 250px;
+}
+#remont-v-vidnom-eto p:first-child {
+	font-size: 40px;
+}
+#remont-v-vidnom-eto p:nth-child(2) {
+	font-size: 20px;
 	padding-top: 20px;
 }
-.zakaz-button {
-	background-image: none;
-	background-color: #9b3713;
-	padding: 10px 20px;
-	border-radius: 0px;
-	font-weight: bold;
+#remont-v-vidnom-eto p:nth-child(3) {
+	font-size: 30px;
+	padding-top: 20px;
+}
+#remont-v-vidnom-eto button {
+	margin-top: 20px;
+}
+/*Наша команда*/
+#our-team {
+	padding-top: 40px;
+	padding-bottom: 30px;
+	background-color: #899e00;
+	color: #fff;
+}
+#our-team p:first-child {
+	font-size: 30px;
+}
+#our-team .row img{
+	width: 100%;
+}
+#our-team .row p{
+	font-size: 16px;
+	margin-top: 10px;
+	margin-bottom: 0;
+}
+.ruk-mast {
+	margin-top: 20px;
+	margin-bottom: 20px;
 	font-size: 20px;
+}
+#our-team button {
+	margin-top: 35px;
+}
+/*<!-- РЕМОНТ КВАРТИР В... -->*/
+#remont-v {
+	padding-top: 67px;
+	padding-bottom: 45px;
+	font-size: 20px;
+}
+#remont-v p:first-child {
+	font-size: 24px;
 	text-transform: uppercase;
 }
-.btn-primary.disabled {
-	background-color: #9b3713;
+#remont-v .padding-right {
+	padding-right: 150px;
 }
-#forma-zakaza h3,h4,h5 {
-	font-weight: bold;
+#remont-v .complexes .col-md-6 p {
+	margin-bottom: 15px;
+	font-size: 18px;
 }
-.zakaz-niz {
-	padding:50px;
+#remont-v button {
+	margin-top: 35px;
 }
-.zakaz-niz h3, .zakaz-niz h4 {
+/*КАК МЫ РАБОТАЕМ*/
+#how-we-work {
+	min-height: 500px;
+	background-image: url(../img/bg-2.jpg);
+	background-position: center center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding-top: 40px;
+	padding-bottom: 25px;
+}
+#how-we-work .row .col-md-2 {
+	min-height: 150px;
+	padding: 0px;
+	position: relative;
+	color: #fff;
+}
+#cikl {
+	border-top:1px solid #fff;
+	border-right:1px solid #fff;
+	border-bottom:1px solid #fff;
+}
+.fishka {
+	width:40px;
+	height:40px;
+	border-radius: 20px;
+	background-color: #899e00;
+	line-height: 40px;
+	vertical-align: middle;
+	text-align: center;
+	position: absolute;
+	left:0;
+	top:0;
+	margin-left: -20px;
+	margin-top: -20px;
+}
+.fishka-right-top {
+	left:auto;
+	right:0;
+	margin-left: 0px;
+	margin-right: -20px;
+}
+.fishka-bottom-left {
+	top:auto;
+	bottom: 0;
+	margin-bottom: -20px;
+}
+.fishka-bottom-right {
+	left:auto;
+	right:0;
+	top:auto;
+	bottom: 0;
+	margin-left: 0;
+	margin-right: -20px;
+	margin-top: 0;
+	margin-bottom: -20px;
+}
+.border {
+	border-top: 3px solid #ccd1de;
+	border-bottom: 3px solid #ccd1de;
+}
+.border-right {
+	border-right: 3px solid #ccd1de;
+}
+.left-top {
+	position: absolute;
+	text-align: center;
+	left:0;
+	top:0;
+	margin-top:-70px;
+	margin-left: -50px;
+	font-family: RobotoSlab-Regular;
+	font-size: 13px;
+	color: #000;
+}
+.right-top {
+	position: absolute;
+	text-align: center;
+	right:0;
+	top:0;
+	margin-top:-70px;
+	margin-right: -50px;
+	font-family: RobotoSlab-Regular;
+	font-size: 13px;
+	color: #000;
+}
+.left-bottom {
+	position: absolute;
+	text-align: center;
+	left:0;
+	bottom:0;
+	margin-bottom:-80px;
+	margin-left: -35px;
+	font-family: RobotoSlab-Regular;
+	font-size: 13px;
+	color: #000;
+}
+.right-bottom {
+	position: absolute;
+	text-align: center;
+	right:0;
+	bottom:0;
+	margin-bottom:-75px;
+	margin-right: -50px;
+	font-family: RobotoSlab-Regular;
+	font-size: 13px;
+	color: #000;
+}
+#how-we-work .how-we-workh1 {
+	font-size: 25px;
+	margin-bottom: 100px;
+}
+#how-we-work button {
+	margin-top: 100px;
+}
+/*АКТЫ*/
+#akti {
+	padding-left: 100px;
+	padding-right: 100px;
+	padding-top: 70px;
+	padding-bottom: 65px;
+}
+#akti p:first-child {
+	font-size: 25px;
+}
+.jcarousel-wrapper {
+	border-width: 0px;
+	box-shadow: none;
+}
+.jcarousel {
+	border-width: 0;
+}
+.jcarousel-control-prev, .jcarousel-control-next {
+	background: none;
+	box-shadow: none;
+	color: #899e00;
+	font-size: 60px;
+}
+.jcarousel-control-prev:hover, .jcarousel-control-next:hover {
+	text-decoration: none;
+	color: #899e00;
+}
+.jcarousel-control-prev {
+	left:-10px;
+}
+.jcarousel-control-next {
+	right: -10px;
+}
+.jcarousel li img {
+	margin:0 auto;
+}
+#akti .upper {
+	font-size: 25px;
+}
+/*ОТЗЫВЫ*/
+#feedback {
+	background-color: #899e00;
 	padding-top: 30px;
+	padding-bottom: 30px;
+	color: #fff;
 }
-/*Footter*/
-#footer {
-	background-image: url(../img/header-menu-bg.jpg);
-	min-height: 100px;
-	padding:20px;
+#feedback p {
+	font-size: 25px;
 }
-
-
+.carousel-control.right, .carousel-control.left {
+	background: none;
+}
+.carousel-inner>.item.active, .carousel-inner>.item {
+	padding-left: 150px;
+	padding-right: 150px;
+}
+#feedback .regular p {
+	font-size: 16px;
+}
+#feedback .regular .feedback-zagolovok {
+	font-size: 20px;
+}
+#feedback .text-center a {
+	font-size: 20px;
+	border-bottom: 1px dashed #fff;
+	color: #fff;
+}
+#feedback .text-center a:hover {
+	color: #fff;
+	border-bottom: none;
+	text-decoration: none;
+}
+/*ФУТЕР*/
+#footer, #footer-responsive {
+	background-color: #232323;
+	color: #899e00;
+	padding-top: 40px;
+	padding-bottom: 30px;
+}
+.footer-left {
+	font-size: 14px;
+}
+.footer-left img {
+	margin-left: 15px;
+}
+.footer-middle {
+	font-size: 16px;
+}
+.footer-middle .number {
+	font-size: 20px;
+	color:#fff;
+}
+.footer-right .icon, #footer-responsive .icon {
+	width:40px;
+	height: 40px;
+	border-radius: 20px;
+	border: 2px solid #899e00;
+	display: inline-block;
+	text-align: right;
+	margin-left: 10px;
+}
+.bb {
+	border-bottom: 1px dashed #899e00;
+	color: #899e00;
+}
+.bb:hover {
+	border-bottom: 1px dashed transparent;
+	text-decoration: none;
+	color: #899e00;
+}
