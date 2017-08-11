@@ -17,11 +17,11 @@
 	#knopka-adaptive {
 		margin: 0 auto;
 		float: right;
-		width:70px;
-		height: 70px;
+		width:50px;
+		height: 50px;
 		background-color: #899e00;
 		color: #fff;
-		margin-top:8px;
+		margin-top:17px;
 	}
 	#knopka-adaptive span {
 		color: #fff;
@@ -58,6 +58,26 @@
 	#responsive-header-text .p3 button {
 		color: #899e00;
 		font-size: 20px;
+	}
+	/*НАСТРОЙКА ВСПЛЫВАЮЩЕГО МЕНЮ*/
+	.navbar-collapse {
+		width: 60%;
+		position: absolute;
+		z-index: 9999;
+		left:20%;
+	}
+	.navbar-nav {
+		background-color: #899e00;
+	}
+	#header-responsive .nav>li>a {
+		padding: 10px;
+		color: #fff;
+		text-shadow: none;
+	}
+	#header-responsive .nav>.active>a {
+		background-image: none;
+		background-color: rgba(0,0,0,0.3);
+
 	}
 	/*ФУТЕР--------------------------------*/
 	#footer-responsive {
