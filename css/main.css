@@ -1,439 +1,183 @@
 @font-face {
-    font-family: RobotoSlab-Bold; /* Имя шрифта */
-    src: url(../fonts/RobotoSlab-Bold.ttf); /* Путь к файлу со шрифтом */
-   }
-@font-face {
-    font-family: RobotoSlab-Light; /* Имя шрифта */
-    src: url(../fonts/RobotoSlab-Light.ttf); /* Путь к файлу со шрифтом */
-   }
-@font-face {
-    font-family: RobotoSlab-Thin.ttf; /* Имя шрифта */
-    src: url(../fonts/RobotoSlab-Thin.ttf); /* Путь к файлу со шрифтом */
-   }
-@font-face {
-    font-family: RobotoSlab-Regular; /* Имя шрифта */
-    src: url(../fonts/RobotoSlab-Regular.ttf); /* Путь к файлу со шрифтом */
-   }
-/*
-@import url('../fonts/GilroyRegular.otf');*/
-.green-font {
-	color: #899e00;
+			font-family: "EtelkaMediumProRegular";
+			src: url("../fonts/EtelkaMediumProRegular.eot");
+			src: url("../fonts/EtelkaMediumProRegular.eot?#iefix")format("embedded-opentype"),
+			url("../fonts/EtelkaMediumProRegular.woff") format("woff"),
+			url("../fonts/EtelkaMediumProRegular.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+	}
+
+	@font-face {
+			font-family: "EtelkaMediumProBold";
+			src: url("../fonts/EtelkaMediumProBold.eot");
+			src: url("../fonts/EtelkaMediumProBold.eot?#iefix")format("embedded-opentype"),
+			url("../fonts/EtelkaMediumProBold.woff") format("woff"),
+			url("../fonts/EtelkaMediumProBold.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+	}
+body {
+	font-family: EtelkaMediumProRegular;
 }
-.btn-link {
-	padding: 0px;
-	color: inherit;
-}
-.regular {
-	font-family: RobotoSlab-Regular;
-}
-.btn-success, .btn-default {
-	background-image: none;
-	min-width: 120px;
-	padding: 10px 20px;
-	border-width: 0px;
-}
-.btn-success {
-	background-color: #899e00;
-}
-.bold {
-	font-family: RobotoSlab-Bold;
-}
-.upper {
-	text-transform: uppercase;
-}
-/*------------------------О НАС-----------------------------*/
-/*HEADER*/
 #header {
-	padding-top: 15px;
-	font-family: RobotoSlab-Bold;
-	padding-bottom: 15px;
-}
-#header-logo img {
-	max-width: 54px;
-	margin-left: 35px;
-}
-#header-logo p {
-	font-size: 14px;
-}
-#header-text {
-	font-size: 22px;
-	padding-top:20px;
-}
-.phone-number {
-	font-size: 25px;
-}
-.zakaz-zvonok {
-	font-size: 15px;
-	border-bottom: 1px dashed #899e00;
-	margin-top: -10px;
-	font-family: RobotoSlab-Regular;
-}
-.zakaz-zvonok:hover {
-	color: inherit;
-	border-bottom: 0px;
-	text-decoration: none;
+	background-image: url(../img/city-bg.jpg);
+	background-repeat: no-repeat;
 }
 #menu {
-	background-color: #899e00;
-	font-family: RobotoSlab-Regular;
-	padding-left:0px;
-	padding-right: 0; 
+	padding-top: 20px;
+	padding-bottom: 20px;
+	position: fixed;
+	left: 0;
+	right: 0;
+	z-index: 99;
+	background-color: rgba(255,255,255,0.8);
+	font-family: EtelkaMediumProBold;
+	font-size: 14px;
+	border-bottom: 2px solid #e8e8e8;
 }
-#menu .container {
-	padding-left:0px;
-	padding-right: 0; 
-}
-#menu a {
-	color: #fff;
-}
-.navbar-default {
-	background-image: none;
-	background-color: transparent;
-	border-width: 0px;
-	box-shadow: none;
-}
-.navbar {
-	margin-bottom: 0px;
-}
-.nav>li>a {
-	padding: 20px 30px;
-}
-#menu .active a {
-	background-image: none;
-	background-color: rgba(0,0,0,0.3);
-}
-/*Заголовок*/
-#zagolovok {
-	background-image: url(../img/bg-1.jpg);
-	-webkit-background-size: cover;
-	background-size: cover;
-	background-position: center center;
-	font-family: RobotoSlab-Bold;
-}
-#zagolovok .col-md-8 {
-	padding-left: 30px;
-	padding-top: 140px;
-}
-#zagolovok .col-md-8 h1 {
-	font-size: 40px;
-}
-#zagolovok .col-md-8 p {
-	font-size: 20px;
-	margin-top: 20px;
-}
-#zagolovok .col-md-4 {
-	background-color: rgba(137,158,0,0.5);
-	padding-top: 30px;
-	padding-bottom: 40px;
-}
-#zagolovok .col-md-4 p {
-	font-size: 20px;
-	margin-bottom: 30px;
-}
-#zagolovok .col-md-4 .numbers-about-us-number {
-	font-size: 50px;
+#menu .text-right {
 	margin-bottom: 0;
 }
-#zagolovok .col-md-4 .number-about-us-text {
-	margin-top: -10px;
-	font-family: RobotoSlab-Regular;
-	font-size: 15px;
+#menu a, #footer a {
+	text-decoration: none;
+	border-bottom: 1px dashed #ffe600;
+	color: #000;
 }
-#zagolovok .btn-success, #zagolovok .btn-default {
-	margin-top:20px;
+#menu a:hover, #footer a:hover {
+	text-decoration: none;
+	color: #000;
+	border-bottom: 1px dashed transparent;
 }
-#zagolovok .btn-default {
-	margin-left: 20px;
+#cars {
+	margin-top: 200px;
 }
-/*РЕМОНТ В ВИДНОМ - ЭТО...*/
-#remont-v-vidnom-eto {
-	padding-top: 50px;
-	padding-bottom: 70px;
-	padding-left: 250px;
-	padding-right: 250px;
+#cars .col-md-4 {
+	padding: 30px;
 }
-#remont-v-vidnom-eto p:first-child {
-	font-size: 40px;
-}
-#remont-v-vidnom-eto p:nth-child(2) {
-	font-size: 20px;
-	padding-top: 20px;
-}
-#remont-v-vidnom-eto p:nth-child(3) {
-	font-size: 30px;
-	padding-top: 20px;
-}
-#remont-v-vidnom-eto button {
-	margin-top: 20px;
-}
-/*Наша команда*/
-#our-team {
-	padding-top: 40px;
-	padding-bottom: 30px;
-	background-color: #899e00;
-	color: #fff;
-}
-#our-team p:first-child {
-	font-size: 30px;
-}
-#our-team .row img{
-	width: 100%;
-}
-#our-team .row p{
-	font-size: 16px;
-	margin-top: 10px;
-	margin-bottom: 0;
-}
-.ruk-mast {
-	margin-top: 20px;
-	margin-bottom: 20px;
-	font-size: 20px;
-}
-#our-team button {
-	margin-top: 35px;
-}
-/*<!-- РЕМОНТ КВАРТИР В... -->*/
-#remont-v {
-	padding-top: 67px;
-	padding-bottom: 45px;
-	font-size: 20px;
-}
-#remont-v p:first-child {
-	font-size: 24px;
+h1, h2, h3 {
 	text-transform: uppercase;
+	font-family: EtelkaMediumProBold;
 }
-#remont-v .padding-right {
-	padding-right: 150px;
+#routes {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: #ffe600;
 }
-#remont-v .complexes .col-md-6 p {
-	margin-bottom: 15px;
+#routes p {
+	margin-top: 20px;
+	font-size: 20px;
+}
+#lozung {
+	padding: 40px;
+}
+#lozung h3 {
+	padding: 30px;
+	border: 3px solid #ffe600;
+}
+#services {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-image: url(../img/background.jpg);
+}
+.krugl {
 	font-size: 18px;
 }
-#remont-v button {
-	margin-top: 35px;
+#services img {
+	margin: 0 auto;
 }
-/*КАК МЫ РАБОТАЕМ*/
-#how-we-work {
-	min-height: 500px;
-	background-image: url(../img/bg-2.jpg);
-	background-position: center center;
-	-webkit-background-size: cover;
-	background-size: cover;
-	background-repeat: no-repeat;
-	padding-top: 40px;
-	padding-bottom: 25px;
+#services .row {
+	font-size: 18px;
+	color: #c3b000;
 }
-#how-we-work .row .col-md-2 {
-	min-height: 150px;
-	padding: 0px;
-	position: relative;
-	color: #fff;
-}
-#cikl {
-	border-top:1px solid #fff;
-	border-right:1px solid #fff;
-	border-bottom:1px solid #fff;
-}
-.fishka {
-	width:40px;
-	height:40px;
-	border-radius: 20px;
-	background-color: #899e00;
-	line-height: 40px;
-	vertical-align: middle;
-	text-align: center;
-	position: absolute;
-	left:0;
-	top:0;
-	margin-left: -20px;
-	margin-top: -20px;
-}
-.fishka-right-top {
-	left:auto;
-	right:0;
-	margin-left: 0px;
-	margin-right: -20px;
-}
-.fishka-bottom-left {
-	top:auto;
-	bottom: 0;
-	margin-bottom: -20px;
-}
-.fishka-bottom-right {
-	left:auto;
-	right:0;
-	top:auto;
-	bottom: 0;
-	margin-left: 0;
-	margin-right: -20px;
-	margin-top: 0;
-	margin-bottom: -20px;
-}
-.border {
-	border-top: 3px solid #ccd1de;
-	border-bottom: 3px solid #ccd1de;
-}
-.border-right {
-	border-right: 3px solid #ccd1de;
-}
-.left-top {
-	position: absolute;
-	text-align: center;
-	left:0;
-	top:0;
-	margin-top:-70px;
-	margin-left: -50px;
-	font-family: RobotoSlab-Regular;
-	font-size: 13px;
-	color: #000;
-}
-.right-top {
-	position: absolute;
-	text-align: center;
-	right:0;
-	top:0;
-	margin-top:-70px;
-	margin-right: -50px;
-	font-family: RobotoSlab-Regular;
-	font-size: 13px;
-	color: #000;
-}
-.left-bottom {
-	position: absolute;
-	text-align: center;
-	left:0;
-	bottom:0;
-	margin-bottom:-80px;
-	margin-left: -35px;
-	font-family: RobotoSlab-Regular;
-	font-size: 13px;
-	color: #000;
-}
-.right-bottom {
-	position: absolute;
-	text-align: center;
-	right:0;
-	bottom:0;
-	margin-bottom:-75px;
-	margin-right: -50px;
-	font-family: RobotoSlab-Regular;
-	font-size: 13px;
-	color: #000;
-}
-#how-we-work .how-we-workh1 {
-	font-size: 25px;
-	margin-bottom: 100px;
-}
-#how-we-work button {
-	margin-top: 100px;
-}
-/*АКТЫ*/
-#akti {
-	padding-left: 100px;
-	padding-right: 100px;
-	padding-top: 70px;
-	padding-bottom: 65px;
-}
-#akti p:first-child {
-	font-size: 25px;
-}
-.jcarousel-wrapper {
-	border-width: 0px;
-	box-shadow: none;
-}
-.jcarousel {
-	border-width: 0;
-}
-.jcarousel-control-prev, .jcarousel-control-next {
-	background: none;
-	box-shadow: none;
-	color: #899e00;
-	font-size: 60px;
-}
-.jcarousel-control-prev:hover, .jcarousel-control-next:hover {
-	text-decoration: none;
-	color: #899e00;
-}
-.jcarousel-control-prev {
-	left:-10px;
-}
-.jcarousel-control-next {
-	right: -10px;
-}
-.jcarousel li img {
-	margin:0 auto;
-}
-#akti .upper {
-	font-size: 25px;
-}
-/*ОТЗЫВЫ*/
-#feedback {
-	background-color: #899e00;
-	padding-top: 30px;
-	padding-bottom: 30px;
-	color: #fff;
-}
-#feedback p {
-	font-size: 25px;
-}
-.carousel-control.right, .carousel-control.left {
-	background: none;
-}
-.carousel-inner>.item.active, .carousel-inner>.item {
-	padding-left: 150px;
-	padding-right: 150px;
-}
-#feedback .regular p {
-	font-size: 16px;
-}
-#feedback .regular .feedback-zagolovok {
+.text {
 	font-size: 20px;
+	color: #000;
 }
-#feedback .text-center a {
+#footer {
+	padding-top: 20px;
+	padding-bottom: 10px;
+	border-top: 2px solid #e8e8e8;
+	background-color: rgba(255,255,255,0.8);
+	background-color: #ffe600;
+}
+.btn-success {
+	padding: 20px 50px;
 	font-size: 20px;
-	border-bottom: 1px dashed #fff;
-	color: #fff;
+	border-radius: 40px;
 }
-#feedback .text-center a:hover {
-	color: #fff;
+.modal-content {
+	z-index: 9999999;
+	background-color: #ffe600;
+}
+.modal-header {
 	border-bottom: none;
-	text-decoration: none;
 }
-/*ФУТЕР*/
-#footer, #footer-responsive {
-	background-color: #232323;
-	color: #899e00;
-	padding-top: 40px;
-	padding-bottom: 30px;
+.modal-footer {
+	border-top: none;
 }
-.footer-left {
-	font-size: 14px;
-}
-.footer-left img {
-	margin-left: 15px;
-}
-.footer-middle {
-	font-size: 16px;
-}
-.footer-middle .number {
+.modal-body {
 	font-size: 20px;
-	color:#fff;
 }
-.footer-right .icon, #footer-responsive .icon {
-	width:40px;
-	height: 40px;
-	border-radius: 20px;
-	border: 2px solid #899e00;
-	display: inline-block;
-	text-align: right;
-	margin-left: 10px;
+.modal-body p {
+	margin-top: 20px;
 }
-.bb {
-	border-bottom: 1px dashed #899e00;
-	color: #899e00;
+.modal-body a {
+	color: #000;
 }
-.bb:hover {
-	border-bottom: 1px dashed transparent;
-	text-decoration: none;
-	color: #899e00;
+@media (max-width: 992px) {
+	#menu {
+		font-size: 16px;
+		text-align: center;
+		position: relative;
+		margin-left: -15px;
+		margin-right: -15px;
+	}
+	#menu .text-right {
+		text-align: center;
+	}
+	#menu p {
+		margin-top: 20px;
+	}
+	#cars {
+		margin-top: 0px;
+	}
+	#cars img {
+		margin: 0 auto;
+	}
+	h1 {
+		font-size: 25px;
+	}
+	h2 {
+		font-size: 18px;
+	}
+	#routes p {
+		font-size: 14px;
+	}
+	#lozung {
+		padding:15px;
+	}
+	h3 {
+		font-size: 20px;
+	}
+	.krugl {
+		font-size: 14px;
+	}
+	#footer p {
+		margin-top: 20px;
+	}
+	#footer {
+		text-align: center;
+	}
+	#footer .text-right {
+		text-align: center;
+	}
+}
+@media (max-width: 1150px) and (min-width: 993px) {
+	#menu {
+		font-size: 12px;
+	}
+	#footer {
+		font-size: 12px;
+	}
 }
