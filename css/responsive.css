@@ -1,0 +1,297 @@
+@media (max-width: 992px) {
+	/*ШАПКА----------------------------------------------------*/
+	#header-responsive {
+		display:block;
+		font-family: RobotoSlab-Bold;
+	}
+	#header {
+		display:none;
+	}
+	#menu {
+		display: none;
+	}
+	.navbar-toogle {
+		border:1px solid #000;
+		background-color: #899e00;
+	}
+	#knopka-adaptive {
+		margin: 0 auto;
+		float: right;
+		width:50px;
+		height: 50px;
+		background-color: #899e00;
+		color: #fff;
+		margin-top:17px;
+	}
+	#knopka-adaptive span {
+		color: #fff;
+		width:100%;
+		background-color: #fff;
+		margin-top: 10px;
+	}
+	#knopka-adaptive span:nth-child(2) {
+	margin-top:0px;
+	}
+	.navbar-header {
+		padding:10px 20px;
+	}
+	.navbar-header img {
+		max-width:50px;
+		margin-left: 25px;
+	}
+	#navbar-header-name {
+		font-size: 12px;
+		color: #899e00;
+		margin-bottom: 0;
+	}
+	.navbar-header .col-xs-6 {
+		padding:0px;
+	}
+	#responsive-header-text .p1 {
+		font-size: 16px;
+	}
+	#responsive-header-text .p2 a {
+		font-size: 20px;
+		color: #000;
+		text-decoration: none;
+	}
+	#responsive-header-text .p3 button {
+		color: #899e00;
+		font-size: 20px;
+	}
+	/*СТРАНИЦА ОТЗЫВЫ*/
+	#cackle {
+		margin-top: 20px;
+	}
+	/*ГЛАВНАЯ*/
+	.background-changing .col-md-8 {
+		min-height: 400px;
+	}
+	.background-changing-right-block {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+	/*НАСТРОЙКА ВСПЛЫВАЮЩЕГО МЕНЮ*/
+	.navbar-collapse {
+		width: 80%;
+		position: absolute;
+		z-index: 9999;
+		left:14%;
+	}
+	.navbar-nav {
+		background-color: #899e00;
+	}
+	#header-responsive .nav>li>a {
+		padding: 10px;
+		color: #fff;
+		text-shadow: none;
+		padding-left: 30px;
+	}
+	#header-responsive .nav>.active>a {
+		background-image: none;
+		background-color: rgba(0,0,0,0.3);
+
+	}
+	/*ФУТЕР--------------------------------*/
+	#footer-responsive {
+		display: block;
+	}
+	#footer {
+		display: none;
+	}
+	.pf1 {
+		color: #fff;
+		font-size: 18px;
+	}
+	.pf2 a {
+		color: #fff;
+		font-size: 22px;
+	}
+	.pf3 a {
+		font-size: 16px;
+		color: #899e00;
+	}
+	/*СТРАНИЦА О НАС-----------------------*/
+	#zagolovok .btn-default {
+		margin-left: 0;
+	}
+	#zagolovok .col-md-4 {
+		margin-top:20px;
+		margin-bottom: 20px;
+	}
+	#remont-v-vidnom-eto {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	#remont-v {
+		text-align: center;
+	}
+	#remont-v .padding-right {
+		padding-right: 15px;
+	}
+	#remont-v p:first-child {
+		margin-top: 30px;
+	}
+	#akti {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	#feedback #carousel-example-generic {
+		display: none;
+	}
+	#how-we-work-desktop {
+		display: none;
+	}
+	#how-we-work-responsive {
+		display: block;
+	}
+	.fishka {
+		left:50%;
+		top:50%;
+	}
+	#how-we-work-responsive .col-xs-4 {
+		position: relative;
+	}
+	#how-we-work-responsive .col-xs-4, #how-we-work-responsive .col-xs-8 {
+		text-align: center;
+		padding: 20px;
+	}
+	#how-we-work-responsive .col-xs-8 {
+		text-align: left;
+	}
+	.equal, .equal > div[class*='col-'] {
+	    display: -webkit-box;
+	    display: -moz-box;
+	    display: -ms-flexbox;
+	    display: -webkit-flex;
+	    display: flex;
+	    flex:1 0 auto;
+	}
+	#how-we-work {
+		background-image: none;
+		background-color: #899e00;
+		color: #fff;
+	}
+	.fishka {
+		background-color: #fff;
+		color: #899e00;
+	}
+	#how-we-work .btn-success {
+		background-color: #fff;
+		color: #000;
+		text-shadow: none;
+	}
+	.fading {
+		display: block;
+	}
+	/*СТРАНИЦА КОНТАКТЫ--------------------*/
+	#contacts-page-container {
+		text-align: center;
+	}
+	#contacts-map {
+		margin-top: 20px;
+	}
+
+	/*СТРАНИЦА СПАСИБО---------------------*/
+	#thank-you .container {
+		padding-left: 15px;
+		padding-right: 15px;
+		text-align: center;
+	}
+	/*СТРАНИЦА АКЦИИ---------------------*/
+	#discounts {
+		text-align: center;
+	}
+	/*СТРАНИЦА ЗАЯВКА*/
+	.zayavka-block {
+		padding-top: 0;
+	}
+	#zayavka .col-md-4 {
+		margin-top: 40px;
+	}
+	/*СТРАНИЦА ПОРТФОЛИО*/
+	#portfolio .col-md-3 img {
+		margin-top:10px;
+	}
+	.row2 {
+		margin-top: -20px;
+	}
+	/*СТРАНИЦА УСЛУГИ*/
+	#uslugi h1 {
+		font-size: 28px;
+	}
+	#uslugi .container {
+		padding-right: 0;
+		padding-left: 0;
+	}
+	#uslugi button {
+		margin-top: 20px;
+	}
+	#uslugi .btn-default {
+		margin-left: 0;
+	}
+	.modal-content {
+		padding-left: 15px;
+	}
+}
+@media (min-width: 400px) {
+	.navbar-collapse {
+		left:12%;
+	}
+}
+@media (min-width: 992px) {
+	/*ШАПКА--------------------------------*/
+	#header-responsive {
+		display:none;
+	}
+	#header {
+		display:block;
+	}
+	#menu {
+		display: block;
+		max-height: 60px;
+	}
+	/*ФУтЕР-------------------------------*/
+	#footer-responsive {
+		display: none;
+	}
+	#footer {
+		display: block;
+	}
+	/*СТРАНИЦА О НАС*/
+	#feedback #carousel-example-generic {
+		display: block;	
+	}
+	#how-we-work-desktop {
+		display: block;
+	}
+	#how-we-work-responsive {
+		display: none;
+	}
+	.fading {
+		display: none;
+	}
+	.background-changing-right-block {
+		padding-top: 150px;
+		padding-bottom: 150px;
+	}
+}
+/*Настройка меню в десктопной версии*/
+@media (max-width: 1200px) {
+	.nav>li>a {
+		padding: 20px 24px;
+	}
+}
+/*Настройка переключателя на странице ЦЕНЫ*/
+@media (max-width: 1200px) {
+	.turner {
+		width:70%;
+		margin:0 auto;
+	}
+}
+@media (min-width: 1200px) {
+	.turner {
+		width:61%;
+		margin:0 auto;
+	}
+}
