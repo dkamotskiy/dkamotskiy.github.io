@@ -14,19 +14,21 @@
 <body>
 <!------------------------------------------------------------ ШАПКА---------------------------------------------------------- -->
 	<!-- Хедер -->
-	<div class="container" id="header">
-		<div class="row">
-			<div class="col-md-2" id="header-logo">
-				<p><img src="img/house.png" alt=""></p>
-				<p class="green-font">Ремонт в Видном</p>
-			</div>
-			<div class="col-md-7" id="header-text">
-				<p class="text-center">РЕМОНТ КВАРТИР И НОВОСТРОЕК В<br>ВИДНОМ ПО ВЫГОДНЫМ ЦЕНАМ</p>
-			</div>
-			<div class="col-md-3" id="header-phones">
-				<p class="text-right phone-number">8 (903) 547-35-38</p>
-				<p class="text-right phone-number">8 (903) 556-76-62</p>
-				<p class="text-right green-font"><button type="button" class="btn btn-link zakaz-zvonok" data-toggle="modal" data-target="#myModal3">Заказать звонок</button></p>
+	<div class="container-fluid gray-background">
+		<div class="container" id="header">
+			<div class="row">
+				<div class="col-md-2" id="header-logo">
+					<p><img src="img/house.png" alt=""></p>
+					<p class="green-font">Ремонт в Видном</p>
+				</div>
+				<div class="col-md-7" id="header-text">
+					<p class="text-center">РЕМОНТ КВАРТИР И НОВОСТРОЕК В<br>ВИДНОМ ПО ВЫГОДНЫМ ЦЕНАМ</p>
+				</div>
+				<div class="col-md-3" id="header-phones">
+					<p class="text-right phone-number">8 (903) 547-35-38</p>
+					<p class="text-right phone-number">8 (903) 556-76-62</p>
+					<p class="text-right green-font"><button type="button" class="btn btn-link zakaz-zvonok" data-toggle="modal" data-target="#myModal3">Заказать звонок</button></p>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -124,14 +126,14 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8">
-					<h1>РЕМОНТ В ВИДНОМ</h1>
+					<h1 class="margin-up">РЕМОНТ В ВИДНОМ</h1>
 					<p>ПРОФЕССИОНАЛЬНО, БЫСТРО, ДЕШЕВО</p>
 					<br><br>
 					<p class="regular">Вызвать замерщика</p>
 					<button type="button" class="btn btn-success regular" data-toggle="modal" data-target="#myModal">Рассчитать</button>
 					<a href="portfolio.html"><button type="button" class="btn btn-default regular green-font">Портфолио</button></a>
 				</div>
-				<div class="col-md-4 text-center">
+				<div class="col-md-4 text-center block-desktop">
 					<p>ЦИФРЫ О НАС</p>
 					<p class="numbers-about-us-number">1999</p>
 					<p class="number-about-us-text">НАЧАЛИ РАБОТАТЬ НА РЫНКЕ</p>
@@ -145,12 +147,36 @@
 			</div>
 		</div>
 	</div>
+	<div class="container-fluid block-mobile regular text-center">
+		<div class="row">
+			<div class="col-xs-6">
+				<p class="numbers-about-us-number bold" style="font-size: 18px;">1999</p>
+				<p class="number-about-us-text" style="font-size: 12px;">НАЧАЛИ РАБОТАТЬ НА РЫНКЕ</p>
+			</div>
+			<div class="col-xs-6">
+				<p class="numbers-about-us-number bold" style="font-size: 18px;">1107</p>
+				<p class="number-about-us-text" style="font-size: 12px;">ДОВОЛЬНЫХ КЛИЕНТОВ</p>
+			</div>			
+		</div>
+		<div class="row">
+			<div class="col-xs-6">
+				<p class="numbers-about-us-number bold" style="font-size: 18px;">207</p>
+				<p class="number-about-us-text" style="font-size: 12px;">ПРОФЕССИОНАЛЬНЫХ МАСТЕРОВ</p>
+			</div>
+			<div class="col-xs-6">
+				<p class="numbers-about-us-number bold" style="font-size: 18px;">984</p>
+				<p class="number-about-us-text" style="font-size: 12px;">УСПЕШНО СДАННЫХ ПРОЕКТОВ</p>
+			</div>
+		</div>
+	</div>
 <!-- Ремонт в видном - это... -->
-	<div class="container regular" id="remont-v-vidnom-eto">
-		<p class="text-center bold">РЕМОНТ В ВИДНОМ - ЭТО:</p>
-		<p class="text-center">Качественные строительные услуги с содержанием всех норм и условий. Только заказывая наш ремонт вы можете быть спокойны. Ведь заказывая наши услуги мы гарантируем вам 100%-ую поддержку, выполнение в сроки и так далее!</p>
-		<p class="text-center">Узнать стоимость моего ремонта</p>
-		<p class="text-center"><button type="button" class="btn btn-success regular" data-toggle="modal" data-target="#myModal">Рассчитать</button></p>
+	<div class="container-fluid gray-background">
+		<div class="container regular" id="remont-v-vidnom-eto">
+			<p class="text-center bold">РЕМОНТ В ВИДНОМ - ЭТО:</p>
+			<p class="text-center">Качественные строительные услуги с содержанием всех норм и условий. Только заказывая наш ремонт вы можете быть спокойны. Ведь заказывая наши услуги мы гарантируем вам 100%-ую поддержку, выполнение в сроки и так далее!</p>
+			<p class="text-center">Узнать стоимость моего ремонта</p>
+			<p class="text-center"><button type="button" class="btn btn-success regular" data-toggle="modal" data-target="#myModal">Рассчитать</button></p>
+		</div>
 	</div>
 <!-- Наша команда -->
 	<div class="container-fluid" id="our-team">
@@ -214,33 +240,35 @@
 		</div>
 	</div>
 <!-- РЕМОНТ КВАРТИР В... -->
-	<div class="container" id="remont-v">
-		<div class="row bold">
-			<div class="col-md-6 padding-right">
-				<p>Ремонт квартир в Видном и в Жилых Комплексах Ленинского района</p><br>
-				<p class="regular">Вот уже 18 лет мы обеспечиваем вам качественный и недорогой ремонт. Тут ещё текст о компании, и тут ещё, и тут чуточек.</p>
+	<div class="container-fluid gray-background">
+		<div class="container" id="remont-v">
+			<div class="row bold">
+				<div class="col-md-6 padding-right">
+					<p>Ремонт квартир в Видном и в Жилых Комплексах Ленинского района</p><br>
+					<p class="regular">Вот уже 18 лет мы обеспечиваем вам качественный и недорогой ремонт. Тут ещё текст о компании, и тут ещё, и тут чуточек.</p>
+				</div>
+				<div class="col-md-6 complexes">
+					<p class="text-center">Жилые Комплексы, где мы работаем</p><br>
+					<div class="row">
+						<div class="col-md-6"><p>ЖК «Вороньи горы»</p></div>
+						<div class="col-md-6"><p>ЖК «Вороньи горы»</p></div>
+					</div>
+					<div class="row">
+						<div class="col-md-6"><p>ЖК «Вороньи горы»</p></div>
+						<div class="col-md-6"><p>ЖК «Вороньи горы»</p></div>
+					</div>
+					<div class="row">
+						<div class="col-md-6"><p>ЖК «Вороньи горы»</p></div>
+						<div class="col-md-6"><p>ЖК «Вороньи горы»</p></div>
+					</div>
+					<div class="row">
+						<div class="col-md-6"><p>ЖК «Вороньи горы»</p></div>
+						<div class="col-md-6"><p>ЖК «Вороньи горы»</p></div>
+					</div>
+				</div>
 			</div>
-			<div class="col-md-6 complexes">
-				<p class="text-center">Жилые Комплексы, где мы работаем</p><br>
-				<div class="row">
-					<div class="col-md-6"><p>ЖК «Вороньи горы»</p></div>
-					<div class="col-md-6"><p>ЖК «Вороньи горы»</p></div>
-				</div>
-				<div class="row">
-					<div class="col-md-6"><p>ЖК «Вороньи горы»</p></div>
-					<div class="col-md-6"><p>ЖК «Вороньи горы»</p></div>
-				</div>
-				<div class="row">
-					<div class="col-md-6"><p>ЖК «Вороньи горы»</p></div>
-					<div class="col-md-6"><p>ЖК «Вороньи горы»</p></div>
-				</div>
-				<div class="row">
-					<div class="col-md-6"><p>ЖК «Вороньи горы»</p></div>
-					<div class="col-md-6"><p>ЖК «Вороньи горы»</p></div>
-				</div>
-			</div>
+			<p class="text-center"><button type="button" class="btn btn-success regular" data-toggle="modal" data-target="#myModal3">Оставить заявку</button></p>
 		</div>
-		<p class="text-center"><button type="button" class="btn btn-success regular" data-toggle="modal" data-target="#myModal3">Оставить заявку</button></p>
 	</div>
 <!-- КАК МЫ РАБОТАЕМ -->
 	<div class="container-fluid bold" id="how-we-work">
@@ -327,33 +355,35 @@
 		</div>
 	</div>
 <!-- Акты о приеме-отдаче -->
-	<div class="container" id="akti">
-		<p class="text-center bold">АКТЫ О ПРИЕМЕ-ОТДАЧИ</p><br>
-		<div class="jcarousel-wrapper">
-                <div class="jcarousel" data-jcarousel="true">
-                    <ul style="left: -600px; top: 0px;">    
-	                    <li style="width: 200px;"><img src="img/akti/1.jpg" alt="Image 3"></li>
-	                    <li style="width: 200px;"><img src="img/akti/1.jpg" alt="Image 4"></li>
-	                    <li style="width: 200px;"><img src="img/akti/1.jpg" alt="Image 5"></li>
-	                    <li style="width: 200px;"><img src="img/akti/1.jpg" alt="Image 6"></li>
-	                    <li style="width: 200px;"><img src="img/akti/1.jpg" alt="Image 1"></li>
-	                    <li style="width: 200px;"><img src="img/akti/1.jpg" alt="Image 2"></li>
-	                    <li style="width: 200px;"><img src="img/akti/1.jpg" alt="Image 2"></li>
-	                    <li style="width: 200px;"><img src="img/akti/1.jpg" alt="Image 2"></li>
-	                    <li style="width: 200px;"><img src="img/akti/1.jpg" alt="Image 2"></li>
-	                    <li style="width: 200px;"><img src="img/akti/1.jpg" alt="Image 2"></li>
-	                    <li style="width: 200px;"><img src="img/akti/1.jpg" alt="Image 2"></li>
-                    </ul>
-                </div>
-                <a href="#" class="jcarousel-control-prev regular" data-jcarouselcontrol="true">‹</a>
-                <a href="#" class="jcarousel-control-next regular" data-jcarouselcontrol="true">›</a>
-        </div>
-        <br><br>
-        <p class="text-center bold upper">заказать ремонт квартир в новостройке</p>
-        <br>
-        <p class="text-center regular" style="font-size: 20px;">Только заказывая наш ремонт вы можете быть спокойны. Ведь заказывая наши услуги мы гарантируем вам 100%-ую поддержку, выполнение в сроки и так далее!</p>
-        <br>
-        <p class="text-center"><button type="button" class="btn btn-success regular" data-toggle="modal" data-target="#myModal">Рассчитать</button></p>
+	<div class="container-fluid gray-background">
+		<div class="container" id="akti">
+			<p class="text-center bold">АКТЫ О ПРИЕМЕ-ОТДАЧИ</p><br>
+			<div class="jcarousel-wrapper">
+	                <div class="jcarousel" data-jcarousel="true">
+	                    <ul style="left: -600px; top: 0px;">    
+		                    <li style="width: 200px;"><img src="img/akti/1.jpg" alt="Image 3"></li>
+		                    <li style="width: 200px;"><img src="img/akti/1.jpg" alt="Image 4"></li>
+		                    <li style="width: 200px;"><img src="img/akti/1.jpg" alt="Image 5"></li>
+		                    <li style="width: 200px;"><img src="img/akti/1.jpg" alt="Image 6"></li>
+		                    <li style="width: 200px;"><img src="img/akti/1.jpg" alt="Image 1"></li>
+		                    <li style="width: 200px;"><img src="img/akti/1.jpg" alt="Image 2"></li>
+		                    <li style="width: 200px;"><img src="img/akti/1.jpg" alt="Image 2"></li>
+		                    <li style="width: 200px;"><img src="img/akti/1.jpg" alt="Image 2"></li>
+		                    <li style="width: 200px;"><img src="img/akti/1.jpg" alt="Image 2"></li>
+		                    <li style="width: 200px;"><img src="img/akti/1.jpg" alt="Image 2"></li>
+		                    <li style="width: 200px;"><img src="img/akti/1.jpg" alt="Image 2"></li>
+	                    </ul>
+	                </div>
+	                <a href="#" class="jcarousel-control-prev regular" data-jcarouselcontrol="true">‹</a>
+	                <a href="#" class="jcarousel-control-next regular" data-jcarouselcontrol="true">›</a>
+	        </div>
+	        <br><br>
+	        <p class="text-center bold upper">заказать ремонт квартир в новостройке</p>
+	        <br>
+	        <p class="text-center regular" style="font-size: 20px;">Только заказывая наш ремонт вы можете быть спокойны. Ведь заказывая наши услуги мы гарантируем вам 100%-ую поддержку, выполнение в сроки и так далее!</p>
+	        <br>
+	        <p class="text-center"><button type="button" class="btn btn-success regular" data-toggle="modal" data-target="#myModal">Рассчитать</button></p>
+		</div>
 	</div>
 <!-- ОТЗЫВЫ -->
 	<div class="container-fluid" id="feedback">
@@ -462,6 +492,9 @@
 <div class="modal fade regular" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
+    	<div class="knopka-exit-modal">
+			 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		</div>
       <div class="modal-body">
           <div class="row">
           	<div class="col-md-6">
@@ -527,6 +560,9 @@
 <div class="modal fade regular" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
+    <div class="knopka-exit-modal">
+			 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		</div>
       <div class="modal-body">
 		<div class="row">
 			<div class="col-md-4"></div>

@@ -3,6 +3,7 @@
 	#header-responsive {
 		display:block;
 		font-family: RobotoSlab-Bold;
+		background-color: #faffe9;
 	}
 	#header {
 		display:none;
@@ -71,12 +72,41 @@
 		padding-top: 50px;
 		padding-bottom: 50px;
 	}
+	#uslugi .col-xs-4 p {
+		font-size: 12px;
+	}
+	.propal {
+		display: block;
+	}
+	.font-40 {
+		font-size: 27px;
+	}
+	.font-14 {
+		font-size: 12px;
+	}
+	#main-nashi-uslugi .col-md-4 div {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	#main-nashi-uslugi .col-md-4 {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.text-mobile {
+		display: block;
+	}
+	.text-desktop {
+		display: none;
+	}
+	#pochemu .col-md-4 {
+		margin-bottom: 30px;
+	}
 	/*НАСТРОЙКА ВСПЛЫВАЮЩЕГО МЕНЮ*/
 	.navbar-collapse {
-		width: 80%;
+		width: 90%;
 		position: absolute;
 		z-index: 9999;
-		left:14%;
+		left:9%;
 	}
 	.navbar-nav {
 		background-color: #899e00;
@@ -115,6 +145,20 @@
 	#zagolovok .btn-default {
 		margin-left: 0;
 	}
+	#zagolovok {
+		padding-bottom: 20px;
+	}
+	.block-desktop {
+		display: none;
+	}
+	.block-mobile {
+		display: block;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	#zagolovok .margin-up {
+		margin-top: -70px;
+	}
 	#zagolovok .col-md-4 {
 		margin-top:20px;
 		margin-bottom: 20px;
@@ -136,28 +180,12 @@
 		padding-left: 15px;
 		padding-right: 15px;
 	}
-	#feedback #carousel-example-generic {
+	#feedback #carousel-example-generic1 {
 		display: none;
-	}
-	#how-we-work-desktop {
-		display: none;
-	}
-	#how-we-work-responsive {
-		display: block;
 	}
 	.fishka {
 		left:50%;
 		top:50%;
-	}
-	#how-we-work-responsive .col-xs-4 {
-		position: relative;
-	}
-	#how-we-work-responsive .col-xs-4, #how-we-work-responsive .col-xs-8 {
-		text-align: center;
-		padding: 20px;
-	}
-	#how-we-work-responsive .col-xs-8 {
-		text-align: left;
 	}
 	.equal, .equal > div[class*='col-'] {
 	    display: -webkit-box;
@@ -166,11 +194,6 @@
 	    display: -webkit-flex;
 	    display: flex;
 	    flex:1 0 auto;
-	}
-	#how-we-work {
-		background-image: none;
-		background-color: #899e00;
-		color: #fff;
 	}
 	.fishka {
 		background-color: #fff;
@@ -236,7 +259,12 @@
 }
 @media (min-width: 400px) {
 	.navbar-collapse {
-		left:12%;
+		left:8%;
+	}
+}
+@media (max-width: 600px) {
+	#header-responsive .nav>li>a {
+			padding-left: 15px;
 	}
 }
 @media (min-width: 992px) {
@@ -262,18 +290,28 @@
 	#feedback #carousel-example-generic {
 		display: block;	
 	}
-	#how-we-work-desktop {
-		display: block;
-	}
-	#how-we-work-responsive {
-		display: none;
-	}
 	.fading {
 		display: none;
 	}
 	.background-changing-right-block {
 		padding-top: 150px;
 		padding-bottom: 150px;
+	}
+	.block-desktop {
+		display: block;
+	}
+	.block-mobile {
+		display: none;
+	}
+	/*ГЛАВНАЯ-------------------------*/
+	.propal {
+		display: none;
+	}
+	.text-mobile {
+		display: none;
+	}
+	.text-desktop {
+		display: block;
 	}
 }
 /*Настройка меню в десктопной версии*/

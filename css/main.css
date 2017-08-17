@@ -16,6 +16,18 @@
    }
 /*
 @import url('../fonts/GilroyRegular.otf');*/
+.modal-content {
+	position: relative;
+}
+.knopka-exit-modal {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	z-index: 9999;
+}
+.close {
+	font-size: 50px;
+}
 .green-font {
 	color: #899e00;
 }
@@ -40,6 +52,9 @@
 }
 .upper {
 	text-transform: uppercase;
+}
+.gray-background {
+	background-color: #faffe9;
 }
 input[type='number'] {
     -moz-appearance:textfield;
@@ -226,7 +241,6 @@ input::-webkit-inner-spin-button {
 }
 /*КАК МЫ РАБОТАЕМ*/
 #how-we-work {
-	min-height: 500px;
 	background-image: url(../img/bg-2.jpg);
 	background-position: center center;
 	-webkit-background-size: cover;
@@ -236,7 +250,6 @@ input::-webkit-inner-spin-button {
 	padding-bottom: 25px;
 }
 #how-we-work .row .col-md-2 {
-	min-height: 150px;
 	padding: 0px;
 	position: relative;
 	color: #fff;
@@ -334,10 +347,10 @@ input::-webkit-inner-spin-button {
 }
 #how-we-work .how-we-workh1 {
 	font-size: 25px;
-	margin-bottom: 100px;
+	margin-bottom: 30px;
 }
 #how-we-work button {
-	margin-top: 100px;
+	margin-top: 30px;
 }
 /*АКТЫ*/
 #akti {
@@ -804,8 +817,8 @@ input:checked + label:after {
 	padding-bottom: 50px;
 }
 #faq .btn-link, #faq-page .btn-link {
-	margin-top: -6px;
-	font-size: 20px;
+	margin-top: -3px;
+	font-size: 16px;
 }
 #uslugi-our-works .carousel-inner>.item.active, #uslugi-our-works .carousel-inner>.item {
 	padding-left: 0;
@@ -813,6 +826,12 @@ input:checked + label:after {
 }
 .cursor-pointer {
 	cursor: pointer;
+}
+.font-40 {
+	font-size: 40px;
+}
+.font-14 {
+	font-size: 14px;
 }
 /*СТРАНИЦА FAQ-----------------------------------------------------*/
 #faq-page, #rekvizity, #privacy-policy {
