@@ -50,6 +50,8 @@
 	}
 	#responsive-header-text .p1 {
 		font-size: 16px;
+		margin-top: -10px;
+		margin-bottom: -10px;
 	}
 	#responsive-header-text .p2 a {
 		font-size: 20px;
@@ -58,7 +60,10 @@
 	}
 	#responsive-header-text .p3 button {
 		color: #899e00;
-		font-size: 20px;
+		font-size: 16px;
+	}
+	#responsive-header-text .p3 {
+		margin-top: -20px;
 	}
 	/*СТРАНИЦА ОТЗЫВЫ*/
 	#cackle {
@@ -100,6 +105,14 @@
 	}
 	#pochemu .col-md-4 {
 		margin-bottom: 30px;
+	}
+	#sdan, #tekush {
+		font-size: 12px;
+	}
+	#uslugi-our-works {
+		padding-left: 0;
+		padding-right: 0;
+
 	}
 	/*НАСТРОЙКА ВСПЛЫВАЮЩЕГО МЕНЮ*/
 	.navbar-collapse {
@@ -155,6 +168,12 @@
 		display: block;
 		padding-top: 20px;
 		padding-bottom: 20px;
+		padding-left: 0;
+		padding-right: 0;
+		margin-left: -20px;
+		margin-right: -10px;
+		background-color: transparent;
+		margin-top: -50px;
 	}
 	#zagolovok .margin-up {
 		margin-top: -70px;
@@ -256,6 +275,18 @@
 	.modal-content {
 		padding-left: 15px;
 	}
+	/*ЦЕНЫ----------------------------*/
+	#button-kapital, #button-novostroyka, #button-kosmetika {
+		font-size: 12px;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	#table-kosmetika, #table-novostroyka, #table-kapital {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	font-size: 12px;
+	}
 }
 @media (min-width: 400px) {
 	.navbar-collapse {
@@ -313,6 +344,12 @@
 	.text-desktop {
 		display: block;
 	}
+	#uslugi .col-xs-4 p {
+		font-size: 18px;
+	}
+	.mt-resp {
+		margin-top: 30px;
+	}
 }
 /*Настройка меню в десктопной версии*/
 @media (max-width: 1200px) {
@@ -332,4 +369,9 @@
 		width:61%;
 		margin:0 auto;
 	}
+}
+@media (max-width: 650px) {
+.prices-margin {
+	margin-top: 300px;
+}
 }

@@ -18,7 +18,7 @@
 		<div class="container" id="header">
 			<div class="row">
 				<div class="col-md-2" id="header-logo">
-					<p><img src="img/house.png" alt=""></p>
+					<p><a href="index.html"><img src="img/house.png" alt=""></a></p>
 					<p class="green-font">Ремонт в Видном</p>
 				</div>
 				<div class="col-md-7" id="header-text">
@@ -78,7 +78,7 @@
 		    <div class="container-fluid">
 		      <div class="navbar-header">
 			      	<div class="col-xs-6">
-			      	<img src="img/house.png" alt="">
+			      	<a href="index.html"><img src="img/house.png" alt=""></a>
 			      	<p id="navbar-header-name">Ремонт в Видном</p>
 			      	</div>
 			      	<div class="col-xs-6">
@@ -135,7 +135,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-4 footer-left">
-					<img src="img/house.png" alt="">
+					<a href="index.html"><img src="img/house.png" alt=""></a>
 					<p>Ремонт в Видном</p>
 					<p class="text-left"><a href="rekvizity.html" class="bb">Реквизиты</a></p>
 				</div>
@@ -179,10 +179,11 @@
 <div class="modal fade regular" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
-    <div class="knopka-exit-modal">
+    	<div class="knopka-exit-modal">
 			 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 		</div>
-      <div class="modal-body">
+		<p class="bold text-center" style="font-size: 20px;">Рассчитать стоимость</p><br><br>
+      	<div class="modal-body">
           <div class="row">
           	<div class="col-md-6">
           		<div class="form-group">
@@ -209,18 +210,10 @@
 			</div>
 			<div class="help-block with-errors"></div>
 		  </div>
-		  <div class="form-group">
-		    <label for="calc_region_3" class="control-label">Площадь помещения</label>
-		    <div class="select_main">
-				<p></p><span class="glyphicon glyphicon-chevron-down"></span>
-				<select name="version_pledge" id="calc_region_3">
-					<option value="1">80м2</option>
-					<option value="2">90м2</option>
-					<option value="3">100м2</option>	
-				</select>
-			</div>
-			<div class="help-block with-errors"></div>
-		  </div>
+			<div class="form-group">
+				    <label for="input-s" class="control-label">Площадь, м<span>2</span></label>
+				    <input type="number" class="form-control text-center green-font" id="input-s" placeholder="" required>
+				</div>
           	</div>
           	<div class="col-md-6">
           		<div class="form-group">
@@ -247,13 +240,14 @@
 <div class="modal fade regular" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
-    <div class="knopka-exit-modal">
+    	<div class="knopka-exit-modal">
 			 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 		</div>
-      <div class="modal-body">
+      	<div class="modal-body">
+      	<p class="bold text-center" style="font-size: 18px;">Оставьте заявку, и в течение 15 минут с Вами свяжется наш специалист</p><br>
 		<div class="row">
-			<div class="col-md-4"></div>
-			<div class="col-md-4">
+			<div class="col-md-3"></div>
+			<div class="col-md-6">
 			<div class="form-group">
 				    <label for="inputName3" class="control-label" style="font-size: 18px;">Имя</label>
 				    <input type="text" class="form-control text-center green-font" id="inputName3" style="width:100%;" placeholder="" required>
@@ -263,12 +257,12 @@
 				    <input type="number" class="form-control text-center green-font" id="inputPhone3" style="width:100%;" placeholder="" required>
 			</div>
 			</div>
-			<div class="col-md-4"></div>
+			<div class="col-md-3"></div>
 		</div>
           <br><br>
-          <p class="text-center regular">Полученные данные строго конфиденциальны и не будут преданы огласке</p>
+          <p class="text-center"><input type="checkbox" checked="checked" style="width: 20px; height: 20px;"/> Даю согласие на обработку персональных данных</p>
           <br>
-          <p class="text-center"><a href="privacy-policy.html" class="bb" style="font-size: 18px;">Политика конфиденциальности</a></p>
+          <p class="text-center"><a href="privacy-policy.html" class="bb" style="font-size: 14px;">Политика конфиденциальности</a></p>
           <br><br>
           <p class="text-center"><button type="button" class="btn btn-success regular">Оставить заявку</button></p>
           </div>

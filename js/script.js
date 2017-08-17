@@ -14,3 +14,29 @@ $('select').change(function(){
         }
     });
 	});
+$(document).ready(function(){
+    $( "#button-novostroyka" ).click(function() {
+        $("#button-kapital").attr("style","border-bottom: 3px solid transparent;");
+        $("#button-novostroyka").attr("style","border-bottom: 3px solid #899e00;");
+        $("#button-kosmetika").attr("style","border-bottom: 3px solid transparent");
+        $("#table-kapital").fadeOut(300);
+        $("#table-kosmetika").fadeOut(300);
+        $("#table-novostroyka").fadeIn(500);
+        });
+    $( "#button-kosmetika" ).click(function() {
+        $("#button-kapital").attr("style","border-bottom: 3px solid transparent;");
+        $("#button-novostroyka").attr("style","border-bottom: 3px solid transparent;");
+        $("#button-kosmetika").attr("style","border-bottom: 3px solid #899e00;");
+        $("#table-kapital").fadeOut(300);
+        $("#table-novostroyka").fadeOut(300);
+        $("#table-kosmetika").fadeIn(500);
+        });
+    $( "#button-kapital" ).click(function() {
+        $("#button-kapital").attr("style","border-bottom: 3px solid #899e00;");
+        $("#button-novostroyka").attr("style","border-bottom: 3px solid transparent;");
+        $("#button-kosmetika").attr("style","border-bottom: 3px solid transparent;");
+        $("#table-novostroyka").fadeOut(300);
+        $("#table-kosmetika").fadeOut(300);
+        $("#table-kapital").fadeIn(500);
+        });
+});

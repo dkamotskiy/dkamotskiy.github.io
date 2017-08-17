@@ -129,6 +129,11 @@ input::-webkit-inner-spin-button {
 	background-image: none;
 	background-color: rgba(0,0,0,0.3);
 }
+#menu a:hover {
+	box-shadow: 0 0 0 1px #000;
+	background-color: rgba(0,0,0,0.2);
+}
+
 /*Заголовок*/
 #zagolovok {
 	background-image: url(../img/bg-1.jpg);
@@ -176,8 +181,8 @@ input::-webkit-inner-spin-button {
 #remont-v-vidnom-eto {
 	padding-top: 50px;
 	padding-bottom: 70px;
-	padding-left: 250px;
-	padding-right: 250px;
+	padding-left: 150px;
+	padding-right: 150px;
 }
 #remont-v-vidnom-eto p:first-child {
 	font-size: 40px;
@@ -572,6 +577,35 @@ input::-webkit-inner-spin-button {
 #prices .nav-tabs {
 	border-bottom: 0;
 }
+#button-kapital, #button-novostroyka, #button-kosmetika {
+	padding-bottom: 15px;
+	cursor: pointer;
+}
+#button-kapital {
+	border-bottom: 3px solid #899e00;
+}
+#table-kosmetika, #table-novostroyka, #table-kapital {
+	position: absolute;
+	width: 100%;
+	left: 0%;
+}
+#table-kosmetika, #table-novostroyka {
+	display: none;
+}
+#table-container {
+}
+#table-kapital .row, #table-kosmetika .row, #table-novostroyka .row {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+#table-kapital .row:nth-child(1), #table-kosmetika .row:nth-child(1), #table-novostroyka .row:nth-child(1) {
+	background-color: #899e00;
+	color: #fff;
+}
+.prices-margin {
+	margin-top: 230px;
+}
+
 /*---------------------СТРАНИЦА АКЦИИ----------------------------------*/
 #discounts {
 	background-color: #faffe9;
@@ -658,10 +692,10 @@ padding-left: 20px;
 	top:7px;
 }
 /*Чекбокс*/
-.zayavka-block label {
+.zayavka-block label, #soglasen label {
 	position: relative;
 } 
-.zayavka-block input {
+.zayavka-block input, #soglasen input {
 	display: none;
 }
 label:before {
@@ -833,6 +867,13 @@ input:checked + label:after {
 .font-14 {
 	font-size: 14px;
 }
+#input-s {
+	width: 100%;
+	height: 40px;
+	background-color: #eaefcf;
+}
+
+
 /*СТРАНИЦА FAQ-----------------------------------------------------*/
 #faq-page, #rekvizity, #privacy-policy {
 	padding-top: 50px;
