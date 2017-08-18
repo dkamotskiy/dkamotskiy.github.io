@@ -79,7 +79,10 @@
 		font-size: 12px;
 	}
 	#carousel-example-generic {
-		margin-bottom: -50px;
+		margin-bottom: -80px;
+	}
+	.imd-advantage {
+		width: 50px;
 	}
 	#uslugi .col-xs-4 p {
 		font-size: 12px;
@@ -363,6 +366,9 @@
 	}
 	.propaja-phone {
 		display: block;
+	}
+	.imd-advantage {
+		width: 70px;
 	}
 }
 /*Настройка меню в десктопной версии*/
