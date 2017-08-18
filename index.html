@@ -137,20 +137,20 @@
 			<div class="row bold">
 				<div class="col-md-1"></div>
 				<div class="col-md-2 col-xs-4">
-					<p class="text-center"><img src="img/icons/uslugi1.png" alt="" class="img-responsive"><br>Возможен ремонт в рассрочку</p>
+					<p class="text-center"><img src="img/icons/uslugi1.png" alt="" class="img-responsive" style="width:70px;"><br>Возможен ремонт в рассрочку</p>
 				</div>
 				<div class="col-md-2 col-xs-4">
-					<p class="text-center"><img src="img/icons/uslugi2.png" alt="" class="img-responsive"><br>Работа по договору</p>
+					<p class="text-center"><img src="img/icons/uslugi2.png" alt="" class="img-responsive" style="width:70px;"><br>Работа по договору</p>
 				</div>
 				<div class="col-md-2 col-xs-4">
-					<p class="text-center"><img src="img/icons/uslugi3.png" alt="" class="img-responsive"><br>Выезд сметчика бесплатный</p>
+					<p class="text-center"><img src="img/icons/uslugi3.png" alt="" class="img-responsive" style="width:70px;"><br>Выезд сметчика бесплатный</p>
 				</div>
 				<div class="col-xs-2 propal"></div>
 				<div class="col-md-2 col-xs-4">
-					<p class="text-center"><img src="img/icons/uslugi4.png" alt="" class="img-responsive"><br>Работа без предоплаты</p>
+					<p class="text-center"><img src="img/icons/uslugi4.png" alt="" class="img-responsive" style="width:70px;"><br>Работа без предоплаты</p>
 				</div>
 				<div class="col-md-2 col-xs-4">
-					<p class="text-center"><img src="img/icons/uslugi5.png" alt="" class="img-responsive"><br>Дизайн проект в подарок</p>
+					<p class="text-center"><img src="img/icons/uslugi5.png" alt="" class="img-responsive" style="width:70px;"><br>Дизайн проект в подарок</p>
 				</div>
 				<div class="col-xs-2 propal"></div>
 				<div class="col-md-1"></div>
@@ -304,7 +304,7 @@
 			<button class="button btn-link" id="tekush">Текущие проекты</button>
 		</p>
 		<br><br>
-		<div class="row"></div>
+		<div class="row">
 			<div class="col-md-1"></div>
 			<div class="col-md-10">
 					<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="false">
@@ -312,8 +312,8 @@
 					  <div class="carousel-inner">
 					    <div class="item active">
 							<div class="row background-changing">
-								<div class="col-md-8"></div>
-								<div class="col-md-4 background-changing-right-block">
+								<div class="col-md-8 col-xs-6"></div>
+								<div class="col-md-4 background-changing-right-block col-xs-6">
 									<p class="bold">Тип: Ремонт квартиры в новостройке</p>
 									<p class="bold">Город: Видное</p>
 									<p class="bold">Улица: Завидная, 8</p><br>
@@ -356,8 +356,25 @@
 					    </div>
 					  </div>
 					</div>
+					<script>
+$(document).ready(function() {  
+
+					//Enable swiping...
+					$(".carousel-inner").swipe( {
+						//Generic swipe handler for all directions
+						swipeLeft:function(event, direction, distance, duration, fingerCount) {
+							$(this).parent().carousel('prev'); 
+						},
+						swipeRight: function() {
+							$(this).parent().carousel('next'); 
+						},
+						//Default is 75px, set to 0 for demo so any distance triggers swipe
+						threshold:0
+					});
+				});
+</script>
 					<br><br>
-					<div class="row">
+					<div class="row propaja-phone">
 						<div class="col-md-3">
 							<img src="img/room.jpg" alt="" class="img-responsive cursor-pointer" data-target="#carousel-example-generic" data-slide-to="0">
 							<br>
@@ -385,6 +402,7 @@
 					</div>
 				</div>
 				<div class="col-md-1"></div>
+			</div>
 		</div>
 		<br><br>
 		<p class="text-center regular">ПОСМОТРЕТЬ НАШИ ТЕКУЩИЕ ОБЪЕКТЫ ВЖИВУЮ</p>

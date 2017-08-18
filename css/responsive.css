@@ -71,11 +71,15 @@
 	}
 	/*ГЛАВНАЯ*/
 	.background-changing .col-md-8 {
-		min-height: 400px;
+		min-height: 1px;
 	}
 	.background-changing-right-block {
 		padding-top: 50px;
 		padding-bottom: 50px;
+		font-size: 12px;
+	}
+	#carousel-example-generic {
+		margin-bottom: -50px;
 	}
 	#uslugi .col-xs-4 p {
 		font-size: 12px;
@@ -114,7 +118,14 @@
 		padding-right: 0;
 
 	}
-	/*НАСТРОЙКА ВСПЛЫВАЮЩЕГО МЕНЮ*/
+	.propaja-phone {
+		display: none;
+	}
+	#carousel-example-generic {
+		margin-left: -15px;
+		margin-right: -15px;
+	}
+ 	/*НАСТРОЙКА ВСПЛЫВАЮЩЕГО МЕНЮ*/
 	.navbar-collapse {
 		width: 90%;
 		position: absolute;
@@ -345,10 +356,13 @@
 		display: block;
 	}
 	#uslugi .col-xs-4 p {
-		font-size: 18px;
+		font-size: 15px;
 	}
 	.mt-resp {
 		margin-top: 30px;
+	}
+	.propaja-phone {
+		display: block;
 	}
 }
 /*Настройка меню в десктопной версии*/
