@@ -190,7 +190,12 @@
 		margin-top: -50px;
 	}
 	#zagolovok .margin-up {
-		margin-top: -70px;
+		margin-top: -90px;
+	}
+	#zagolovok {
+		padding-bottom: 50px;
+		padding-left: 0;
+		padding-right: 0;
 	}
 	#zagolovok .col-md-4 {
 		margin-top:20px;
