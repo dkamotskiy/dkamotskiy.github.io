@@ -64,6 +64,9 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
 }
+.green-border {
+	border-bottom: 1px solid #899e00;
+}
 /*------------------------О НАС-----------------------------*/
 /*HEADER*/
 #header {
