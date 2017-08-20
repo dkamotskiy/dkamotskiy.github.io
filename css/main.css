@@ -66,6 +66,7 @@ input::-webkit-inner-spin-button {
 }
 .green-border {
 	border-bottom: 3px solid #899e00;
+	padding-bottom: 20px;
 }
 /*------------------------О НАС-----------------------------*/
 /*HEADER*/
