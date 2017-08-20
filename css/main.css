@@ -1,3 +1,4 @@
+/*=========0. Подключение шрифтов и общие свойства=============================================*/
 @font-face {
     font-family: RobotoSlab-Bold; /* Имя шрифта */
     src: url(../fonts/RobotoSlab-Bold.ttf); /* Путь к файлу со шрифтом */
@@ -14,15 +15,25 @@
     font-family: RobotoSlab-Regular; /* Имя шрифта */
     src: url(../fonts/RobotoSlab-Regular.ttf); /* Путь к файлу со шрифтом */
    }
-/*
-@import url('../fonts/GilroyRegular.otf');*/
+.soglasie {
+	position: relative;
+}
+#myModal .soglasie-input, #myModal3 .soglasie-input {
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: -3px;
+}
+.soglasie-span {
+	margin-left: 30px;
+}
 .modal-content {
 	position: relative;
 }
 .knopka-exit-modal {
 	position: absolute;
 	right: 10px;
-	top: 10px;
+	top: 0px;
 	z-index: 9999;
 }
 .close {
@@ -68,8 +79,13 @@ input::-webkit-inner-spin-button {
 	border-bottom: 3px solid #899e00;
 	padding-bottom: 20px;
 }
-/*------------------------О НАС-----------------------------*/
-/*HEADER*/
+.help-block {
+	color: #ff0000;
+	font-family: RobotoSlab-Bold;
+	font-size: 12px;
+}
+/*=========1. Страница "О нас"=============================================*/
+/*=========1.1. Хедер=============================================*/
 #header {
 	padding-top: 15px;
 	font-family: RobotoSlab-Bold;
@@ -137,8 +153,7 @@ input::-webkit-inner-spin-button {
 /*	box-shadow: 0 0 0 1px #000;*/
 	background-color: rgba(0,0,0,0.3);
 }
-
-/*Заголовок*/
+/*==========================1.2. Верхний блок первого экрана =============================================*/
 #zagolovok {
 	background-image: url(../img/bg-1.jpg);
 	-webkit-background-size: cover;
@@ -181,7 +196,7 @@ input::-webkit-inner-spin-button {
 #zagolovok .btn-default {
 	margin-left: 20px;
 }
-/*РЕМОНТ В ВИДНОМ - ЭТО...*/
+/*=========1.3 Блок "Ремонт в Видном - это...=============================================*/
 #remont-v-vidnom-eto {
 	padding-top: 50px;
 	padding-bottom: 70px;
@@ -202,7 +217,7 @@ input::-webkit-inner-spin-button {
 #remont-v-vidnom-eto button {
 	margin-top: 20px;
 }
-/*Наша команда*/
+/*=========1.4. Блок "Наша команда"=============================================*/
 #our-team {
 	padding-top: 40px;
 	padding-bottom: 30px;
@@ -228,7 +243,7 @@ input::-webkit-inner-spin-button {
 #our-team button {
 	margin-top: 35px;
 }
-/*<!-- РЕМОНТ КВАРТИР В... -->*/
+/*=========1.5. Блок "Ремонт в..."=============================================*/
 #remont-v {
 	padding-top: 67px;
 	padding-bottom: 45px;
@@ -248,7 +263,7 @@ input::-webkit-inner-spin-button {
 #remont-v button {
 	margin-top: 35px;
 }
-/*КАК МЫ РАБОТАЕМ*/
+/*=========1.6. Блок "Как мы работаем"=============================================*/
 #how-we-work {
 	background-image: url(../img/bg-2.jpg);
 	background-position: center center;
@@ -361,7 +376,7 @@ input::-webkit-inner-spin-button {
 #how-we-work button {
 	margin-top: 30px;
 }
-/*АКТЫ*/
+/*=========1.7. Блок "Акты"=============================================*/
 #akti {
 	padding-left: 100px;
 	padding-right: 100px;
@@ -400,7 +415,7 @@ input::-webkit-inner-spin-button {
 #akti .upper {
 	font-size: 25px;
 }
-/*ОТЗЫВЫ*/
+/*=========1.8. Блок "Отзывы"=============================================*/
 #feedback {
 	background-color: #899e00;
 	padding-top: 30px;
@@ -461,7 +476,7 @@ input::-webkit-inner-spin-button {
 	border-bottom: none;
 	text-decoration: none;
 }
-/*ФУТЕР*/
+/*=========1.9. Блок "Футер"=============================================*/
 #footer, #footer-responsive {
 	background-color: #232323;
 	color: #899e00;
@@ -499,7 +514,7 @@ input::-webkit-inner-spin-button {
 	text-decoration: none;
 	color: #899e00;
 }
-/*--------------------------СТРАНИЦА КОНТАКТЫ--------------------------------------------------*/
+/*=========2. Страница "Контакты"=============================================*/
 #contacts-page-container {
 	padding-top: 30px;
 	padding-bottom: 50px;
@@ -519,7 +534,7 @@ input::-webkit-inner-spin-button {
 	height:350px;
 	background-color: #899e00;
 }
-/*------------------------------СТРАНИЦА СПАСИБО-----------------------------------------------*/
+/*=========3. Страница "Спасибо за заявку!"=============================================*/
 #thank-you {
 	background-color: #faffe9;
 	padding-top: 70px;
@@ -538,7 +553,7 @@ input::-webkit-inner-spin-button {
 #thank-you .regular {
 	font-size: 30px;
 }
-/*-------------------------------СТРАНИЦА ЦЕНЫ------------------------------------------*/
+/*=========4. Страница "Цены"=============================================*/
 #prices {
 	background-color: #faffe9;
 	padding-top: 20px;
@@ -610,7 +625,7 @@ input::-webkit-inner-spin-button {
 	margin-top: 230px;
 }
 
-/*---------------------СТРАНИЦА АКЦИИ----------------------------------*/
+/*=========5. Страница "Акции"=============================================*/
 #discounts {
 	background-color: #faffe9;
 	padding-top: 30px;
@@ -624,7 +639,7 @@ input::-webkit-inner-spin-button {
 #discounts .col-md-4 {
 	padding-left: 30px;
 }
-/*---------------------СТРАНИЦА ОТЗЫВЫ--------------------------------*/
+/*=========6. Страница "Отзывы"=============================================*/
 #feedback-page {
 	background-color: #faffe9;
 	padding-top: 30px;
@@ -635,13 +650,13 @@ input::-webkit-inner-spin-button {
 	background-color: #eaefcf;
 	padding: 46px;
 }
-/*-------------------СТРАНИЦА ОСТАВИТЬ ЗАЯВКУ--------------------------------*/
+/*=========7. Страница "Оставить заявку"=============================================*/
 #zayavka {
 	padding-bottom: 50px;
 	padding-top: 50px;
 }
 .select_main{
-width:200px; 
+width:100%; 
 position:relative; 
 background-color: #eaefcf;
 }
@@ -695,12 +710,33 @@ padding-left: 20px;
 	right:7px;
 	top:7px;
 }
-/*Чекбокс*/
+/*=========7.1. Стилизация чекбоксов=============================================*/
 .zayavka-block label, #soglasen label {
 	position: relative;
 } 
 .zayavka-block input, #soglasen input {
 	display: none;
+}
+.block-checkbox span {
+	margin-right: 10px;
+}
+.block-checkbox {
+	position: absolute;
+	right: 20px;
+	bottom: 10px;
+}
+.zayavka-right-block {
+	padding:20px 40px;
+	background-color: #eaefcf;
+	border-radius: 3px;
+}
+.zayavka-right-block span {
+	font-family: RobotoSlab-Regular;
+}
+#promocode {
+	border-radius: 0;
+	border-width: 0px;
+	box-shadow: none;
 }
 label:before {
 	content:"";
@@ -725,28 +761,7 @@ input:checked + label:after {
 	-webkit-background-size: cover;
 	background-size: cover;
 }
-.block-checkbox span {
-	margin-right: 10px;
-}
-.block-checkbox {
-	position: absolute;
-	right: 20px;
-	bottom: 10px;
-}
-.zayavka-right-block {
-	padding:20px 40px;
-	background-color: #eaefcf;
-	border-radius: 3px;
-}
-.zayavka-right-block span {
-	font-family: RobotoSlab-Regular;
-}
-#promocode {
-	border-radius: 0;
-	border-width: 0px;
-	box-shadow: none;
-}
-/*-------------------СТРАНИЦА ПОРТФОЛИО------------------------*/
+/*=========8. Страница "Портфолио"=============================================*/
 #portfolio, #our-works {
 	padding-top: 50px;
 	padding-bottom: 50px;
@@ -767,7 +782,7 @@ input:checked + label:after {
 #portfolio td {
 	padding: 5px;
 }
-/*------------------СТРАНИЦА УСЛУГИ-----------------------*/
+/*=========9. Страница "Услуги"=============================================*/
 #uslugi {
 	background-image: url(../img/bg-3.jpg);
 	-webkit-background-size: cover;
@@ -818,23 +833,7 @@ input:checked + label:after {
 #uslugi .btn-default {
 	margin-left: 20px;
 }
-/*МОДАЛЬНО ОКНО---------------------------------------------------*/
-#myModal label::before, #myModal2 label::before, #myModal3 label::before {
-	display: none;
-}
-.modal-content {
-	padding-top: 30px;
-	padding-bottom: 30px;
-}
-#myModal .col-md-6 input, #myModal2 input, #myModal3 input {
-	width: 200px;
-	height: 40px;
-	border: none;
-	background-color: #f9ffe9;
-	box-shadow: none;
-	border-radius: 0px;
-}
-/*ГЛАВНАЯ СТРАНИЦА-------------------------------------------------*/
+/*=========10. Страница "Главная"=============================================*/
 #main-nashi-uslugi {
 	background-color: #899e00;
 	padding-top: 30px;
@@ -858,6 +857,12 @@ input:checked + label:after {
 	margin-top: -3px;
 	font-size: 16px;
 }
+.link-email {
+	color: #899e00;
+}
+.link-email:hover {
+	color: #899e00;
+}
 #uslugi-our-works .carousel-inner>.item.active, #uslugi-our-works .carousel-inner>.item {
 	padding-left: 0;
 	padding-right: 0;
@@ -876,14 +881,24 @@ input:checked + label:after {
 	height: 40px;
 	background-color: #eaefcf;
 }
-
-
-/*СТРАНИЦА FAQ-----------------------------------------------------*/
+/*=========11. Страница "Частозадаваемые вопросы"=============================================*/
 #faq-page, #rekvizity, #privacy-policy {
 	padding-top: 50px;
 	padding-bottom: 50px;
 }
-/*СТРАНИЦА ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ-----------------------------*/
-#privacy-policy {
-
+/*=========12. Стилизация модальных окон=============================================*/
+#myModal label::before, #myModal2 label::before, #myModal3 label::before {
+	display: none;
+}
+.modal-content {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+#myModal .col-md-6 input, #myModal2 input, #myModal3 input {
+	width: 100%;
+	height: 40px;
+	border: none;
+	background-color: #eaefcf;
+	box-shadow: none;
+	border-radius: 0px;
 }

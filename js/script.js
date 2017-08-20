@@ -1,19 +1,11 @@
+// Селектор для модального окна расчета
 $('select').each(function(){
 	$(this).siblings('p').text( $(this).children('option:selected').text() );
 });
 $('select').change(function(){
 	$(this).siblings('p').text( $(this).children('option:selected').text() );
 });
-	$(document).ready(function() {
-    $("a[rel=example_group]").fancybox({
-        'transitionIn' : 'none',
-        'transitionOut' : 'none',
-        'titlePosition' : 'over',
-        'titleFormat' : function(title, currentArray, currentIndex, currentOpts) {
-            return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
-        }
-    });
-	});
+// Обработка нажатий на странице "Цены"
 $(document).ready(function(){
     $( "#button-novostroyka" ).click(function() {
         $("#button-kapital").attr("style","border-bottom: 3px solid transparent;");
@@ -40,12 +32,9 @@ $(document).ready(function(){
         $("#table-kapital").fadeIn(500);
         });
 });
-// $(document).ready(function() {  
-//         $('#carousel-example-generic').hammer().on('swipeleft', function(){
-//             $(this).carousel('next'); 
-//         })
-//         $('#carousel-example-generic').hammer().on('swiperight', function(){
-//             $(this).carousel('prev'); 
-//         })
-//  }); 
+// Поддержка свайпа на каруселях Bootstrap
 $('#carousel-example-generic').bcSwipe({ threshold: 50 });
+
+$(document).ready(function(){
+    $("#fancybox-image-wrap img").attr("max-width","100%;");
+});

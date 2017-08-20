@@ -1,5 +1,6 @@
+/*=========1. Стилизация мобильной версии=============================================*/
 @media (max-width: 992px) {
-	/*ШАПКА----------------------------------------------------*/
+	/*1.1. ШАПКА----------------------------------------------------*/
 	#header-responsive {
 		display:block;
 		font-family: RobotoSlab-Bold;
@@ -65,11 +66,11 @@
 	#responsive-header-text .p3 {
 		margin-top: -20px;
 	}
-	/*СТРАНИЦА ОТЗЫВЫ*/
+	/*1.2. СТРАНИЦА ОТЗЫВЫ==================*/
 	#cackle {
 		margin-top: 20px;
 	}
-	/*ГЛАВНАЯ*/
+	/*1.3. ГЛАВНАЯ==========================*/
 	.background-changing .col-md-8 {
 		min-height: 1px;
 	}
@@ -128,7 +129,7 @@
 		margin-left: -15px;
 		margin-right: -15px;
 	}
- 	/*НАСТРОЙКА ВСПЛЫВАЮЩЕГО МЕНЮ*/
+ 	/*1.4. НАСТРОЙКА ВСПЛЫВАЮЩЕГО МЕНЮ==============*/
 	.navbar-collapse {
 		width: 90%;
 		position: absolute;
@@ -149,7 +150,7 @@
 		background-color: rgba(0,0,0,0.3);
 
 	}
-	/*ФУТЕР--------------------------------*/
+	/*1.5. ФУТЕР--------------------------------*/
 	#footer-responsive {
 		display: block;
 	}
@@ -168,7 +169,7 @@
 		font-size: 16px;
 		color: #899e00;
 	}
-	/*СТРАНИЦА О НАС-----------------------*/
+	/*1.6. СТРАНИЦА О НАС-----------------------*/
 	#zagolovok .btn-default {
 		margin-left: 0;
 	}
@@ -245,7 +246,7 @@
 	.fading {
 		display: block;
 	}
-	/*СТРАНИЦА КОНТАКТЫ--------------------*/
+	/*1.7. СТРАНИЦА КОНТАКТЫ--------------------*/
 	#contacts-page-container {
 		text-align: center;
 	}
@@ -253,13 +254,13 @@
 		margin-top: 20px;
 	}
 
-	/*СТРАНИЦА СПАСИБО---------------------*/
+	/*1.8. СТРАНИЦА СПАСИБО---------------------*/
 	#thank-you .container {
 		padding-left: 15px;
 		padding-right: 15px;
 		text-align: center;
 	}
-	/*СТРАНИЦА АКЦИИ---------------------*/
+	/*1.9. СТРАНИЦА АКЦИИ---------------------*/
 	#discounts {
 		text-align: center;
 	}
@@ -270,14 +271,14 @@
 	#zayavka .col-md-4 {
 		margin-top: 40px;
 	}
-	/*СТРАНИЦА ПОРТФОЛИО*/
+	/*1.10. СТРАНИЦА ПОРТФОЛИО---------------*/
 	#portfolio .col-md-3 img {
 		margin-top:10px;
 	}
 	.row2 {
 		margin-top: -20px;
 	}
-	/*СТРАНИЦА УСЛУГИ*/
+	/*1.11. СТРАНИЦА УСЛУГИ-------------------*/
 	#uslugi h1 {
 		font-size: 28px;
 	}
@@ -292,9 +293,9 @@
 		margin-left: 0;
 	}
 	.modal-content {
-		padding-left: 15px;
+		padding-left: 0px;
 	}
-	/*ЦЕНЫ----------------------------*/
+	/*1.12. СТРАНИЦА ЦЕНЫ----------------------------*/
 	#button-kapital, #button-novostroyka, #button-kosmetika {
 		font-size: 12px;
 		padding-left: 0;
@@ -306,19 +307,51 @@
 	left: 0;
 	font-size: 12px;
 	}
-}
-@media (min-width: 400px) {
-	.navbar-collapse {
-		left:8%;
+	/*1.13 МОДАЛЬНЫЕ ОКНА "ЧТО ВКЛЮЧАЕТ*/
+	#what-included .modal-body, #what-included2 .modal-body, #what-included3 .modal-body {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	#myModal3 .row {
+		margin-top: -20px;
+		margin-bottom: -20px;
+	}
+	#myModal3 .modal-content {
+		padding-top: 15px;
+		padding-bottom: 5px;
+	}
+	#myModal .row {
+		margin-top: -35px;
+		margin-bottom: -30px;
+	}
+	#myModal button {
+		margin-top: -25px;
+	}
+	#myModal .knopka-exit-modal {
+		top:20px;
+	}
+	#myModal .modal-content {
+		padding-bottom: 0;
+	}
+	#rekvizity h1, #privacy-policy h1, #prices h1, #our-works h1, #feedback-page h1, #faq-page h1, #contacts-page-container h1, #zayavka h1, #discounts h1 {
+		font-size: 25px;
 	}
 }
+/*=========2. Стилизация сверхнизких разрешений=============================================*/
 @media (max-width: 600px) {
 	#header-responsive .nav>li>a {
 			padding-left: 15px;
 	}
 }
+/*=========3. Стилизация разрешений помимо сверхнизких=============================================*/
+@media (min-width: 400px) {
+	.navbar-collapse {
+		left:8%;
+	}
+}
+/*=========4. Стилизация десктопной версии=============================================*/
 @media (min-width: 992px) {
-	/*ШАПКА--------------------------------*/
+	/*4.1. ШАПКА--------------------------------*/
 	#header-responsive {
 		display:none;
 	}
@@ -329,14 +362,14 @@
 		display: block;
 		max-height: 50px;
 	}
-	/*ФУтЕР-------------------------------*/
+	/*4.2 ФУтЕР-------------------------------*/
 	#footer-responsive {
 		display: none;
 	}
 	#footer {
 		display: block;
 	}
-	/*СТРАНИЦА О НАС*/
+	/*4.3 СТРАНИЦА О НАС-----------------------*/
 	#feedback #carousel-example-generic {
 		display: block;	
 	}
@@ -353,7 +386,7 @@
 	.block-mobile {
 		display: none;
 	}
-	/*ГЛАВНАЯ-------------------------*/
+	/*4.4 ГЛАВНАЯ-----------------------------*/
 	.propal {
 		display: none;
 	}
@@ -375,14 +408,20 @@
 	.imd-advantage {
 		width: 50px;
 	}
+	/*5 МОДАЛЬНЫЕ ОКНА "ЧТО ВКЛЮЧАЕТ*/
+	#what-included1 .modal-body, #what-included2 .modal-body, #what-included3 .modal-body {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
 }
-/*Настройка меню в десктопной версии*/
+/*=========5. Стилизация компонентов из соображений адаптивности=============================================*/
+/*5.1 Настройка меню в десктопной версии*/
 @media (max-width: 1200px) {
 	.nav>li>a {
 		padding: 20px 24px;
 	}
 }
-/*Настройка переключателя на странице ЦЕНЫ*/
+/*5.2 Настройка переключателя на странице ЦЕНЫ*/
 @media (max-width: 1200px) {
 	.turner {
 		width:70%;
@@ -415,5 +454,8 @@
 	#uslugi {
 		padding-bottom: 100px;
 	}
+}
+.fancybox-image-wrap img {
+	max-width: 100%;
 }
 
