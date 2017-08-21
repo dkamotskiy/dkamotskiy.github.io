@@ -317,7 +317,7 @@
 		margin-bottom: -20px;
 	}
 	#myModal3 .modal-content {
-		padding-top: 15px;
+		padding-top: 23px;
 		padding-bottom: 5px;
 	}
 	#myModal .row {
@@ -331,6 +331,7 @@
 		top:20px;
 	}
 	#myModal .modal-content {
+		padding-top: 30px;
 		padding-bottom: 0;
 	}
 	#rekvizity h1, #privacy-policy h1, #prices h1, #our-works h1, #feedback-page h1, #faq-page h1, #contacts-page-container h1, #zayavka h1, #discounts h1 {

@@ -26,6 +26,12 @@
 	top:500px;
 	margin-top:-400px;
 }
+.icon i {
+	color: #fff;
+	font-size: 23px;
+	margin-right: 7px;
+	margin-top: 5px;
+}
 #myModal .soglasie-input, #myModal3 .soglasie-input {
 	width: 20px;
 	height: 20px;
@@ -899,7 +905,7 @@ input:checked + label:after {
 	display: none;
 }
 .modal-content {
-	padding-top: 30px;
+	padding-top: 40px;
 	padding-bottom: 30px;
 }
 #myModal .col-md-6 input, #myModal2 input, #myModal3 input {
