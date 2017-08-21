@@ -38,3 +38,9 @@ $('#carousel-example-generic').bcSwipe({ threshold: 50 });
 $(document).ready(function(){
     $("#fancybox-image-wrap img").attr("max-width","100%;");
 });
+// Разрешение прокрутки фрейма после нажатия
+$(document).ready(function(){
+    $('.overlay').click(function() {
+        $(this).remove();
+    });
+});

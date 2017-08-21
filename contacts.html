@@ -133,8 +133,11 @@
 			<p class="bold">ул. Строителей 15</p><br>
 			<p class="regular"><a href="mailto:info@vidnorem.ru">info@vidnorem.ru</a></p>
 		</div>
-		<div class="col-md-8">
-			<div id="contacts-map"></div>
+		<div class="col-md-8" id="map" style="padding-left: 0; padding-right: 0;">
+			<div id="yandexMap">
+				<div class="overlay" onClick="style.pointerEvents='none'"></div> 
+				<iframe src="https://yandex.ru/map-widget/v1/-/CBUij8SekA" width="100%" height="400" frameborder="0"></iframe>
+			</div>
 		</div>
 	</div>
 	</div>
@@ -295,6 +298,17 @@
 	<script src="js/jcarousel.responsive.js"></script>
 	<script src="js/jquery.jcarousel.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+	<script>
+		function init() {
+  var myMap = new ymaps.Map('map', {
+    center: [55.76, 37.64],
+    zoom: 10
+  })
+myMap.behaviors.disable('scrollZoom');
+myMap.behaviors.disable('drag');
+}
+	</script>
 
 </body>
 </html>
