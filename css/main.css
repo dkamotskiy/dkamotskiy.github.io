@@ -27,7 +27,7 @@
 	margin-top:-400px;
 }
 .icon i {
-	color: #fff;
+	color: #899e00;
 	font-size: 23px;
 	margin-right: 7px;
 	margin-top: 5px;
@@ -915,4 +915,7 @@ input:checked + label:after {
 	background-color: #eaefcf;
 	box-shadow: none;
 	border-radius: 0px;
+}
+.mfp-zoom-out-cur, .mfp-zoom-out-cur .mfp-image-holder .mfp-close {
+	cursor: pointer;
 }

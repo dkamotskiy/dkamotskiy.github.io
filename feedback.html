@@ -234,61 +234,65 @@
 		</div>
 		<p class="bold text-center" style="font-size: 20px;">Рассчитать стоимость</p><br><br>
       	<div class="modal-body">
-          <div class="row">
-          	<div class="col-md-6">
-	          	<div class="form-group">
-			    	<label for="calc_region_1" class="control-label">Тип ремонта</label>
-				    <div class="select_main">
-						<p></p><span class="glyphicon glyphicon-chevron-down"></span>
-						<select name="version_pledge" id="calc_region_1">
-							<option value="1">Капитальный</option>
-							<option value="2">В новостройке</option>
-							<option value="3">Косметический</option>
-						</select>
+			<form data-toggle="validator" role="form">
+	          <div class="row">
+	          	<div class="col-md-6">
+		          	<div class="form-group">
+				    	<label for="calc_region_1" class="control-label">Тип ремонта</label>
+					    <div class="select_main">
+							<p></p><span class="glyphicon glyphicon-chevron-down"></span>
+							<select name="version_pledge" id="calc_region_1">
+								<option value="1">Капитальный</option>
+								<option value="2">В новостройке</option>
+								<option value="3">Косметический</option>
+							</select>
+						</div>
+						<div class="help-block with-errors"></div>
 					</div>
-					<div class="help-block with-errors"></div>
-				</div>
-				<div class="form-group">
-			    	<label for="calc_region_2" class="control-label">Класс ремонта</label>
-				    <div class="select_main">
-						<p></p><span class="glyphicon glyphicon-chevron-down"></span>
-						<select name="version_pledge" id="calc_region_2">
-							<option value="1">Дизайнерский</option>
-							<option value="2">Евро</option>
-							<option value="3">Стандарт</option>	
-						</select>
+					<div class="form-group">
+				    	<label for="calc_region_2" class="control-label">Класс ремонта</label>
+					    <div class="select_main">
+							<p></p><span class="glyphicon glyphicon-chevron-down"></span>
+							<select name="version_pledge" id="calc_region_2">
+								<option value="1">Дизайнерский</option>
+								<option value="2">Евро</option>
+								<option value="3">Стандарт</option>	
+							</select>
+						</div>
+						<div class="help-block with-errors"></div>
 					</div>
-					<div class="help-block with-errors"></div>
-				</div>
-				<div class="form-group">
-					<label for="input-s" class="control-label">Площадь, м<span>2</span></label>
-					<input type="number" class="form-control text-center green-font" id="input-s" placeholder="" required>
-					<div class="help-block with-errors" id="not-entered-s"></div>
-				</div>
-          	</div>
-          	<div class="col-md-6">
-          		<div class="form-group">
-				    <label for="inputPhone" class="control-label">Телефон</label>
-				    <input type="number" class="form-control text-center green-font" id="inputPhone" placeholder="" required>
-				    <div class="help-block with-errors" id="not-entered-phone-raschet"></div>
-				</div>
-				<div class="form-group">
-				    <label for="inputName" class="control-label">Имя</label>
-				    <input type="text" class="form-control text-center green-font" id="inputName" placeholder="" required>
-				    <div class="help-block with-errors" id="not-entered-name-raschet"></div>
-				</div>
-          	</div>
-          </div>
-          <br><br>
-          <p class="text-center soglasie">
-          	<input  class="soglasie-input" type="checkbox" checked="checked"/>
-          	<span class="soglasie-span"> Даю согласие на обработку персональных данных</span>
-          </p>
-          <br>
-          <p class="text-center"><a href="privacy-policy.html" class="bb" style="font-size: 14px;">Политика конфиденциальности</a></p>
-          <br><br>
-          <p class="text-center"><button type="button" class="btn btn-success regular">Заказать ремонт</button></p>
-      </div>
+					<div class="form-group">
+						<label for="input-s" class="control-label">Площадь, м<sup>2</sup></label>
+						<input type="number" class="form-control text-center green-font" id="input-s" placeholder="" required data-error="Укажите площадь объекта">
+						<div class="help-block with-errors" id="not-entered-s"></div>
+					</div>
+	          	</div>
+	          	<div class="col-md-6">
+	          		<div class="form-group">
+					    <label for="inputPhone" class="control-label">Телефон</label>
+					    <input type="number" class="form-control text-center green-font" id="inputPhone" placeholder="" required data-error="Введите номер телефона">
+					    <div class="help-block with-errors" id="not-entered-phone-raschet"></div>
+					</div>
+					<div class="form-group">
+					    <label for="inputName" class="control-label">Имя</label>
+					    <input type="text" class="form-control text-center green-font" id="inputName" placeholder="" required data-error="Введите имя">
+					    <div class="help-block with-errors" id="not-entered-name-raschet"></div>
+					</div>
+	          	</div>
+	          </div>
+	          <br><br>
+	          <p class="text-center soglasie">
+	          	<input  class="soglasie-input" type="checkbox" checked="checked" required/>
+	          	<span class="soglasie-span"> Даю согласие на обработку персональных данных</span>
+	          </p>
+	          <br>
+	          <p class="text-center"><a href="privacy-policy.html" class="bb" style="font-size: 14px;">Политика конфиденциальности</a></p>
+	          <br><br>
+			  <div class="form-group">
+	          	<p class="text-center"><button type="submit" class="btn btn-success regular">Заказать ремонт</button></p>
+			  </div>
+	        </form>
+        </div>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
@@ -300,34 +304,37 @@
 			 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 		</div>
       	<div class="modal-body">
-      	<p class="bold text-center" style="font-size: 18px;">Оставьте заявку, и в течение 15 минут с Вами свяжется наш специалист</p><br>
-		<div class="row">
-			<div class="col-md-3"></div>
-			<div class="col-md-6">
-			<div class="form-group">
-				    <label for="inputName3" class="control-label" style="font-size: 18px;">Имя</label>
-				    <input type="text" class="form-control text-center green-font" id="inputName3" style="width:100%;" placeholder="" required>
-				    <div class="help-block with-errors" id="not-entered-name"></div>
-			</div>
-          	<div class="form-group">
-				    <label for="inputPhone3" class="control-label" style="font-size: 18px;">Телефон</label>
-				    <input type="number" class="form-control text-center green-font" id="inputPhone3" style="width:100%;" placeholder="" required>
-				    <div class="help-block with-errors" id="not-entered-mobile"></div>
-			</div>
-			</div>
-			<div class="col-md-3"></div>
-		</div>
-          <br><br>
-          <p class="text-center soglasie">
-          	<input  class="soglasie-input" type="checkbox" checked="checked"/>
-          	<span class="soglasie-span"> Даю согласие на обработку персональных данных</span>
-          </p>
-          <div class="help-block with-errors" id="not-checked-policy"></div>
-          <br>
-          <p class="text-center"><a href="privacy-policy.html" class="bb" style="font-size: 14px;">Политика конфиденциальности</a></p>
-          <br><br>
-          <p class="text-center"><button type="button" class="btn btn-success regular">Оставить заявку</button></p>
-          </div>
+      		<form data-toggle="validator" role="form">
+	      		<p class="bold text-center" style="font-size: 18px;">Оставьте заявку, и в течение 15 минут с Вами свяжется наш специалист</p><br>
+				<div class="row">
+					<div class="col-md-3"></div>
+					<div class="col-md-6">
+							<div class="form-group">
+								    <label for="inputName3" class="control-label" style="font-size: 18px;">Имя</label>
+								    <input type="text" class="form-control text-center green-font" id="inputName3" style="width:100%;" placeholder="" required data-error="Введите свое имя">
+								    <div class="help-block with-errors" id="not-entered-name"></div>
+							</div>
+				          	<div class="form-group">
+								    <label for="inputPhone3" class="control-label" style="font-size: 18px;">Телефон</label>
+								    <input type="number" class="form-control text-center green-font" id="inputPhone3" style="width:100%;" placeholder="" required required data-error="Введите номер телефона">
+								    <div class="help-block with-errors" id="not-entered-mobile"></div>
+							</div>
+					</div>
+					<div class="col-md-3"></div>
+				</div>
+	          	<br><br>
+	          	<p class="text-center soglasie">
+	          		<input  class="soglasie-input" type="checkbox" checked="checked" required/><span class="soglasie-span"> Даю согласие на обработку персональных данных</span>
+	          	</p>
+	          	<div class="help-block with-errors" id="not-checked-policy"></div>
+	          	<br>
+	        	<p class="text-center"><a href="privacy-policy.html" class="bb" style="font-size: 14px;">Политика конфиденциальности</a></p>
+	        	<br><br>
+				<div class="form-group">
+					<p class="text-center"><button type="submit" class="btn btn-success regular">Оставить заявку</button></p>
+				</div>
+	        </form>
+        </div>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
@@ -336,5 +343,6 @@
 	<script src="js/jquery.jcarousel.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<script src="https://use.fontawesome.com/02bcef1f84.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.js"></script>
 </body>
 </html>
