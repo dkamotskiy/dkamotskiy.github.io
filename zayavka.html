@@ -24,8 +24,8 @@
 					<p class="text-center">РЕМОНТ КВАРТИР И НОВОСТРОЕК В<br>ВИДНОМ ПО ВЫГОДНЫМ ЦЕНАМ</p>
 				</div>
 				<div class="col-md-3" id="header-phones">
-					<p class="text-right phone-number">8 <img>(903)<img> 547-<img>35-38</p>
-					<p class="text-right phone-number">8 <img>(903)<img> 556-<img>76-62</p>
+					<p class="text-right phone-number">8 (903) 547-35-38</p>
+					<p class="text-right phone-number">8 (903) 556-76-62</p>
 					<p class="text-right green-font"><button type="button" class="btn btn-link zakaz-zvonok" data-toggle="modal" data-target="#myModal3">Заказать звонок</button></p>
 				</div>
 			</div>
@@ -112,8 +112,8 @@
 		<div class="container-fluid" id="responsive-header-text">
 			<br>
 			<p class="text-center p1">РЕМОНТ КВАРТИР И НОВОСТРОЕК В ВИДНОМ ПО ВЫГОДНЫМ ЦЕНАМ!</p><br>
-			<p class="text-center p2"><a href="tel:89035473538">8 <img>(903)<img> 547-<img>35-38</a></p>
-			<p class="text-center p2"><a href="tel:89035567662">8 <img>(903)<img> 556-<img>76-62</a></p><br>
+			<p class="text-center p2"><a href="tel:89035473538">8 (903) 547-35-38</a></p>
+			<p class="text-center p2"><a href="tel:89035567662">8 (903) 556-76-62</a></p><br>
 			<p class="text-center p3"><button type="button" class="btn btn-link zakaz-zvonok" data-toggle="modal" data-target="#myModal3">Заказать звонок</button></p>
 		</div>
 	</div>
@@ -145,17 +145,13 @@
 				</div>
 				<br>
 				<p class="bold">Площадь помещения</p>
-				<div class="select_main">
-					<p></p><span class="glyphicon glyphicon-chevron-down"></span>
-					<select name="version_pledge" id="calc_region_3">
-						<option value="1">80%</option>
-						<option value="2"></option>
-						<option value="3"></option>						
-					</select>
+				<div class="">
+					<input type="number" class="form-control text-center green-font" id="input-s" placeholder="" required data-error="Укажите площадь объекта" style="border: none; border-radius: 0px; box-shadow: none;">
 				</div>
-				<br>
-				<p class="regular"><a href="#" class="bb">Что входит в ремонт</a></p>
-				<br>
+				<br><br>
+				<button type="button" class="btn btn-link zakaz-zvonok" data-toggle="modal" data-target="#what-included3">Что включает ремонт</button>
+				<br><br><br>
+				<p class="bold">Дополнительные услуги</p><br>
 				<div class="zayavka-block">
 					<div class="row">
 						<div class="col-md-3 col-xs-3">
@@ -166,7 +162,7 @@
 							<p class="regular">25000 руб.</p>
 						</div>
 					</div>
-					<img src="img/question.jpg" alt="" class="question">
+					<img src="img/question.jpg" alt="" data-toggle="tooltip" title="Тут какая-то подсказка!" data-trigger="click" class="question">
 					<div class="block-checkbox">
 						<span>Добавить</span>
 						<input id="zayavka1" type="checkbox">
@@ -184,7 +180,7 @@
 							<p class="regular">25000 руб.</p>
 						</div>
 					</div>
-					<img src="img/question.jpg" alt="" class="question">
+					<img src="img/question.jpg" alt="" data-toggle="tooltip" title="Тут какая-то подсказка!" data-trigger="click" class="question">
 					<div class="block-checkbox">
 						<span>Добавить</span>
 						<input id="zayavka2" type="checkbox">
@@ -202,7 +198,7 @@
 							<p class="regular">25000 руб.</p>
 						</div>
 					</div>
-					<img src="img/question.jpg" alt="" class="question">
+					<img src="img/question.jpg" alt="" data-toggle="tooltip" title="Тут какая-то подсказка!" data-trigger="click" class="question">
 					<div class="block-checkbox">
 						<span>Добавить</span>
 						<input id="zayavka3" type="checkbox">
@@ -221,8 +217,21 @@
 					<p class="bold">Стоимость: <span> 300 000 руб.</span></p><br>
 					<p class="text-center"><button type="button" class="btn btn-success regular">Заказать ремонт</button></p>
 				</div>
-				<br><br>
-				<div class="zayavka-right-block">
+				<br>
+				<p class="text-center"><button type="button" class="btn btn-link zakaz-zvonok fading" data-toggle="modal" data-target="#what-included3" style="margin: 0 auto;">Что включает ремонт</button></p>
+				<br>
+				<button type="button" class="btn btn-success regular" data-toggle="collapse" data-target="#demo1" style="width: 100%; margin-bottom: 20px;" id="promocode-button">Ввести промо-код</button>
+
+				<div id="demo1" class="collapse regular">
+					<div class="zayavka-right-block" style="margin-top: 0;">
+					<p class="text-center bold" style="font-size: 20px;">ПРОМО-КОД</p><br>
+					<input type="text" class="form-control" id="promocode-faded" placeholder="">
+					<br>
+					<p class="text-center"><button type="button" class="btn btn-success regular">Заказать ремонт</button></p>
+				</div>
+				</div>
+
+				<div class="zayavka-right-block" id="promocode-desktop">
 					<p class="text-center bold" style="font-size: 20px;">ПРОМО-КОД</p><br>
 					<input type="text" class="form-control" id="promocode" placeholder="">
 					<br>
@@ -230,6 +239,63 @@
 				</div>
 			</div>
 			<div class="col-md-1"></div>
+			<div class="col-md-6 fading">
+				<br>
+				<div class="zayavka-block">
+					<div class="row">
+						<div class="col-md-3 col-xs-3">
+							<img src="img/camera.jpg" alt="" class="img-responsive">
+						</div>
+						<div class="col-md-6 col-xs-7">
+							<p class="bold"><br>Дизайн-проект</p>
+							<p class="regular">25000 руб.</p>
+						</div>
+					</div>
+					<img src="img/question.jpg" alt="" data-toggle="tooltip" title="Тут какая-то подсказка!" data-trigger="click" class="question">
+					<div class="block-checkbox">
+						<span class="regular" style="font-size: 12px;">Добавить</span>
+						<input id="zayavka4" type="checkbox">
+						<label for="zayavka4"></label>
+					</div>
+				</div>
+				<br>
+				<div class="zayavka-block">
+					<div class="row">
+						<div class="col-md-3 col-xs-3">
+							<img src="img/camera.jpg" alt="" class="img-responsive">
+						</div>
+						<div class="col-md-6 col-xs-7">
+							<p class="bold"><br>Дизайн-проект</p>
+							<p class="regular">25000 руб.</p>
+						</div>
+					</div>
+					<img src="img/question.jpg" alt="" data-toggle="tooltip" title="Тут какая-то подсказка!" data-trigger="click" class="question">
+					<div class="block-checkbox">
+						<span class="regular" style="font-size: 12px;">Добавить</span>
+						<input id="zayavka5" type="checkbox">
+						<label for="zayavka5"></label>
+					</div>
+				</div>
+				<br>
+				<div class="zayavka-block">
+					<div class="row">
+						<div class="col-md-3 col-xs-3">
+							<img src="img/camera.jpg" alt="" class="img-responsive">
+						</div>
+						<div class="col-md-6 col-xs-7">
+							<p class="bold"><br>Дизайн-проект</p>
+							<p class="regular">25000 руб.</p>
+						</div>
+					</div>
+					<img src="img/question.jpg" alt="" data-toggle="tooltip" title="Тут какая-то подсказка!" data-trigger="click" class="question">
+					<div class="block-checkbox">
+						<span class="regular" style="font-size: 12px;">Добавить</span>
+						<input id="zayavka6" type="checkbox">
+						<label for="zayavka6"></label>
+					</div>
+				</div>
+				<br><br><p class="text-center"><button type="button" class="btn btn-success regular" data-toggle="modal" data-target="#myModal3">Оставить заявку</button></p>
+			</div>
 		</div>
 	</div>
 <!-- ----------------------------------------------------------КОНЕЦ ТЕЛА---------------------------------------------------------- -->
@@ -244,7 +310,7 @@
 				</div>
 				<div class="col-md-4 footer-middle">
 					<p class="text-center number">8 (903) 547-35-38</p>
-					<p class="text-center number">8 <img>(903)<img> 556-<img>76-62</p><br>
+					<p class="text-center number">8 (903) 556-76-62</p><br>
 					<p class="text-center"><a href="mailto:info@vidnorem.ru" class="link-email">info@vidnorem.ru</a></p><br>
 					<p class="text-center"><button type="button" class="btn btn-success regular" data-toggle="modal" data-target="#myModal3">Оставить заявку</button></p>
 				</div>
@@ -263,8 +329,8 @@
 	<div class="container-fluid regular" id="footer-responsive">
 		<p class="text-center pf1">РЕМОНТ В ВИДНОМ</p>
 		<br>
-		<p class="text-center pf2 bold"><a href="tel:89035473538">8 <img>(903)<img> 547-<img>35-38</a></p>
-		<p class="text-center pf2 bold"><a href="tel:89035567662">8 <img>(903)<img> 556-<img>76-62</a></p>
+		<p class="text-center pf2 bold"><a href="tel:89035473538">8 (903) 547-35-38</a></p>
+		<p class="text-center pf2 bold"><a href="tel:89035567662">8 (903) 556-76-62</a></p>
 		<p class="text-center pf3 bold"><a href="mailto:info@vidnorem.ru" class="link-email">info@vidnorem.ru</a></p><br>
 		<p class="text-center"><button type="button" class="btn btn-success regular" data-toggle="modal" data-target="#myModal3">Оставить заявку</button></p><br>
 		<p class="text-center">
@@ -387,6 +453,35 @@
 					<p class="text-center"><button type="submit" class="btn btn-success regular">Оставить заявку</button></p>
 				</div>
 	        </form>
+        </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<!-- Модальное окно ЧТО ВКЛЮЧАЕТ3-->
+<div class="modal fade regular" id="what-included3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+    	<div class="knopka-exit-modal">
+			 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		</div>
+      	<div class="modal-body">
+      		<p class="bold text-center" style="font-size: 18px;">Список услуг3</p><br>
+      		
+      		<p class="bold">В комнатах и коридорах:</p>
+      		<p class="regular">- раскладывание вещей в аккуратные стопки</p>
+      		<p class="regular">- раскладывание вещей в аккуратные стопки</p>
+      		<p class="regular">- раскладывание вещей в аккуратные стопки</p>
+      		<br>
+      		<p class="bold">В комнатах и коридорах:</p>
+      		<p class="regular">- раскладывание вещей в аккуратные стопки</p>
+      		<p class="regular">- раскладывание вещей в аккуратные стопки</p>
+      		<p class="regular">- раскладывание вещей в аккуратные стопки</p>
+      		<br>
+      		<p class="bold">В комнатах и коридорах:</p>
+      		<p class="regular">- раскладывание вещей в аккуратные стопки</p>
+      		<p class="regular">- раскладывание вещей в аккуратные стопки</p>
+      		<p class="regular">- раскладывание вещей в аккуратные стопки</p>
+			
         </div>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->

@@ -31,6 +31,12 @@
 		background-color: #fff;
 		margin-top: 10px;
 	}
+	#zayavka .col-md-5 {
+		display: none;
+	}
+	.zayavka-right-block {
+		margin-top: -60px;
+	}
 	#knopka-adaptive span:nth-child(2) {
 	margin-top:0px;
 	}
@@ -226,6 +232,9 @@
 		left:50%;
 		top:50%;
 	}
+	#promocode-desktop {
+		display: none;
+	}
 	.equal, .equal > div[class*='col-'] {
 	    display: -webkit-box;
 	    display: -moz-box;
@@ -413,6 +422,9 @@
 	#what-included1 .modal-body, #what-included2 .modal-body, #what-included3 .modal-body {
 		padding-left: 30px;
 		padding-right: 30px;
+	}
+	#promocode-button {
+		display: none;
 	}
 }
 /*=========5. Стилизация компонентов из соображений адаптивности=============================================*/
