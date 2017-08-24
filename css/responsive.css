@@ -264,16 +264,10 @@
 	}
 
 	/*1.8. СТРАНИЦА СПАСИБО---------------------*/
-	.thank-you .container {
+	#thank-you .container {
 		padding-left: 15px;
 		padding-right: 15px;
 		text-align: center;
-	}
-	.thank-you-responsive {
-		display: block;
-	}
-	.thank-you-desktop {
-		display: none;
 	}
 	/*1.9. СТРАНИЦА АКЦИИ---------------------*/
 	#discounts {
@@ -285,10 +279,6 @@
 	}
 	#zayavka .col-md-4 {
 		margin-top: 40px;
-	}
-	#zayavka .container {
-		padding-left: 0;
-		padding-right: 0;
 	}
 	/*1.10. СТРАНИЦА ПОРТФОЛИО---------------*/
 	#portfolio .col-md-3 img {
@@ -325,9 +315,6 @@
 	width: 100%;
 	left: 0;
 	font-size: 12px;
-	}
-	#table-kapital button, #table-kosmetika button, #table-novostroyka button {
-		font-size: 10px;
 	}
 	/*1.13 МОДАЛЬНЫЕ ОКНА "ЧТО ВКЛЮЧАЕТ*/
 	#what-included .modal-body, #what-included2 .modal-body, #what-included3 .modal-body {
@@ -438,12 +425,6 @@
 	}
 	#promocode-button {
 		display: none;
-	}
-	.thank-you-responsive {
-		display: none;
-	}
-	.thank-you-desktop {
-		display: block;
 	}
 }
 /*=========5. Стилизация компонентов из соображений адаптивности=============================================*/
