@@ -15,6 +15,12 @@
     font-family: RobotoSlab-Regular; /* Имя шрифта */
     src: url(../fonts/RobotoSlab-Regular.ttf); /* Путь к файлу со шрифтом */
    }
+[data-toggle="tooltip"] {
+	cursor: pointer;
+}
+label[for="zayavka1"], label[for="zayavka2"], label[for="zayavka3"], label[for="zayavka4"], label[for="zayavka5"], label[for="zayavka6"] {
+	cursor: pointer;
+}
 .soglasie {
 	position: relative;
 }
