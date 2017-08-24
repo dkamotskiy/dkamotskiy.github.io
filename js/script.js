@@ -38,7 +38,10 @@ $('#carousel-example-generic').bcSwipe({ threshold: 50 });
 $(document).ready(function(){
     $("#fancybox-image-wrap img").attr("max-width","100%;");
 });
-// Обработка нажатий блока "Наши работы"
+// Активауия тултипа
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip(); 
+});
 $(document).ready(function(){
     $( "#selector-img-1" ).click(function() {
         $("#selector-img-1").attr("style","border: 3px solid #899e00;");
