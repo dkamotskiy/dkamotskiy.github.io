@@ -255,6 +255,10 @@
 	.fading {
 		display: block;
 	}
+	#zayavka {
+		padding-left: 0;
+		padding-right: 0;
+	}
 	/*1.7. СТРАНИЦА КОНТАКТЫ--------------------*/
 	#contacts-page-container {
 		text-align: center;
