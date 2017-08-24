@@ -38,30 +38,7 @@ $('#carousel-example-generic').bcSwipe({ threshold: 50 });
 $(document).ready(function(){
     $("#fancybox-image-wrap img").attr("max-width","100%;");
 });
-// Обработка нажатий блока "Наши работы"
+// Активауия тултипа
 $(document).ready(function(){
-    $( "#selector-img-1" ).click(function() {
-        $("#selector-img-1").attr("style","border: 3px solid #899e00;");
-        $("#selector-img-2").attr("style","border: 3px solid #fff;");
-        $("#selector-img-3").attr("style","border: 3px solid #fff;");
-        $("#selector-img-4").attr("style","border: 3px solid #fff;");
-        });
-    $( "#selector-img-2" ).click(function() {
-        $("#selector-img-2").attr("style","border: 3px solid #899e00;");
-        $("#selector-img-1").attr("style","border: 3px solid #fff;");
-        $("#selector-img-3").attr("style","border: 3px solid #fff;");
-        $("#selector-img-4").attr("style","border: 3px solid #fff;");
-        });
-    $( "#selector-img-3" ).click(function() {
-        $("#selector-img-3").attr("style","border: 3px solid #899e00;");
-        $("#selector-img-2").attr("style","border: 3px solid #fff;");
-        $("#selector-img-1").attr("style","border: 3px solid #fff;");
-        $("#selector-img-4").attr("style","border: 3px solid #fff;");
-        });
-    $( "#selector-img-4" ).click(function() {
-        $("#selector-img-4").attr("style","border: 3px solid #899e00;");
-        $("#selector-img-2").attr("style","border: 3px solid #fff;");
-        $("#selector-img-3").attr("style","border: 3px solid #fff;");
-        $("#selector-img-1").attr("style","border: 3px solid #fff;");
-        });
+    $('[data-toggle="tooltip"]').tooltip(); 
 });

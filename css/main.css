@@ -549,23 +549,27 @@ input::-webkit-inner-spin-button {
 	background-color: #899e00;
 }
 /*=========3. Страница "Спасибо за заявку!"=============================================*/
-#thank-you {
+.thank-you {
 	background-color: #faffe9;
 	padding-top: 70px;
 	padding-bottom: 100px;
 }
-#thank-you .container {
+.thank-you .container {
 	padding-left: 100px;
 	padding-right: 100px;
 }
-#thank-you img {
+.thank-you img {
 	margin: 0 auto;
 }
-#thank-you .bold {
+.thank-you .bold {
 	font-size: 45px;
 }
-#thank-you .regular {
+.thank-you .regular {
 	font-size: 30px;
+}
+.thank-you-responsive {
+	padding-top: 0;
+	padding-bottom: 30px;
 }
 /*=========4. Страница "Цены"=============================================*/
 #prices {
