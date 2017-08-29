@@ -1,936 +1,184 @@
-/*=========0. Подключение шрифтов и общие свойства=============================================*/
+/*Подключение шрифтов*/
 @font-face {
-    font-family: RobotoSlab-Bold; /* Имя шрифта */
-    src: url(../fonts/RobotoSlab-Bold.ttf); /* Путь к файлу со шрифтом */
+    font-family: ; /* Имя шрифта */
+    src: url(../fonts/);
    }
-@font-face {
-    font-family: RobotoSlab-Light; /* Имя шрифта */
-    src: url(../fonts/RobotoSlab-Light.ttf); /* Путь к файлу со шрифтом */
-   }
-@font-face {
-    font-family: RobotoSlab-Thin.ttf; /* Имя шрифта */
-    src: url(../fonts/RobotoSlab-Thin.ttf); /* Путь к файлу со шрифтом */
-   }
-@font-face {
-    font-family: RobotoSlab-Regular; /* Имя шрифта */
-    src: url(../fonts/RobotoSlab-Regular.ttf); /* Путь к файлу со шрифтом */
-   }
-[data-toggle="tooltip"] {
-	cursor: pointer;
+/*Основной шрифт*/
+body {
+	background-color: #f5f5f5;
+	font-family: Tahoma;
 }
-label[for="zayavka1"], label[for="zayavka2"], label[for="zayavka3"], label[for="zayavka4"], label[for="zayavka5"], label[for="zayavka6"] {
-	cursor: pointer;
-}
-.soglasie {
-	position: relative;
-}
-.overlay {
-	background:transparent; 
-	position:relative; 
-	width:100%;
-	height:400px;
-	top:500px;
-	margin-top:-400px;
-}
-.icon i {
-	color: #899e00;
-	font-size: 23px;
-	margin-right: 7px;
-	margin-top: 5px;
-}
-#myModal .soglasie-input, #myModal3 .soglasie-input {
-	width: 20px;
-	height: 20px;
-	position: absolute;
-	top: -3px;
-}
-.soglasie-span {
-	margin-left: 30px;
-}
-.modal-content {
-	position: relative;
-}
-.knopka-exit-modal {
-	position: absolute;
-	right: 10px;
-	top: 0px;
-	z-index: 9999;
-}
-.close {
-	font-size: 50px;
-}
-.green-font {
-	color: #899e00;
-}
-.btn-link {
-	padding: 0px;
-	color: inherit;
-}
-.regular {
-	font-family: RobotoSlab-Regular;
-}
-.btn-success, .btn-default {
-	background-image: none;
-	min-width: 120px;
-	padding: 10px 20px;
-	border-width: 0px;
-}
-.btn-success {
-	background-color: #899e00;
-}
+/*Стили*/
 .bold {
-	font-family: RobotoSlab-Bold;
+	font-weight: bold;
 }
-.upper {
-	text-transform: uppercase;
+#line {
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
-.gray-background {
-	background-color: #faffe9;
+#line p a {
+	color: #d1361b;
+	font-size: 20px;
 }
-input[type='number'] {
-    -moz-appearance:textfield;
-}
-
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-}
-.green-border {
-	border-bottom: 3px solid #899e00;
-	padding-bottom: 20px;
-}
-.help-block {
-	color: #ff0000;
-	font-family: RobotoSlab-Bold;
-	font-size: 12px;
-}
-/*=========1. Страница "О нас"=============================================*/
-/*=========1.1. Хедер=============================================*/
-#header {
-	padding-top: 15px;
-	font-family: RobotoSlab-Bold;
-	padding-bottom: 0px;
-}
-#header-logo img {
-	max-width: 54px;
-	margin-left: 35px;
-}
-#header-logo p {
-	font-size: 14px;
-}
-#header-text {
-	font-size: 22px;
-	padding-top:20px;
-}
-.phone-number {
-	font-size: 22px;
-}
-.zakaz-zvonok {
-	font-size: 15px;
-	border-bottom: 1px dashed #899e00;
-	margin-top: -10px;
-	font-family: RobotoSlab-Regular;
-}
-.zakaz-zvonok:hover {
-	color: inherit;
-	border-bottom: 0px;
-	text-decoration: none;
+#line img {
+	margin-top: 0px;
 }
 #menu {
-	background-color: #899e00;
-	font-family: RobotoSlab-Regular;
-	padding-left:0px;
-	padding-right: 0; 
+	background-color: #d1361b;
 }
-#menu .container {
-	padding-left:0px;
-	padding-right: 0; 
-}
-#menu a {
-	color: #fff;
-}
-.navbar-default {
-	background-image: none;
-	background-color: transparent;
-	border-width: 0px;
-	box-shadow: none;
-}
-.navbar {
-	margin-bottom: 0px;
-}
-.nav>li>a {
-	padding: 20px 30px;
-}
-#menu .active ul {
-	background-image: none;
-	background-color: #899e00;
-}
-#menu .active a {
-	background-image: none;
-	background-color: rgba(0,0,0,0.3);
-}
-#menu a:hover {
-/*	box-shadow: 0 0 0 1px #000;*/
-	background-color: rgba(0,0,0,0.3);
-}
-/*==========================1.2. Верхний блок первого экрана =============================================*/
-#zagolovok {
-	background-image: url(../img/bg-1.jpg);
-	-webkit-background-size: cover;
-	background-size: cover;
-	background-position: center center;
-	font-family: RobotoSlab-Bold;
-}
-#zagolovok .col-md-8 {
-	padding-left: 30px;
-	padding-top: 140px;
-}
-#zagolovok .col-md-8 h1 {
-	font-size: 40px;
-}
-#zagolovok .col-md-8 p {
-	font-size: 20px;
-	margin-top: 20px;
-}
-#zagolovok .col-md-4 {
-	background-color: rgba(137,158,0,0.5);
-	padding-top: 30px;
-	padding-bottom: 40px;
-}
-#zagolovok .col-md-4 p {
-	font-size: 20px;
-	margin-bottom: 30px;
-}
-#zagolovok .col-md-4 .numbers-about-us-number {
-	font-size: 50px;
-	margin-bottom: 0;
-}
-#zagolovok .col-md-4 .number-about-us-text {
-	margin-top: -10px;
-	font-family: RobotoSlab-Regular;
-	font-size: 15px;
-}
-#zagolovok .btn-success, #zagolovok .btn-default {
-	margin-top:20px;
-}
-#zagolovok .btn-default {
-	margin-left: 20px;
-}
-/*=========1.3 Блок "Ремонт в Видном - это...=============================================*/
-#remont-v-vidnom-eto {
-	padding-top: 50px;
-	padding-bottom: 70px;
-	padding-left: 150px;
-	padding-right: 150px;
-}
-#remont-v-vidnom-eto p:first-child {
-	font-size: 40px;
-}
-#remont-v-vidnom-eto p:nth-child(2) {
-	font-size: 20px;
-	padding-top: 20px;
-}
-#remont-v-vidnom-eto p:nth-child(3) {
-	font-size: 30px;
-	padding-top: 20px;
-}
-#remont-v-vidnom-eto button {
-	margin-top: 20px;
-}
-/*=========1.4. Блок "Наша команда"=============================================*/
-#our-team {
-	padding-top: 40px;
-	padding-bottom: 30px;
-	background-color: #899e00;
-	color: #fff;
-}
-#our-team p:first-child {
-	font-size: 30px;
-}
-#our-team .row img{
-	width: 100%;
-}
-#our-team .row p{
-	font-size: 16px;
-	margin-top: 10px;
-	margin-bottom: 0;
-}
-.ruk-mast {
-	margin-top: 20px;
-	margin-bottom: 20px;
-	font-size: 20px;
-}
-#our-team button {
-	margin-top: 35px;
-}
-/*=========1.5. Блок "Ремонт в..."=============================================*/
-#remont-v {
-	padding-top: 67px;
-	padding-bottom: 45px;
-	font-size: 20px;
-}
-#remont-v p:first-child {
-	font-size: 24px;
-	text-transform: uppercase;
-}
-#remont-v .padding-right {
-	padding-right: 150px;
-}
-#remont-v .complexes .col-md-6 p {
-	margin-bottom: 15px;
-	font-size: 18px;
-}
-#remont-v button {
-	margin-top: 35px;
-}
-/*=========1.6. Блок "Как мы работаем"=============================================*/
-#how-we-work {
-	background-image: url(../img/bg-2.jpg);
-	background-position: center center;
-	-webkit-background-size: cover;
-	background-size: cover;
-	background-repeat: no-repeat;
-	padding-top: 40px;
-	padding-bottom: 25px;
-}
-#how-we-work .row .col-md-2 {
-	padding: 0px;
-	position: relative;
-	color: #fff;
-}
-#cikl {
-	border-top:1px solid #fff;
-	border-right:1px solid #fff;
-	border-bottom:1px solid #fff;
-}
-.fishka {
-	width:40px;
-	height:40px;
-	border-radius: 20px;
-	background-color: #899e00;
-	line-height: 40px;
-	vertical-align: middle;
-	text-align: center;
-	position: absolute;
-	left:0;
-	top:0;
-	margin-left: -20px;
-	margin-top: -20px;
-}
-.fishka-right-top {
-	left:auto;
-	right:0;
-	margin-left: 0px;
-	margin-right: -20px;
-}
-.fishka-bottom-left {
-	top:auto;
-	bottom: 0;
-	margin-bottom: -20px;
-}
-.fishka-bottom-right {
-	left:auto;
-	right:0;
-	top:auto;
-	bottom: 0;
-	margin-left: 0;
-	margin-right: -20px;
-	margin-top: 0;
-	margin-bottom: -20px;
-}
-.border {
-	border-top: 3px solid #ccd1de;
-	border-bottom: 3px solid #ccd1de;
-}
-.border-right {
-	border-right: 3px solid #ccd1de;
-}
-.left-top {
-	position: absolute;
-	text-align: center;
-	left:0;
-	top:0;
-	margin-top:-70px;
-	margin-left: -50px;
-	font-family: RobotoSlab-Regular;
-	font-size: 13px;
-	color: #000;
-}
-.right-top {
-	position: absolute;
-	text-align: center;
-	right:0;
-	top:0;
-	margin-top:-70px;
-	margin-right: -50px;
-	font-family: RobotoSlab-Regular;
-	font-size: 13px;
-	color: #000;
-}
-.left-bottom {
-	position: absolute;
-	text-align: center;
-	left:0;
-	bottom:0;
-	margin-bottom:-80px;
-	margin-left: -35px;
-	font-family: RobotoSlab-Regular;
-	font-size: 13px;
-	color: #000;
-}
-.right-bottom {
-	position: absolute;
-	text-align: center;
-	right:0;
-	bottom:0;
-	margin-bottom:-75px;
-	margin-right: -50px;
-	font-family: RobotoSlab-Regular;
-	font-size: 13px;
-	color: #000;
-}
-#how-we-work .how-we-workh1 {
-	font-size: 25px;
-	margin-bottom: 30px;
-}
-#how-we-work button {
-	margin-top: 30px;
-}
-/*=========1.7. Блок "Акты"=============================================*/
-#akti {
-	padding-left: 100px;
-	padding-right: 100px;
-	padding-top: 70px;
-	padding-bottom: 65px;
-}
-#akti p:first-child {
-	font-size: 25px;
-}
-.jcarousel-wrapper {
-	border-width: 0px;
-	box-shadow: none;
-}
-.jcarousel {
-	border-width: 0;
-}
-.jcarousel-control-prev, .jcarousel-control-next {
-	background: none;
-	box-shadow: none;
-	color: #899e00;
-	font-size: 60px;
-}
-.jcarousel-control-prev:hover, .jcarousel-control-next:hover {
-	text-decoration: none;
-	color: #899e00;
-}
-.jcarousel-control-prev {
-	left:-10px;
-}
-.jcarousel-control-next {
-	right: -10px;
-}
-.jcarousel li img {
-	margin:0 auto;
-}
-#akti .upper {
-	font-size: 25px;
-}
-/*=========1.8. Блок "Отзывы"=============================================*/
-#feedback {
-	background-color: #899e00;
-	padding-top: 30px;
-	padding-bottom: 30px;
-	color: #fff;
-}
-.fishka-otzyvy img {
-	margin: 0 auto;
-	margin-bottom: 20px;
-}
-.background-changing {
-	background-image: url(../img/portfolio/kitchen.jpg);
-	-webkit-background-size: cover;
-	background-size: cover;
-	background-position: center center;
-	margin-left: 0px;
-	margin-right: 0px;
-}
-.background-changing-right-block {
-	background-color: rgba(0,0,0,0.5);
-	color: #fff;
-}
-#sdan, #tekush {
-	font-size: 20px;
-}
-#sdan:hover, #tekush:hover {
-	text-decoration: none;
-}
-#sdan {
-	border-bottom: 1px solid #899e00;
-}
-#tekush {
-	margin-left: 30px;
-}
-#feedback p {
-	font-size: 25px;
-}
-.carousel-control.right, .carousel-control.left {
-	background: none;
-}
-.carousel-inner>.item.active, .carousel-inner>.item {
-	padding-left: 150px;
-	padding-right: 150px;
-}
-#feedback .regular p {
-	font-size: 16px;
-}
-#feedback .regular .feedback-zagolovok {
-	font-size: 20px;
-}
-#feedback .text-center a {
-	font-size: 20px;
-	border-bottom: 1px dashed #fff;
-	color: #fff;
-}
-#feedback .text-center a:hover {
-	color: #fff;
-	border-bottom: none;
-	text-decoration: none;
-}
-/*=========1.9. Блок "Футер"=============================================*/
-#footer, #footer-responsive {
-	background-color: #232323;
-	color: #899e00;
-	padding-top: 40px;
-	padding-bottom: 30px;
-}
-.footer-left {
-	font-size: 14px;
-}
-.footer-left img {
-	margin-left: 15px;
-}
-.footer-middle {
-	font-size: 16px;
-}
-.footer-middle .number {
-	font-size: 20px;
-	color:#fff;
-}
-.footer-right .icon, #footer-responsive .icon {
-	width:40px;
-	height: 40px;
-	border-radius: 20px;
-	border: 2px solid #899e00;
-	display: inline-block;
-	text-align: right;
-	margin-left: 10px;
-}
-.bb {
-	border-bottom: 1px dashed #899e00;
-	color: #899e00;
-}
-.bb:hover {
-	border-bottom: 1px dashed transparent;
-	text-decoration: none;
-	color: #899e00;
-}
-/*=========2. Страница "Контакты"=============================================*/
-#contacts-page-container {
-	padding-top: 30px;
-	padding-bottom: 50px;
-	background-color: #faffe9;
-}
-#contacts-page-container p {
-	font-size: 25px;
-}
-#contacts-page-container .regular a {
-	color: #899e00;
-}
-#contacts-page-container .bold a {
-	color:#000;
-}
-#contacts-map {
-	width:100%;
-	height:350px;
-	background-color: #899e00;
-}
-/*=========3. Страница "Спасибо за заявку!"=============================================*/
-.thank-you {
-	background-color: #faffe9;
-	padding-top: 70px;
-	padding-bottom: 100px;
-}
-.thank-you .container {
-	padding-left: 100px;
-	padding-right: 100px;
-}
-.thank-you img {
-	margin: 0 auto;
-}
-.thank-you .bold {
-	font-size: 45px;
-}
-.thank-you .regular {
-	font-size: 30px;
-}
-.thank-you-responsive {
-	padding-top: 0;
-	padding-bottom: 30px;
-}
-/*=========4. Страница "Цены"=============================================*/
-#prices {
-	background-color: #faffe9;
-	padding-top: 20px;
-	padding-bottom: 50px;
-}
-#prices table, #zakazat-remont-v table {
-	margin: 0 auto;
-}
-#prices td, #zakazat-remont-v td {
-	padding:20px 30px;
-}
-#prices table tr:nth-child(1), #zakazat-remont-v table tr:nth-child(1) {
-	background-color: #899e00;
-	color:#fff;
-}
-#prices a, #zakazat-remont-v table a {
-	color: #899e00;
-	border-bottom: 1px dashed #899e00;
-}
-#prices a:hover, #zakazat-remont-v table a {
-	text-decoration: none;
-	border-bottom: 1px solid transparent;
-}
-#prices li a {
-	border-bottom: 0;
-}
-#prices li a {
-	color:#000;
-}
-#prices .active a {
-	border-width: 0px;
-	border-radius: 0px;
-	border-bottom: 2px solid #899e00;
-	border-top: 0px;
-	border-left: 0;
-	border-right: 0;
-	color: #899e00;
-	background-color: transparent;
-}
-#prices .nav-tabs {
-	border-bottom: 0;
-}
-#button-kapital, #button-novostroyka, #button-kosmetika {
-	padding-bottom: 15px;
+#menu .col-md-2 {
 	cursor: pointer;
 }
-#button-kapital {
-	border-bottom: 3px solid #899e00;
+#menu .col-md-2:hover {
+	background-color: #a52b16;
 }
-#table-kosmetika, #table-novostroyka, #table-kapital {
-	position: absolute;
-	width: 100%;
-	left: 0%;
+#menu a {
+	color: #ffffff;
 }
-#table-kosmetika, #table-novostroyka {
-	display: none;
+#menu a:hover {
+	color: #fff;
+	text-decoration: none;
 }
-#table-container {
+#menu .active {
+	background-color: #a52b16;
 }
-#table-kapital .row, #table-kosmetika .row, #table-novostroyka .row {
+#menu .col-md-2 {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-right: 1px solid #000;
+}
+#menu .row {
+	margin-left: 0;
+	margin-right: 0;
+}
+#top-block {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-left: 0;
+	margin-right: 0;
+	border-left: 1px solid #bbbab9;
+	border-right: 1px solid #bbbab9;
+	border-bottom: 1px solid #bbbab9;
+}
+#top-block li a {
+	color: #000;
+	text-decoration: underline;
+}
+#top-block li a:hover {
+	color: #000;
+	text-decoration: none;
+}
+#top-block .col-md-4 {
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
-#table-kapital .row:nth-child(1), #table-kosmetika .row:nth-child(1), #table-novostroyka .row:nth-child(1) {
-	background-color: #899e00;
-	color: #fff;
+#top-block .col-md-4 p {
+	margin-left: 30px;
 }
-.prices-margin {
-	margin-top: 230px;
-}
-
-/*=========5. Страница "Акции"=============================================*/
-#discounts {
-	background-color: #faffe9;
-	padding-top: 30px;
-	padding-bottom: 50px;
-}
-#discounts .col-md-5 {
-	background-color: #899e00;
-	border-radius: 5px;
-	min-height: 250px;
-}
-#discounts .col-md-4 {
-	padding-left: 30px;
-}
-/*=========6. Страница "Отзывы"=============================================*/
-#feedback-page {
-	background-color: #faffe9;
-	padding-top: 30px;
-	padding-bottom: 50px;
-}
-.feedback-page-man {
-	width:100%;
-	background-color: #eaefcf;
-	padding: 46px;
-}
-/*=========7. Страница "Оставить заявку"=============================================*/
-#zayavka {
-	padding-bottom: 50px;
-	padding-top: 50px;
-}
-.select_main{
-width:100%; 
-position:relative; 
-background-color: #eaefcf;
-}
-select {
-width:100%; 
-height:40px; 
-position:reative; 
-border:none; 
-cursor:pointer; 
-opacity:0;
-filter: alpha(opacity=0);
-}
-.select_main p {
-width:100%; 
-height:100%; 
-position:absolute; 
-left:0; 
-top:0; 
-color:#0a0a0a; 
-font-size:14px; 
-line-height:40px; 
-overflow:hidden;
-padding-left: 20px;
-}
-.select_main span {
-	position: absolute;
-	right:5px;
-	top:12px;
-	font-size: 20px;
-	color: #899e00;
-}
-.zayavka-block {
-	height: 120px;
-	background-color: #eaefcf;
-	width: 100%;
-	border-radius: 3px;
+#top-block .col-md-8 {
+	background-image: url(../img/bg.jpg);
+	background-position: center center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	font-size: 26px;
+	color: #d1361b;
 	padding-left: 20px;
 	padding-top: 20px;
-	padding-right: 15px;
+	text-shadow: 1px 1px 2px #fff, 0 0 1em #fff;
+	font-weight: bold;
+}
+#center-block {
+	margin-left: 0;
+	margin-right: 0;
+}
+#menu .col-md-2 {
+	width: 20%;
+}
+#center-block img {
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+	margin-bottom: 20px;
+}
+#center-block .col-md-12 p {
+	font-size: 13px;
+}
+#center-block .col-md-12 {
+	border-left: 1px solid #bbbab9;;
+	border-right: 1px solid #bbbab9;
+	border-bottom: 1px solid #bbbab9;
+	padding-bottom: 20px;
+}
+#sitemap {
+	padding-top: 10px;
 	padding-bottom: 10px;
-	position: relative;
 }
-.zayavka-block .col-md-3 img {
-	margin-top: 8px;
+#sitemap a {
+	margin-right: 20px;
+	font-size: 12px;
+	color: #000;
+	text-decoration: underline;
 }
-.zayavka-block .col-md-5 .bold {
-	margin-top: 12px;
+#sitemap span {
+	margin-right: 20px;
 }
-.question {
-	position: absolute;
-	right:7px;
-	top:7px;
+#footer-line {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 12px;
 }
-/*=========7.1. Стилизация чекбоксов=============================================*/
-.zayavka-block label, #soglasen label {
-	position: relative;
-} 
-.zayavka-block input, #soglasen input {
-	display: none;
-}
-.block-checkbox span {
-	margin-right: 10px;
-}
-.block-checkbox {
-	position: absolute;
-	right: 20px;
-	bottom: 10px;
-}
-.zayavka-right-block {
-	padding:20px 40px;
-	background-color: #eaefcf;
-	border-radius: 3px;
-}
-.zayavka-right-block span {
-	font-family: RobotoSlab-Regular;
-}
-#promocode {
-	border-radius: 0;
-	border-width: 0px;
+#button-menu {
+	width: 100%;
+	background: #d1361b;
+	border: none;
 	box-shadow: none;
+	border-radius: 10px;
+	color: #fff;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
-#promocode-faded {
-	border-radius: 0;
-	border-width: 0px;
-	box-shadow: none;
+#menu-responsive a {
+	color: #000;
 }
-label:before {
-	content:"";
-	width: 20px;
-	height: 20px;
-	display: inline-block;
-	border: 1px solid #696a62;
-	vertical-align: middle;
-	background-color: #fff;
+#menu-responsive .col-md-2 {
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
-input:checked + label:after {
-	content: "";
-	width: 18px;
-	height: 18px;
-	display: inline-block;
-	background-color: #fff;
-	vertical-align: middle;
-	position: absolute;
-	left: 1px;
-	top: 2px;
-	background-image: url(../img/checked.jpg);
-	-webkit-background-size: cover;
-	background-size: cover;
+/*Страница Услуги----------------------------------------------------------------*/
+hr {
+	height: 1px;
+	background-color: #bbbab9;
+	margin-left: -15px;
+	margin-right: -15px;
 }
-/*=========8. Страница "Портфолио"=============================================*/
-#portfolio, #our-works {
-	padding-top: 50px;
-	padding-bottom: 50px;
-	background-color: #faffea;
+#center-block-uslugi p, #center-block-uslugi ul li, #center-block-uslugi table {
+	font-size: 13px;
 }
-.portfolio-img-with-button {
-	position: relative;
+#center-block-uslugi {
+	max-width: 1140px;
 }
-.portfolio-img-with-button button {
-	position: absolute;
-	left: 50%;
-	bottom: 10%;
-	margin-left: -64px;
+#center-block-uslugi a {
+	color: #000;
 }
-#portfolio table {
-	margin: 0 auto;
+#center-block-uslugi .podrobnee-button {
+	padding: 10px 20px;
+	background-color: #d1361b;
+	color: #fff;
+	text-transform: uppercase;
+	border-radius: 5px;
+	font-weight: bold;
 }
-#portfolio td {
-	padding: 5px;
-}
-/*=========9. Страница "Услуги"=============================================*/
-#uslugi {
-	background-image: url(../img/bg-3.jpg);
-	-webkit-background-size: cover;
-	background-size: cover;
-	background-position: center center;
-	padding-top: 35px;
-	padding-bottom: 35px;
-}
-.strikethrough {
-    position: relative;
-    font-size: 20px;
-}
-.strikethrough:before {
-    border-bottom: 3px solid red;
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 50%;
-    transform: rotate(7deg);
-}
-#uslugi .col-md-2 .text-center img, #pochemu .col-md-4 p img {
-	margin: 0 auto;
-}
-#uslugi-kach-remont {
-	padding-top: 50px;
-	padding-bottom: 50px;
-}
-#uslugi-kach-remont hr {
-	border-top: 4px solid #000;
-}
-.advantages {
+/*Страница Закон и право*/
+.zip-h3 {
 	margin-top: 40px;
-}
-#pochemu {
-	padding-top: 50px;
-	padding-bottom: 50px;
-}
-#pochemu .col-md-4 {
-	padding-left: 50px;
-	padding-right: 50px;
-}
-#uslugi-our-works {
-	padding-bottom: 50px;
-}
-#zakazat-remont-v {
-	padding-bottom: 50px;
-}
-#uslugi .btn-default {
+	margin-bottom: 40px;
 	margin-left: 20px;
 }
-/*=========10. Страница "Главная"=============================================*/
-#main-nashi-uslugi {
-	background-color: #899e00;
-	padding-top: 30px;
-	padding-bottom: 30px;
+#center-block-uslugi .col-md-6 img {
+	margin: 0 auto;
+	display: block;
 }
-#main-nashi-uslugi .col-md-4 p {
-	text-align: center;
-}
-#main-nashi-uslugi .col-md-4 {
-}
-#main-nashi-uslugi .col-md-4 div {
-	margin: 15px;
-	padding: 15px;
-	background-color: #fff;
-}
-#faq {
-	padding-top: 50px;
-	padding-bottom: 50px;
-}
-#faq .btn-link, #faq-page .btn-link {
-	margin-top: -3px;
-	font-size: 16px;
-}
-.link-email {
-	color: #899e00;
-}
-.link-email:hover {
-	color: #899e00;
-}
-#uslugi-our-works .carousel-inner>.item.active, #uslugi-our-works .carousel-inner>.item {
-	padding-left: 0;
-	padding-right: 0;
-}
-.cursor-pointer {
-	cursor: pointer;
-}
-.font-40 {
-	font-size: 40px;
-}
-.font-14 {
-	font-size: 14px;
-}
-#input-s {
-	width: 100%;
-	height: 40px;
-	background-color: #eaefcf;
-}
-/*=========11. Страница "Частозадаваемые вопросы"=============================================*/
-#faq-page, #rekvizity, #privacy-policy {
-	padding-top: 50px;
-	padding-bottom: 50px;
-}
-/*=========12. Стилизация модальных окон=============================================*/
-#myModal label::before, #myModal2 label::before, #myModal3 label::before {
-	display: none;
-}
-.modal-content {
-	padding-top: 40px;
-	padding-bottom: 30px;
-}
-#myModal .col-md-6 input, #myModal2 input, #myModal3 input {
-	width: 100%;
-	height: 40px;
-	border: none;
-	background-color: #eaefcf;
-	box-shadow: none;
-	border-radius: 0px;
-}
-.mfp-zoom-out-cur, .mfp-zoom-out-cur .mfp-image-holder .mfp-close {
-	cursor: pointer;
+#center-block-uslugi .row a {
+	margin-left: 20px;
+	margin-top: 20px;
 }
