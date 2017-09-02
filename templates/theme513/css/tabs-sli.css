@@ -103,3 +103,35 @@
 .slider-button-main .button-play{ margin:0 0 0 0;}
 
 .images div img, .images div{ width:654px; height:595px;}
+
+.boxIndent ul li {
+	font-size: 12px;
+}
+.top-row-box .fleft {
+	width: 450px;
+}
+.top-row-box .fright {
+	width: 280px;
+}
+.images {
+	width: 280px;
+}
+.images div {
+	border: none;
+}
+.images div img {
+	width: 280px;
+	height: auto;
+}
+.top-row-box .fright {
+	margin-right: 30px;margin-top: 5px;
+}
+.content-indent {
+	padding: 0;
+}
+.article-title-text {
+	line-height: 35px;
+}
+.article-title-text {
+	margin-top: 28px !important;
+}
