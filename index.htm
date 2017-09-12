@@ -1,0 +1,309 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+<!-- <script src='//ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.1.min.js'></script> -->
+<!-- <script src='//ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.3.min.js'></script> -->
+<!-- <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> -->
+
+<!-- <script src="//shared.cheapoffer.ru/jq/jquery-3.2.0.min.js"></script> -->
+<!-- <script src="//shared.cheapoffer.ru/jq/jquery-migrate-1.4.1.min.js"></script> -->
+<!-- <script src="//shared.cheapoffer.ru/jq/jquery-migrate-3.0.0.min.js"></script> -->
+<!-- <script src="//shared.cheapoffer.ru/jq/jquery-1.12.4.min.js"></script> -->
+<!-- <script src="//shared.cheapoffer.ru/jq/jquery-2.2.4.min.js"></script> -->
+<script src="jss\jquery-2.1.4.min.js"></script>
+<!-- <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script> -->
+<script src="jsss\form.validate1679.js?6"></script>
+<script src="jsss\form1679.js?6"></script>
+
+<!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+<![endif]-->
+
+
+<script>
+
+window.app = {
+    offers: {"4973":{"discount":"","price2":"3595","currency":{"code":"RUB","name":"\u0440\u0443\u0431"},"product_sku":"steklo","id":4973,"price":"1690","country":{"code":"RU","name":"\u0420\u043e\u0441\u0441\u0438\u044f"},"link":"","delivery_price":""},"5031":{"discount":"","price2":"136","currency":{"code":"BYR","name":"Br"},"product_sku":"steklo","id":5031,"price":"64","country":{"code":"BY","name":"\u0411\u0435\u043b\u0430\u0440\u0443\u0441\u044c"},"link":"","delivery_price":""}},
+    currentOffer: {"discount":"","price2":"3595","currency":{"code":"RUB","name":"\u0440\u0443\u0431"},"product_sku":"steklo","id":4973,"price":"1690","country":{"code":"RU","name":"\u0420\u043e\u0441\u0441\u0438\u044f"},"link":"","delivery_price":""},
+    allowedCountries: ["RU","BY"],
+    currentCountry: "RU",
+    _setOfferId: false,
+    setOffer: function (offerId) {
+        if (offerId == this._setOfferId) {
+            return ;
+        }
+        this._setOfferId = offerId;
+        if (offerId) {
+            fixAllForms();
+            var offer = app.offers[offerId];
+            var previousOffer = app.currentOffer;
+            app.currentOffer = offer;
+            $('select[name=offer], input[name=offer]').val(offerId);
+            $('input[name=country]').val(offer.country.code);
+            $('x-newprice').html(offer.price);
+            $('x-oldprice').html(offer.price2);
+            $('x-currency').html(offer.currency.name);
+            var event = jQuery.Event("offerchange");
+            event.previousOffer = previousOffer;
+            event.currentOffer = app.currentOffer;
+            $(document).trigger(event);
+        } else {
+            $('input[name=country]').val('');
+        }
+    }
+
+};
+
+$(document).on('change input', 'select[name=offer]', function(e) {
+    app.setOffer(this.value);
+});
+
+$(document).on('focus', 'form', function(e) {
+    app.setOffer(app.currentOffer.id);
+});
+
+$(function() {
+    app.setOffer($('select[name=offer]').val());
+});
+
+</script>
+<script src="jsss\form.incompleteeccb.js?3"></script>
+
+
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<meta name="viewport" content="width=device-width">
+	<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script><![endif]-->
+	<title>Жидкое стекло WILLSON SILANE GUARD</title>
+    <meta name="description" content="Эффективное средство для защиты ЛКП вашего авто! Придает сияющий блеск кузову автомобиля в течение долгого времени – до 1 года!">
+    <meta name="keywords" content="SILANE GUARD, удаление царапин на авто, удаление сколов на авто, автомобильные акссесуары, новинка для авто, купить со скидкой, средство от царапин ЛКП авто">
+	<link rel="shortcut icon" href="favicon.ico"> 
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="css\slick.css">
+	<link rel="stylesheet" href="css\timer.css">
+	<link rel="stylesheet" href="css\settings.css">
+	<link rel="stylesheet" href="css\style.css">
+
+
+        
+        <script src="js\detect.js" type="text/javascript"></script>
+        
+        <link href="css\popup-m1-style.css" rel="stylesheet" type="text/css">
+                <script src="js\popup-m1.js" type="text/javascript"></script>
+
+                <script type="text/javascript">
+                $(function(){
+                    M1.initComebacker(3000);
+                    
+                });
+                </script>
+        
+       
+</head>
+<body>
+
+<section class="block1">
+    <div class="wrap">
+        <div class="logo"></div>
+        <ul class="imp">
+            <li>Доказанная <br>эффективность</li>
+            <li>Множество положительных &nbsp;тел: +7 (977) 484-65-43&nbsp;<br>отзывов</li>
+            <li class="lo"></li>
+        </ul>
+        <div class="clear"></div>
+        <h1>&nbsp;<span>willson silane guard</span></h1>
+        <h2>революционный продукт &nbsp;– однокомпонентное жидкое стекло</h2>
+        <div class="sale">Акция! <p>-53%</p> скидка</div>
+        <div class="auto-small"></div>
+        <div class="stock">Осталось упаковок по акции: <span>6</span></div>
+        <ul class="recom">
+            <li><p>Сохраняет яркий и насыщенный цвет кузова</p></li>
+            <li><p>Подходит для любого типа лакокрасочного покрытия</p></li>
+            <li><p>Надежная защита от мелких царапин</p></li>
+            <li><p>Водоотталкивающий эффект</p></li>
+        </ul>
+        <div class="clear"></div>
+        <div class="price clearfix">
+            <span class="old-cost">2590 <x-currency>руб</x-currency></span>
+            <span class="new-cost">800 <x-currency>руб</x-currency></span>
+        </div>
+        <div class="clear"></div>
+        <a href="#buy" class="button-m">Заказать со скидкой</a>
+    </div>
+</section>  
+  
+<section class="block2">
+    <div class="wrap">
+        <h2 class="title"><span>2 шт = по 850 руб ДОСТАВКА &nbsp;от 2 шт бесплатно</span></h2>
+        <div class="product"></div>    
+        <div class="prtext">Сохраняет оригинальный яркий и насыщенный цвет кузова. Придает сияющий блеск кузову автомобиля в течение долгого времени – до 1 года! Дополнительно придает устойчивый водоотталкивающий эффект.</div>
+        <ul class="pr">
+            <li>Продукт от японской <br>компании&nbsp;</li>
+            <li>Однокомпонентный состав, <br>не требует смешивания</li>
+            <li>Одной упаковки хватает на <br>2-4 автомобиля/слоя</li>
+            <li>Простое нанесение покрытия <br>на ваше авто</li>
+        </ul>
+        <ul class="primg">
+            <li></li><li></li><li></li>
+        </ul>
+    </div>
+</section>
+
+<section class="block3">
+    <div class="wrap">
+        <h2 class="title"><span>Результаты использования</span></h2>
+        <ul class="result clearfix">
+            <li>сохраняет оригинальный <br>яркий и насыщенный <br>цвет кузова</li>
+            <li>придает сияющий блеск <br>кузову автомобиля <br>в течение долгого <br>времени</li>
+            <li>дополнительно <br>придает устойчивый <br>водоотталкивающий <br>эффект</li>
+            <li>защищает от мелких царапин, сколов, от влияния реагентов, от сильнощелочных шампуней при бесконтактных мойках</li>
+        </ul>
+    </div>
+</section>
+    
+<section class="block4">
+    <div class="wrap">
+        <div class="video-container">
+            <div class="youtube" id="CtScSA_dKfs"></div>
+        </div>
+        <ul class="step">
+            <li>Обильно смоченной губкой легкими движениями наносим раствор Silane Guard на чистое сухое авто</li>
+            <li>Ожидаем высыхания в течение 5-10 минут</li>
+            <li>Без нажима протираем поверхность салфеткой</li>
+            <li>Жидкое стекло Silane Guard нанесено и ЛКП вашего авто полностью защищено</li>
+        </ul>
+        <a href="#buy" class="button-m">Заказать со скидкой</a>
+    </div>
+</section> 
+    
+<section class="block5">
+    <div class="wrap">
+        <h2 class="title"><span>silane guard</span> Отзывы покупателей</h2>
+        <div class="reviews">
+            <div class="revcont">
+                <div class="rev clearfix">
+                    <img src="img\1.jpg" alt="Silane Guard отзывы покупателей">
+                    <span><b>Андрей Соколов, 43 года</b></span>
+                    <p>Эффект просто потрясающий! При корректном нанесении кузов начинает сверкать. Уходит паутина с кузова. Появляется отличная гидрофобность – вода скатывается (в том числе и грязь). Скажу кратко: "круто как услуга для своего любимого железного коня!"</p>
+                </div>
+            </div>
+            <div class="revcont">
+                <div class="rev clearfix r2">
+                    <img src="img\2.jpg" alt="Silane Guard отзывы покупателей">
+                    <span><b>Борис, 34 года</b></span>
+                    <p>Могу сказать одно: Willson Silane Guard – это средство из разряда must have для тех, кто заботится о внешнем виде собственного авто. Оно отлично скрывает мелкие царапины и паутинку на ЛКП. Существенно улучшает внешний вид авто. Лично у меня такое чувство, что я только что забрал машину из салона.</p>
+                </div>
+            </div>
+            <div class="revcont">
+                <div class="rev clearfix r3">
+                    <img src="img\3.jpg" alt="Silane Guard отзывы покупателей">
+                    <span><b>Владимир Козырев, 30 лет</b></span>
+                    <p>У меня авто не новое, поэтому перед нанесением этого средства сделал глубокую полировку. Эффект получился мегамощный! Машинка сияет и блестит, дождя не боится, кустов не боится. Уже прошло 5 месяцев, а покрытию всё нипочём. Всем советую!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>                
+
+
+<section class="block7">
+    <div class="wrap">
+        <div class="prim">
+            <div class="pcont">
+                <img src="img\prim1.jpg" alt="Silane Guard жидкое стекло">
+            </div>
+            <div class="pcont">
+                <img src="img\prim2.jpg" alt="Silane Guard жидкое стекло">
+            </div>
+            <div class="pcont">
+                <img src="img\prim3.jpg" alt="Silane Guard жидкое стекло">
+            </div>    
+        </div>
+        <a href="#buy" class="button-m">Заказать со скидкой</a>
+    </div>
+</section>
+
+<section class="block8">
+    <div class="wrap">
+        <h2 class="title"><span>silane guard</span> Как заказать?</h2>
+        <ul class="ship">
+            <li><p>Заполните форму заказа <br>на нашем сайте</p></li>
+            <li><p>Дождитесь звонка оператора <br>для подтверждения заказа</p></li>
+            <li><p>Доставка по Москве <br>300 руб. От 2 шт - бесплатно</p></li>
+        </ul>
+    </div>
+</section>
+
+<section class="block9">
+    <div class="wrap">
+        <h1>жидкое стекло <span>silane guard</span></h1>   
+        <h2>закажите сейчас <span>+7 (977) 484-65-43&nbsp;</span></h2>
+        <h3>революционный продукт от японской компании willson – однокомпонентное «жидкое стекло»!</h3>
+        <div class="auto-small"></div>
+        <div class="sale">Акция! <p>-53%</p> скидка</div>
+        <ul class="recom">
+            <li><p>Сохраняет яркий и насыщенный цвет кузова</p></li>
+            <li><p>Надежная защита от мелких царапин</p></li>
+            <li><p>Подходит для любого типа лакокрасочного покрытия</p></li>
+            <li><p>Водоотталкивающий эффект</p></li>
+        </ul>
+        <!-- <div class="stock">Осталось упаковок по акции: <span>25</span></div> -->
+        <div class="formbox">
+            <div class="foo">
+<p>1 шт. - 800 руб</p>
+<p>2 шт. - 750 руб</p>
+<p>
+<p> 
+            </div>   
+            <!--<div class="price clearfix">
+                <span class="old-cost">1960 <x-currency>руб</x-currency></span>
+                <span class="new-cost">980 <x-currency>руб</x-currency></span>
+            </div> -->   
+            <form id="buy" class="m1-form" action="#" method="post">
+                <input class="field" name="Имя" type="text" placeholder="Введите ваше имя">
+                <input class="field" name="Телефон" type="text" placeholder="Введите ваш телефон">
+<button type="button" class="cme-btn">Заказать со скидкой</button>
+<div class="callme-result"></div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="wrpa">
+        <!-- <p>
+      ООО "Интернет продажи" ИНН 7725157081 КПП 730201101 ОГРН 1247716358381 
+  </p>
+ -->
+<p>
+      107258, г. Москва, ул. Краснобогатырская, д.29 к2
+  </p>
+
+
+          <p class="tlight-link">
+        <a class="nav-link" target="_blank" href="#"></a>
+      </p>
+    
+    
+            <p class="conf-link doclinks">
+        <a class="nav-link" href="#" onclick="window.open('policy.html'); return false;">Политика конфиденциальности </a>
+      </p>
+      
+      <p class="policy-link doclinks">
+        <a class="nav-link" href="#" onclick="window.open('#'); return false;"></a>
+      </p>
+
+    
+    </div>
+</footer>
+
+<script type="text/javascript" charset="utf-8" src="callme\js\callme.js"></script>
+
+<script src="js\previewYouTube.js"></script>
+<script src="js\slick.min.js"></script>
+<script src="js\count.js"></script>
+<script src="js\main.js"></script>
+
+</body>
+
+</html>
