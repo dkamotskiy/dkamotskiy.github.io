@@ -1,8 +1,9 @@
-/*Подключение шрифтов*/
 @font-face {
-    font-family: Rain; /* Имя шрифта */
-    src: url(../fonts/Rain.ttf);
-   }
+	font-family: 'Rain';
+	src: url('../fonts/Rain.eot?') format('eot'), 
+	     url('../fonts/Rain.woff') format('woff'), 
+	     url('../fonts/Rain.ttf')  format('truetype');
+	}
 @font-face {
     font-family: Roboto-Bold; /* Имя шрифта */
     src: url(../fonts/Roboto-Bold.ttf);
