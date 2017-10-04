@@ -1,23 +1,5 @@
 /*Стилизация мобильной версии*/
 @media (max-width: 992px) {
-	.logo {
-		font-size: 36px;
-	}
-	.logo img {
-		max-width: 20px;
-	}
-	#header .rbold {
-		text-align: left;
-		font-size: 15px;
-		margin-top: 0px;
-	}
-	.predmet {
-		text-align: right;
-	}
-	.basket-summa {
-		text-align: right;
-		font-size: 20px;
-	}
 	.display-mobile {
 		display: block;
 	}
@@ -28,173 +10,196 @@
 		display: block;
 		flex: none;
 	}
-	#menu li.active a {
-		background-color: transparent;
-	}
-	.navbar-form {
-		margin-left: 0;
-		margin-right: 0;
-	}
-	.navbar-collapse {
-		overflow-x: hidden;
-	}
-	.navbar-default .navbar-nav>li>a {
-		padding-left: 30px;
-	}
-	.navbar-form {
-		border-top: none;
-		border-bottom: none;
-	}
-	#products img {
-		margin: 0 auto;
-	}
-	#dobry .display-mobile .col-xs-6 img {
-		margin: 0 auto;
-		margin-bottom: 10px;
-	}
-	.mt30 {
-		margin-top: 30px;
-	}
-	.pl20 {
-		padding-left: 0;
-	}
-	.pl20 p {
-		text-align: center !important;
-	}
-	.see-cities {
-		text-align: center;
-	}
-	#dobry .see-catalog {
-		display: block;
-	}
-	#popular .col-md-3 {
-		margin-bottom: 20px;
-	}
-	.second-line {
-		margin-top: 0;
-	}
-	#absolut .gray {
-		padding: 20px 15px;
-	}
-	#zakaz {
-		padding-top: 0;
-	}
-	.p40 {
-		padding-right: 0;
-	}
-	#zakaz label {
-		font-size: 11px;
-	}
-	#zakaz .mt-20  {
-		margin-top: -20px;
-		display: block;
-	}
-	#zakaz-send {
-		position: static;
-		display: block;
-		margin-top: 15px;
-	}
-	.footer-info {
-		margin-top: 30px;
-	}
-	img[src="img/yellowbox.png"] {
-		position: static !important;
-		max-width: 100% !important;	
-		margin: 0 auto;
-		display: block;
-	}
-	.slider-left {
-		display: none;
-	}
-	#slider .ttu:nth-child(1) {
-		font-size: 33px;
-	}
-	#slider .ttu:nth-child(2) {
-		font-size: 75px;
-		margin-top: -20px;
-	}
-	.advantages {
-		font-size: 15px;
-	}
-	.slider-right {
-		margin-left: -15px;
-	}
-	.slider-right .ttu {
-		text-align: center;
-	}
-	.polosa {
-		display: none;
-	}
-	.polosa-verh {
-		display: none;
-	}
-	.way {
+	#header-line {
 		font-size: 12px;
 	}
-	.pr15 {
-		padding-right: 15px;
+	#header-main {
+		min-height: 500px;
 	}
-	.name-of-product {
+	.img-first {
+		width: 100%;
+		margin-bottom: 0;
+	}
+	.advantages {
+		position: static;
+		padding-left: 0;
+	}
+	.advantages ul li {
+		font-size: 17px;
+	}
+	#first button {
+		position: static;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+	}
+	#first {
+		margin-bottom: 40px;
+	}
+	#uslugi p:nth-child(1) {
 		font-size: 30px;
 	}
-	#zakazat-tovar {
-		margin-top: 20px;
+	#uslugi * {
+		border: none;
 	}
-	.you-can-offer-text div {
-		float: left !important;
+	.hover-callcenter2 p {
+		font-size: 14px !important;
 	}
-	.you-can-offer-img {
-		margin-top: 20px;
+	#tovarys .zagolovok {
+		position: static;
 	}
-	#zakazat-tovar {
-		width: 250px;
+	#tovarys .left-block {
+		padding-top: 50px;
+		margin-left: -30px;
+		margin-right: -30px;
 	}
-	#brands .col-xs-6 img {
+	.obvodka {
+		display: none;
+	}
+	#tovarys .zagolovok p:nth-child(1), #dostavkavsrok .zagolovok p:nth-child(1) {
+		font-size: 30px;
+	}
+	#tovarys .zagolovok p:nth-child(2), #dostavkavsrok .zagolovok p:nth-child(2) {
+		font-size: 50px;
+		margin-top: -15px;
+	}
+	#tovarys .zagolovok p:nth-child(3), #dostavkavsrok .zagolovok p:nth-child(3) {
+		font-size: 21px;
+    	margin-top: -18px;
+	}
+	#tovarys .zagolovok {
+		display: table;
+	}
+	.we-always {
+		margin-top: 30px;
+		font-size: 25px;
+		text-align: center;
+	}
+	#find-tovar {
+		margin-left: auto;
+		margin-right: auto;
 		display: block;
-		margin: 0 auto;
 	}
-	.panel-upravleniya input {
-		width: 65px;
+	.selector {
+		margin-left: -30px;
+		margin-right: -30px;
 	}
-	.mt15r {
-		margin-top: 15px;
+	.selector .col-xs-6 {
+		height: 170px;
+		-webkit-background-size: cover;
+		background-size: cover;
 	}
-	.navbar-right {
-		float: left !important;
-		margin-left: -15px;
+	#kachestvo p:nth-child(1) {
+		font-size: 30px;
 	}
-	#dobry img {
-		display: block;
-		margin: 0 auto;
+	#kachestvo .ser {
+		margin-top: -20px;
+		font-size: 25px;
 	}
-	#slider {
-		background: #fff569;
+	#kachestvo .col-md-2, #kachestvo2 .col-md-2 {
+		width: 100%;
+		margin-bottom: 15px;
 	}
-	.glav-photo img {
-		margin: 0 auto;
+	.fon {
+		height: auto;
 	}
-}
-@media screen and (min-width: 768px) and (max-width: 992px) {
-	#menu .container {
+	#dostavkavsrok {
+		height: auto;
+	}
+	#dostavkavsrok .zagolovok {
+		position: static;
+	}
+	#specialoffer {
+		display: none;
+	}
+	.chem, .tem {
+		position: static;
+	}
+	.mart-obvodka {
+		display: none;
+	}
+	#mart p:nth-child(1) {
+		font-size: 25px;
+	}
+	#mart p:nth-child(2) {
+		font-size: 20px;
+	}
+	#mart p:nth-child(3) {
+		margin-top: 30px;
+		text-align: center;
+		font-size: 22px;
+	}
+	#forma input {
+		margin-bottom: 10px;
+	}
+	.dlya {
+		text-align: center;
+	}
+	#nashi p:nth-child(1) {
+		font-size: 30px;
+	}
+	#footer {
+		font-size: 14px;
+	}
+	#footer span {
+		font-size: 12px;
+	}
+	#dostavkavsrok {
+		display: none;
+	}
+	#better * {
+		position: static;
+	}
+	#better {
 		padding-left: 0;
 		padding-right: 0;
+		height: auto;
 	}
-	#menu li {
+	.chem {
+		width: 100%;
+		padding-top: 30px;
+		padding-bottom: 30px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.chem span {
+		font-size: 32px;
+	}
+	.tem {
+		width: 100%;
+		height: auto;
+	}
+	.item {
+		margin-top: 0;
+		margin-left: 0;
+		padding: 20px 15px;
+	}
+	.slider-button {
+		 display: none;
+	}
+	#better {
+		background-color: #00192d;
+		width: 100%;
+	} 
+	#menu-adaptive .row {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	#first {
+		padding-top: 20px;
+	}
+	.ham {
+		height: 40px;
+    float: right;
+    cursor: pointer;
+	}
+	#demo a {
+		display: block;
 		font-size: 18px;
-	}
-	#menu li a {
-		padding: 8px 12px;
-	}
-}
-@media screen and (min-width: 500px) and (max-width: 992px) {
-	#zakazat-tovar {
-		margin-top: 30px;
-	}
-	#plus {
-		top: 30px;
-	}
-	#minus {
-		top: 60px;
+		color: #000;
+		padding-top: 15px;
+		padding-bottom: 15px;
 	}
 }
 /*Стилизация десктопной версии*/
@@ -213,50 +218,39 @@
 	    display: flex;
 	    flex:1 0 auto;
 	}
-	.pl20 {
-		padding-left: 20px;
-	}
 }
-/*Стилизация 1024*/
-@media screen and (max-width: 1200px) and (min-width: 1000px) {
-	.header-phone {
-		font-size: 15px;
+/*Стилизация 1024-------------------------------------------------*/
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+	#menu .col-md-6 a {
+		margin-right: 10px;
+		font-size: 16px;
 	}
-	.header-city {
-		font-size: 15px;
+	.advantages {
+		padding-top: 30px;
+		padding-bottom: 20px;
+		padding-left: 10px;
+		padding-right: 10px;
 	}
-	.logo {
-		font-size: 57px;
+	.first-button {
+		left: 15px;
+		padding: 10px 15px;
+		font-size: 17px;
 	}
-	.pink-button {
-		font-size: 12px;
+	.delivery-service {
+		right: 10px;
 	}
-	#menu li {
-		font-size: 18px;
+	.obvodka {
+		width: 310px;
 	}
-	.slider-right {
-		text-align: right;
+	.special-rt {
+		font-size: 55px;
 	}
-	.footer-phone {
-		font-size: 21px;
+	.special-rb {
+		margin-top: 30px;
+		padding-top: 100px;
+		padding-bottom: 100px;
 	}
-	p.footer-copyright {
-		font-size: 15px;
-	}
-	.sitemap li {
-		font-size: 12px;
-	}
-	.way {
-		font-size: 12px;
-	}
-	#zakazat-tovar {
-		width: 200px;
-	}
-	.panel-upravleniya input {
-		width: 72px;
-	}
-	.kartridj {
-		width: 29px;
-		height: 29px;
+	#mart p:nth-child(1) {
+		font-size: 38px;
 	}
 }

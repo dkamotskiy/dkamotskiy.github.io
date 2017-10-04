@@ -13,532 +13,386 @@
 	<link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
-	<div id="header" class="container">
+<!-- Шапка ===============================================-->
+	<div id="header" class="container-fluid">
+		<div id="header-line">
+			<div class="container">
+				<div class="row">
+				<div class="col-md-6 col-xs-6">
+					<p class="text-left">Товары для интернет-магазинов с Китая</p>
+				</div>
+				<div class="col-md-6 col-xs-6">
+					<p class="text-right">+38<span> (093) </span>765 85 12</p>
+				</div>
+			</div>	
+			</div>	
+		</div>
+		<div id="header-main">
+				<img src="img/logo.png" alt="" class="img-responsive">
+		</div>
+	</div>
+<!-- Меню-оснновное================================================== -->
+	<div id="menu" class="container-fluid display-desktop">
+		<div class="container">
+			<div class="row">
+			<div class="col-md-3">
+				<img src="img/logo-small.png" alt="" class="img-responsive">
+			</div>
+			<div class="col-md-6">
+				<div>
+					<a href="#">Продукция</a>
+					<a href="#">Что мы предлагаем</a>
+					<a href="#">Оптовикам</a>
+					<a href="#">Контакты</a>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<button class="menu-button" data-toggle="modal" data-target="#zakaz-zvonok">Заказать звонок</button>
+			</div>
+		</div>
+		</div>
+	</div>
+<!-- Меню адаптивное========================================== -->
+	<div id="menu-adaptive" class="container-fluid display-mobile">
 		<div class="row">
-			<div class="col-md-3 col-xs-6">
-				<span class="logo"><span>A</span>PRINTER</span>
-				<p class="text-center rbold">ПРОДАЖА<br>КАРТРИДЖЕЙ<br>И ОРГ.ТЕХНИКИ</p>
+			<div class="col-xs-6">
+			<p class="text-center"><img src="img/logo-small.png" alt="" class="img-responsive"></p>
 			</div>
-			<div class="col-md-2 text-center display-desktop">
-				<p class="header-phone">+7 (831) 410-94-51</p>
-				<p class="header-city">Нижний Новгород</p>
-				<p class="header-time">(с 9.00 до 18.00)</p>
-				<p class="header-phone">+7 (495) 587-40-36</p>
-				<p class="header-city">Москва</p>
-				<p class="header-time" style="margin-bottom: 0;">(с 9.00 до 18.00)</p>
-			</div>
-			<div class="col-md-2 text-center display-desktop">
-				<p class="header-phone">+7 (812) 678-96-67</p>
-				<p class="header-city">Санкт-Петербург</p>
-				<p class="header-time">(с 9.00 до 18.00)</p>
-				<p class="header-phone">+7 (812) 678-96-67</p>
-				<p class="header-city">Санкт-Петербург</p>
-				<p class="header-time" style="margin-bottom: 0;">(с 9.00 до 18.00)</p>
-			</div>
-			<div class="col-md-2 text-center display-desktop">
-				<p class="header-phone">+7 (812) 678-96-67</p>
-				<p class="header-city">Санкт-Петербург</p>
-				<p class="header-time">(с 9.00 до 18.00)</p>
-				<a href="#" class="all-cities">Все города</a>
-				<button class="pink-button text-center">Заказать обратный<br>звонок</button>
-			</div>
-			<div class="col-md-3 col-xs-6">
-				<p class="text-right logo"><img src="img/basket.png" alt="" class="img-responsive">КОРЗИНА</p>
-				<p class="predmet text-center"><span>2</span> предмета</p>
-				<p class="basket-summa text-center"><span>10000</span> рублей</p>
+			<div class="col-xs-6">
+				<img src="img/hamburger.png" alt="" class="ham" data-toggle="collapse" data-target="#demo">
 			</div>
 		</div>
-	</div>
-<!-- Меню======================================================================= -->
-	<div id="menu" class="container-fluid">
-		<div class="container">
-			<nav class="navbar navbar-default" role="navigation">
-		    <div class="container-fluid">
-		      <div class="navbar-header">
-		        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-		              <span class="sr-only">Навигация</span>
-		              <span class="icon-bar"></span>
-		              <span class="icon-bar"></span>
-		              <span class="icon-bar"></span>
-		            </button>
-		      </div>
-
-		      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-		        <ul class="nav navbar-nav">
-		          <li class="dropdown active">
-		            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Каталог товаров</a>
-		            <ul class="dropdown-menu">
-		              <li><a href="#">Картриджи для принтеров</a></li>
-		              <li><a href="#">Каплеструйные чернила</a></li>
-		              <li><a href="#">Лазерные принтеры</a></li>
-		              <li><a href="#">МФУ</a></li>
-		              <li><a href="#">Принтеры штрих кодов</a></li>
-		              <li><a href="#">Бумага офисная</a></li>
-		              <li><a href="#">Фотобумага</a></li>
-		               <li><a href="#">Пленка для факса</a></li>
-		                <li><a href="#">Заправка картриджей</a></li>
-		                 <li><a href="#">Тонер для заправки</a></li>
-		            </ul>
-		          </li>
-		          <li><a href="#">О компании</a></li>
-		          <li><a href="#">Заправка картриджей</a></li>
-		          <li><a href="#">Контакты</a></li>
-		          <li><a href="#">Ремонт оргтехники</a></li>
-		          <li><a href="#">Доставка</a></li>
-		          <li><a href="#">Способы оплаты</a></li>
-		          
-		        </ul>
-		        
-		        <ul class="nav navbar-nav navbar-right">
-		          <form class="navbar-form navbar-left" role="search">
-		          <div class="form-group">
-		            <input type="text" class="form-control blue-text" placeholder="Поиск по сайту">
-		            <img src="img/search.png" alt="">
-		          </div>
-		        </form>
-		        </ul>
-		      </div>
-		    </div>
-		  </nav>
+		<div id="demo" class="collapse">
+					<a href="#">Продукция</a>
+					<a href="#">Что мы предлагаем</a>
+					<a href="#">Оптовикам</a>
+					<a href="#">Контакты</a>
 		</div>
+		<p class="text-center"><button class="menu-button" data-toggle="modal" data-target="#zakaz-zvonok">Заказать звонок</button></p>
 	</div>
-<!-- слайдер=========================================================================== -->
-	
-	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="false">
-	  <!-- Wrapper for slides -->
-	  <div class="carousel-inner">
-	    <div class="item active">
-	      <div id="slider" class="container-fluid" style="position: relative;">
+<!-- First================================================ -->
+	<div id="first" class="container">
+		<div class="img-first">
+			<img src="img/first.jpg" alt="" class="img-responsive">
+			<span class="display-desktop">first</span>
+		</div>
+		<div class="delivery-service display-desktop">
+			<p>DELIVERY</p>
+			<div class="hr"></div>
+			<p>SERVISE</p>
+		</div>
+		<div class="advantages">
+			<ul>
+				<li>Более 100 позиций товара всегда в наличии</li>
+				<li>ОПТ от 5 штук</li>
+				<li>Цены ниже рыночных до 10%</li>
+				<li>Меняем бракованный товар</li>
+			</ul>
+		</div>
+		<button class="first-button" data-toggle="modal" data-target="#zakaz-zvonok">Получить консультацию</button>
+	</div>
+<!-- Услуги================================================= -->
+	<div class="container-fluid" id="uslugi">
 		<div class="container">
-		<img src="img/left.png" alt="" class="carousel-left-strelka" href="#carousel-example-generic" data-slide="prev">
-			<div class="row equal">
-			<div class="col-md-5 slider-left">
-				
-			</div>
-			<div class="col-md-7 slider-right">
-				<img src="img/yellowbox.png" alt="" style="    max-width: 480px;
-    position: absolute;
-    top: 25%;
-    left: -384px;
-    z-index: 9999;">
-				<div style="margin: 0 auto; display: table;">
-					<p class="ttu">Совместимые картриджи</p>
-					<p class="ttu">Yellow Box</p>
-					<p class="advantages"><img src="img/adv1.png" alt="">Контроль за качеством на<br><span>производстве</span></p>
-					<p class="advantages"><img src="img/adv2.png" alt="">Сокращение стоимости печати</p>
-					<p class="advantages"><img src="img/adv3.png" alt="">Гарантия качества печати</p>
+			<p class="text-center">Наши услуги</p>
+			<div class="uslugi-row1">
+				<div class="row">
+					<div class="col-md-6 borr hoverrr">
+						<div class="hover-callcenter">
+							<img src="img/uslugi1.png" alt="" class="img-responsive">
+							<p class="text-center">Поиск и доставка товара с Китая (от 3х дней)</p>
+						</div>
+						<div class="hover-callcenter2">
+							<p>Колл-центр:</p>
+							<p>Наши операторы колл-центра обучены и регулярно повышают квалификацию специально для продаж в интернет-магазинах. Мы знаем как для Вас важен средний чек и процент</p>
+						</div>
+					</div>
+					<div class="col-md-6 hoverrr">
+						<div class="hover-callcenter">
+							<img src="img/uslugi2.png" alt="" class="img-responsive">
+							<p class="text-center">Наличие товара в Украине на опт и дропшиппинг</p>
+						</div>
+						<div class="hover-callcenter2">
+							<p>Колл-центр:</p>
+							<p>Наши операторы колл-центра обучены и регулярно повышают квалификацию специально для продаж в интернет-магазинах. Мы знаем как для Вас важен средний чек и процент</p>
+						</div>
+					</div>
 				</div>
-				<img src="img/right.png" alt="" class="carousel-right-strelka" href="#carousel-example-generic" data-slide="next">
 			</div>
-		</div>
-
-		</div>
-		<div class="polosa"></div>
-		<div class="polosa-verh"></div>
-	</div>
-	    </div>
-	    <div class="item">
-	    	<div id="slider" class="container-fluid" style="position: relative;">
-		<div class="container">
-			<img src="img/left.png" alt="" class="carousel-left-strelka" href="#carousel-example-generic" data-slide="prev">
-			<div class="row equal">
-			<div class="col-md-5 slider-left">
-				
-			</div>
-			<div class="col-md-7 slider-right">
-				<img src="img/yellowbox.png" alt="" style="    max-width: 480px;
-    position: absolute;
-    top: 25%;
-    left: -384px;
-    z-index: 9999;">
-				<div style="margin: 0 auto; display: table;">
-					<p class="ttu">Совместимые картриджи</p>
-					<p class="ttu">Yellow Box</p>
-					<p class="advantages"><img src="img/adv1.png" alt="">Контроль за качеством на<br><span>производстве</span></p>
-					<p class="advantages"><img src="img/adv2.png" alt="">Сокращение стоимости печати</p>
-					<p class="advantages"><img src="img/adv3.png" alt="">Гарантия качества печати</p>
+			<div class="uslugi-row2">
+				<div class="row">
+					<div class="col-md-4 borr hoverrr">
+						<div class="hover-callcenter">
+							<img src="img/uslugi3.png" alt="" class="img-responsive">
+							<p class="text-center">Товар под реализацию</p>
+						</div>
+						<div class="hover-callcenter2">
+							<p>Колл-центр:</p>
+							<p>Наши операторы колл-центра обучены и регулярно повышают квалификацию специально для продаж в интернет-магазинах. Мы знаем как для Вас важен средний чек и процент</p>
+						</div>
+					</div>
+					<div class="col-md-4 borr hoverrr">
+						<div class="hover-callcenter">
+							<img src="img/uslugi4.png" alt="" class="img-responsive">
+							<p class="text-center">Колл-центр</p>
+						</div>
+						<div class="hover-callcenter2">
+							<p>Колл-центр:</p>
+							<p>Наши операторы колл-центра обучены и регулярно повышают квалификацию специально для продаж в интернет-магазинах. Мы знаем как для Вас важен средний чек и процент</p>
+						</div>
+					</div>
+					<div class="col-md-4 hoverrr">
+						<div class="hover-callcenter">
+							<img src="img/uslugi5.png" alt="" class="img-responsive">
+							<p class="text-center">Консалтинг</p>
+						</div>
+						<div class="hover-callcenter2">
+							<p>Колл-центр:</p>
+							<p>Наши операторы колл-центра обучены и регулярно повышают квалификацию специально для продаж в интернет-магазинах. Мы знаем как для Вас важен средний чек и процент</p>
+						</div>
+					</div>
 				</div>
-				<img src="img/right.png" alt="" class="carousel-right-strelka" href="#carousel-example-generic" data-slide="next">
 			</div>
 		</div>
-
-		</div>
-		<div class="polosa"></div>
-		<div class="polosa-verh"></div>
 	</div>
-	    </div>
-	    <div class="item">
-	    	<div id="slider" class="container-fluid" style="position: relative;">
+<!-- Товары с Китая=============================================== -->
+	<div class="container-fluid" id="tovarys">
 		<div class="container">
-			<img src="img/left.png" alt="" class="carousel-left-strelka" href="#carousel-example-generic" data-slide="prev">
-			<div class="row equal">
-			<div class="col-md-5 slider-left">
-				
-			</div>
-			<div class="col-md-7 slider-right">
-				<img src="img/yellowbox.png" alt="" style="    max-width: 480px;
-    position: absolute;
-    top: 25%;
-    left: -384px;
-    z-index: 9999;">
-				<div style="margin: 0 auto; display: table;">
-					<p class="ttu">Совместимые картриджи</p>
-					<p class="ttu">Yellow Box</p>
-					<p class="advantages"><img src="img/adv1.png" alt="">Контроль за качеством на<br><span>производстве</span></p>
-					<p class="advantages"><img src="img/adv2.png" alt="">Сокращение стоимости печати</p>
-					<p class="advantages"><img src="img/adv3.png" alt="">Гарантия качества печати</p>
+			<div class="col-md-6 left-block">
+				<div class="zagolovok">
+					<p>ТОВАРЫ</p>
+					<p>С КИТАЯ</p>
+					<p>ОТ 3Х ДНЕЙ</p>
 				</div>
-				<img src="img/right.png" alt="" class="carousel-right-strelka" href="#carousel-example-generic" data-slide="next">
+				<div class="obvodka"></div>
+				<p class="we-always">Мы всегда найдем нужный товар в кратчайшие сроки</p>
+				<button id="find-tovar" data-toggle="modal" data-target="#tovar-modal">Найти товар</button>
+			</div>
+			<div class="col-md-6 selector">
+				<div class="row">
+					<div class="col-md-6 col-xs-6" id="muj-tov">
+						<div class="red-selector"><span>Мужские товары</span></div>
+					</div>
+					<div class="col-md-6 col-xs-6" id="jhen-tov">
+						<div class="red-selector"><span>Женские товары</span></div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6 col-xs-6" id="wow-tov">
+						<div class="red-selector"><span class="text-center">WOW товары и Хиты продаж</span></div>
+					</div>
+					<div class="col-md-6 col-xs-6" id="det-tov">
+						<div class="red-selector"><span>Товары для детей</span></div>
+					</div>
+				</div>
 			</div>
 		</div>
-
+	</div>
+<!-- Качество======================================================= -->
+	<div id="kachestvo" class="container-fluid">
+		<div class="container">
+			<p class="text-center">качество прежде всего</p>
+			<p class="text-center ser">доставка с китая</p>
+			<div class="row">
+				<div class="col-md-2">
+					<img src="img/uslugi10.png" alt="" class="img-responsive">
+					<p class="text-center">Представительство в Китае</p>
+				</div>
+				<div class="col-md-2">
+					<img src="img/uslugi6.png" alt="" class="img-responsive">
+					<p class="text-center">Проверка качества перед отправкой</p>
+				</div>
+				<div class="col-md-2">
+					<img src="img/uslugi7.png" alt="" class="img-responsive">
+					<p class="text-center">Обмен/возврат в случае брака</p>
+				</div>
+				<div class="col-md-2">
+					<img src="img/uslugi8.png" alt="" class="img-responsive">
+					<p class="text-center">Подберем грамотную допродажу</p>
+				</div>
+				<div class="col-md-2">
+					<img src="img/uslugi9.png" alt="" class="img-responsive">
+					<p class="text-center">Сотрудничество с фабриками</p>
+				</div>
+			</div>
+			<p class="text-center ser" style="margin-top: 45px;">товары в украине</p>
 		</div>
-		<div class="polosa"></div>
-		<div class="polosa-verh"></div>
 	</div>
-	    </div>
-	    </div>
-	  </div>
-
-	  <!-- Controls -->
-	  <!-- <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-	    <span class="glyphicon glyphicon-chevron-left"></span>
-	  </a>
-	  <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-	    <span class="glyphicon glyphicon-chevron-right"></span>
-	  </a> -->
+<!-- Качество-пробел================================================== -->
+	<div id="kachestvo-probel" class="container-fluid"></div>
+<!-- Качество-2======================================================= -->
+	<div id="kachestvo2" class="container-fluid">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2">
+					<img src="img/tovary1.png" alt="" class="img-responsive">
+					<p class="text-center">Все новинки у нас на складе</p>
+				</div>
+				<div class="col-md-2">
+					<img src="img/tovary2.png" alt="" class="img-responsive">
+					<p class="text-center">Более 100 позиций уже в Украине</p>
+				</div>
+				<div class="col-md-2">
+					<img src="img/tovary3.png" alt="" class="img-responsive">
+					<p class="text-center">Ежедневный отчет</p>
+				</div>
+				<div class="col-md-2">
+					<img src="img/tovary4.png" alt="" class="img-responsive">
+					<p class="text-center">Личный менеджер</p>
+				</div>
+				<div class="col-md-2">
+					<img src="img/tovary5.png" alt="" class="img-responsive">
+					<p class="text-center">Доступны товары на мелкий опт и дропшиппинг</p>
+				</div>
+			</div>
+		</div>
 	</div>
-<!-- продукты=========================================================================== -->
-	<div class="container" id="products">
+<!-- Доставка в срок ======================================================-->
+	<div class="container-fluid" id="dostavkavsrok">
 		<div class="row">
-			<div class="col-md-2 col-xs-6">
-				<a href="#"><img src="img/1.jpg" alt="" class="img-responsive hover1"></a>
-				<p class="text-center">КАРТРИДЖИ ДЛЯ ПРИНТЕРОВ</p>
-			</div>
-			<div class="col-md-2 col-xs-6">
-				<a href="#"><img src="img/2.jpg" alt="" class="img-responsive hover2"></a>
-				<p class="text-center">Чернила для каплеструйных принтеров</p>
-			</div>
-			<div class="col-md-2 col-xs-6">
-				<a href="#"><img src="img/3.jpg" alt="" class="img-responsive hover3"></a>
-				<p class="text-center">Лазерные принтеры</p>
-			</div>
-			<div class="col-md-2 col-xs-6">
-				<a href="#"><img src="img/4.jpg" alt="" class="img-responsive hover4"></a>
-				<p class="text-center">Многофункциональные устройства</p>
-			</div>
-			<div class="col-md-2 col-xs-6">
-				<a href="#"><img src="img/5.jpg" alt="" class="img-responsive hover5"></a>
-				<p class="text-center">Принтеры штрих кодов</p>
-			</div>
-			<div class="col-md-2 col-xs-6">
-				<a href="#"><img src="img/6.jpg" alt="" class="img-responsive hover6"></a>
-				<p class="text-center">Бумага офисная</p>
+			<div class="col-md-6"></div>
+			<div class="col-md-6 fon">
 			</div>
 		</div>
-		<div class="row second-line">
-			<div class="col-md-1"></div>
-			<div class="col-md-2 col-xs-6">
-				<a href="#"><img src="img/7.jpg" alt="" class="img-responsive hover7"></a>
-				<p class="text-center">Фотобумага</p>
+		<div class="container">
+			<div class="col-md-6 left-block">
+				<div class="zagolovok">
+					<p>ДОСТАВКА</p>
+					<p>В СРОК</p>
+				</div>
+				<div class="obvodka"></div>
+				<p class="we-always">Мы всегда найдем нужный товар в кратчайшие сроки</p>
+				<button id="have-a-consult" data-toggle="modal" data-target="#zakaz-zvonok">Получить консультацию</button>
 			</div>
-			<div class="col-md-2 col-xs-6">
-				<a href="#"><img src="img/8.jpg" alt="" class="img-responsive hover8"></a>
-				<p class="text-center">Пленка для факса</p>
-			</div>
-			<div class="col-md-2 col-xs-6">
-				<a href="#"><img src="img/9.jpg" alt="" class="img-responsive hover9"></a>
-				<p class="text-center">Заправка картриджей</p>
-			</div>
-			<div class="col-md-2 col-xs-6">
-				<a href="#"><img src="img/10.jpg" alt="" class="img-responsive hover10"></a>
-				<p class="text-center">Тонер для заправки</p>
-			</div>
-			<div class="col-md-2 col-xs-6">
-				<a href="#"><img src="img/11.jpg" alt="" class="img-responsive hover11"></a>
-				<p class="text-center">Ремонт орг техники</p>
-			</div>
-			<div class="col-md-1"></div>
+			<div class="col-md-6"></div>
 		</div>
 	</div>
-	<div class="hr"></div>
-<!-- Продажа======================================================== -->
-	<div id="prodaja">
-		<p class="text-center">Продажа новых оригинальных или</p>
-		<p class="text-center">совместимых картриджей для принтеров</p>
-	</div>
-	<div class="hr"></div>
-<!-- Добрый день! ===============================================================-->
-	<div id="dobry" class="container">
+<!-- Специальное предложение =========================================================-->
+	<div id="specialoffer" class="container">
 		<div class="row">
 			<div class="col-md-6">
-				<img src="img/youtube.jpg" alt="" class="img-responsive">
-				<br>
-				<p class="text-center">Мы продаем как оригинальные картриджи так и их совместимые аналоги:</p>
-				<br>
-				<div class="row display-desktop">
-					<div class="col-md-4"><img src="img/hp.jpg" alt="" class="img-responsive"></div>
-					<div class="col-md-4"><img src="img/canon.jpg" alt="" class="img-responsive"></div>
-					<div class="col-md-4"><img src="img/epson.jpg" alt="" class="img-responsive"></div>
-				</div>
-				<div class="row second-line display-desktop">
-					<div class="col-md-4"><img src="img/samsung.jpg" alt="" class="img-responsive"></div>
-					<div class="col-md-4"><img src="img/brother.jpg" alt="" class="img-responsive"></div>
-					<div class="col-md-4"><img src="img/xerox.jpg" alt="" class="img-responsive"></div>
-				</div>
-				<div class="row display-mobile">
-					<div class="col-xs-6"><img src="img/hp.jpg" alt="" class="img-responsive"></div>
-					<div class="col-xs-6"><img src="img/canon.jpg" alt="" class="img-responsive"></div>
-				</div>
-				<div class="row display-mobile">
-					<div class="col-xs-6"><img src="img/epson.jpg" alt="" class="img-responsive"></div>
-					<div class="col-xs-6"><img src="img/brother.jpg" alt="" class="img-responsive"></div>
-				</div>
-				<div class="row display-mobile">
-					<div class="col-xs-6"><img src="img/brother.jpg" alt="" class="img-responsive"></div>
-					<div class="col-xs-6"><img src="img/xerox.jpg" alt="" class="img-responsive"></div>
-				</div>
+				<img src="img/special.jpg" alt="" class="img-responsive">
 			</div>
-			<div class="col-md-6 mt30">
-				<p class="text-center">Добрый день, Уважаемый Посетитель!</p>
-				<p class="text-left">Наша компания благодарит Вас за интерес, проявленный к нам и к картриджам, которые мы продаем. Надеемся, что работа с нашим сайтом будет удобна и позволит получить Вам максимум интересующей информации</p>
-				<p class="text-left">Для обдуманной, уверенной покупки Вы всегда можете подъехать к нам в офис и лично ознакомиться со всем нашим ассортиментом в демо-зале, ждем Ваc за покупками! Проводя постоянный анализ потребительского спроса, мы стараемся вводить в ассортиментный ряд картриджи, которые удовлетворят спрос потенциального покупателя. Купить картриджи Вы можете за наличный и безналичный учет.</p>
-				<p class="text-left">Также мы предлагаем вам широкий спектр расходных материалов для вашего офиса.</p>
-				<p class="text-left">Мы всегда готовы пойти на помощь нашим коллегам и партнерам, по всем вопросам и предложениям. Ждем Ваших звонков.</p>
-				<br>
-				<div class="pl20">
-					<p class="text-center" style="text-align: left;">Доставляем нашими силами:</p>
-					<p class="text-left">Картриджи hp, canon, epson, samsung, brother, xerox по Москве, Санкт-Петербургу и Новосибирску</p>
-					<br>
-					<a href="#" class="text-right see-cities">Посмотреть весь список городов</a>
+			<div class="col-md-6">
+				<div class="special-rt">
+					<p>специальное</p>
+					<div class="hr"></div>
+					<p>предложение</p>
 				</div>
-				<br>
-				<p class="text-center"><a href="#" class="text-center see-catalog">Посмотреть все картриджи на нашем сайте...</a></p>
-				
-			</div>
-		</div>
-	</div>
-	<div class="hr"></div>
-<!-- Популярное=============================================================== -->
-	<div id="popular" class="container">
-		<p class="text-center">ПОПУЛЯРНОЕ</p>
-		<br>
-		<div class="row">
-			<div class="col-md-3">
-				<div>
-					<img src="img/popular.jpg" alt="" class="img-responsive">
-					<br>
-					<p class="text-center">Картридж HP 81X черный (CF281X) для HP</p>
-					<br>
-					<p class="text-center"><button class="popular-pink">Заказать</button></p>
-				</div>
-			</div>
-			<div class="col-md-3">
-				<div>
-					<img src="img/popular.jpg" alt="" class="img-responsive">
-					<br>
-					<p class="text-center">Картридж HP 81X черный (CF281X) для HP</p>
-					<br>
-					<p class="text-center"><button class="popular-pink">Заказать</button></p>
-				</div>
-			</div>
-			<div class="col-md-3">
-				<div>
-					<img src="img/popular.jpg" alt="" class="img-responsive">
-					<br>
-					<p class="text-center">Картридж HP 81X черный (CF281X) для HP</p>
-					<br>
-					<p class="text-center"><button class="popular-pink">Заказать</button></p>
-				</div>
-			</div>
-			<div class="col-md-3">
-				<div>
-					<img src="img/popular.jpg" alt="" class="img-responsive">
-					<br>
-					<p class="text-center">Картридж HP 81X черный (CF281X) для HP</p>
-					<br>
-					<p class="text-center"><button class="popular-pink">Заказать</button></p>
-				</div>
-			</div>
-		</div>
-		<div class="row second-line">
-			<div class="col-md-3">
-				<div>
-					<img src="img/popular.jpg" alt="" class="img-responsive">
-					<br>
-					<p class="text-center">Картридж HP 81X черный (CF281X) для HP</p>
-					<br>
-					<p class="text-center"><button class="popular-pink">Заказать</button></p>
-				</div>
-			</div>
-			<div class="col-md-3">
-				<div>
-					<img src="img/popular.jpg" alt="" class="img-responsive">
-					<br>
-					<p class="text-center">Картридж HP 81X черный (CF281X) для HP</p>
-					<br>
-					<p class="text-center"><button class="popular-pink">Заказать</button></p>
-				</div>
-			</div>
-			<div class="col-md-3">
-				<div>
-					<img src="img/popular.jpg" alt="" class="img-responsive">
-					<br>
-					<p class="text-center">Картридж HP 81X черный (CF281X) для HP</p>
-					<br>
-					<p class="text-center"><button class="popular-pink">Заказать</button></p>
-				</div>
-			</div>
-			<div class="col-md-3">
-				<div>
-					<img src="img/popular.jpg" alt="" class="img-responsive">
-					<br>
-					<p class="text-center">Картридж HP 81X черный (CF281X) для HP</p>
-					<br>
-					<p class="text-center"><button class="popular-pink">Заказать</button></p>
+				<div class="special-rb">
+					<p>На первый оптовый заказ <br>от 100 штук <span>скидка до 10%</span></p>
+					<p class="text-center" style="position: inherit; z-index: 99;"><button id="special-button" data-toggle="modal" data-target="#zakaz-zvonok">ПОЛУЧИТЬ СКИДКУ</button></p>
+					<div class="special-obvodka"></div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="hr"></div>
-<!-- Наша компания==================================================================== -->
-	<div id="nasha" class="container">
-		<p class="text-center">Наша компания предлагает услуги по заправке</p>
-		<p class="text-center">и восстановлению картриджей</p>
-	</div>
-	<div class="hr"></div>
-<!-- Компания Абсолют -->
-	<div id="absolut" class="container">
-		<p class="text-center">Компания Абсолют занимается заправкой и восстановлением картриджей ведущих производителей,</p>
-		<p class="text-center">таких как Hewlett-Packard, Canon, Epson, Xerox, Brother, Lexmark, Samsung и Panasonic.</p>
-		<p class="text-justify">При восстановлении картриджей используются только оригинальные комплектующие, полностью восстанавливается работоспособность, при этом печать абсолютно не теряет в качестве.</p>
-		<p class="text-justify">Помимо восстановления наша компания так же занимается заправкой картриджей. Что является вариантом куда более экономичным, нежели покупка нового картриджа каждый раз, как только заканчивается тонер. Оригинальные картриджи зачастую стоят едва ли не столько же, сколько сам принтер. Есть над чем задуматься. Мы предлагаем выгодное решение без потери качества печати. Важно отметить, что заправкой картриджей должны заниматься только специалисты, в этом деле существует множество нюансов, которые вряд ли известны большинству людей. Люди не знакомые с устройством картриджей и принтеров могут ненароком повредить аппаратуру, совершить ошибку, после которой даже специалист уже не сможет вернуть былое качество печати вашей техники. В итоге вы потеряете не только время, но и деньги.</p>
-		<p class="text-justify">Заправлять картриджи более 3-4 раз не рекомендуется. Но и в этом случае покупка нового картриджа вовсе не обязательна, можно просто отдать нашим специалистам свою аппаратуру на восстановление.</p>
-		<p class="text-justify">Разумеется, вечной техники не существует, и иногда техника уже не подлежит восстановлению. В этом случае Вы можете обратиться в отделы продаж нашей компании. Грамотные, опытные специалисты посоветуют Вам какой картридж подойдет для вашего принтера.</p>
-		<p class="text-justify">Обратившись в компанию Абсолют, Вы гарантировано получите самое лучшее обслуживание, в кратчайшие сроки мы подберем наиболее оптимальный вариант решению любой Вашей проблемы, связанной с ремонтом, обслуживанием, а так же покупкой орг. техники и комплектующих.</p>
-		<p class="text-justify">Тонер картриджи для принтеров HP LazerJet несут в себе наилучшую возможность качественной лазерной печати, реализуемую благодаря передовым разработкам. Лазерные картриджи для принтеров HP LaserJet последних поколений содержат тонер, частицы которого мельче, чем в предыдущих моделях. Это позволило еще больше повысить качество печати принтеров Hewlett-Packard.</p>
-		<br>
-		<div class="gray">
-			<p><b>Тонер-картридж</b> - высокотехнологическое изделие, представляющее собой бункер с тонером, является неотъемлемой частью технологии лазерной печати.</p>
-			<p><b>Тонер (тонерный порошок)</b> - это основной компонент печатного процесса в лазерных принтерах, многофункциональных устройствах и копирах, с помощью которого и создается требуемое изображение. По типу производства он разделяется на два типа.</p>
+<!-- Чем мы лучше других============================================================ -->
+	<div class="container" id="better">
+		<div class="chem">
+			<span>Чем мы лучше других?</span>
+		</div>
+<!-- 		<div class="tem">
+			<p>Доставим<br><span>В заранее оговоренный срок</span></p>
+		</div> -->
+		<div id="carousel-example-generic" class="carousel slide tem" data-ride="carousel" data-interval="false">
+  <!-- Wrapper for slides -->
+		  <div class="carousel-inner">
+		    <div class="item active">
+		      <p>Доставим<br><span>В заранее оговоренный срок</span></p>
+		    </div>
+		    <div class="item">
+		    	<p>Доставим<br><span>В заранее оговоренный срок</span></p>
+		    </div>
+		    <div class="item">
+		    	<p>Доставим<br><span>В заранее оговоренный срок</span></p>
+		    </div>
+		  </div>
+		</div>
+		
+		<div class="slider-button left" href="#carousel-example-generic" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left"></span>
+		</div>
+		<div class="slider-button" href="#carousel-example-generic" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right"></span>
 		</div>
 	</div>
-<!-- Заказ============================================================ -->
-	<div id="zakaz" class="container">
-		<div class="row">
-			<div class="col-md-4">
-				<img src="img/woman.jpg" alt="" class="img-responsive">
-			</div>
-			<div class="col-md-8">
-				<p class="text-center">Заказать Консультацию</p>
-				<br>
-				<div class="hr"></div>
-				<br><br>
-				<form action="">
-					<div class="row p40">
-						<div class="col-md-5 col-xs-5">
-							<p class="text-right" style="margin-top: 10px;"><label for="input-name">Имя: <span>* </span></label>
-							<p class="text-right" style="margin-top: 20px;"><label for="input-name">Контактный телефон: <span>* </span></label></p>
-							<p class="text-right" style="margin-top: 20px;"><label for="input-name">Контактный e-mail:</label></p>
-							<br><br>
-							<p class="text-right"><label for="checking">Даю согласие на использование<br>персональных данных</label></p>
-						</div>
-						<div class="col-md-7 col-xs-7" style="padding-top: 0; position: relative;">
-							<p><input type="text" id="input-name"></p>
-							<p><input type="text" id="input-phone"></p>
-							<p><input type="text" id="input-mail"></p>
-							<br><br>
-							<input type="checkbox" id="c1" name="cc" />
-							<label for="c1"><span class="mt-20"></span></label>
-							<button id="zakaz-send">Отправить</button>
-						</div>
-					</div>					
-				</form>
-			</div>
+<!-- До конца марта================================================================== -->
+	<div id="mart" class="container-fluid">
+		<div class="container">
+			<p class="text-center">До конца марта начните работу по одному из офферов</p>
+			<p class="text-center">и примите участие в уникальной бонусной программе для новых клиентов</p>
+			<p class="text-right">Подробности уточняйте у личного менеджера</p>
+			<div class="mart-obvodka"></div>
 		</div>
 	</div>
-	<div class="hr"></div>
-	<div class="hr-gray"></div>
-<!-- Футер======================================================================== -->
+<!-- Форма========================================================================= -->
+	<div id="forma" class="container-fluid">
+		<div class="container">
+			<form action="">
+				<div class="row">
+					<div class="col-md-3"><input type="text" placeholder="Ваше имя" required></div>
+					<div class="col-md-3"><input type="text" placeholder="Ваш телефон" required></div>
+					<div class="col-md-3"><input type="text" placeholder="Ваш e-mail"></div>
+					<div class="col-md-3"><button type="submit">СОТРУДНИЧАТЬ</button></div>
+				</div>
+			</form>
+		</div>
+	</div>
+<!-- Контакты============================================================================= -->
+	<div id="nashi" class="container">
+		<p class="text-center">наши представители в городах: <span>Киев, Днепр, Одесса</span></p>
+		<p class="text-center">наш представитель готов бесплатно выехать в любой город Украины</p>
+		<span class="dlya">для личной встречи и уточнения всех деталей</span>
+	</div>
+	<div id="map" class="continer-fluid">
+		<img src="img/map.jpg" alt="" class="img-responsive">
+	</div>
+<!-- Футер================================================================================ -->
 	<div id="footer" class="container">
 		<div class="row">
-			<div class="col-md-7 sitemap">
-				<div class="row">
-					<div class="col-md-4">
-						<p><img src="img/icon-1.png" alt="">Услуги:</p>
-						<ul>
-							<li><a href="#">Заправка картриджей</a></li>
-							<li><a href="#">Ремонт орг техники</a></li>
-						</ul>
-						<br><br>
-						<p><img src="img/icon-2.png" alt="">Информация:</p>
-						<ul>
-							<li><a href="#">FAQ</a></li>
-							<li><a href="#">Статьи</a></li>
-							<li><a href="#">Таблица совместимости</a></li>
-						</ul>
-					</div>
-					<div class="col-md-4">
-						<p><img src="img/icon-3.png" alt="">Продукция:</p>
-						<ul>
-							<li><a href="#">Картриджи</a></li>
-							<li><a href="#">Чернила</a></li>
-							<li><a href="#">Лазерные принтеры</a></li>
-							<li><a href="#">Принтеры штрих кода</a></li>
-							<li><a href="#">Бумага офисная</a></li>
-							<li><a href="#">Фотобумага</a></li>
-							<li><a href="#">Плёнка для Факса</a></li>
-							<li><a href="#">Тонер для заправки</a></li>
-						</ul>
-					</div>
-					<div class="col-md-4">
-						<p><img src="img/icon-4.png" alt="">Условия:</p>
-						<ul>
-							<li><a href="#">Доставка</a></li>
-							<li><a href="#">Оплата</a></li>
-							<li><a href="#">Гарантия</a></li>
-							<li><a href="#">Продукция и цены</a></li>
-						</ul>
-					</div>
-				</div>
-				<p class="footer-copyright">2017. Все права защищены</p>
-				<p class="footer-copyright" style="margin-top: -18px;">Москва, Санкт-Петербург, Новосибирск, Нижний Новгород, Екатеринбург</p>
+			<div class="col-md-6 col-xs-6">
+				<p class="text-right"><img src="img/logo-small.png" alt="" class="img-responsive"></p>
 			</div>
-			<div class="col-md-5 footer-info">
-				<span class="logo text-center"><span>A</span>PRINTER</span>
-				<p class="text-center footer-mylo">email: <a href="mailto:info@aprinter.ru">info@aprinter.ru</a></p>
-				<br>
-				<div class="row text-center">
-					<div class="col-md-6">
-						<p class="footer-phone">+7 (831) 410-94-51</p>
-						<p class="footer-city">Нижний Новгород</p>
-						<p class="footer-time">(с 9.00 до 18.00)</p>
-						<p class="footer-phone">+7 (495) 587-40-36</p>
-						<p class="footer-city">Москва</p>
-						<p class="footer-time">(с 9.00 до 18.00)</p>
-						<p class="footer-phone">+7 (812) 678-96-67</p>
-						<p class="footer-city">Санкт-Петербург</p>
-						<p class="footer-time">(с 9.00 до 18.00)</p>
-					</div>
-					<div class="col-md-6">
-						<p class="footer-phone">+7 (812) 678-96-67</p>
-						<p class="footer-city">Санкт-Петербург</p>
-						<p class="footer-time">(с 9.00 до 18.00)</p>
-						<p class="footer-phone">+7 (812) 678-96-67</p>
-						<p class="footer-city">Санкт-Петербург</p>
-						<p class="footer-time">(с 9.00 до 18.00)</p>
-						<p class="footer-phone">+7 (812) 678-96-67</p>
-						<p class="footer-city">Санкт-Петербург</p>
-						<p class="footer-time">(с 9.00 до 18.00)</p>
-					</div>
-				</div>
+			<div class="col-md-6 col-xs-6">
+				<p class="number-footer">+38 <span>(093)</span> 571 52 60</p>
+				<p class="number-footer">+38 <span>(093)</span> 571 52 60</p>
+				<p class="email-footer">email@website.com</p>
 			</div>
 		</div>
 	</div>
-<!-- Картинка -->
-	<div class="container-fluid" id="picture">
-		<br>
-		<img src="img/footer-picture.jpg" alt="" class="img-responsive">
+<!-- Модальные окна ======================================================================-->
+<!-- Получить прайс====================================================================== -->
+	<div class="modal fade" id="zakaz-zvonok" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-body">
+	      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+	      <form action="form">
+	      	<input type="text" placeholder="Ваше имя" required>
+	      	<input type="text" placeholder="Ваш телефон" required>
+	      	<select class="css-styled"><option>Сейчас</option><option>Через 15 минут</option><option>Через час</option></select>
+	      	<button type="submit">ОТПРАВИТЬ</button>
+	      </form>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+<!-- Найти товар=========================================================================== -->
+	<div class="modal fade" id="tovar-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-body">
+	      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+	      <form action="form">
+	      	<input type="text" placeholder="Ваше имя" required>
+	      	<input type="text" placeholder="Ваш телефон" required>
+	      	<textarea type="text" placeholder="Интересующий товар" required></textarea>
+	      	<button type="submit">ОТПРАВИТЬ</button>
+	      </form>
+	      </div>
+	    </div>
+	  </div>
 	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	<!-- <script src="js/jcarousel.responsive.js"></script> -->
@@ -550,4 +404,3 @@
 	<!-- <script src="https://use.fontawesome.com/02bcef1f84.js"></script> -->
 	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.js"></script> -->
 </body>
-</html>
