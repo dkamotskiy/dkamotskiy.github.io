@@ -70,6 +70,15 @@ p {
 	color: #fcffff;
 	text-transform: uppercase;
 }
+.stickytop {
+ position:fixed;
+ top:0;
+ z-index: 1000;
+ left:0
+ right:0;
+ width: 100%;
+ background-color: #fff;
+}
 /*First---------------------------------------------------*/
 #first {
 	padding-top: 50px;
@@ -473,7 +482,7 @@ p {
 .tem {
 	height: 50%;
 	width: 60%;
-	z-index: 9999;
+	z-index: 999;
 	right: 0;
 	bottom: 0;
 	position: absolute;
@@ -734,4 +743,12 @@ width: 4px;
 }
 #find-tovar:hover, #have-a-consult:hover, #special-button:hover {
 	background-color: #d00202;
+}
+/*Дополнения*/
+select {
+	background-color: #fff;
+}
+#menu-adaptive {
+	padding-bottom: 10px;
+	box-shadow: 0 6px 4px -4px rgba(0, 0, 0, .2);
 }

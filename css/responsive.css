@@ -1,5 +1,16 @@
 /*Стилизация мобильной версии*/
 @media (max-width: 992px) {
+	.red-selector {
+		display: block;
+	}
+	.selector .col-md-6>div {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	text-align: center;
+	}
 	.display-mobile {
 		display: block;
 	}
