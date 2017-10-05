@@ -1,0 +1,8 @@
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+#header-main {
+	padding-top: 200px;
+}
+.chem span {
+	margin-top: 100px;
+}
+}

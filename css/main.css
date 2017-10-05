@@ -1,8 +1,17 @@
 /*Подключение шрифтов*/
 @font-face {
-    font-family: Circle; /* Имя шрифта */
-    src: url(../fonts/Circle.otf);
-   }
+	font-family: 'Circle';
+	src: url('../fonts/Circle.eot?') format('eot'), 
+	     url('../fonts/Circle.woff') format('woff'), 
+	     url('../fonts/Circle.otf'),
+	     url('../fonts/Circle.ttf')  format('truetype');
+	}
+@font-face {
+	font-family: 'Calibri';
+	src: url('../fonts/Calibri.eot?') format('eot'), 
+	     url('../fonts/Calibri.woff') format('woff'), 
+	     url('../fonts/Calibri.ttf')  format('truetype');
+	}
 /*Основной шрифт*/
 body {
 	font-family: Calibri;
@@ -27,6 +36,9 @@ p {
 	padding-bottom: 10px;
 	color: #d8e1e8;
 }
+#header-line a, #header-line a:hover {
+	color: #d8e1e8;
+}
 #header-main {
 	min-height: 700px;
 	display: flex;
@@ -35,9 +47,11 @@ p {
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
+	//padding-top: 200px;
 }
 #header-main img {
 	margin: auto;
+	//margin-top: 200px;
 }
 /*Меню-------------------------------------------------*/
 #menu {
@@ -56,9 +70,6 @@ p {
 #menu a {
 	margin-right: 20px;
 	color: #01213a;
-}
-#menu a:nth-child(1) {
-	font-weight: bold;
 }
 #menu button, #menu-adaptive button {
 	line-height: 40px;
@@ -629,6 +640,9 @@ p {
 	padding-top: 40px;
 	padding-bottom: 40px;
 }
+#footer a, #footer a:hover {
+	color: #64686c;
+}
 #footer span {
 	font-size: 18px;
 }
@@ -751,4 +765,12 @@ select {
 #menu-adaptive {
 	padding-bottom: 10px;
 	box-shadow: 0 6px 4px -4px rgba(0, 0, 0, .2);
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+#header-main {
+	padding-top: 200px;
+}
+.chem span {
+	margin-top: 100px;
+}
 }
