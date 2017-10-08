@@ -279,7 +279,7 @@ p {
 	margin-top: 225px;
 	color: #00192d;
 }
-#find-tovar, #have-a-consult, #special-button {
+#find-tovar, .have-a-consult, #special-button {
 	background-color: #ff0000;
 	text-transform: uppercase;
 	font-size: 20px;
@@ -776,7 +776,7 @@ width: 4px;
 #menu button:hover, .first-button:hover, #forma button:hover {
 	background-color: #ca2c24;
 }
-#find-tovar:hover, #have-a-consult:hover, #special-button:hover {
+#find-tovar:hover, .have-a-consult:hover, #special-button:hover {
 	background-color: #d00202;
 	transition: 0.3s;
 }

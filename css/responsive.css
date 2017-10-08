@@ -62,8 +62,6 @@
 	}
 	#tovarys .left-block {
 		padding-top: 50px;
-		margin-left: -30px;
-		margin-right: -30px;
 	}
 	.obvodka {
 		display: none;
@@ -81,6 +79,9 @@
 	}
 	#tovarys .zagolovok {
 		display: table;
+	}
+	#tovarys {
+		background-color: #fff;
 	}
 	.we-always {
 		margin-top: 30px;
@@ -113,8 +114,6 @@
 		margin-bottom: 15px;
 	}
 	.fon {
-		min-height: 400px;
-		max-height: 400px;
 		background: #fff;
 	}
 	#dostavkavsrok {
@@ -124,7 +123,7 @@
 		position: static;
 	}
 	#specialoffer {
-		padding-top: 50px;
+		padding-top: 0px;
 		padding-bottom: 50px;
 	}
 	#specialoffer img {
@@ -139,10 +138,13 @@
 	.special-rb {
 		width: 100%;
 		text-align: center;
+		padding-top: 50px;
+		padding-bottom: 50px;
 	}
 	.special-rt {
 		text-align: center;
-		font-size: 40px;
+		font-size: 30px;
+		padding-left: 0;
 	}
 	.chem, .tem {
 		position: static;
@@ -256,14 +258,15 @@
 		display: inline;
 		font-size: 40px !important;
 	}
-	#tovarys .container {
-		margin-right: -60px;
-	}
 	#tovarys .container .zagolovok {
 		background-color: #fff;
 	}
-	#tovarys .selector {
-		margin-right: 30px;
+	#vsrok-mobile {
+	    font-family: Circle;
+	    color: #767a7f;
+	    background-color: #fff;
+	    padding-top: 50px;
+	    padding-bottom: 50px;
 	}
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
