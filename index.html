@@ -41,10 +41,10 @@
 			</div>
 			<div class="col-md-6">
 				<div>
-					<a href="#first">Продукция</a>
-					<a href="#uslugi">Что мы предлагаем</a>
-					<a href="#tovarys">Оптовикам</a>
-					<a href="#nashi">Контакты</a>
+					<li><a href="#first" onclick="return anchorScroller(this)">Продукция</a></li>
+					<li><a href="#uslugi" onclick="return anchorScroller(this)">Что мы предлагаем</a></li>
+					<li><a href="#tovarys" onclick="return anchorScroller(this)">Оптовикам</a></li>
+					<li><a href="#nashi" onclick="return anchorScroller(this)">Контакты</a></li>
 				</div>
 			</div>
 			<div class="col-md-3">
@@ -163,7 +163,7 @@
 				<div class="zagolovok">
 					<p>ТОВАРЫ</p>
 					<p>С КИТАЯ</p>
-					<p>ОТ 3Х ДНЕЙ</p>
+					<p style="color: #575a5e;">ОТ 3Х ДНЕЙ</p>
 				</div>
 				<div class="obvodka"></div>
 				<p class="we-always">Мы всегда найдем нужный товар в кратчайшие сроки</p>
@@ -259,10 +259,10 @@
 			<div class="col-md-6 left-block">
 				<div class="zagolovok">
 					<p>ДОСТАВКА</p>
-					<p>В СРОК</p>
+					<p>В СРОК!</p>
 				</div>
 				<div class="obvodka"></div>
-				<p class="we-always">Мы всегда найдем нужный товар в кратчайшие сроки</p>
+				<p class="we-always">В случае задержки мы компенсируем убытки</p>
 				<button id="have-a-consult" data-toggle="modal" data-target="#zakaz-zvonok">Получить консультацию</button>
 			</div>
 			<div class="col-md-6"></div>
@@ -353,7 +353,7 @@
 	<div id="footer" class="container">
 		<div class="row">
 			<div class="col-md-6 col-xs-6">
-				<p class="text-right"><img src="img/logo-small.png" alt="" class="img-responsive"></p>
+				<p class="text-right"><img src="img/logo-footer.png" alt="" class="img-responsive"></p>
 			</div>
 			<div class="col-md-6 col-xs-6">
 				<p class="number-footer"><a href="tel:+380935715260">+38 <span>(093)</span> 571 52 60</a></p>
@@ -362,6 +362,8 @@
 			</div>
 		</div>
 	</div>
+
+
 <!-- Модальные окна ======================================================================-->
 <!-- Получить прайс====================================================================== -->
 	<div class="modal fade" id="zakaz-zvonok" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">

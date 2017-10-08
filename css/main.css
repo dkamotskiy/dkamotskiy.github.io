@@ -38,6 +38,7 @@ p {
 }
 #header-line a, #header-line a:hover {
 	color: #d8e1e8;
+	transition: 0.3s;
 }
 #header-main {
 	min-height: 700px;
@@ -56,20 +57,33 @@ p {
 /*Меню-------------------------------------------------*/
 #menu {
 	text-transform: uppercase;
-	line-height: 120px;
+	line-height: 70px;
 	box-shadow: 0 6px 4px -4px rgba(0, 0, 0, .2);
 	font-size: 18px;
 }
 #menu img {
-	margin-top: 40px;
+	margin-top: 15px;
 }
 #menu .col-md-8 div {
 	margin: 0 auto;
 	display: table;
 }
+#menu li {
+	display: inline;
+}
 #menu a {
 	margin-right: 20px;
 	color: #01213a;
+}
+#menu a:hover {
+	font-weight: bold;
+	text-decoration: none;
+	transition: 0.3s;
+}
+#menu li.active {
+	font-weight: bold;
+	text-decoration: none;
+	transition: 0.3s;
 }
 #menu button, #menu-adaptive button {
 	line-height: 40px;
@@ -256,10 +270,11 @@ p {
 }
 
 .we-always {
-	font-weight: bold;
+	font-weight: bolder;
 	font-size: 30px;
 	letter-spacing: 0.1em;
 	margin-top: 225px;
+	color: #00192d;
 }
 #find-tovar, #have-a-consult, #special-button {
 	background-color: #ff0000;
@@ -267,9 +282,10 @@ p {
 	font-size: 20px;
 	font-weight: bold;
 	color: #fff;
-	padding: 10px 25px;
+	padding: 10px 30px;
 	border: none;
 	margin-top: 50px;
+	letter-spacing: 0.1em;
 }
 #muj-tov {
 	background-image: url(../img/muj-tov.jpg);
@@ -508,6 +524,8 @@ p {
 }
 .tem p span {
 	color: #f40014;
+	display: block;	
+	margin-top: 10px;	
 }
 .slider-button {
 	display: inline-block;
@@ -517,14 +535,12 @@ p {
     text-align: center;
     font-size: 50px;
     height: 22%;
-    background-color: #000;
     cursor: pointer;
-    opacity: 0.2;
     top:28%;
+	background-color: #d9e0ea;
 }
 .slider-button.left {
 	right: 9%;
-	opacity: 0.3;
 }
 .slider-button span {
 	opacity: 1;
@@ -536,7 +552,8 @@ p {
     margin-left: -25px;
 }
 .slider-button:hover {
-	opacity: 0.4;
+	transition: 0.3s;
+	background-color: #c9d0d9;
 }
 /*До конца марта----------------------------------------*/
 #mart {
@@ -582,8 +599,8 @@ p {
 	padding-bottom: 50px;
 }
 #forma .container {
-	padding-left: 0;
-	padding-right: 0;
+	padding-left: 15px;
+	padding-right: 15px;
 }
 #forma input {
 	width: 100%;
@@ -632,6 +649,7 @@ p {
     padding-right: 20px;
     color: #777b80 !important;
     font-size: 21px;
+    margin-top: 15px;	
 }
 /*Футер----------------------------------------------*/
 #footer {
@@ -642,12 +660,12 @@ p {
 }
 #footer a, #footer a:hover {
 	color: #64686c;
+	transition: 0.3s;
 }
 #footer span {
 	font-size: 18px;
 }
 #footer img {
-	margin-top: 20px;
 	float: right;
 }
 /*Карта----------------------------------------------*/
@@ -757,6 +775,7 @@ width: 4px;
 }
 #find-tovar:hover, #have-a-consult:hover, #special-button:hover {
 	background-color: #d00202;
+	transition: 0.3s;
 }
 /*Дополнения*/
 select {

@@ -229,6 +229,17 @@
 	    display: flex;
 	    flex:1 0 auto;
 	}
+	.hoverrr {
+	padding-left: 10%;	
+	padding-right: 10%;	
+	}
+	#mart {
+		margin-top: 100px;	
+	}
+	#menu button {
+    float: right;
+    margin-top: 15px;
+	}
 }
 /*Стилизация 1024-------------------------------------------------*/
 @media screen and (min-width: 992px) and (max-width: 1200px) {
