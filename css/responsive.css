@@ -113,7 +113,9 @@
 		margin-bottom: 15px;
 	}
 	.fon {
-		height: auto;
+		min-height: 400px;
+		max-height: 400px;
+		background: #fff;
 	}
 	#dostavkavsrok {
 		height: auto;
@@ -122,7 +124,25 @@
 		position: static;
 	}
 	#specialoffer {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+	#specialoffer img {
+		margin: 0 auto;
+	}
+	#specialoffer .hr {
 		display: none;
+	}
+	.special-obvodka {
+		display: none;
+	}
+	.special-rb {
+		width: 100%;
+		text-align: center;
+	}
+	.special-rt {
+		text-align: center;
+		font-size: 40px;
 	}
 	.chem, .tem {
 		position: static;
@@ -156,8 +176,8 @@
 	#footer span {
 		font-size: 12px;
 	}
-	#dostavkavsrok {
-		display: none;
+	#dostavkavsrok * {
+		position: static;
 	}
 	#better * {
 		position: static;
@@ -212,6 +232,35 @@
 		padding-top: 15px;
 		padding-bottom: 15px;
 	}
+	#tovarys .zagolovok * {
+		display: inline;
+		font-size: 50px !important;
+		text-align: center;
+	}
+	.carousel-inner {
+		text-align: center;
+	}
+	#forma input {
+		background-color: #d9e0ea;
+		border: none;
+	}
+	.left-block {
+		width: 100%;
+		text-align: center;
+		background-color: #fff !important;
+	}
+	#dostavkavsrok .zagolovok {
+		background-color: #fff !important;
+	}
+	#dostavkavsrok .zagolovok p {
+		display: inline;
+		font-size: 40px !important;
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+	#kachestvo .col-md-2, #kachestvo2 .col-md-2 {
+		width: 50%;
+	}
 }
 /*Стилизация десктопной версии*/
 @media (min-width: 992px) {
@@ -239,6 +288,13 @@
 	#menu button {
     float: right;
     margin-top: 15px;
+	}
+	.special-rb {
+		width: 100%;
+		text-align: center;
+	}
+	#mart p:nth-child(2) {
+		padding-top: 10px;
 	}
 }
 /*Стилизация 1024-------------------------------------------------*/

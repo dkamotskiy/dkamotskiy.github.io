@@ -80,6 +80,9 @@ p {
 	text-decoration: none;
 	transition: 0.3s;
 }
+#menu a:focus, #menu a:visited {
+	text-decoration: none;
+}
 #menu li.active {
 	font-weight: bold;
 	text-decoration: none;
