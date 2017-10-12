@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="2364 2867.5 27 27">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+      }
+    </style>
+  </defs>
+  <path id="ic_free_breakfast_24px" class="cls-1" d="M27.111,3H4V17.444a5.776,5.776,0,0,0,5.778,5.778h8.667a5.776,5.776,0,0,0,5.778-5.778V13.111h2.889A2.888,2.888,0,0,0,30,10.222V5.889A2.879,2.879,0,0,0,27.111,3Zm0,7.222H24.222V5.889h2.889ZM4,26.111H27.111V29H4Z" transform="translate(2360.5 2865)"/>
+</svg>

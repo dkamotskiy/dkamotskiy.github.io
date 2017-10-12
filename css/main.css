@@ -1,798 +1,952 @@
 /*Подключение шрифтов*/
 @font-face {
-	font-family: 'Circle';
-	src: url('../fonts/Circle.eot?') format('eot'), 
-	     url('../fonts/Circle.woff') format('woff'), 
-	     url('../fonts/Circle.otf'),
-	     url('../fonts/Circle.ttf')  format('truetype');
+	font-family: 'Open Sans Condensed';
+	src: url('../fonts/Rain.eot?') format('eot'), 
+	     url('../fonts/Rain.woff') format('woff'), 
+	     url('../fonts/OpenSansCondensed-Light.ttf')  format('truetype');
 	}
-@font-face {
-	font-family: 'Calibri';
-	src: url('../fonts/Calibri.eot?') format('eot'), 
-	     url('../fonts/Calibri.woff') format('woff'), 
-	     url('../fonts/Calibri.ttf')  format('truetype');
-	}
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900');
+/*@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&subset=cyrillic,cyrillic-ext');*/
 /*Основной шрифт*/
 body {
-	font-family: Calibri;
+	overflow-x: hidden;
+	font-family: Roboto;
+}
+.container-fluid {
+	padding-left: 0;	
+	padding-right: 0;	
 }
 p {
 	margin: 0;
 }
-/*Хедер*/
-#header {
-	padding-left: 0;
-	padding-right: 0;
-	font-family: Calibri;
-	font-size: 18px;
-	letter-spacing: 0.2em;
+/*Боковое меню---------------------------------------------*/
+.pushy-open-right .pushy-right {
+	width: 400px;
+	background-color: #fff;
 }
-#header span {
-	font-size: 14px;
-}
-#header-line {
-	background-color: #00192d;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	color: #d8e1e8;
-}
-#header-line a, #header-line a:hover {
-	color: #d8e1e8;
-	transition: 0.3s;
-}
-#header-main {
-	min-height: 700px;
-	display: flex;
-	background-image: url(../img/header-bg.jpg);
-	-webkit-background-size: cover;
-	background-size: cover;
-	background-position: center center;
-	background-repeat: no-repeat;
-	//padding-top: 200px;
-}
-#header-main img {
-	margin: auto;
-	//margin-top: 200px;
-}
-/*Меню-------------------------------------------------*/
-#menu {
-	text-transform: uppercase;
-	line-height: 70px;
-	box-shadow: 0 6px 4px -4px rgba(0, 0, 0, .2);
-	font-size: 18px;
-}
-#menu img {
-	margin-top: 15px;
-}
-#menu .col-md-8 div {
-	margin: 0 auto;
-	display: table;
-}
-#menu li {
-	display: inline;
-}
-#menu a {
-	margin-right: 20px;
-	color: #01213a;
-}
-#menu a:hover {
-	font-weight: bold;
-	text-decoration: none;
-	transition: 0.3s;
-}
-#menu a:focus, #menu a:visited {
-	text-decoration: none;
-}
-#menu li.active {
-	font-weight: bold;
-	text-decoration: none;
-	transition: 0.3s;
-}
-#menu button, #menu-adaptive button {
-	line-height: 40px;
-	padding-left: 20px;
-	padding-right: 20px;
-	background-color: #f8362c;
-	border: none;
-	box-shadow: none;
-	color: #fcffff;
-	text-transform: uppercase;
-}
-.stickytop {
- position:fixed;
- top:0;
- z-index: 1000;
- left:0
- right:0;
- width: 100%;
- background-color: #fff;
-}
-/*First---------------------------------------------------*/
-#first {
-	padding-top: 50px;
+.pushy-content {
 	position: relative;
-	margin-bottom: 150px;
-}
-.img-first {
-	width: 65%;
-	position: relative;
-	margin-bottom: 100px;
-}
-.img-first span {
-	position: absolute;
-	top: 15%;
-	right: 20px;
-	color: #fff;
-	font-family: Circle;
-	text-transform: uppercase;
-	font-size: 200px;
-}
-.delivery-service {
-	margin-top: 66px;
-    position: absolute;
-    top: 15%;
-    right: 65px;
-    font-family: Circle;
-    font-size: 69px;
-}
-.hr {
-	width: 150px;
-	height: 3px;
-	background-color: #f8362c;
-}
-.advantages {
 	padding-top: 50px;
-	padding-bottom: 50px;
-	font-size: 24px;
-	letter-spacing: 0.1em;
-	background-color: #d9e0ea;
-	padding-left: 30px;
-	padding-right: 30px;
-	position: absolute;
-	right: 0;
-	bottom: 0;
 }
-#first ul {
-	list-style: none;
-}
-#first li {
-    margin: 0;
-    margin-bottom: 1em;
-    padding-left: 1.5em;
-    position: relative;
-}
-    
-#first li:after {
-      content: '';
-      height: .4em;
-      width: .4em;
-      background: #f8362c;
-      display: block;
-      position: absolute;
-      transform: rotate(45deg);
-      top: .5em;
-      left: 0;
-    }
-.first-button {
-	font-weight: bold;
-	letter-spacing: 0.1em;
-	color: #fff;
-	background-color: #f8362c;
-	padding: 15px 20px;
-	text-transform: uppercase;
-	position: absolute;
-	bottom: 0;
-	left: 5%;
-	border: none;
-	box-shadow: none;
-	font-size: 20px;
-}
-/*Наши услуги----------------------------------*/
-#uslugi {
-	padding-top: 90px;
-	padding-bottom: 90px;
-	background-color: #00192d;
-	color: #fff;
-	font-size: 22px;
-}
-#uslugi p:nth-child(1) {
-	font-family: Circle;
-	font-size: 70px;
-	text-transform: uppercase;
-	margin-bottom: 50px;
-}
-.uslugi-row1, .uslugi-row2 {
-	border-top: 1px solid #fff;
-	border-bottom: 1px solid #fff;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	letter-spacing: 0.05em;
-}
-.borr {
-	border-right: 1px solid #fff;
-}
-.uslugi-row1 img, .uslugi-row2 img {
-	margin: 0 auto;
+.pushy-right img {
 	display: block;
+	margin: 0 auto;
+	max-width: 211px;
+	margin-bottom: 30px;
 }
-#uslugi .col-md-6, #uslugi .col-md-4 {
-	padding-top: 30px;
-	padding-bottom: 30px;
-}
-#uslugi .col-md-6 p.text-center, #uslugi .col-md-4 p.text-center {
-	margin-top: 30px;
-}
-/*Товары с Китая----------------------------------*/
-#tovarys {
-	background-color: #d9e0ea;
-}
-#tovarys .left-block, #dostavkavsrok .left-block {
-	padding-top: 120px;
-	padding-bottom: 50px;
-	position: relative;
-}
-#tovarys .zagolovok, #dostavkavsrok .zagolovok {
-	font-family: Circle;
-	color: #767a7f;
-	display: inline-block;
-	z-index: 999;
-	position: absolute;
-	background-color: #d9e0ea;
-}
-#tovarys .zagolovok p:nth-child(1), #dostavkavsrok .zagolovok p:nth-child(1) {
-	font-size: 50px;
-}
-#tovarys .zagolovok p:nth-child(2), #dostavkavsrok .zagolovok p:nth-child(2) {
-	font-size: 80px;
-	margin-top: -30px;
-}
-#tovarys .zagolovok p:nth-child(3), #dostavkavsrok .zagolovok p:nth-child(3) {
-	font-size: 35px;
-	margin-top: -30px;
+#pushy-menu {
+	margin-right: 95px;
 	text-align: right;
 }
-.obvodka {
-	width: 370px;
-    height: 223px;
-    border: 10px solid #cad1da;
-    position: absolute;
-    top: 88px;
-    left: 122px;
+#pushy-menu p {
+	margin-bottom: 17px;
+	font-weight: 500;
+	font-size: 16px;
 }
-.zagolovok p {
-	z-index: 9999;
+.pushy a {
+	color: #333333;
+	padding: 0;
 }
-.selector .col-md-6 {
-	height: 300px;display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
-	padding-top: 15px;
-	padding-bottom: 15px;
+.pushy a:hover {
+	color: #3D9FBC;
 }
-
-.we-always {
-	font-weight: bolder;
-	font-size: 30px;
-	letter-spacing: 0.1em;
-	margin-top: 225px;
-	color: #00192d;
-}
-#find-tovar, .have-a-consult, #special-button {
-	background-color: #ff0000;
-	text-transform: uppercase;
-	font-size: 20px;
-	font-weight: bold;
-	color: #fff;
-	padding: 10px 30px;
-	border: none;
-	margin-top: 50px;
-	letter-spacing: 0.1em;
-}
-#muj-tov {
-	background-image: url(../img/muj-tov.jpg);
-	background-repeat: no-repeat;
-	background-position: center center;
-}
-#jhen-tov {
-	background-image: url(../img/jhen-tov.jpg);
-	background-repeat: no-repeat;
-	background-position: center center;
-}
-#wow-tov {
-	background-image: url(../img/wow-tov.jpg);
-	background-repeat: no-repeat;
-	background-position: center center;
-}
-#det-tov {
-	background-image: url(../img/det-tov.jpg);
-	background-repeat: no-repeat;
-	background-position: center center;
-}
-.red-selector {
-	background-color: rgba(255,0,0,0.5);
-	width: 100%;
-	display: none;
-}
-.red-selector span {
-	margin: auto;
-	font-size: 21px;
-	font-weight: bold;
-	color: #fff;
-}
-.selector .col-md-6:hover>div {
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
-}
-/*Качество-------------------------------------------------*/
-#kachestvo {
-	padding-top: 100px;
-	padding-bottom: 40px;
-	background-color: #00192d;
-	color: #fff;
-}
-#kachestvo p:nth-child(1) {
-	font-family: Circle;
-	font-size: 60px;
-	text-transform: uppercase;
-	margin-bottom: 30px;
-}
-#kachestvo .ser {
-	font-size: 45px;
-	text-transform: uppercase;
-	margin-bottom: 30px;
-	color: #767a7f;
-	letter-spacing: 0.05em;
-}
-#kachestvo .col-md-2, #kachestvo2 .col-md-2 {
-	width: 20%;
-}
-#kachestvo .col-md-2 img, #kachestvo2 .col-md-2 img {
-	margin: 0 auto;
-	margin-bottom: 10px;
-}
-#kachestvo .col-md-2 p, #kachestvo2 .col-md-2 p {
-	font-size: 17px;
-	letter-spacing: 0.05em;
-}
-/*Качество-пробел----------------------------------------*/
-#kachestvo-probel {
-	height: 70px;
-}
-/*Качество2----------------------------------------------*/
-#kachestvo2 {
-	background-color: #00192d;
-	color: #fff;
-	padding-bottom: 40px;
-}
-#kachestvo2 .row {
-	margin-top: -90px;
-}
-/*Доставка в срок----------------------------------------*/
-#dostavkavsrok .row .col-md-6 {
-	padding-left: 0;
-	padding-right: 0;
-}
-#dostavkavsrok img {
-	width: 100%;
-}
-#dostavkavsrok {
-	background-color: #d9e0ea;
-	position: relative;
-	height: 550px;
-}
-#dostavkavsrok .container {
+.pushy-closing {
 	position: absolute;
-	top: 0;
+	top: 30px;
+	right: 30px;
+	width: 18px;
+	height: 18px;
+	cursor: pointer;
 }
-@media (min-width: 768px) {
-	#dostavkavsrok .container {
-    left: 50%;
-    margin-left: -384px;
+/*точки----------------------------------------------------*/
+#fp-nav ul li a span {
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background-color: rgba(255,255,255,0.5);
 }
+#fp-nav ul li:hover a span, #fp-nav ul li a.active span {
+	width: 10px;
+	height: 10px;
+	background-color: transparent !important;
+	border:1px solid rgba(255,255,255,0.5);
+	border-radius: 50%; 
+	margin-left: -4.5px;
 }
-@media (min-width: 992px) {
-	#dostavkavsrok .container {
-    left: 50%;
-    margin-left: -485px;
-}
-}
-@media (min-width: 1200px) {
-	#dostavkavsrok .container {
-    left: 50%;
-    margin-left: -585px;
-}
-}
-#dostavkavsrok .zagolovok p:nth-child(1) {
-	font-size: 50px;
-}
-#dostavkavsrok .zagolovok p:nth-child(2) {
-	font-size: 80px;
-	line-height: 1;
-	margin-top: -10px;
-}
-#dostavkavsrok .obvodka {
-	top: 50px;
-}
-#dostavkavsrok .col-md-6:nth-child(1) {
-	background-color: #d9e0ea;
-}
-.fon {
-	height: 550px;
-	background-image: url(../img/dostavka.jpg);
+/*1 экран--------------------------------------------------*/
+#ekran1 {
+	background-image: url(../img/bg-clouds.png);
+	background-position: top center;
+	background-repeat: no-repeat;
+	height: 100vh;
 	-webkit-background-size: cover;
 	background-size: cover;
-	background-position: center center;
-}
-#dostavkavsrok .left-block {
-	padding-bottom: 0;
-	padding-top: 90px;
-}
-/*Специальное предложение-----------------------------------*/
-#specialoffer {
-	padding-top: 150px;
-	padding-bottom: 90px;
-}
-#specialoffer .col-md-6 {
-	padding-left: 0;
-	padding-right: 0;
-}
-.special-rt {
-	padding-left: 30px;
-	font-family: Circle;
-	font-size: 60px;
-	color: #888c92;
-	text-transform: uppercase;
-	padding-top: 50px;
-}
-#specialoffer .hr {
-	width: 200px;
-}
-.special-rb {
-	background-color: #d9e0ea;
-	display: inline-block;
-	padding-left: 30px;
-	padding-right: 40px;
-	font-family: Circle;
-	font-size: 30px;
-	margin-top: 50px;
-	letter-spacing: 0.1em;
-	padding-top: 170px;
-	padding-bottom: 170px;
-	position: relative;
-}
-.special-rb button {
-	margin-top: 50px;
-}
-.special-rb p span {
-	color: #ff0000;
-}
-.special-obvodka {
-    width: 110%;
-    height: 96%;
-    position: absolute;
-    top: 2%;
-    border: 10px solid #767a7f;
-    right: 2%;
-    background: transparent;
-}
-#special-button {
-	position: inherit;
-	z-index: 99;
-}
-/*Чем мы лучше других?----------------------------------*/
-#better {
-	height: 420px;
-	position: relative;
-}
-.chem {
-	width: 82%;
-	height: 60%;
 	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
-	background: linear-gradient(-70deg, #263847 60%, #00192d 40%);
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	color: #fff;
+	line-height: 1.5;
+	font-size: 16px;
+}
+.ekran1-footer, .ekran1-footer-mountain {	
+	width: 100%;
+	position: absolute;	
+	bottom: 0;	
+	z-index: 1000;
+}
+.ekran1-footer-mountain {
+	z-index: 500;
+}
+.bg-mounts {
+	
+}
+.logo-ekran1 {
+	width: 48%;
+	position: absolute;	
+	bottom: 0;	
+	left: 26%;	
+	z-index: 750;
+}
+.menu-button {
+	position: fixed;
+	top:30px;
+	right: 30px;
+	padding-right: 45px;
+	cursor: pointer;
+	text-transform: uppercase;
+	font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #fff;
+    line-height: 1.5;
+    font-size: 16px;
+    z-index: 1500;
+}
+.bar {
+	width: 34px;
+	height: 4px;
+	background-color: #fff;
+}
+.button {
+	display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+} 
+.menu-button .bar:nth-child(2) {
+	margin-top: 5px;
+}
+.menu-button .bar:nth-child(3) {
+	margin-top: 5px;
+}
+.deviz {
+	font-size: 31px;
+	font-family: Roboto;
+	font-weight: 300;
+	position: absolute;
+	text-align: center;
+	bottom: 70px;
+	z-index: 3000;
+	left:50%;
+	margin-left: -300px;
+	color: #fff;
+}
+/*2 экран-----------------------------------------*/
+#ekran2 {
+	height: 100vh;
+	padding-left: 7%;
+	padding-right: 7%;
+	position: relative;
+}
+#ekran2 .col-md-4 {
+	padding: 10px;
+}
+#ekran2 .col-md-4 div {
+	border-radius: 2px;
+	border: 1px solid #D2D6D9;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+#ekran2 h3 {
+	font-size: 42px;
+	font-family: Roboto;
+	font-weight: 300;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: -5px;
+}
+#ekran2 p {
+	font-size: 14px;
+	font-family: Roboto;
+	font-weight: 300;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+#ekran2 button, #ekran3 button {
+	margin: 0 auto;
+	display: block;
+	background-color: #66C8E5;
+	border: none;
+	border-radius: 3px;
+	padding: 10px 20px;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight: 300;
+	font-size: 18px;
+	text-transform: uppercase;
+	color: #fff;
+	line-height: 1.5;
+	letter-spacing: 0.05em;
+}
+#ekran2 button:hover, #ekran3 button:hover {
+	background-color: #66B2C8;
+}
+#ekran2 img {
+	width: 75px;
+	margin: 0 auto;
+}
+#ekran2 .ekran3-zagolovok {
+	font-size: 16px;
+	text-align: center;
+	font-weight: 400;
+}
+/*3 экран--------------------------------------------------*/
+.sdvig {
+	margin-left: 45px;
+}
+#ekran3 {
+	height: 100vh;
+	background-image: url(../img/3-bg.jpg);
+	background-position: center center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: #fff;
+	font-family: 'Roboto';
+}
+#ekran3 h2 {
+	font-weight: bold;
+	font-size: 46px;
+}
+#ekran3 p {
+	padding-left: 10%;
+	padding-right: 10%;
+	font-size: 20px;
+}
+#ekran3 .number {
+	font-size: 41px;
+	font-weight: bold;
+	position: absolute;
+}
+#ekran3 .col-md-3 {
+	position: relative;
+}
+#ekran3 .verh {
+	left: 70px;
+	position: absolute;
+	font-size: 16px;
+	top: 8px;
+}
+#ekran3 .niz {
+	left: 70px;
+	top: 27px;
+	position: absolute;
+	font-size: 16px;
+}
+#ekran3 .verh1 {
+	left: 50px;
+}
+#ekran3 .niz1 {
+	left: 50px;
+}
+#ekran3 .col-md-3 img {
+	position: absolute;
+    left: 30px;
+    top: -12px;
+}
+.glavtext {
+	margin-bottom: 35px;
+}
+.ourface {
+	margin-top: 100px;
+	border-left: 1px solid #fff;
+	border-right: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	border-radius: 2px;
+	padding-bottom: 15px;
+	position: relative;
+	padding-top: 30px;
+}
+.ourface-lt {
 	position: absolute;
 	left: 0;
 	top: 0;
-}
-.chem span {
-	margin: auto;
-	font-family: Circle;
-	font-size: 55px;
-	text-transform: uppercase;
-	color: #fff;
-}
-.tem {
-	height: 50%;
-	width: 60%;
-	z-index: 999;
-	right: 0;
-	bottom: 0;
-	position: absolute;
-	background-color: #00192d;
-}
-.tem p {
-	margin: auto;
-	text-transform: uppercase;
-	font-family: Circle;
-	font-size: 30px;
-	color: #fff;
-}
-.tem p span {
-	color: #f40014;
-	display: block;	
-	margin-top: 10px;	
-}
-.slider-button {
-	display: inline-block;
-    position: absolute;
-    right: 0;
-    width: 9%;
-    text-align: center;
-    font-size: 50px;
-    height: 22%;
-    cursor: pointer;
-    top:28%;
-	background-color: #d9e0ea;
-}
-.slider-button.left {
-	right: 9%;
-}
-.slider-button span {
-	opacity: 1;
-	color: #fff;
-	position: absolute;
-    left: 50%;
-    top: 50%;
-    margin-top: -25px;
-    margin-left: -25px;
-}
-.slider-button:hover {
-	transition: 0.3s;
-	background-color: #c9d0d9;
-}
-/*До конца марта----------------------------------------*/
-#mart {
-	background-color: #d9e0ea;
-	padding-top: 90px;
-	padding-bottom: 50px;
-	font-family: Circle;
-}
-#mart p:nth-child(1) {
-	font-size: 39px;
-	color: #00192d;
-	position: inherit;
-	background-color: #d9e0ea;
-	z-index: 99;
-}
-#mart p:nth-child(2) {
-	font-size: 28px;
-	color: #00192d;
-	position: inherit;
-	background-color: #d9e0ea;
-	z-index: 99;
-}
-#mart p:nth-child(3) {
-	font-size: 30px;
-	color: #6a6e72;
-	margin-top: 100px;
-}
-#mart .container {
-	position: relative;
-}
-.mart-obvodka {
-    border: 10px solid #c9d0d9;
-    position: absolute;
-    top: -26px;
-    right: 0;
-    width: 60%;
-    height: 160px;
-}
-/*Форма-------------------------------------------------*/
-#forma {
-	background-color: #00192d;
-	padding-top: 50px;
-	padding-bottom: 50px;
-}
-#forma .container {
-	padding-left: 15px;
-	padding-right: 15px;
-}
-#forma input {
-	width: 100%;
-    border: 2px solid #92979d;
-    background: transparent;
-    height: 45px;
-    padding-left: 20px;
-    font-size: 19px;
-    color: #92979d;
-}
-#forma button {
-    width: 100%;
-    height: 45px;
-    border: none;
-    background: #f8362c;
-    color: #fff;
-    font-size: 22px;
-    letter-spacing: 0.08em;
-}
-/*Контакты-----------------------------------------------*/
-#nashi {
-	font-weight: bold;
-	text-transform: uppercase;
-	color: #777b80;
-	margin-top: 50px;
-	margin-bottom: 50px;
-	padding-top: 30px;
-	border: 5px solid #dddddd;
-}
-#nashi span {
-	color: #ff0000;
-}
-#nashi p:nth-child(1) {
-	font-size: 35px;
-}
-#nashi p:nth-child(2) {
-	font-size: 21px;
-	margin-top: 25px;
-}
-.dlya {
-	margin: 0 auto;
-    display: table;
-    margin-bottom: -16px;
-    background: #fff;
-    padding-left: 20px;
-    padding-right: 20px;
-    color: #777b80 !important;
-    font-size: 21px;
-    margin-top: 15px;	
-}
-/*Футер----------------------------------------------*/
-#footer {
-	color: #64686c;
-	font-size: 20px;
-	padding-top: 40px;
-	padding-bottom: 40px;
-}
-#footer a, #footer a:hover {
-	color: #64686c;
-	transition: 0.3s;
-}
-#footer span {
-	font-size: 18px;
-}
-#footer img {
-	float: right;
-}
-/*Карта----------------------------------------------*/
-#map img {
-	width: 100%;
-}
-/*Модалька*/
-.modal-content {
-	border-radius: 0px;
-	max-width: 500px;
-	margin: 0 auto;
-}
-#zakaz-zvonok .modal-body, #tovar-modal .modal-body {
-	padding-top: 50px;
-	padding-bottom: 75px;
-	padding-left: 20%;
-	padding-right: 20%;
-}
-.close {
-    top: 8px;
-    right: 19px;
-    position: absolute;
-    font-size: 40px;
-}
-#zakaz-zvonok input, #zakaz-zvonok select, #tovar-modal input, #tovar-modal textarea {
-    width: 100%;
-    margin-bottom: 20px;
-    height: 50px;
-    padding-left: 20px;
-    padding-right: 20px;
-    font-size: 19px;
-    letter-spacing: 0.1em;
-}
-#zakaz-zvonok button[type="submit"], #tovar-modal button[type="submit"] {
-    width: 100%;
-    margin-bottom: 20px;
-    height: 50px;
-    font-size: 25px;
-    color: #fff;
-    font-weight: bold;
-    background-color: #b82821;
-    letter-spacing: 0.1em;
-    border:none;
-}
-#tovar-modal textarea {
-	padding-top: 20px;
-    padding-bottom: 20px;
-    height: 89px;
-}
-/*Наведения----------------------------------*/
-.hoverrr {
-	cursor: pointer;
-}
-.hover-callcenter2 {
-	display: none;
-	max-height: 200px;
-	overflow-y: auto;
-}
-.hover-callcenter2 p {
-	font-size: 20px !important;
-}
-.hoverrr:hover>.hover-callcenter2 {
-	display: block;
-}
-.hoverrr:hover>.hover-callcenter {
-	display: none;
-}
-.hover-callcenter2::-webkit-scrollbar-button { 
-background-image:url(''); 
-background-repeat:no-repeat; 
-width:8px; 
-height:0px 
-} 
-
-.hover-callcenter2::-webkit-scrollbar-track { 
-background-color:#fff; 
-box-shadow:0px 0px 5px #000 inset; 
-} 
-
-.hover-callcenter2::-webkit-scrollbar-thumb { 
-border-radius: 0px;
-max-height: 10px; 
-background-color:#ffffff; 
-box-shadow:0px 1px 1px #fff inset; 
-background-image:url('https://yraaa.ru/_pu/24/59610063.png'); 
-background-position:center; 
-background-repeat:no-repeat; 
-} 
-
-.hover-callcenter2::-webkit-resizer{ 
-background-image:url(''); 
-background-repeat:no-repeat; 
-width:7px; 
-height:0px 
-} 
-
-.hover-callcenter2::-webkit-scrollbar{ 
-width: 4px; 
-}
-.item {
-	margin-top: 60px;
-	margin-left: 50px;
-}
-/*Ховеры кнопок-------------------------------*/
-#menu button:hover, .first-button:hover, #forma button:hover {
-	background-color: #ca2c24;
-}
-#find-tovar:hover, .have-a-consult:hover, #special-button:hover {
-	background-color: #d00202;
-	transition: 0.3s;
-}
-/*Дополнения*/
-select {
+	width: 20%;
+	height: 1px;
 	background-color: #fff;
 }
-#menu-adaptive {
-	padding-bottom: 10px;
-	box-shadow: 0 6px 4px -4px rgba(0, 0, 0, .2);
+.ourface-rt {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 20%;
+	height: 1px;
+	background-color: #fff;
 }
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-#header-main {
-	padding-top: 200px;
+.ourface h4 {
+	font-weight: 300;
+	text-transform: uppercase;
+	font-size: 30px;
+	line-height: 1.6;
+	margin: 0 auto;
+	margin-top: -22px;
+    position: absolute;
+    left: 50%;
+    margin-left: -90px;
+    top: 0;
 }
-.chem span {
-	margin-top: 100px;
+.ourface img {
+	margin: 0 auto;
+	width: 26px;
+	display: block;
 }
+#ekran3 .hr {
+	width: 69px;
+	height: 1px;
+	background-color: #fff;
+	margin: 15px auto;
+}
+#ekran3 .col-md-4 p {
+	font-size: 14px;
+}
+#ekran3 button {
+	position: absolute;
+	bottom: 15px;
+	left:50%;
+	margin-left: -80px;
+}
+#ekran3 .col-md-4 .zagolovok-ourface {
+	font-size: 20px;
+	font-weight: 300;
+}
+/*4 экран----------------------------------------*/
+#ekran4 {
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-top: 20px;
+	position: relative;
+}
+#ekran4 li img {
+	margin-bottom: 5px;
+	margin-right: 3px; 
+}
+.jcarousel-wrapper {
+	border: none;
+	box-shadow: none;
+}
+.jcarousel-control-next {
+	position: absolute;
+	right: 0;
+	top: 50%;
+	width: 93px;
+	height: 150px;
+	background-image: url(../img/right.png);
+	opacity: 0.3;
+	background-color: transparent;
+	margin-top: -100px;
+	border-radius: 0;
+}
+.jcarousel-control-prev {
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 93px;
+	height: 150px;
+	background-image: url(../img/left.png);
+	opacity: 0.3;
+	background-color: transparent;
+	margin-top: -75px;
+	border-radius: 0;
+}
+.jcarousel-control-prev:hover, .jcarousel-control-next:hover {
+	opacity: 0.8;
+	transition: 0.4s;
+}
+#ekran4 h3, #ekran6 h3 {
+	text-transform: uppercase;
+	font-weight: 300;
+	font-size: 30px;
+	font-family: 'Roboto';
+	text-align: center;
+}
+/*5 экран----------------------------------------------*/
+#ekran5 {
+	background-image: url(../img/ekran5/bg.jpg);
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100%;
+	padding-top: 25px;
+	font-family: 'Roboto';
+	color: #fff;
+	text-align: center;
+}
+#ekran5 h3 {
+	font-size: 30px;
+	font-weight: 300;
+	line-height: 37px;
+}
+.topp {
+	font-size: 20px;
+	font-weight: 300;
+}
+#ekran5 .row {
+	margin-top: 70px;
+}
+#ekran5 .hr {
+	width: 60px;
+	background-color: #fff;
+	height: 2px;
+	margin: 0 auto;
+	margin-top: 10px;
+	margin-bottom: 25px;
+}
+.downp {
+	font-size: 13px;
+}
+.komfortno {
+	width: 75%;
+	margin: 0 auto;
+	margin-top: 35px;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight: 300;
+	font-size: 32px;
+	position: relative;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.komfortno img {
+	max-width: 60px;
+	display: block;
+	margin: 0 auto;
+}
+.lt, .lb, .rb, .rt {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+}
+.lt {
+	left: 0;
+	top: 0;
+	border-left: 1px solid #fff;
+	border-top: 1px solid #fff;
+}
+.lb	{
+	left: 0;
+	bottom: 0;
+	border-left: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+}
+.rt {
+	right: 0;
+	top: 0;
+	border-top: 1px solid #fff;
+	border-right: 1px solid #fff;	
+}
+.rb {
+	right: 0;
+	bottom: 0;
+	border-bottom: 1px solid #fff;
+	border-right: 1px solid #fff;	
+}
+.zadacha {
+	font-size: 22px;
+	font-weight: 300;
+	margin-top: 30px;
+}
+/*6 экран-----------------------------------------------*/
+#ekran6 {
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-bottom: 20px;
+	height: 100vh;
+	padding-top: 30px;
+}
+#ekran6 h3 {
+	margin-bottom: 20px;
+}
+/*#ekran6 .right-gradient {
+	position: absolute;
+	height: 100vh;
+	width: 50%;
+	background: -webkit-linear-gradient(left, transparent 1%, rgba(255,255,255,0.8));
+	background: -o-linear-gradient(left, transparent 1%, rgba(255,255,255,0.8));
+	background: linear-gradient(to right, transparent 1%, rgba(255,255,255,0.8));
+	right: 0;
+	top: 0;
+	z-index: 20;
+}*/
+.img {
+	position: relative;
+}
+.play-button {
+	width: 66px;
+	height: 66px;
+	left: 50%;
+	margin-left: -33px;
+	top: 50%;
+	margin-top: -33px;
+	background-image: url(../img/play.svg);
+	-webkit-background-size: cover;
+	background-size: cover;
+	position: absolute;
+}
+.play-button:hover {
+	background-image: url(../img/play-hover.svg);
+	cursor: pointer;
+}
+.firma {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	font-weight: 400;
+}
+#ekran6 .jcarousel {
+	color: #fff;
+}
+.direktor {
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+	font-weight: 400;
+}
+/*7 экран-----------------------------------------------*/
+#ekran7 {
+	background-image: url(../img/ekran7/bg.jpg);
+	background-position: center center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	height: 100vh;
+	position: relative;
+	color: #fff;
+}
+#ekran7 h3 {
+	font-size: 34px;
+	position: absolute;
+	top:20%;
+	text-align: center;
+	left:50%;
+	margin-left: -228px;
+	font-weight: 400;
+}
+#ekran7 .ostavte {
+	border-left: 1px solid #fff;
+	border-right: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	position: absolute;
+	width: 70%;
+	height: 20%;
+	top:50%;
+	left: 15%;
+}
+.ostavte span:nth-child(1) {
+	margin-left: -222px;
+    left: 50%;
+    position: absolute;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 300;
+    top: -14px;
+}
+.ostavte input[type="text"] {
+	height: 33%;
+	position: absolute;
+	top:33%;
+	width: 30%;
+	left: 6%;
+	background-color: transparent;
+	color: #fff;
+	border: none;
+	border-bottom: 1px solid #fff;
+	box-shadow: none;
+	font-size: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-weight: 300;
+}
+.ostavte input[type="text"]::-webkit-input-placeholder {
+	color:#fff;
+	font-size: 20px;
+	font-weight: 300;
+}
+.ostavte input[type="text"]::-moz-placeholder {
+	color:#fff;
+	font-size: 20px;
+	font-weight: 300;
+}
+/* Firefox 19+ */
+.ostavte input[type="text"]:-moz-placeholder {
+	color:#fff;
+	font-size: 20px;
+	font-weight: 300;
+}
+/* Firefox 18- */
+.ostavte input[type="text"]:-ms-input-placeholder {
+	color:#fff;
+	font-size: 20px;
+	font-weight: 300;
+}
+.ostavte input[type="text"]:nth-child(2) {
+	left: 40%;
+}
+.ostavte button {
+	width: 17%;
+	height: 33%;
+	position: absolute;
+	right: 5%;
+	top: 33%;
+	text-transform: uppercase;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight: 300;
+	font-size: 16px;
+	background-color: #66C8E5;
+	border: none;
+	box-shadow: none;
+	letter-spacing: 0.05em;
+}
+.ostavte button:hover {
+	background-color: #63B5CE;
+}
+.ostavte-lefttop {
+	width: 20%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 1px;
+	background-color: #fff;
+}
+.obrabotka {
+	position: absolute;
+	bottom: -50px;
+	left: 50%;
+	margin-left: -220px;
+}
+.ostavte-righttop {
+	width: 20%;
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 1px;
+	background-color: #fff;
+}
+.ostavte label {
+	font-weight: 400;
+	font-size: 14px;
+	margin-left: 20px;
+}
+/* Скрываем реальный чекбокс */
+.checkbox {
+    display: none;
+}
+ 
+/* Задаем внешний вид для нашего кастомного чекбокса. Все обязательные свойства прокомментированы, остальные же свойства меняйте по вашему усмотрению */
+.checkbox-custom {
+    position: relative;      /* Обязательно задаем, чтобы мы могли абсолютным образом позиционировать псевдоэлемент внютри нашего кастомного чекбокса */
+    width: 14px;             /* Обязательно задаем ширину */
+    height: 14px;            /* Обязательно задаем высоту */
+    border: 1px solid #fff;
+    border-radius: 0px;
+}
+ 
+/* Кастомный чекбокс и лейбл центрируем по вертикали. Если вам это не требуется, то вы можете убрать свойство vertical-align: middle из данного правила, но свойство display: inline-block обязательно должно быть */
+.checkbox-custom,
+.label {
+    display: inline-block;
+    vertical-align: middle;
+}
+ 
+/* Если реальный чекбокс у нас отмечен, то тогда добавляем данный признак и к нашему кастомному чекбоксу  */
+.checkbox:checked + .checkbox-custom::before {
+    content: "";             /* Добавляем наш псевдоэлемент */
+    display: block;          /* Делаем его блочным элементом */
+    position: absolute;      /* Позиционируем его абсолютным образом */
+ 
+    /* Задаем расстояние от верхней, правой, нижней и левой границы */
+    top: 2px;
+    right: 2px;
+    bottom: 2px;
+    left: 2px;
+ 
+    background-image: url(../img/galochka.png); 
+    -webkit-background-size: cover;
+        background-size: cover;    /* Добавляем фон. Если требуется, можете поставить сюда картинку в виде "галочки", которая будет символизировать, что чекбокс отмечен */
+    border-radius: 2px;
+}
+.obrabotka .label {
+	font-size: 14px;
+	font-weight: 400;
+}
+/*8 экран----------------------------------------------*/
+#ekran8 {
+	height: 100vh;
+	background-image: url(../img/ekran8/bg.jpg);
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+	color: #fff;
+	padding-left: 7%;
+	padding-right: 7%;
+	padding-top: 30px;
+}
+#ekran8 h3 {
+	font-size: 30px;
+	font-weight: 300;
+	margin-bottom: 10px;
+}
+#ekran8 p {
+	font-size: 13px;
+}
+#ekran8 .etapy-zagolovok {
+	font-size: 20px;
+	font-weight: 300;
+	margin-bottom: 15px;
+}
+.etapy-podrobnee {
+	background-color: #66B2C8;
+	margin-top: 10px;
+	width: 170px;
+	height: 34px;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight: 300;
+	font-size: 16px;
+	text-transform: uppercase;
+	border: none;
+}
+.sposoby-oplaty {
+	width: 100%;
+	border-left: 1px solid #fff;
+	border-right: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	position: relative;
+	
+	padding-top: 20px;
+	padding-bottom: 20px;
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 40px;
+}
+.sposoby-lt, .sposoby-rt {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 20%;
+	height: 1px;
+	background-color: #fff;
+}
+.sposoby-rt {
+	right: 0;
+	left: auto;
+}
+.sposoby-oplaty img {
+	display: block;
+	margin: 0 auto;
+	max-width: 30px;
+}
+#ekran8 .sposoby-oplaty p {
+	font-weight: 400;
+	font-size: 16px;
+}
+#ekran8 p.sposoby-zagolovok {
+	font-size: 30px;
+	font-weight: 300;
+	position: absolute;
+	left: 50%;
+	top: -20px;
+	margin-left: -140px;
+}
+/*9 экран--------------------------------------------*/
+#ekran9 {
+	position: relative;
+	color: #fff;
+}
+#ekran9 h3 {
+	position: absolute;
+	top: 30px;
+	font-weight: 400;
+	font-size: 30px;
+	z-index: 20;
+	left: 50%;
+	margin-left: -80px;
+}
+#map {
+	height: 100vh;
+	width: 100%;
+	position: relative;
+	z-index: 10 !important;
+}
+.gmnoprint {
+	display: none !important;
+}
+.gmnoprint.gm-style-cc {
+	display: none !important;
+}
+#ekran9 .forma {
+	position: absolute;
+	width: 24%;
+	left: 7%;
+	min-height: 35%;
+	background-color: rgba(5, 37, 48,0.7);
+	z-index: 20;
+	top:14%;
+}
+#ekran9 .main-block-forma {
+	position: absolute;
+	width: 86%;
+	left: 7%;
+	border-left: 1px solid #fff;
+	border-right: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	min-height: 85%;
+	top: 10%;
+	z-index: 20;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 20px;
+}
+.main-block-forma span:nth-child(1) {
+	position: absolute;
+	font-size: 16px;
+	font-weight: 300;
+    left: 50%;
+    top: -7px;
+    margin-left: -70px;
+}
+.main-block-forma input[type="text"] {
+	height: 30px;
+	top:33%;
+	left: 6%;
+	background-color: transparent;
+	color: #fff;
+	border: none;
+	border-bottom: 1px solid #fff;
+	box-shadow: none;
+	font-size: 16px;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-weight: 300;
+	display: block;
+	width: 100%;
+	margin-bottom: 10px;
+}
+.main-block-forma input[type="text"]::-webkit-input-placeholder {
+	color:#fff;
+}
+.main-block-forma input[type="text"]::-moz-placeholder {
+	color:#fff;
+}
+/* Firefox 19+ */
+.main-block-forma input[type="text"]:-moz-placeholder {
+	color:#fff;
+}
+/* Firefox 18- */
+.main-block-forma input[type="text"]:-ms-input-placeholder {
+	color:#fff;
+}
+.send-map {
+	width: 170px;
+	height: 40px;
+	background-color: #63B5CE;
+	font-family: 'Open Sans Condensed';
+	font-weight: 300;
+	font-size: 16px;
+	text-transform: uppercase;
+	border: none;
+	margin: 0 auto;
+	display: block;
+	margin-top: 20px;
+}
+.send-map:hover {
+	background-color: #589BAF;
+}
+.dau {
+	width: 166px;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+.ofis {
+	position: absolute;
+	width: 24%;
+	left: 7%;
+	min-height: 35%;
+	background-image: url(../img/contacts-bg.jpg);
+	background-position: center center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	z-index: 20;
+	top:50%;
+}
+.ofis-nadpis {
+	position: absolute;
+	bottom: 0;
+	background-color: rgba(9, 70, 104,0.5);
+	font-size: 14px;
+	font-weight: 400;
+	left: 0;
+	right: 0;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+.ofis-nadpis img {
+	display: inline;
+    margin-right: 10px;
+    max-width: 13px;
+}
+.ofis-nadpis a {
+	color: #fff;
+	text-decoration: none;
+}
+.ofis-nadpis a:hover, .ofis-nadpis a:focus, .ofis-nadpis a:visited {
+	color: #fff;
+	text-decoration: none;
+}
+#footer {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(5,37,48,0.7);
+	z-index: 20;
+	border-top: 1px solid #fff;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+#footer .col-md-2 p:nth-child(1) {
+	font-size: 20px;
+	font-weight: 300;
+}
+#footer .col-md-2 p:nth-child(2) {
+	font-size: 12px;
+	font-weight: 300;
+}
+#footer .sitemap .col-md-3 {
+	width: auto;
+}
+#footer .sitemap .col-md-3 a {
+	display: block;
+	color: #fff;
+	font-size: 12px;
+	text-decoration: none;
+	font-weight: 300;
+}
+.sitemap {
+	float: right;
+	margin-top: 6px;
+}
+#footer img {
+	max-width: 32px;
+	margin-right: 10px;
+	margin-top: 8px;
 }
