@@ -1,16 +1,18 @@
 //Логотип
-$(document).ready(function(){
-$(".logo-ekran1").animate({bottom: "50%"}, 1000).delay(1000);
+$(window).load(function(){
+$(".logo-ekran1").delay(1000).animate({bottom: "50%"}, 2000);
 });
 // Инициализация скроллинга
 $('#fullpage').fullpage({
-    anchors:['firstSlide','secondSlide','3rdSlide','4thSlide','5thSlide','6thSlide','7thSlide','8thSlide','9thSlide'],
+    anchors:['firstSlide','secondSlide','3rdSlide','4thSlide','5thSlide','6thSlide','7thSlide','8thSlide','newSlide','9thSlide'],
     sectionSelector: '.vertical-scrolling',
     slideSelector: '.horizontal-scrolling',
     controlArrows: false,
     navigation:true,
     navigationPosition:'left',
     overflowScroll:true,
+    scrollOverflow:true,
+    normalScrollElements: '#ekran2',
     afterLoad:function(link,index) {
 // первый слайд
         if(index == 1) {
@@ -20,6 +22,7 @@ $('#fullpage').fullpage({
           $("#fp-nav ul li a span").css({'border':'1px solid #fff'});
           $("#fp-nav ul li:hover a span").css({'border':'1px solid #fff'});
           $("#fp-nav ul li a.active span").css({'border':'1px solid #fff'});
+          $("#top").css({'display':'none'});
         }
         if(link == 'firstSlide') {
          $(".menu-button").css({'color':'#fff'});
@@ -28,6 +31,7 @@ $('#fullpage').fullpage({
          $("#fp-nav ul li a span").css({'border':'1px solid #fff'});
          $("#fp-nav ul li:hover a span").css({'border':'1px solid #fff'});
          $("#fp-nav ul li a.active span").css({'border':'1px solid #fff'});
+         $("#top").css({'display':'none'});
         }
 // второй слайд
         if(index == 2) {
@@ -37,6 +41,7 @@ $('#fullpage').fullpage({
           $("#fp-nav ul li a span").css({'border':'1px solid #95989A'});
           $("#fp-nav ul li:hover a span").css({'border':'1px solid #95989A'});
           $("#fp-nav ul li a.active span").css({'border':'1px solid #95989A'});
+          $("#top").css({'display':'block'});
         }
         if(link == 'secondSlide') {
          $(".menu-button").css({'color':'black'});
@@ -45,6 +50,7 @@ $('#fullpage').fullpage({
          $("#fp-nav ul li a span").css({'border':'1px solid #95989A'});
          $("#fp-nav ul li:hover a span").css({'border':'1px solid #95989A'});
          $("#fp-nav ul li a.active span").css({'border':'1px solid #95989A'});
+         $("#top").css({'display':'block'});
         }
 // третий слайд
         if(index == 3) {

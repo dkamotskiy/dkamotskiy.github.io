@@ -10,6 +10,9 @@
 		display: block;
 		flex: none;
 	}
+	#ekran2 {
+		height: auto;
+	}
 }
 /*Стилизация десктопной версии*/
 @media (min-width: 992px) {
@@ -27,7 +30,351 @@
 	    display: flex;
 	    flex:1 0 auto;
 	}
-	#ekran5 .col-md-2 {
+	#ekran5 .col-md-2, #ekran-new .col-md-2 {
 		width: 20%;
+	}
+}
+/*Стилизация десктопной версии 992-1200*/
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+	/*Экран2*/
+	#ekran2 img {
+		width: 55px;
+	}
+	#ekran2 p {
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+	/*Экран3*/
+	#ekran3 h2 {
+		font-size: 38px;
+	}
+	#ekran3 p {
+		font-size: 15px;
+	}
+	.ourface {
+		padding-top: 20px;
+
+	}
+	.ourface h4 {
+		font-size: 25px;
+		margin-left: -74px;
+	}
+	#ekran3 .col-md-4 .zagolovok-ourface {
+		font-size: 17px;
+	}
+	#ekran3 .hr {
+		margin: 2px auto;
+	}
+	#ekran3 .ourface p {
+		padding-left: 2%;
+		padding-right: 2%;
+	}
+	/*Экран4*/
+	#ekran4 h3 {
+		margin-top: 30px;
+	}
+	#ekran4 .jcarousel-wrapper {
+		margin-top: 45px;
+	}
+	/*Экран5*/
+	#ekran5 .row {
+		margin-top: 40px;
+	}
+	.topp {
+		font-size: 18px;
+	}
+	/*Экран6*/
+	#ekran6 .jcarousel {
+		margin-top: 60px;
+	}
+	#ekran6 h3 {
+		margin-top: 30px;
+	}
+	.ostavte-lefttop, .ostavte-righttop {
+		width: 15%;
+	}
+	/*Экран9*/
+	.sposoby-lt, .sposoby-rt {
+		width: 10%;
+	}
+	/*Боковое меню*/ 
+	#pushy-menu p {
+		margin-bottom: 16px;
+	}
+}
+/*Стилизация десктопной версии 1200-1300*/
+@media screen and (min-width: 1250px) and (max-width: 1320px) and (min-height: 1000px) {
+	#ekran2 {
+		padding-top: 8%;
+	}
+	#ekran2 h3 {
+		margin-bottom: 50px;
+	}
+	#ekran2 img {
+		width: 100px;
+	}
+	#ekran2 .col-md-4 div {
+		padding-top: 19px;
+	    padding-bottom: 20px;
+	    padding-left: 10px;
+	    padding-right: 10px;
+	}
+	#ekran3 {
+		padding-top: 8%;
+	}
+	.ourface {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+	.ourface img {
+		width: 50px;
+	}
+	#ekran3 .col-md-4 .zagolovok-ourface {
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	#ekran3 button {
+		bottom: 50px;
+	}
+	#ekran4 {
+		padding-top: 10%;
+	}
+	#ekran4 .jcarousel-wrapper {
+		margin-top: 100px;
+	}
+	#ekran5 {
+		padding-top: 8%;
+	}
+	#ekran5 .row {
+		margin-top: 100px;
+	}
+	#ekran6 {
+		padding-top: 10%;
+	}
+	#ekran6 .jcarousel {
+		margin-top: 130px;
+	}
+	#ekran9 .forma, .ofis {
+		min-height: 25%;
+	}
+	.ofis {
+		top: 40%;
+	}
+}
+/*Стилизация десктопной версии 1200-1300*/
+@media screen and (min-width: 1500px) {
+	#ekran2 {
+		padding-top: 50px;
+	}
+	#ekran2 h3, #ekran4 h3 {
+		font-size: 42px;
+		margin-bottom: 50px;
+	}
+	#ekran2 img {
+		width: 105px;
+	}
+	#ekran2 .col-md-4 div {
+		padding-top: 17px;
+		padding-bottom: 34px;
+	}
+	#ekran2 button, #ekran3 button {
+		width: 200px;
+		height: 40px;
+		margin-top: 20px;
+	}
+	#ekran2 .ekran3-zagolovok {
+		font-size: 20px;
+	}
+	#ekran2 p {
+		font-size: 18px;
+	}
+	#ekran3 {
+		padding-left: 140px;
+		padding-right: 140px;
+		padding-top: 20px;
+	}
+	#ekran3 h2 {
+		font-size: 62px;
+	}
+	#ekran3 p {
+		font-size: 24px;
+	}
+	#ekran3 .number {
+		font-size: 54px !important;
+	}
+	#ekran3 .verh {
+		font-size: 21px;
+		top: 10px;
+		left: 85px;
+	}
+	#ekran3 .niz {
+		font-size: 21px;
+		top: 30px;
+		left: 85px;
+	}
+	#ekran3 .verh1, #ekran3 .niz1 {
+		left: 50px;
+	}
+	#ekran3 .col-md-3 img {
+	    position: absolute;
+	    left: 30px;
+	    top: -21px;
+	    width: 107px;
+	}
+	.sdvig {
+		margin-left: -10px;
+		margin-top: 50px;
+	}
+	.ourface {
+		margin-top: 200px;
+		padding-top: 40px;
+		padding-bottom: 25px;
+	}
+	#ekran3 button {
+		bottom: 35px;
+	}
+	.ourface img {
+		width: 42px;
+	}
+	#ekran4 {
+		padding-top: 60px;
+		padding-left: 140px;
+		padding-right: 140px;
+	}
+	#ekran3 .col-md-4 .zagolovok-ourface {
+		font-size: 24px;
+	}
+	#ekran3 .col-md-4 p {
+		font-size: 18px;
+	}
+	#ekran5 {
+		padding-left: 140px;
+		padding-right: 140px;
+		padding-top: 60px;
+	}
+	#ekran5 h3 {
+		font-size: 42px;
+	}
+	#ekran5 .row {
+		margin-top: 150px;
+	}
+	.topp {
+		font-size: 24px;
+	}
+	.downp {
+		font-size: 18px;
+	}
+	.komfortno img {
+		max-width: 84px;
+	}
+	.komfortno {
+		font-size: 42px;
+	}
+	.zadacha {
+		margin-top: 100px;
+	}
+	#ekran6 h3 {
+		font-size: 42px;
+		margin-bottom: 70px;
+	}
+	#ekran6 {
+		padding-top: 100px;
+	}
+	#ekran8 {
+		padding-left: 140px;
+		padding-right: 140px;
+		padding-top: 70px;
+	}
+	#ekran8 h3 {
+		font-size: 42px;
+		margin-bottom: 50px;
+	}
+	#ekran8 .row img {
+		width: 56px;
+	}
+	#ekran8 .row p.zagolovok-strategy {
+		font-size: 24px;
+	}
+	#ekran8 .row .hr {
+		width: 70px;
+	}
+	#ekran8 .row p {
+		font-size: 18px;
+	}
+	#ekran-new {
+		padding-left: 140px;
+		padding-right: 140px;
+		padding-top: 140px;
+	}
+	#ekran-new h3 {
+		font-size: 42px;
+		margin-bottom: 45px;
+	}
+	#ekran-new .row img {
+		width: 70px;
+	}
+	.borderr p {
+		font-size: 24px;
+	}
+	#ekran-new .row.sposoby-newblock img {
+		width: 55px;
+	}
+	.sposoby-newblock .hr {
+		width: 70px;
+	}
+	#ekran-new .text-center {
+		font-size: 18px;
+	}
+	#ekran-new .sposoby-new-zagolovok {
+		font-size: 24px;
+	}
+	#ekran7 h3 {
+		font-size: 47px;
+		margin-left: -268px;
+	}
+	.main-block-forma input[type="text"] {
+		height: 37px;
+		font-size: 20px;
+		margin-bottom: 20px;
+	}
+	.send-map {
+		width: 204px;
+		height: 48px;
+	}
+	#ekran9 .forma, .ofis {
+		min-height: 31%;
+	}
+	.main-block-forma span:nth-child(1) {
+    position: absolute;
+    font-size: 24px;
+    font-weight: 300;
+    left: 50%;
+    top: -15px;
+    margin-left: -106px;
+	}
+	#ekran9 .main-block-forma {
+		padding-top: 35px;
+		padding-bottom: 35px;
+	}
+	.send-map {
+		margin-top: 40px;
+	}
+	.deviz {
+		font-size: 42px;
+		margin-left: -400px;
+	}
+	/*Боковое меню*/
+	.pushy-open-right .pushy-right {
+		width: 562px;
+	}
+	.pushy-right img {
+		max-width: 296px;
+	}
+	#pushy-menu {
+		margin-right:135px;
+	}
+	#pushy-menu p {
+		font-size: 21px;
+		margin-bottom: 25px;
 	}
 }

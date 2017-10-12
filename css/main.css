@@ -11,6 +11,13 @@
 body {
 	overflow-x: hidden;
 	font-family: Roboto;
+	color: #333333;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+	color: #333333;
+}
+#ekran1, #ekran2, #ekran3, #ekran4, #ekran5, #ekran6, #ekran7, #ekran8, #ekran9 {
+	height: 100vh;
 }
 .container-fluid {
 	padding-left: 0;	
@@ -19,6 +26,9 @@ body {
 p {
 	margin: 0;
 }
+.container {
+	width: 100%;
+	}
 /*Боковое меню---------------------------------------------*/
 .pushy-open-right .pushy-right {
 	width: 400px;
@@ -46,9 +56,11 @@ p {
 .pushy a {
 	color: #333333;
 	padding: 0;
+	transition: 0.3s;
 }
 .pushy a:hover {
 	color: #3D9FBC;
+	transition: 0.3s;
 }
 .pushy-closing {
 	position: absolute;
@@ -156,6 +168,7 @@ p {
 	padding-left: 7%;
 	padding-right: 7%;
 	position: relative;
+	padding-top: 10px;
 }
 #ekran2 .col-md-4 {
 	padding: 10px;
@@ -167,12 +180,11 @@ p {
 	padding-bottom: 10px;
 }
 #ekran2 h3 {
-	font-size: 42px;
+	font-size: 30px;
 	font-family: Roboto;
 	font-weight: 300;
 	text-transform: uppercase;
 	text-align: center;
-	margin-bottom: -5px;
 }
 #ekran2 p {
 	font-size: 14px;
@@ -187,7 +199,8 @@ p {
 	background-color: #66C8E5;
 	border: none;
 	border-radius: 3px;
-	padding: 10px 20px;
+	width: 170px;
+	height: 34px;
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-weight: 300;
 	font-size: 18px;
@@ -195,9 +208,11 @@ p {
 	color: #fff;
 	line-height: 1.5;
 	letter-spacing: 0.05em;
+	transition: 0.4s;
 }
 #ekran2 button:hover, #ekran3 button:hover {
 	background-color: #66B2C8;
+	transition: 0.4s;
 }
 #ekran2 img {
 	width: 75px;
@@ -208,6 +223,7 @@ p {
 	text-align: center;
 	font-weight: 400;
 }
+
 /*3 экран--------------------------------------------------*/
 .sdvig {
 	margin-left: 45px;
@@ -221,14 +237,17 @@ p {
 	background-repeat: no-repeat;
 	color: #fff;
 	font-family: 'Roboto';
+	padding-left: 100px;
+	padding-right: 100px;
 }
 #ekran3 h2 {
 	font-weight: bold;
 	font-size: 46px;
+	color: #fff;
 }
 #ekran3 p {
-	padding-left: 10%;
-	padding-right: 10%;
+	padding-left: 8%;
+	padding-right: 8%;
 	font-size: 20px;
 }
 #ekran3 .number {
@@ -302,6 +321,7 @@ p {
     left: 50%;
     margin-left: -90px;
     top: 0;
+    color: #fff;
 }
 .ourface img {
 	margin: 0 auto;
@@ -312,7 +332,7 @@ p {
 	width: 69px;
 	height: 1px;
 	background-color: #fff;
-	margin: 15px auto;
+	margin: 5px auto;
 }
 #ekran3 .col-md-4 p {
 	font-size: 14px;
@@ -327,16 +347,21 @@ p {
 	font-size: 20px;
 	font-weight: 300;
 }
+#ekran3 .container {
+	width: 100%;
+}
 /*4 экран----------------------------------------*/
 #ekran4 {
-	padding-left: 10%;
-	padding-right: 10%;
+	padding-left: 130px;
+	padding-right: 130px;
 	padding-top: 20px;
 	position: relative;
 }
-#ekran4 li img {
-	margin-bottom: 5px;
-	margin-right: 3px; 
+.jcarousel li img {
+    margin-bottom: 6px;
+    margin-right: 5px;
+    display: block;
+    padding-right: 4px;
 }
 .jcarousel-wrapper {
 	border: none;
@@ -388,18 +413,21 @@ p {
 	font-family: 'Roboto';
 	color: #fff;
 	text-align: center;
+	padding-left: 100px;
+	padding-right: 100px;
 }
 #ekran5 h3 {
 	font-size: 30px;
 	font-weight: 300;
 	line-height: 37px;
+	color: #fff;
 }
 .topp {
 	font-size: 20px;
 	font-weight: 300;
 }
 #ekran5 .row {
-	margin-top: 70px;
+	margin-top: 50px;
 }
 #ekran5 .hr {
 	width: 60px;
@@ -408,9 +436,6 @@ p {
 	margin: 0 auto;
 	margin-top: 10px;
 	margin-bottom: 25px;
-}
-.downp {
-	font-size: 13px;
 }
 .komfortno {
 	width: 75%;
@@ -534,8 +559,9 @@ p {
 	top:20%;
 	text-align: center;
 	left:50%;
-	margin-left: -228px;
+	margin-left: -195px;
 	font-weight: 400;
+	color: #fff;
 }
 #ekran7 .ostavte {
 	border-left: 1px solid #fff;
@@ -571,6 +597,12 @@ p {
 	padding-left: 10px;
 	padding-right: 10px;
 	font-weight: 300;
+	border-radius: 1px;
+}
+.ostavte input[type="text"]:active, .ostavte input[type="text"]:hover, .ostavte input[type="text"]:focus {
+    outline: 1px solid #32B0C2;
+    outline-offset: 0;
+    border-bottom: none;
 }
 .ostavte input[type="text"]::-webkit-input-placeholder {
 	color:#fff;
@@ -695,11 +727,13 @@ p {
 	padding-left: 7%;
 	padding-right: 7%;
 	padding-top: 30px;
+
 }
 #ekran8 h3 {
 	font-size: 30px;
 	font-weight: 300;
 	margin-bottom: 10px;
+	color: #fff;
 }
 #ekran8 p {
 	font-size: 13px;
@@ -762,6 +796,95 @@ p {
 	top: -20px;
 	margin-left: -140px;
 }
+#ekran8 .row p {
+	font-size: 14px;
+	font-weight: 400;
+	color: #F2F2F2;
+}
+#ekran8 .row p.zagolovok-strategy {
+	font-size: 20px;
+	font-weight: 300;
+}
+#ekran8 .row img {
+	width: 40px;
+	display: block;
+	margin: 0 auto;
+}
+#ekran8 .row .hr {
+	margin: 10px auto;
+	width: 50px;
+	height: 1px;
+	background-color: #fff;
+}
+/*Новый экран----------------------------------------*/
+#ekran-new {
+	height: 100vh;
+	background-image: url(../img/ekran-new/bg.jpg);
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+	color: #fff;
+	padding-left: 7%;
+	padding-right: 7%;
+	padding-top: 4%;
+}
+#ekran-new h3 {
+	font-size: 30px;
+	font-weight: 300;
+	text-align: center;
+	color: #fff;
+}
+#ekran-new .row img {
+	width: 50px;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 10px;
+}
+.borderr {
+	border-bottom: 1px solid #fff;
+	border-left: 1px solid #fff;
+	border-right: 1px solid #fff;
+	position: relative;
+	padding-top: 60px;
+	padding-bottom: 33px;
+}
+.borderr p {
+	font-size: 20px;
+	font-weight: 300;
+}
+.borderr-left, .borderr-right {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 20%;
+	height: 1px;
+	background-color: #fff;
+}
+.borderr-right {
+	left: auto;
+	right: 0;
+}
+#ekran-new h3:nth-child(1) {
+	margin-bottom: -20px;
+}
+.sposoby-newblock .hr {
+	width: 50px;
+	margin: 10px auto;
+	height: 1px;
+	background-color: #fff;
+}
+#ekran-new .sposoby-newblock img {
+	width: 40px;
+}
+#ekran-new .sposoby-new-zagolovok {
+	font-size: 20px;
+	font-weight: 300;
+	text-align: center;
+}
+.spospo {
+	margin-top: 60px;
+	margin-bottom: 30px;
+}
 /*9 экран--------------------------------------------*/
 #ekran9 {
 	position: relative;
@@ -775,6 +898,7 @@ p {
 	z-index: 20;
 	left: 50%;
 	margin-left: -80px;
+	color: #fff;
 }
 #map {
 	height: 100vh;
@@ -791,7 +915,7 @@ p {
 #ekran9 .forma {
 	position: absolute;
 	width: 24%;
-	left: 7%;
+	right: 7%;
 	min-height: 35%;
 	background-color: rgba(5, 37, 48,0.7);
 	z-index: 20;
@@ -870,11 +994,19 @@ p {
 	width: 166px;
 	margin: 0 auto;
 	margin-top: 10px;
+	position: relative;
+}
+.dau .label {
+	text-align: left;
+    position: absolute;
+    top: -2px;
+    left: 15px;
+    font-size: 10px;
 }
 .ofis {
 	position: absolute;
 	width: 24%;
-	left: 7%;
+	right: 7%;
 	min-height: 35%;
 	background-image: url(../img/contacts-bg.jpg);
 	background-position: center center;
@@ -949,4 +1081,22 @@ p {
 	max-width: 32px;
 	margin-right: 10px;
 	margin-top: 8px;
+}
+/*Кнопка вверх*/
+#top {
+	position: fixed;
+	bottom: 30px;
+	left: 30px;
+	opacity: 0.2;
+	z-index: 999;
+	transition: 0.5s;
+	cursor: pointer;
+}
+#top:hover {
+	opacity: 0.8;
+	transition: 0.5s;
+}
+#top img {
+	width: 70px;
+	height: 70px;
 }
