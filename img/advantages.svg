@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="4959 2663 285 158">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3, .cls-5 {
+        fill: #fff;
+      }
+
+      .cls-1 {
+        stroke: #95989a;
+      }
+
+      .cls-2 {
+        font-size: 11px;
+        font-family: Roboto-Regular, Roboto;
+      }
+
+      .cls-3 {
+        font-size: 28px;
+        font-family: Roboto-Bold, Roboto;
+        font-weight: 700;
+        opacity: 0.97;
+      }
+
+      .cls-4 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-5 {
+        opacity: 0.4;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_390" data-name="Rectangle 390" class="cls-1" width="56" height="62" transform="translate(291 285.012)"/>
+    </clipPath>
+  </defs>
+  <g id="Group_954" data-name="Group 954" transform="translate(4419 2348)">
+    <g id="Group_1" data-name="Group 1" transform="translate(279 127.988)">
+      <text id="лет_на_рынке_IT_услуг" data-name="лет на рынке
+IT услуг" class="cls-2" transform="translate(301 311.012)"><tspan x="0" y="0">лет на рынке</tspan><tspan x="0" y="13">IT услуг</tspan></text>
+      <text id="_5" data-name="5" class="cls-3" transform="translate(294 324.012)"><tspan x="-16.064" y="0">5</tspan></text>
+      <g id="Symbol_33_4" data-name="Symbol 33 – 4">
+        <g id="Mask_Group_118" data-name="Mask Group 118" class="cls-4" transform="translate(-5 -2)">
+          <path id="circle" class="cls-5" d="M75.576,75.741,50.352,58.051a30.794,30.794,0,1,1,0,35.38Zm0,0L56.773,88.91a22.932,22.932,0,1,0,0-26.339Z" transform="translate(240.648 240.271)"/>
+        </g>
+      </g>
+    </g>
+    <g id="Group_1-2" data-name="Group 1" transform="translate(436 127.988)">
+      <text id="реализованных_пректов" data-name="реализованных
+пректов" class="cls-2" transform="translate(301 311.012)"><tspan x="0" y="0">реализованных</tspan><tspan x="0" y="13">пректов</tspan></text>
+      <text id="_97" data-name="97" class="cls-3" transform="translate(294 324.012)"><tspan x="-32.129" y="0">97</tspan></text>
+      <g id="Symbol_33_5" data-name="Symbol 33 – 5">
+        <g id="Mask_Group_118-2" data-name="Mask Group 118" class="cls-4" transform="translate(-5 -2)">
+          <path id="circle-2" data-name="circle" class="cls-5" d="M75.576,75.741,50.352,58.051a30.794,30.794,0,1,1,0,35.38Zm0,0L56.773,88.91a22.932,22.932,0,1,0,0-26.339Z" transform="translate(240.648 240.271)"/>
+        </g>
+      </g>
+    </g>
+    <g id="Group_1-3" data-name="Group 1" transform="translate(279 31.988)">
+      <text id="профессиональных_сотрудников" data-name="профессиональных
+сотрудников" class="cls-2" transform="translate(301 311.012)"><tspan x="0" y="0">профессиональных</tspan><tspan x="0" y="13">сотрудников</tspan></text>
+      <text id="_10" data-name="10" class="cls-3" transform="translate(294 324.012)"><tspan x="-32.129" y="0">10</tspan></text>
+      <g id="Symbol_33_2" data-name="Symbol 33 – 2">
+        <g id="Mask_Group_118-3" data-name="Mask Group 118" class="cls-4" transform="translate(-5 -2)">
+          <path id="circle-3" data-name="circle" class="cls-5" d="M75.576,75.741,50.352,58.051a30.794,30.794,0,1,1,0,35.38Zm0,0L56.773,88.91a22.932,22.932,0,1,0,0-26.339Z" transform="translate(240.648 240.271)"/>
+        </g>
+      </g>
+    </g>
+    <g id="Group_1-4" data-name="Group 1" transform="translate(436 31.988)">
+      <text id="компании_работают_с_нами" data-name="компании
+работают с нами" class="cls-2" transform="translate(301 311.012)"><tspan x="0" y="0">компании</tspan><tspan x="0" y="13">работают с нами</tspan></text>
+      <text id="_23" data-name="23" class="cls-3" transform="translate(294 324.012)"><tspan x="-32.129" y="0">23</tspan></text>
+      <g id="Symbol_33_3" data-name="Symbol 33 – 3" transform="translate(-1)">
+        <g id="Mask_Group_118-4" data-name="Mask Group 118" class="cls-4" transform="translate(-5 -2)">
+          <path id="circle-4" data-name="circle" class="cls-5" d="M75.576,75.741,50.352,58.051a30.794,30.794,0,1,1,0,35.38Zm0,0L56.773,88.91a22.932,22.932,0,1,0,0-26.339Z" transform="translate(240.648 240.271)"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
