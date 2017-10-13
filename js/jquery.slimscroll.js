@@ -70,7 +70,7 @@
         wheelStep : 40,
 
         // scroll amount applied when user is using gestures
-        touchScrollStep : 100,
+        touchScrollStep : 200,
 
         // sets border radius
         borderRadius: '7px',
