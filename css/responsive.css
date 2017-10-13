@@ -30,6 +30,7 @@
 		position: static;	
 		margin-top: 125%;	
 		margin-left: 0;	
+		width: 100%;	
 	}
 	/*3 экран*/
 	#ekran3 {
@@ -290,7 +291,10 @@
 
 	}
 	.ostavte label {
-		margin-left: 30px;	
+		margin-left: 30px;
+		margin: auto;
+		display: block;	
+		max-width: 220px;	
 	}
 	.obrabotka .label {
 		font-size: 12px;	
@@ -308,6 +312,10 @@
 	}
 	.pushy-right img {
 		padding-bottom: 0;	
+	}
+	/*Экран 8*/
+	#ekran8 .col-md-3 {
+		margin-bottom: 15px;	
 	}
 }
 /*Стилизация десктопной версии*/
