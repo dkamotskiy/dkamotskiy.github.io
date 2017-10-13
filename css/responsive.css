@@ -20,12 +20,12 @@
 		right: 15px;
 	}
 	/*1 экран*/
-	.ekran1-footer-mountain, .ekran1-footer {
+	/*.ekran1-footer-mountain, .ekran1-footer {
 		bottom: -60px;
 	}
 	.logo-ekran1 {
 		bottom: -60px;
-	}
+	}*/
 	#ekran1 {
 		overflow: hidden;
 	}
