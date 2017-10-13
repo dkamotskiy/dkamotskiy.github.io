@@ -20,6 +20,9 @@
 		right: 15px;
 	}
 	/*1 экран*/
+	#ekran1 {
+		height: calc(100vh - 60px);
+	}
 	.logo-ekran1 {
 		width: 226px;
 		left: 50%;
