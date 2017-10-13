@@ -17,7 +17,7 @@
 	/*Общие элементы*/
 	.menu-button {
 		top: 15px;
-		right: 105px;
+		right: 30px;
 	}
 	/*1 экран*/
 	.logo-ekran1 {
@@ -70,12 +70,16 @@
 		padding-left: 20px;
 		padding-right: 20px;
 		height: auto;
-		padding-bottom: 20px;
+		padding-bottom: 5px;
 	} 
 	#ekran4 img.display-mobile {
 		padding-bottom: 5px;
 		display: block;
 		margin: 0 auto;
+	}
+	#ekran4 button.display-mobile {
+		margin-top: 15px !important;	
+		margin-bottom: 15px !important;	
 	}
 	/*Экран5---------*/
 	#ekran5 {
@@ -113,7 +117,7 @@
 	#images-ekran6 .img, #dop-images-6 .img {
 		margin-bottom: 15px;
 	}
-	#ekran6 button.display-mobile {
+	#ekran6 button.display-mobile, #ekran4 button.display-mobile {
 		display: block;
 	    margin: 0 auto;
 	    box-shadow: none;
@@ -191,7 +195,7 @@
 		padding-right: 10px;
 		margin-top: 30px;
 		padding-top: 60px;
-		padding-bottom: 90px;
+		padding-bottom: 40px;
 		position: relative;
 	}
 	.ostavte input[type="text"] {
@@ -220,6 +224,7 @@
 		position: static;
 		bottom: 0;
 	}
+	/*Последний экран*/
 	#ekran9 {
 		min-height: 1100px;
 	}
@@ -243,6 +248,64 @@
 		font-size: 12px;
 		color: #FFFFFF;
 		text-align: left;
+	}
+	#ekran9 .forma {	
+	    width: 86%;
+	    left: 7%;
+	    min-height: 1px;
+	    padding-left: 15px;
+	    padding-right: 15px;
+	    padding-top: 15px;
+	    padding-bottom: 5px;	
+	    top: auto;	
+	    bottom: 500px;	
+	}
+	.main-block-forma span:nth-child(1) {
+		margin-left: -60px;
+		font-size: 14px;
+
+	}
+	.main-block-forma input[type="text"] {
+		font-size: 14px;
+	}
+	#ekran9 .main-block-forma {
+		min-height: 1px;
+		width: 100%;
+		position: relative;	
+		left: 0;	
+	}
+	.ofis {
+		height: 280px;	
+		width: 86%;
+    	left: 7%;
+    	min-height: 1px;
+    	top: auto;	
+    	bottom: 200px;	
+	}
+	/*Формы*/
+	.obrabotka.display-mobile {
+		margin-top: 20px;	
+
+	}
+	.ostavte label {
+		margin-left: 30px;	
+	}
+	.obrabotka .label {
+		font-size: 12px;	
+	}
+	/*Боковое меню*/
+	.pushy-open-right .pushy-right {
+		width: 291px;	
+	}
+	#pushy-menu {
+		margin-right: 15px;	
+	}
+	#pushy-menu p {
+		margin-bottom: 11px;
+		font-size: 15px;		
+	}
+	.pushy-right img {
+		padding-bottom: 0;	
 	}
 }
 /*Стилизация десктопной версии*/
