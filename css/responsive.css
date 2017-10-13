@@ -10,7 +10,7 @@
 		display: block;
 		flex: none;
 	}
-	#ekran2, #ekran3, #ekran4, #ekran6, #ekran8, #ekran-new {
+	#ekran2, #ekran3, #ekran4, #ekran6, #ekran8, #ekran-new, #ekran5 {
 		height: auto;
 		padding-top: 65px;
 	}
