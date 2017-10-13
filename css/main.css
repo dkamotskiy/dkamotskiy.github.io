@@ -1129,3 +1129,7 @@ p {
 	width: 70px;
 	height: 70px;
 }
+/*Прочее*/
+.slimScrollBar {
+	display: none !important;
+}

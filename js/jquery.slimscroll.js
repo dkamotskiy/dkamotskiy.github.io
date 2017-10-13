@@ -19,7 +19,7 @@
         height : '250px',
 
         // width in pixels of the scrollbar and rail
-        size : '7px',
+        size : '5px',
 
         // scrollbar color, accepts any hex/color value
         color: '#000',
@@ -70,7 +70,7 @@
         wheelStep : 40,
 
         // scroll amount applied when user is using gestures
-        touchScrollStep : 400,
+        touchScrollStep : 100,
 
         // sets border radius
         borderRadius: '7px',
