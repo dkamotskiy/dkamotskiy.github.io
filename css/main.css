@@ -23,6 +23,9 @@ body {
 	padding-left: 0;	
 	padding-right: 0;	
 }
+.jcarousel-control-prev, .jcarousel-control-next {
+	box-shadow: none;
+}
 p {
 	margin: 0;
 }
@@ -90,7 +93,7 @@ p {
 }
 /*1 экран--------------------------------------------------*/
 #ekran1 {
-	background-image: url(../img/bg-clouds.png);
+	background-image: url(../img/bg-clouds.jpg);
 	background-position: top center;
 	background-repeat: no-repeat;
 	height: 100vh;
@@ -293,9 +296,9 @@ p {
 	border-right: 1px solid #fff;
 	border-bottom: 1px solid #fff;
 	border-radius: 2px;
-	padding-bottom: 15px;
+	padding-bottom: 0px;
 	position: relative;
-	padding-top: 30px;
+	padding-top: 25px;
 }
 .ourface-lt {
 	position: absolute;
@@ -333,7 +336,7 @@ p {
 }
 #ekran3 .hr {
 	width: 69px;
-	height: 1px;
+	height: 1px !important;
 	background-color: #fff;
 	margin: 5px auto;
 }
@@ -405,13 +408,35 @@ p {
 	font-family: 'Roboto';
 	text-align: center;
 }
+#ekran4 .portfolio-pic {
+	position: relative;
+}
+#ekran4 .portfolio-pic h5 {
+	position: absolute;
+	text-align: center;
+	top:22px;
+	width: 100%;
+	font-size: 14px;
+	font-weight: 400;
+	color: #fff;
+	margin-top: 0;
+}
+#ekran4 .portfolio-pic.ccc h5 {
+	color: #cccccc;
+}
+#ekran4 .portfolio-pic.ser h5 {
+	color: #636566;
+}
+#ekran4 img {
+	max-width: 100%;
+}
 /*5 экран----------------------------------------------*/
 #ekran5 {
 	background-image: url(../img/ekran5/bg.jpg);
 	-webkit-background-size: cover;
 	background-size: cover;
 	background-repeat: no-repeat;
-	height: 100%;
+	height: 100vh;
 	padding-top: 25px;
 	font-family: 'Roboto';
 	color: #fff;
@@ -604,7 +629,7 @@ p {
 	border-radius: 1px;
 }
 .ostavte input[type="text"]:active, .ostavte input[type="text"]:hover, .ostavte input[type="text"]:focus {
-    outline: 1px solid #32B0C2;
+    outline: 1px solid #32B0C2 !important;
     outline-offset: 0;
     border-bottom: none;
 }

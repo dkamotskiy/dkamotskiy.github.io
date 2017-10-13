@@ -2,8 +2,14 @@
 $(window).load(function(){
 $(".logo-ekran1").delay(1000).animate({bottom: "50%"}, 2000);
 });
+//Инициализация свайпа карусели
+$('.jcarousel')
+    .jcarousel()       // init jcarousel
+    .jcarouselSwipe(); // init jcarouselSwipe
 // Инициализация скроллинга
-$('#fullpage').fullpage({
+$(document).ready(function() {
+                if ($(window).width() > 76){
+                  $('#fullpage').fullpage({
     anchors:['firstSlide','secondSlide','3rdSlide','4thSlide','5thSlide','6thSlide','7thSlide','8thSlide','newSlide','9thSlide'],
     sectionSelector: '.vertical-scrolling',
     slideSelector: '.horizontal-scrolling',
@@ -13,7 +19,7 @@ $('#fullpage').fullpage({
     overflowScroll:true,
     // navigationTooltips
     scrollOverflow:true,
-    normalScrollElements: '#ekran2',
+    normalScrollElements: '',
     afterLoad:function(link,index) {
 // первый слайд
         if(index == 1) {
@@ -140,6 +146,11 @@ $('#fullpage').fullpage({
       }
     // другие опции
 });
+                }
+         else   {
+            }
+
+});
 // Появление левой кнопки
 $(document).ready(function(){
 $( "#ekran4 .jcarousel-control-next" ).click(function() {
@@ -151,81 +162,64 @@ $( "#ekran6 .jcarousel-control-next" ).click(function() {
     $("#ekran6 .jcarousel-control-prev").attr("style","display:block");
 });  
 });
+// Смена свойств кнопки "Меню при скролле"
+// var target = $('#ekran2');
+// var targetPos = target.offset().top;
+// var winHeight = $(window).height();
+// var scrollToElem = targetPos - winHeight;
+// $(window).scroll(function(){
+//   var winScrollTop = $(this).scrollTop();
+//   if(winScrollTop > scrollToElem){
+//    $(".menu-button").attr("style","background-color:#000;");
+//   }
+// });
+// var target = $('#ekran3');
+// var targetPos = target.offset().top;
+// var winHeight = $(window).height();
+// var scrollToElem = targetPos - winHeight;
+// $(window).scroll(function(){
+//   var winScrollTop = $(this).scrollTop();
+//   if(winScrollTop > scrollToElem){
+//    $(".menu-button").css({'color':'#000'});
+//   }
+// });
+// var target = $('#ekran3');
+// var targetPos = target.offset().top;
+// var winHeight = $(window).height();
+// var scrollToElem = targetPos - winHeight;
+// $(window).scroll(function(){
+//   var winScrollTop = $(this).scrollTop();
+//   if(winScrollTop > scrollToElem){
+//    $(".menu-button").css({'color':'#fff'});
+//   }
+// });
+// var target = $('#ekran3');
+// var targetPos = target.offset().top;
+// var winHeight = $(window).height();
+// var scrollToElem = targetPos - winHeight;
+// $(window).scroll(function(){
+//   var winScrollTop = $(this).scrollTop();
+//   if(winScrollTop > scrollToElem){
+//    $(".menu-button").css({'color':'#000'});
+//   }
+// });
 
-
-
-
-
-
-
-
-
-
-
-//скролл
-$(window).scroll(function(){
-  var offset = $('.white').offset(),
-      offsetwb = $('.white + .black').offset();
-  if ($(this).scrollTop() > offset.top && $(this).scrollTop() < offsetwb.top) {
-    $('.menu-button').css('background-color','black !important');
-  }
-  else {
-    $('.menu-button').css('background-color','white !important');
-  }
-});
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// //скролл
+// $(window).scroll(function(){
+//   var offset = $('.white').offset(),
+//       offsetwb = $('.white + .black').offset();
+//   if ($(this).scrollTop() > offset.top && $(this).scrollTop() < offsetwb.top) {
+//     $('.menu-button').css('background-color','black !important');
+//   }
+//   else {
+//     $('.menu-button').css('background-color','white !important');
+//   }
+// });
 // Маска
 jQuery(function($){
    $("#phone-form").mask("+7 (999) 999-9999");
    $("#phone-forma2").mask("+7 (999) 999-9999");
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //GoogleMap
                   function initMap() {
                     var uluru = {lat: 54.736908, lng: 55.987691};

@@ -1,5 +1,181 @@
-/*Стилизация мобильной версии*/
-@media (max-width: 768px) {
+/*Стилизация планшетной версии*/
+@media screen and (min-width: 768px) and (max-width: 991px) and (min-height: 1000px) {
+	.jcarousel-control-next {
+		margin-top: -75px;
+	}
+	.display-tablet {
+		display: block;
+	}
+	.display-desktop {
+		display: none;
+	}
+	#ekran3 .display-mobile, #ekran4 .display-mobile {
+		display: none;
+	}
+	.not-tablet-displayed {
+		display: none;
+	}
+	.display-tablet .hr {
+		padding: 0 !important;
+	    border: none !important;
+	    border-radius: 0 !important;
+	}
+	.ourface {
+		margin-top: 60px;
+		padding-top: 0;
+	}
+	.zagolovok-ourface {
+		font: 18px;
+	} 
+	#ekran3 p {
+		font-size: 14px;
+	}
+	#ekran3 .glavtext {
+		margin-bottom: 40px;
+		font-size: 18px;
+	}
+	.row.display-tablet {
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	#ekran2 .row.display-tablet .col-sm-6 div {
+		padding: 10px;
+		border: 1px solid #D2D6D9;
+		border-radius: 2px;
+	}
+	#ekran3 button {
+		bottom: 50px;
+	}
+	#ekran3 {
+		padding-left: 15px;
+		padding-right: 15px;
+		padding-top: 30px;
+	}
+	#ekran3 p {
+		padding-left: 10px;
+		padding-right: 10px;	
+	}
+	#ekran4 .display-desktop {
+		display: block;
+	}
+	#ekran4 {
+		padding-left: 90px;
+		padding-right: 90px;
+		padding-top: 70px;
+	}
+	#ekran4 .jcarousel-wrapper, #ekran6 .jcarousel-wrapper {
+		margin-top: 170px;
+	}
+	.topp {
+		font-size: 20px;
+	}
+	#ekran5 {
+		padding-left: 40px;
+		padding-right: 40px;
+		padding-top: 50px;
+	}
+	#ekran5 .row {
+		margin-top: 30px;
+	}
+	.komfortno {
+		width: 100%;
+	}
+	#ekran6 .display-desktop {
+		display: block;
+	}
+	#ekran6 {
+		padding-left: 100px;
+		padding-right: 100px;
+		padding-top: 70px;
+	}
+	#ekran8 {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+	#ekran8 .row p.zagolovok-strategy {
+		font-size: 18px;
+	}
+	#ekran-new {
+		padding-left: 40px;
+		padding-right: 40px;
+		padding-top: 70px;
+	}
+	#ekran-new .row.display-tablet {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	.tablet-border {
+		position: relative;
+		padding-top: 60px;
+		padding-bottom: 40px;
+		border-left: 1px solid #fff;
+		border-right: 1px solid #fff;
+		border-bottom: 1px solid #fff;
+	}
+	.tablet-border {
+		margin-bottom: 20px;
+	}
+	#ekran-new .row.sposoby-newblock.display-tablet {
+		margin-bottom: 20px;
+	}
+	#footer .display-mobile {
+		display: none;
+	}
+	#footer .display-desktop {
+		display: block;
+	}
+	#footer .col-sm-3 {
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+	#footer .col-md-2.col-sm-2.text-center {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.ofis {
+		top: auto;
+	    bottom: 100px;
+	    right: 7%;
+	    width: 40%;
+	    min-height: 25%;
+	}
+	#ekran9 .forma {
+		top: auto;
+	    bottom: 100px;
+	    right: auto;
+	    left: 7%;
+	    width: 40%;
+	    min-height: 25%;
+	}
+	#ekran7 .ostavte {
+	    width: 90%;
+	    left: 5%;
+	    top: 40%;
+	}
+	.ostavte span:nth-child(1) {
+		width: 40%;
+    	text-align: center;
+    	left: 60%;
+	}
+	.ostavte br {
+		display: none;
+	}
+	.ostavte button {
+		height: 20%;
+		top: 40%;
+	}
+}
+
+
+
+/*Стилизация мобильной версии------------------------------------------------------------------------------------------*/
+@media (max-width: 767px) {
+	.portfolio-pic {
+	margin-bottom: 15px;
+	}
+	.display-tablet {
+		display: none;
+	}
 	.display-mobile {
 		display: block;
 	}
@@ -12,13 +188,13 @@
 	}
 	#ekran2, #ekran3, #ekran4, #ekran6, #ekran8, #ekran-new, #ekran5 {
 		height: auto;
-		padding-top: 65px;
+		padding-top: 40px;
 	}
 	/*Общие элементы*/
 	.menu-button {
 		top: 15px;
 		right: 15px;
-	}
+	}*/
 	/*1 экран*/
 	/*.ekran1-footer-mountain, .ekran1-footer {
 		bottom: -60px;
@@ -62,6 +238,8 @@
 		margin-left: -15px;
 		margin-right: -15px;
 		margin-bottom: 50px;
+		padding-left: 10px;
+		padding-right: 10px;
 	}
 	.ourface h4 {
 		font-size: 22px;
@@ -150,9 +328,6 @@
 	#ekran6 button.display-mobile:hover {
 		background-color: #66B2C8;
 		transition: 0.4s;
-	}
-	#dop-images-6 {
-		padding-top: 15px;
 	}
 	#dop-images-6 button {
 		margin-top: 15px;
@@ -331,8 +506,13 @@
 		margin-right: 0;
 	}
 }
-/*Стилизация десктопной версии*/
+
+
+/*Стилизация десктопной версии---------------------------------------------------------------*/
 @media (min-width: 992px) {
+	.display-tablet {
+		display: none;
+	}
 	.display-desktop {
 		display: block;
 	}
@@ -351,7 +531,9 @@
 		width: 20%;
 	}
 }
-/*Стилизация десктопной версии 992-1200*/
+
+
+/*Стилизация десктопной версии 992-1200-----------------------------------------------------*/
 @media screen and (min-width: 992px) and (max-width: 1200px) {
 	/*Экран2*/
 	#ekran2 img {
@@ -419,7 +601,8 @@
 		margin-bottom: 16px;
 	}
 }
-/*Стилизация десктопной версии 1200-1300*/
+
+/*Стилизация десктопной версии 1280-----------------------------------------------------------------*/
 @media screen and (min-width: 1250px) and (max-width: 1320px) and (min-height: 1000px) {
 	#ekran2 {
 		padding-top: 8%;
@@ -440,8 +623,8 @@
 		padding-top: 8%;
 	}
 	.ourface {
-		padding-top: 50px;
-		padding-bottom: 50px;
+		padding-top: 30px;
+		padding-bottom: 30px;
 	}
 	.ourface img {
 		width: 50px;
@@ -477,9 +660,29 @@
 	.ofis {
 		top: 40%;
 	}
+	#ekran8 h3 {
+		margin-top: 100px;
+		margin-bottom: 100px;
+	}
+	#ekran-new {
+		padding-top: 200px;
+	}
+	#ekran-new .spospo {
+		margin-top: 100px;
+	}
+	.ostavte button {
+		height: 20%;
+		top: 40%;
+	}
 }
-/*Стилизация десктопной версии 1200-1300*/
-@media screen and (min-width: 1500px) {
+/*Стилизация десктопной версии 1920---------------------------------*/
+@media screen and (min-width: 1800px) {
+	.firma, .direktor {
+		font-size: 18px;
+	}
+	#ekran4 .portfolio-pic h5 {
+		font-size: 20px;
+	}
 	#ekran2 {
 		padding-top: 50px;
 	}
@@ -539,7 +742,7 @@
 	    width: 107px;
 	}
 	.sdvig {
-		margin-left: -10px;
+		margin-left: 60px;
 		margin-top: 50px;
 	}
 	.ourface {

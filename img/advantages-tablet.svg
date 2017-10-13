@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="3652 2615 694 83">
+  <defs>
+    <style>
+      .cls-1, .cls-4, .cls-5, .cls-7 {
+        fill: #fff;
+      }
+
+      .cls-1 {
+        stroke: #95989a;
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+
+      .cls-3 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-4 {
+        font-size: 13px;
+        font-family: Roboto-Regular, Roboto;
+      }
+
+      .cls-5 {
+        font-size: 33px;
+        font-family: Roboto-Bold, Roboto;
+        font-weight: 700;
+        opacity: 0.97;
+      }
+
+      .cls-6 {
+        clip-path: url(#clip-path-2);
+      }
+
+      .cls-7 {
+        opacity: 0.4;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect class="cls-2" width="694" height="83"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="Rectangle_388" data-name="Rectangle 388" class="cls-1" width="62" height="68" transform="translate(291 267)"/>
+    </clipPath>
+  </defs>
+  <g id="block_1" data-name="block 1" class="cls-3" transform="translate(3652 2615)">
+    <g id="Group_1" data-name="Group 1" transform="translate(-268 -266)">
+      <text id="лет_на_рынке_IT_услуг" data-name="лет на рынке
+IT услуг" class="cls-4" transform="translate(305 306)"><tspan x="0" y="0">лет на рынке</tspan><tspan x="0" y="15">IT услуг</tspan></text>
+      <text id="_5" data-name="5" class="cls-5" transform="translate(300 323)"><tspan x="-18.933" y="0">5</tspan></text>
+      <g id="Symbol_31_5" data-name="Symbol 31 – 5" transform="translate(14 11)">
+        <g id="Mask_Group_116" data-name="Mask Group 116" class="cls-6" transform="translate(-12)">
+          <path id="circle" class="cls-7" d="M83.274,83.455,55.48,63.963a33.931,33.931,0,1,1,0,38.984Zm0,0L62.555,97.966a25.268,25.268,0,1,0,0-29.021Z" transform="translate(235.52 217.545)"/>
+        </g>
+      </g>
+    </g>
+    <g id="Group_1-2" data-name="Group 1" transform="translate(-84 -266)">
+      <text id="реализованных_пректов" data-name="реализованных
+пректов" class="cls-4" transform="translate(305 306)"><tspan x="0" y="0">реализованных</tspan><tspan x="0" y="15">пректов</tspan></text>
+      <text id="_97" data-name="97" class="cls-5" transform="translate(300 323)"><tspan x="-37.866" y="0">97</tspan></text>
+      <g id="Symbol_31_5-2" data-name="Symbol 31 – 5" transform="translate(14 11)">
+        <g id="Mask_Group_116-2" data-name="Mask Group 116" class="cls-6" transform="translate(-12)">
+          <path id="circle-2" data-name="circle" class="cls-7" d="M83.274,83.455,55.48,63.963a33.931,33.931,0,1,1,0,38.984Zm0,0L62.555,97.966a25.268,25.268,0,1,0,0-29.021Z" transform="translate(235.52 217.545)"/>
+        </g>
+      </g>
+    </g>
+    <g id="Group_1-3" data-name="Group 1" transform="translate(100 -266)">
+      <text id="профессиональных_сотрудников" data-name="профессиональных
+сотрудников" class="cls-4" transform="translate(305 306)"><tspan x="0" y="0">профессиональных</tspan><tspan x="0" y="15">сотрудников</tspan></text>
+      <text id="_10" data-name="10" class="cls-5" transform="translate(300 323)"><tspan x="-37.866" y="0">10</tspan></text>
+      <g id="Symbol_31_5-3" data-name="Symbol 31 – 5" transform="translate(14 11)">
+        <g id="Mask_Group_116-3" data-name="Mask Group 116" class="cls-6" transform="translate(-12)">
+          <path id="circle-3" data-name="circle" class="cls-7" d="M83.274,83.455,55.48,63.963a33.931,33.931,0,1,1,0,38.984Zm0,0L62.555,97.966a25.268,25.268,0,1,0,0-29.021Z" transform="translate(235.52 217.545)"/>
+        </g>
+      </g>
+    </g>
+    <g id="Group_1-4" data-name="Group 1" transform="translate(284 -266)">
+      <text id="компании_работают_с_нами" data-name="компании
+работают с нами" class="cls-4" transform="translate(305 306)"><tspan x="0" y="0">компании</tspan><tspan x="0" y="15">работают с нами</tspan></text>
+      <text id="_23" data-name="23" class="cls-5" transform="translate(300 323)"><tspan x="-37.866" y="0">23</tspan></text>
+      <g id="Symbol_31_5-4" data-name="Symbol 31 – 5" transform="translate(14 11)">
+        <g id="Mask_Group_116-4" data-name="Mask Group 116" class="cls-6" transform="translate(-12)">
+          <path id="circle-4" data-name="circle" class="cls-7" d="M83.274,83.455,55.48,63.963a33.931,33.931,0,1,1,0,38.984Zm0,0L62.555,97.966a25.268,25.268,0,1,0,0-29.021Z" transform="translate(235.52 217.545)"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
