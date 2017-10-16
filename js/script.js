@@ -1,6 +1,6 @@
 //Логотип
 $(window).load(function(){
-$(".logo-ekran1").delay(1000).animate({bottom: "50%"}, 2000);
+$(".logo-ekran1").delay(0).animate({bottom: "50%"}, 2500);
 });
 //Инициализация свайпа карусели
 $('.jcarousel')

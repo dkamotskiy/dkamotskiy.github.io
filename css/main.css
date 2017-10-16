@@ -94,7 +94,9 @@ p {
 /*1 экран--------------------------------------------------*/
 #ekran1 {
 	background-image: url(../img/bg-clouds.jpg);
-	background-position: top center;
+	background-position-x: center;
+	-ms-background-position-y: -250px;
+	background-position-y: -250px;
 	background-repeat: no-repeat;
 	height: 100vh;
 	-webkit-background-size: cover;
