@@ -3,192 +3,617 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Marbus - О компании</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-	<!-- <link rel="stylesheet" href="css/jcarousel.responsive.css"> -->
+	<title>О компании - AquaComfort</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/jcarousel.responsive.css">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 	<!-- <link rel="stylesheet" href="css/jcarousel.vertical.css"> -->
-	<link rel="stylesheet" href="css/pushy.css">
-	<!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.css" rel="stylesheet"> -->
-	<link href="css/jcarousel.responsive.css" rel="stylesheet">
-	<link rel="stylesheet" href="css/jquery.fullpage.css">
-	<link rel="stylesheet" href="css/lity.min.css">
+  <link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/responsive.css">
 </head>
-<body>
-<!-- Кнопка=============== -->
-			<div class="menu-button menu-btn">
-				<span>Меню</span>
-				<div class="button">
-					<div class="bar"></div>
-					<div class="bar"></div>
-					<div class="bar"></div>
-				</div>
-			</div>
-<!-- Кнопка вверх========== -->
-			<div id="top"><a href="#firstSlide"><img src="img/up.png" alt="В начало страницы"></a></div>
-<!-- Правое меню ============================================================================-->
-	<!-- Pushy Menu -->
-		<nav class="pushy pushy-right">
-		    <div class="pushy-content">
-		        <img src="img/logo-right-menu.svg" alt="" class="img-responsive">
-		        <div id="pushy-menu">
-		        	<p><a href="#">ГЛАВНАЯ</a></p>
-		        	<p><a href="#">СОЗДАНИЕ САЙТОВ</a></p>
-		        	<p><a href="#">SEO ПРОДВИЖЕНИЕ САЙТОВ</a></p>
-		        	<p><a href="#">КОНТЕКСТНАЯ РЕКЛАМА</a></p>
-		        	<p><a href="#">ИНТЕГРАЦИЯ САЙТОВ С  CRM, 1C</a></p>
-		        	<p><a href="#">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</a></p>
-		        	<p><a href="#">CMM ПРОДВИЖЕНИЕ</a></p>
-		        	<p><a href="#">О КОМПАНИИ</a></p>
-		        	<p><a href="#">ПОРТФОЛИО</a></p>
-		        	<p><a href="#">ОТЗЫВЫ</a></p>
-		        	<p><a href="#">БЛОГ</a></p>
-		        	<p><a href="#">ВАКАНСИИ</a></p>
-		        	<p><a href="#">КОНТАКТЫ</a></p>
-		        </div>
-		        <img src="img/pushy-closing.svg" alt="" class="pushy-closing pushy-link">
-		    </div>
-		</nav>
+<body id="about">
+<!-- Шапка ========================================================-->
+  <div id="header">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><img src="img/logo.png" alt="" class="img-fluid"></a>
+        <a href="tel:88005002030" class="header-mobile display-mobile">8 800 500 20 30</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 
-		<!-- Site Overlay -->
-		<div class="site-overlay"></div>
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-		<!-- Your Content -->
-		<div id="container">
-		    <!-- Menu Button -->
-		    
-		</div>
-<!-- Основная часть слайдера - секции======================================================= -->
-<div id="fullpage">
-<!-- 1 экран================================================================================ -->
-	<section class="vertical-scrolling" data-anchor="firstSlide">
-		<div id="about-ekran1" class="container-fluid section black">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Бассейны<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Оборудование</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Химия</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Сервис</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">О компании</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Наши работы</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Акции</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Контакты</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
+            <div class="header-right display-desktop">
+            <a href="tel:88005002030" class="header-mobile">8 800 500 20 30</a>
+            <a href="#" class="header-raschet display-desktop">Расчет стоимости</a>
+            <img src="img/hamburger.svg" alt="" class="img-fluid display-mobile hamburger" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+          </div>
+          </form>
+        </div>
+    </nav>
+  </div>
+<!-- Сервис - первый блок==================== -->
+  <div class="container-fluid service-first-block cover first-block">
+    <p class="about-new-text1">АКВАКОМФОРТ</p>
+    <p class="about-new-text2">7 ЛЕТ С ВАМИ</p>
+  </div>
+<!-- О КОМПАНИИ============================== -->
+  <div class="container o-kompanii">
+    <div class="h3">О КОМПАНИИ</div>
+    <div class="hr"></div>
+    <p class="fz16-970" style="margin-top: 20px;">Товарищи! укрепление и развитие структуры требуют от нас анализа дальнейших направлений развития. Равным образом сложившаяся структура организации позволяет оценить значение систем массового участия. С другой стороны реализация намеченных плановых заданий позволяет выполнять важные задания по разработке направлений прогрессивного развития. Разнообразный и богатый опыт начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке направлений прогрессивного развития. Разнообразный и богатый опыт сложившаяся структура организации позволяет оценить значение форм развития. Идейные соображения высшего порядка, а также постоянное информационно-пропагандистское обеспечение нашей деятельности способствует подготовки и реализации соответствующий условий активизации. Равным образом начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке позиций, занимаемых участниками в отношении поставленных задач. Задача организац</p>
+  </div>
+<!-- О нас в цифрах======================================================= -->
+  <div class="about-us-in-numbers container-fluid bg">
+    <div class="container">
+      <p class="text-center">О нас в цифрах:</p>
+    <!-- <img src="img/basseyn/numbers.svg" alt="" class="img-responsive"> -->
+    <div class="about-us-numbers display-desktop">
+      <div class="w20">
+        <div class="about-us-number spincrement">7</div>
+        <div class="obvodka"><img src="img/obvodka.png" alt="" class="img-fluid"></div>
+        <span class="verh">Лет</span>
+        <span class="niz">на рынке</span>
+      </div>
+      <div class="w20">
+        <div class="about-us-number about-us-number3 spincrement">180</div>
+        <div class="obvodka"><img src="img/obvodka.png" alt="" class="img-fluid"></div>
+        <span class="verh">Бассейнов сдано в</span>
+        <span class="niz">эксплуатацию</span>
+      </div>
+      <div class="w20">
+        <div class="about-us-number spincrement">8</div>
+        <div class="obvodka"><img src="img/obvodka.png" alt="" class="img-fluid"></div>
+        <span class="verh">Квалифицированных</span>
+        <span class="niz">специалистов</span>
+      </div>
+      <div class="w20">
+        <div class="about-us-number about-us-number2 spincrement">25</div>
+        <div class="obvodka"><img src="img/obvodka.png" alt="" class="img-fluid"></div>
+        <span class="verh">Лет гарантии на</span>
+        <span class="niz">бассейны</span>
+      </div>
+      <div class="w20">
+        <div class="about-us-number about-us-number2 spincrement">24</div>
+        <div class="obvodka"><img src="img/obvodka.png" alt="" class="img-fluid"></div>
+        <span class="verh">Месяца гарантии</span>
+        <span class="niz">на оборудование</span>
+      </div>
+    </div>
+    <img src="img/basseyn/numbers-mobile.svg" alt="" class="img-responsive display-mobile">
+    <div class="fz24">Наши клиенты отмечают:</div>
+    <li class="fz18">Разнообразный и богатый опыт реализация намеченных заданий;</li>
+    <li class="fz18">Разнообразный и богатый опыт реализация намеченных заданий;</li>
+    <li class="fz18">Разнообразный и богатый опыт реализация намеченных заданий;</li>
+    <li class="fz18">Разнообразный и богатый опыт реализация намеченных заданий;</li>
+    <li class="fz18">Разнообразный и богатый опыт реализация намеченных заданий;</li>
+    <li class="fz18">Разнообразный и богатый опыт реализация намеченных заданий;</li>
+    <div class="gendirektor">
+      <p class="gendirektor-main">Генеральный директор, Иванов Иван Иванович</p>
+        <a href="#"><div class="col-md-5">
+          <img src="img/kompozit/play.svg" alt="" class="play">
+        </div></a>
+        <p class="fz14">Товарищи! укрепление и развитие структуры требуют от нас анализа дальнейших направлений развития. Равным образом сложившаяся структура организации позволяет оценить значение систем массового участия. С другой стороны реализация намеченных плановых заданий позволяет выполнять важные задания по разработке направлений прогрессивного развития. Разнообразный и богатый опыт начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке направлений прогрессивного развития.
+Разнообразный и богатый опыт сложившаяся структура организации позволяет оценить значение форм развития. Идейные соображения высшего порядка, а также постоянное информационно-пропагандистское обеспечение нашей деятельности способствует подготовки и реализации соответствующий условий активизации. Равным образом начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке позиций, занимаемых участниками в отношении поставленных задач. Задача организации, в особенности же рамки и место обучения кадров способствует подготовки и реализации соответствующий условий активизации. Не следует, однако забывать, что сложившаяся структура организации требуют определения и уточнения соответствующий условий активизации.
+</p>
+      <p class="fz14">Равным образом рамки и место обучения кадров способствует подготовки и реализации новых предложений. Таким образом начало повседневной работы по формированию позиции в значительной степени обуславливает создание направлений прогрессивного развития. Идейные соображения высшего порядка, а также новая модель организационной деятельности играет важную роль в формировании форм развития. Значимость этих проблем настолько очевидна, что сложившаяся структура организации влечет за собой процесс внедрения и модернизации форм развития.
+Товарищи! укрепление и развитие структуры требуют от нас анализа дальнейших направлений развития. Равным образом сложившаяся структура организации позволяет оценить значение систем массового участия. С другой</p>
+    </div>
+    </div>
+  </div>
+<!-- ЯВЛЯЕМСЯ ОФИЦИАЛЬНЫМИ ДИЛЛЕРАМИ========= -->
+  <div class="dealers container-fluid">
+    <div class="container">
+      <div class="h3">ОФИЦИАЛЬНЫЕ ДИЛЕРЫ</div>
+    <div class="hr"></div>
+    <div class="jcarousel-wrapper">
+                <div class="jcarousel">
+                    <ul>
+                        <li>
+                          <div><img src="img/kompozit/dealers/background.png" alt="" class="img-fluid"></div>
+                        </li>
+                        <li>
+                          <div><img src="img/kompozit/dealers/background.png" alt="" class="img-fluid"></div>
+                        </li>
+                        <li>
+                          <div><img src="img/kompozit/dealers/background.png" alt="" class="img-fluid"></div>
+                        </li>
+                        <li>
+                          <div><img src="img/kompozit/dealers/background.png" alt="" class="img-fluid"></div>
+                        </li>
+                        <li>
+                          <div><img src="img/kompozit/dealers/background.png" alt="" class="img-fluid"></div>
+                        </li>
+                        <li>
+                          <div><img src="img/kompozit/dealers/background.png" alt="" class="img-fluid"></div>
+                        </li>
+                        <li>
+                          <div><img src="img/kompozit/dealers/background.png" alt="" class="img-fluid"></div>
+                        </li>
+                        <li>
+                          <div><img src="img/kompozit/dealers/background.png" alt="" class="img-fluid"></div>
+                        </li>
 
-		</div>
-	</section>
-<!-- 2 экран=============================================================================== -->
-	<section class="vertical-scrolling" data-anchor="secondSlide">
-		<div id="about-ekran2" class="container-fluid section white">
-			
-		</div>
-	</section>
-<!-- 9 экран================================================= -->
-	<section class="vertical-scrolling" data-anchor="9thSlide">
-			<div id="about-ekran9" class="container-fluid section black">
-				<div id="map"></div>
-				<h3 class="text-center">КОНТАКТЫ</h3>
-				<div class="forma">
-					<div class="main-block-forma">
-						<span class="main-block-zagolovok">ОСТАВЬТЕ ЗАЯВКУ</span>
-						<div class="sposoby-lt"></div>
-						<div class="sposoby-rt"></div>
-						<form action="form">
-							<input type="text" required placeholder="Введите имя">
-							<input type="text" required placeholder="Телефон" id="phone-forma2">
-							<button class="send-map" type="submit">Отправить</button>
-								<div class="dau">
-									<label>
-									<input type="checkbox" class="checkbox" id="checkbox" checked="checked" required>
-									<span class="checkbox-custom"></span>
-									 <span class="label">Даю согласие на обработку<br>своих персональных даннных</span>
-									</label>
-								</div>
-								
-						</form>
-					</div>
-				</div>
-				<div class="ofis">
-					<div class="ofis-nadpis">
-						<p class="text-center">450007, г. Уфа, ул. 8 марта, д.19, оф. 101, 102</p>
-						<p class="text-center"><img src="img/mail.png" alt="" class="img-responsive"><a href="mailto:info@marbus.ru">info@marbus.ru</a></p>
-						<p class="text-center"><img src="img/phone.png" alt="" class="img-responsive"><a href="tel:89871022202">+7 (987) 102 22 02</a></p>
-					</div>
-				</div>
-				<div id="footer">
-					<div class="row">
-					<div class="col-md-5 col-sm-5 display-desktop">
-						<a href="#"><img src="img/footer/facebook.svg" alt=""></a>
-						<a href="#"><img src="img/footer/instagram.svg" alt=""></a>
-						<a href="#"><img src="img/footer/odnoklassniki.svg" alt=""></a>
-						<a href="#"><img src="img/footer/vkontakte.svg" alt=""></a>
-						<a href="#"><img src="img/footer/youtube.svg" alt=""></a>
-					</div>
-					<div class="col-md-2 col-sm-2 text-center">
-						<p>Post scriptum</p>
-						<p>Все права защищены</p>
-					</div>
-						<div class="display-mobile">
-							<a href="#"><img src="img/footer/facebook.svg" alt=""></a>
-							<a href="#"><img src="img/footer/instagram.svg" alt=""></a>
-							<a href="#"><img src="img/footer/odnoklassniki.svg" alt=""></a>
-							<a href="#"><img src="img/footer/vkontakte.svg" alt=""></a>
-							<a href="#"><img src="img/footer/youtube.svg" alt=""></a>
-						</div>
-					<div class="col-md-5 col-sm-5 display-desktop">
-						<div class="row sitemap">
-							<div class="col-md-3 col-sm-3">
-								<a href="#">ГЛАВНАЯ</a>
-								<a href="#">УСЛУГИ</a>
-							</div>
-							<div class="col-md-3 col-sm-3">
-								<a href="#">О КОМПАНИИ</a>
-								<a href="#">ПОРТФОЛИО</a>
-							</div>
-							<div class="col-md-3 col-sm-3">
-								<a href="#">ОТЗЫВЫ</a>
-								<a href="#">БЛОГ</a>
-							</div>
-							<div class="col-md-3 col-sm-3">
-								<a href="#">ВАКАНСИИ</a>
-								<a href="#">КОНТАКТЫ</a>
-							</div>
-						</div>
-					</div>
-					<div class="display-mobile row">
-						<div class="col-xs-6">
-							<a href="#">ГЛАВНАЯ</a>
-							<a href="#">УСЛУГИ</a>
-							<a href="#">О КОМПАНИИ</a>
-							<a href="#">ПОРТФОЛИО</a>
-						</div>
-						<div class="col-xs-6">
-							<a href="#">ОТЗЫВЫ</a>
-							<a href="#">БЛОГ</a>
-							<a href="#">ВАКАНСИИ</a>
-							<a href="#">КОНТАКТЫ</a>
-						</div>
-					</div>
-					</div>
-				</div>
-			</div>
-	</section>
+                    </ul>
+                </div>
+
+                
+
+               <!--  <p class="jcarousel-pagination"></p> -->
+            </div>
+    </div>
+            <a href="#" class="jcarousel-control-prev"><img src="img/left.png" alt=""></a>
+            <a href="#" class="jcarousel-control-next"><img src="img/right.png" alt=""></a>
+  </div>
+  <!-- ЯВЛЯЕМСЯ ОФИЦИАЛЬНЫМИ ДИЛЛЕРАМИ========= -->
+  <div class="docs container-fluid">
+    <div class="container">
+      <div class="h3">УЧРЕДИТЕЛЬНЫЕ ДОКУМЕНТЫ</div>
+    <div class="hr"></div>
+    <div class="jcarousel-wrapper">
+                <div class="jcarousel">
+                    <ul>
+                        <li>
+                          <div><img src="img/about/docs/1.jpg" alt="" class="img-fluid"></div>
+                        </li>
+                        <li>
+                          <div><img src="img/about/docs/1.jpg" alt="" class="img-fluid"></div>
+                        </li>
+                        <li>
+                          <div><img src="img/about/docs/1.jpg" alt="" class="img-fluid"></div>
+                        </li>
+                        <li>
+                          <div><img src="img/about/docs/1.jpg" alt="" class="img-fluid"></div>
+                        </li>
+                        <li>
+                          <div><img src="img/about/docs/1.jpg" alt="" class="img-fluid"></div>
+                        </li>
+                        <li>
+                          <div><img src="img/about/docs/1.jpg" alt="" class="img-fluid"></div>
+                        </li>
+                        <li>
+                          <div><img src="img/about/docs/1.jpg" alt="" class="img-fluid"></div>
+                        </li>
+                        <li>
+                          <div><img src="img/about/docs/1.jpg" alt="" class="img-fluid"></div>
+                        </li>
+
+                    </ul>
+                </div>
+
+                
+
+               <!--  <p class="jcarousel-pagination"></p> -->
+            </div>
+    </div>
+            <a href="#" class="jcarousel-control-prev"><img src="img/left.png" alt=""></a>
+            <a href="#" class="jcarousel-control-next"><img src="img/right.png" alt=""></a>
+  </div>
+<!-- Последние работы======================== -->
+  <div class="latest-works container-fluid">
+    <div class="container">
+      <div class="h3">НАШИ ПОСЛЕДНИЕ РАБОТЫ</div>
+    <div class="hr"></div>
+    <div class="jcarousel-wrapper">
+                <div class="jcarousel">
+                    <ul>
+                        <li>
+                          <a href="#">
+                            <div class="img">
+                            <img src="img/basseyn/our-works/1.jpg" alt="" class="img-fluid">
+                            <p class="text-center">Композитный бассейн<br>поселок Чесноковка</p>
+                          </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <div class="img">
+                            <img src="img/basseyn/our-works/1.jpg" alt="" class="img-fluid">
+                            <p class="text-center">Композитный бассейн<br>поселок Чесноковка</p>
+                          </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <div class="img">
+                            <img src="img/basseyn/our-works/1.jpg" alt="" class="img-fluid">
+                            <p class="text-center">Композитный бассейн<br>поселок Чесноковка</p>
+                          </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <div class="img">
+                            <img src="img/basseyn/our-works/1.jpg" alt="" class="img-fluid">
+                            <p class="text-center">Композитный бассейн<br>поселок Чесноковка</p>
+                          </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <div class="img">
+                            <img src="img/basseyn/our-works/1.jpg" alt="" class="img-fluid">
+                            <p class="text-center">Композитный бассейн<br>поселок Чесноковка</p>
+                          </div>
+                          </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                
+
+               <!--  <p class="jcarousel-pagination"></p> -->
+            </div>
+            <a href="#" class="blue-button">ВСЕ РАБОТЫ</a>
+    </div>
+            <a href="#" class="jcarousel-control-prev"><img src="img/left.png" alt=""></a>
+            <a href="#" class="jcarousel-control-next"><img src="img/right.png" alt=""></a>
+  </div>
+<!-- О НАС ГОВОРЯТ======================== -->
+  <div class="talking-about-us container-fluid">
+    <div class="container">
+      <div class="h3">О НАС ГОВОРЯТ</div>
+    <div class="hr"></div>
+    <div class="jcarousel-wrapper">
+                <div class="jcarousel">
+                    <ul>
+                        <li>
+                          <a href="#">
+                            <div class="o-nas-inner">
+                            <div class="o-nas-niz">
+                              <p>Петр Иванов. Композитный бассейн,</p>
+                              <p>поселок Чесноковка.</p>
+                            </div>
+                            <img src="img/kompozit/play.svg" alt="" class="o-nas-play">
+                          </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <div class="o-nas-inner">
+                            <div class="o-nas-niz">
+                              <p>Петр Иванов. Композитный бассейн,</p>
+                              <p>поселок Чесноковка.</p>
+                            </div>
+                            <img src="img/kompozit/play.svg" alt="" class="o-nas-play">
+                          </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <div class="o-nas-inner">
+                            <div class="o-nas-niz">
+                              <p>Петр Иванов. Композитный бассейн,</p>
+                              <p>поселок Чесноковка.</p>
+                            </div>
+                            <img src="img/kompozit/play.svg" alt="" class="o-nas-play">
+                          </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <div class="o-nas-inner">
+                            <div class="o-nas-niz">
+                              <p>Петр Иванов. Композитный бассейн,</p>
+                              <p>поселок Чесноковка.</p>
+                            </div>
+                            <img src="img/kompozit/play.svg" alt="" class="o-nas-play">
+                          </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <div class="o-nas-inner">
+                            <div class="o-nas-niz">
+                              <p>Петр Иванов. Композитный бассейн,</p>
+                              <p>поселок Чесноковка.</p>
+                            </div>
+                            <img src="img/kompozit/play.svg" alt="" class="o-nas-play">
+                          </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <div class="o-nas-inner">
+                            <div class="o-nas-niz">
+                              <p>Петр Иванов. Композитный бассейн,</p>
+                              <p>поселок Чесноковка.</p>
+                            </div>
+                            <img src="img/kompozit/play.svg" alt="" class="o-nas-play">
+                          </div>
+                          </a>
+                        </li>
+                    </ul>
+                </div>
+
+                
+
+               <!--  <p class="jcarousel-pagination"></p> -->
+            </div>
+    </div>
+            <a href="#" class="jcarousel-control-prev"><img src="img/left.png" alt=""></a>
+            <a href="#" class="jcarousel-control-next"><img src="img/right.png" alt=""></a>
+  </div>
+<!-- Контакты============================= -->
+  <div class="container-fluid contacts">
+    <div class="h3">КОНТАКТЫ</div>
+    <div class="hr"></div>
+    <div id="map"></div>
+    <div class="map-nadpis">
+       <div class="row">
+         <div class="col-md-2 col-xs-2">
+          <img src="img/basseyn/time.svg" alt="" class="img-fluid">
+        </div>
+        <div class="col-md-10 col-xs-10">Пн-Пт, 9:00–18:00</div>
+       </div> 
+       <div class="row">
+         <div class="col-md-2 col-xs-2">
+          <img src="img/basseyn/mail.svg" alt="" class="img-fluid">
+        </div>
+        <div class="col-md-10 col-xs-10">2627372@mail.ru</div>
+       </div> 
+       <div class="row">
+         <div class="col-md-2 col-xs-2">
+          <img src="img/basseyn/call.svg" alt="" class="img-fluid">
+        </div>
+        <div class="col-md-10 col-xs-10">
+          <p class="fw400">Отдел продаж:</p>
+          <p>+7(347) 262-73-72</p>
+          <p>+7(927) 30-99-099</p>
+          <p class="fw400">Технический отдел:</p>
+          <p>+7(937) 83-15-484</p>
+        </div>
+       </div>
+       <div class="row">
+         <div class="col-md-2 col-xs-2">
+          <img src="img/basseyn/location.svg" alt="" class="img-fluid">
+        </div>
+        <div class="col-md-10 col-xs-10">
+          <p>+450001, Россия, Республика Башкортостан, г. Уфа, ул.Комсомольская, д.23, АТК Комсомольский, эт. 4, оф. 14-2</p>
+        </div>
+       </div>
+       <button type="button" class="tovar-look" data-toggle="modal" data-target="#zayavka-blue">ОСТАВИТЬ ЗАЯВКУ</button>
+    </div>
+  </div>
+<!-- Футер============================================ -->
+  <div id="footer" class="container-fluid bg">
+    <div class="container">
+<!-- Десктопный футер=========================================== -->
+      <div class="row main-footer-row display-desktop">
+        <div class="col-md-2">
+          <p class="fw400"><a href="#">Бассейны</a></p>
+            <p><a href="#">Композитные бассейны</a></p>
+            <p><a href="#">Полипропиленовые бассейны</a></p>
+            <p><a href="#">Каркасные бассейны</a></p>
+            <p><a href="#">SPA бассейны</a></p>
+        </div>
+          <div class="col-md-2">
+          <p class="fw400"><a href="#">Оборудование</a></p>
+          <p><a href="#">Станция дозирования</a></p>
+          <p><a href="#">Засыпка для фильтра</a></p>
+          <p><a href="#">Фильтры для бассейна</a></p>
+          <p><a href="#">Пылесосы для бассейна</a></p>
+          <p><a href="#">Ролик комплект</a></p>
+          <p><a href="#">Поручни для бассейна</a></p>
+        </div>
+        <div class="col-md-2">
+          <p class="fw400 display-desktop">&nbsp;</p>
+          <p><a href="#">Противотоки</a></p>
+          <p><a href="#">Подводное освещение</a></p>
+          <p><a href="#">Подогрев воды</a></p>
+          <p><a href="#">Покрывало</a></p>
+          <p><a href="#">Закладные детали</a></p>
+          <p><a href="#">Лестницы</a></p>
+        </div>
+        <div class="col-md-2 footer-w50 pt30">
+          <p class="fw400 display-desktop">&nbsp;</p>
+          <p><a href="#">ПВХ арматура для обвязки</a></p>
+          <p><a href="#">Гидромассаж</a></p>
+          <p><a href="#">Горки</a></p>
+          <p><a href="#">Гидромассажное плато</a></p>
+          <p><a href="#">Водопады</a></p>
+          <p><a href="#">Павильоны</a></p>
+        </div>
+        <div class="col-md-2 footer-w50 mt15">
+          <p class="fw400"><a href="#">Химия</a></p>
+          <p><a href="#">CHEMAFORM - Германия</a></p>
+          <p><a href="#">BAYROL - Германия</a></p>
+          <p><a href="#">AQUALEON- Россия</a></p>
+          <p><a href="#">HTH - Франция</a></p>
+        </div>
+         <div class="col-md-2 footer-w50 mt15">
+          <p class="fw400"><a href="#">Сервис</a></p>
+          <p><a href="#">Установка бассейнов</a></p>
+          <p><a href="#">Обслуживание бассейнов</a></p>
+          <p><a href="#">Ремонт бассейнов</a></p>
+        </div>
+      </div>
+<!-- Мобильный футер=========================================== -->
+      <div class="row main-footer-row display-mobile">
+        <div class="row">
+          <div class="col-11">
+          <p class="fw400"><a href="#">Бассейны</a></p>
+            <p><a href="#">Композитные бассейны</a></p>
+            <p><a href="#">Полипропиленовые бассейны</a></p>
+            <p><a href="#">Каркасные бассейны</a></p>
+            <p><a href="#">SPA бассейны</a></p>
+        </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+          <p class="fw400"><a href="#">Оборудование</a></p>
+          <p><a href="#">Станция дозирования</a></p>
+          <p><a href="#">Засыпка для фильтра</a></p>
+          <p><a href="#">Фильтры для бассейна</a></p>
+          <p><a href="#">Пылесосы для бассейна</a></p>
+          <p><a href="#">Ролик комплект</a></p>
+          <p><a href="#">Поручни для бассейна</a></p>
+          <p><a href="#">Противотоки</a></p>
+          <p><a href="#">Подводное освещение</a></p>
+          <p><a href="#">Подогрев воды</a></p>
+        </div>
+        <div class="col-6">
+          <p class="fw400"><a href="#">&nbsp;</a></p>
+          <p><a href="#">Покрывало</a></p>
+          <p><a href="#">Закладные детали</a></p>
+          <p><a href="#">Лестницы</a></p>
+          <p><a href="#">ПВХ арматура для обвязки</a></p>
+          <p><a href="#">Гидромассаж</a></p>
+          <p><a href="#">Горки</a></p>
+          <p><a href="#">Гидромассажное плато</a></p>
+          <p><a href="#">Водопады</a></p>
+          <p><a href="#">Павильоны</a></p>
+        </div>
+        </div>
+        <div class="row">
+          <div class="col-6 footer-w50 mt15">
+          <p class="fw400"><a href="#">Химия</a></p>
+          <p><a href="#">CHEMAFORM - Германия</a></p>
+          <p><a href="#">BAYROL - Германия</a></p>
+          <p><a href="#">AQUALEON- Россия</a></p>
+          <p><a href="#">HTH - Франция</a></p>
+        </div>
+         <div class="col-6 footer-w50 mt15">
+          <p class="fw400"><a href="#">Сервис</a></p>
+          <p><a href="#">Установка бассейнов</a></p>
+          <p><a href="#">Обслуживание бассейнов</a></p>
+          <p><a href="#">Ремонт бассейнов</a></p>
+        </div>
+        </div>
+      </div>
+<!-- Вторая линия==================================================== -->
+      <div class="row second-footer-row display-desktop">
+        <div class="col-md-3 social-footer display-mobile">
+              <a href="#"><img src="img/social/youtube.svg" alt=""></a>
+              <a href="#"><img src="img/social/vkontakte.svg" alt=""></a>
+              <a href="#"><img src="img/social/instagram.svg" alt=""></a>
+            </div>
+        <div class="col-md-2"><img src="img/basseyn/1/time.svg" alt="" class="img-fluid">Пн-Пт, 9:00–18:00</div>
+        <div class="col-md-2"><img src="img/basseyn/1/mail.svg" alt="" class="img-fluid">2627372@mail.ru</div>
+        <div class="col-md-2"><img src="img/basseyn/1/call.svg" alt="" class="img-fluid">8 (347) 26-27-372</div>
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-9"><img src="img/basseyn/1/location.svg" alt="" class="img-fluid">450001, Респ. Башкортостан, г. Уфа, ул. Комсомольская, д.23, АТК <br> Комсомольский, эт. 4, оф. 14-2</div>
+            <div class="col-md-3 social-footer display-desktop">
+              <a href="#"><img src="img/social/youtube.svg" alt=""></a>
+              <a href="#"><img src="img/social/vkontakte.svg" alt=""></a>
+              <a href="#"><img src="img/social/instagram.svg" alt=""></a>
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- Вторая линия-мобилка==================================================== -->
+      <div class="row second-footer-row display-mobile">
+        <div class="col-md-2"><img src="img/basseyn/1/time.svg" alt="" class="img-fluid">Пн-Пт, 9:00–18:00</div>
+        <div class="col-md-2"><img src="img/basseyn/1/mail.svg" alt="" class="img-fluid">2627372@mail.ru</div>
+        <div class="col-md-2"><img src="img/basseyn/1/call.svg" alt="" class="img-fluid">8 (347) 26-27-372</div>
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-9"><img src="img/basseyn/1/location.svg" alt="" class="img-fluid">450001, Респ. Башкортостан, г. Уфа, ул. Комсомольская, д.23, АТК <br> Комсомольский, эт. 4, оф. 14-2</div>
+            <div class="col-md-3 social-footer display-desktop">
+              <a href="#"><img src="img/social/youtube.svg" alt=""></a>
+              <a href="#"><img src="img/social/vkontakte.svg" alt=""></a>
+              <a href="#"><img src="img/social/instagram.svg" alt=""></a>
+            </div>
+          </div>
+        </div>
+                <div class="col-md-3 social-footer display-mobile">
+              <a href="#"><img src="img/social/youtube.svg" alt=""></a>
+              <a href="#"><img src="img/social/vkontakte.svg" alt=""></a>
+              <a href="#"><img src="img/social/instagram.svg" alt=""></a>
+            </div>
+      </div>
+      <div class="all-rights-reserved-footer">Все права защищены</div>
+    </div>
+  </div>
+<!-- Всплывающие окна========================================= -->
+<!-- Отправить заявку - синяя================================= -->
+<div class="modal fade" id="zayavka-blue" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <p class="fz24">ОСТАВЬТЕ ЗАЯВКУ,<br>МЫ С ВАМИ СВЯЖЕМСЯ В БЛИЖАЙШЕЕ ВРЕМЯ</p>
+      <form action="form" data-toggle="validator" role="form" onsubmit="return false;" data-focus="false">
+        <div class="form-group form-group-dib">
+          <input class="form-control" type="text" placeholder="Имя" required>
+        </div>
+        <div class="form-group form-group-dib">
+          <input class="form-control mr0" type="text" placeholder="+7 (___) ___-__-__" required id="phone-form2">
+        </div>
+        <div class="form-group">
+          <textarea name="textarea" id="" cols="30" rows="10" placeholder="Комментарий"></textarea>
+        </div>
+        <div class="form-group">
+          <label>
+                  <input type="checkbox" class="checkbox" id="checkbox" checked="checked" required>
+                  <span class="checkbox-custom"></span>
+                   <span class="label">Даю согласие на обработку своих персональных даннных</span>
+          </label>
+        </div>
+        <div class="form-group"><button type="submit" id="send-blue">ОТПРАВИТЬ</button></div>
+      </form>
+    </div>
+  </div>
 </div>
-
+<!-- Спасибо за заявку================================= -->
+<div class="modal fade" id="spasibo-za-zayavku" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content thanks-for-zayavka">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <p class="fz24">СПАСИБО ЗА ЗАЯВКУ!</p>
+      <div class="hr"></div>
+      <p class="fz18">Наш специалист свяжется с Вами<br>в ближайшее время.</p>
+    </div>
+  </div>
+</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-	<!-- <script src="js/jcarousel.responsive.js"></script> -->
-	<!-- <script src="js/jcarousel.responsive.js"></script> -->
-	<!-- <script src="js/jquery.jcarousel.js"></script> -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-	<!-- <script src="js/jquery.bcSwipe.js"></script> -->
-	<script src="js/pushy.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
-	<script type="text/javascript" src="js/scrolloverflow.js"></script>
-	<script type="text/javascript" src="js/jquery.slimscroll.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.min.js"></script>
-	<script src="js/jquery.jcarousel.js"></script>
 	<script src="js/jcarousel.responsive.js"></script>
-	<script src="js/jcarousel-swipe.js"></script>
-<!-- 	<script src="js/jquery.inview.min.js"></script> -->
-	<script src="js/jquery.appear.js"></script>
-	<script src="js/jquery.maskedinput.js" type="text/javascript"></script>
-	<script src="js/lity.min.js"></script>
+	<script src="js/jquery.jcarousel.js"></script>
+  <script src="js/jcarousel-swipe.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  <script src="js/jquery.spincrement.js"></script>
+  <script src="js/jquery.maskedinput.js"></script>
+	<!-- <script src="js/jquery.bcSwipe.js"></script> -->
+  <script type="text/javascript" src="js/validator.js"></script>
 	<script src="js/script.js"></script>
 	<!-- <script src="https://use.fontawesome.com/02bcef1f84.js"></script> -->
 	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.js"></script> -->
-	<script async defer
+  <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAa5CG4bXC4govazTgEGpB5oLJe2zgbE-0&callback=initMap">
         </script>
 </body>

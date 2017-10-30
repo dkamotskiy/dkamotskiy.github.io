@@ -1,0 +1,98 @@
+﻿Синее всплывающее окно!================================================================
+
+
+<script type="text/javascript" src="js/validator.js"></script>
+
+<button type="button" class="tovar-look" data-toggle="modal" data-target="#zayavka-blue">ОСТАВИТЬ ЗАЯВКУ</button>
+
+
+<!-- Всплывающие окна========================================= -->
+<!-- Отправить заявку - синяя================================= -->
+<div class="modal fade" id="zayavka-blue" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <p class="fz24">ОСТАВЬТЕ ЗАЯВКУ,<br>МЫ С ВАМИ СВЯЖЕМСЯ В БЛИЖАЙШЕЕ ВРЕМЯ</p>
+      <form action="form" data-toggle="validator" role="form" onsubmit="return false;" data-focus="false">
+        <div class="form-group form-group-dib mr30">
+          <input class="form-control" type="text" placeholder="Имя" required>
+        </div>
+        <div class="form-group form-group-dib">
+          <input class="form-control mr0" type="text" placeholder="+7 (___) ___-__-__" required id="phone-form2">
+        </div>
+        <div class="form-group">
+          <textarea name="textarea" id="" cols="30" rows="10" placeholder="Комментарий"></textarea>
+        </div>
+        <div class="form-group">
+          <label>
+                  <input type="checkbox" class="checkbox" id="checkbox" checked="checked" required>
+                  <span class="checkbox-custom"></span>
+                   <span class="label">Даю согласие на обработку своих персональных даннных</span>
+          </label>
+        </div>
+        <div class="form-group"><button type="submit" id="send-blue">ОТПРАВИТЬ</button></div>
+      </form>
+    </div>
+  </div>
+</div>
+<!-- Спасибо за заявку================================= -->
+<div class="modal fade" id="spasibo-za-zayavku" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content thanks-for-zayavka">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <p class="fz24">СПАСИБО ЗА ЗАЯВКУ!</p>
+      <div class="hr"></div>
+      <p class="fz18">Наш специалист свяжется с Вами<br>в ближайшее время.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Форма для "Заказывая у нас..." ======-->
+<form data-toggle="validator" role="form" onsubmit="return false;" data-focus="false">
+        <div class="form-group form-group-dib mr30">
+          <input type="text" placeholder="Имя" required>
+        </div>
+        <div class="form-group form-group-dib">
+          <input type="text" placeholder="+7 (___) ___-__-__" required id="phone-form">
+        </div>
+        <div class="form-group">
+            <textarea name="textarea" id="" cols="30" rows="10" placeholder="Комментарий"></textarea>
+        </div>
+        <div class="form-group">
+	        <label>
+	             <input type="checkbox" class="checkbox" id="checkbox" checked="checked" required>
+	            <span class="checkbox-custom"></span>
+	            <span class="label">Даю согласие на обработку своих персональных даннных</span>
+	        </label>
+    </div>
+    <div class="form-group">
+        <button type="submit" id="send-zakazyvaya">ОТПРАВИТЬ</button>
+    </div>
+</form>
+Ховеры прозрачностью
+.novosti .jcarousel li .img:hover:before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.3);
+	left: 0;
+	top: 0;
+	z-index: 10;
+}
+.novosti .jcarousel li .img:active:before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(255,255,255,0.3);
+	left: 0;
+	top: 0;
+	z-index: 10;
+}
+Нижняя строка в Заказывая
+<p class="fz14 text-center" style="font-size: 13px; margin-top: 30px; margin-bottom: -20px;">* Гарантия до 25 лет распространяется на отдельные модели композитных бассейнов, на другие виды бассейнов гарантия составляет 3 года. Подробности по телефону 8 800 500 30 20</p>

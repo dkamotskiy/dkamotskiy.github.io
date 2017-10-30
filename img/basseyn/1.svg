@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-13383 5050 88 88">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f2f2f2;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        fill: #3e97db;
+      }
+
+      .cls-4, .cls-6 {
+        fill: none;
+      }
+
+      .cls-4 {
+        stroke: #fff;
+        stroke-width: 3px;
+      }
+
+      .cls-5 {
+        stroke: none;
+      }
+
+      .cls-7 {
+        filter: url(#Ellipse_20);
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_100" data-name="Rectangle 100" class="cls-1" width="44" height="44" transform="translate(99 1815)"/>
+    </clipPath>
+    <filter id="Ellipse_20" x="-13383" y="5050" width="88" height="88" filterUnits="userSpaceOnUse">
+      <feOffset dx="3" dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_570" data-name="Group 570" transform="translate(-13475 3805)">
+    <g id="Mask_Group_23" data-name="Mask Group 23" class="cls-2" transform="translate(13 -551)">
+      <path id="noun_1060745_cc" class="cls-3" d="M14.4,3a1.023,1.023,0,0,0-.9,1V6h-6a3.009,3.009,0,0,0-3,3,1,1,0,0,0,2,0V8.95a1,1,0,0,1,1-1h6v2a1,1,0,0,0,1,1h12a1,1,0,0,0,1-1v-2h6a1,1,0,0,1,1,1V18.9l-4.55,7.65c-.15,0-.3-.05-.45-.05H20.4a1,1,0,0,0,.1,2h8.35L26,33.3a3.921,3.921,0,0,0-.45,1.2H20.4a1,1,0,1,0,.1,2h5.25a3.692,3.692,0,0,0,1.65,1.95l.05.05a3.88,3.88,0,0,0,5.25-1.4l1.8-3.05V44a1,1,0,0,1-1,1H7.5a1,1,0,0,1-1-1V13a1,1,0,0,0-1-1H5.45a1,1,0,0,0-1,1h0V44a3.009,3.009,0,0,0,3,3h26a3.009,3.009,0,0,0,3-3V30.65l4.25-7.2,2.4,1.4-4,6.65a1.02,1.02,0,1,0,1.75,1.05l4.5-7.5A.969.969,0,0,0,45,23.7h0l-3.25-1.9,1.2-2.05a3.72,3.72,0,0,0-1.4-5.15v-.1a3.958,3.958,0,0,0-5.05,1.1V9a3.009,3.009,0,0,0-3-3h-6V4a1,1,0,0,0-1-1H14.4Zm1.1,2h10V9h-10Zm.9,10.5a1.046,1.046,0,0,0-.65.35l-2.9,3.35-.75-.5a1.006,1.006,0,0,0-1.15,1.65l1.5,1a.992.992,0,0,0,1.3-.15l3.5-4a1.011,1.011,0,0,0-.05-1.4.987.987,0,0,0-.7-.3Zm23.1.5a1.64,1.64,0,0,1,1.05.25l.05.05a1.716,1.716,0,0,1,.65,2.45l-1.2,2-3.2-1.9L38,16.9A1.934,1.934,0,0,1,39.5,16ZM20.4,18.5a1,1,0,0,0,.1,2h9a1,1,0,0,0,0-2H20.4Zm15.45,2.05L39,22.45,30.95,36.1a1.8,1.8,0,0,1-2.5.65l-.05-.05a1.706,1.706,0,0,1-.65-2.45ZM16.4,23.5a1.046,1.046,0,0,0-.65.35l-2.9,3.35-.75-.5a1.006,1.006,0,0,0-1.15,1.65h0l1.5,1a.992.992,0,0,0,1.3-.15l3.5-4a1.011,1.011,0,0,0-.05-1.4.987.987,0,0,0-.7-.3Zm0,8a1.046,1.046,0,0,0-.65.35l-2.9,3.35-.75-.5a1.006,1.006,0,0,0-1.15,1.65l1.5,1a.992.992,0,0,0,1.3-.15l3.5-4a1.011,1.011,0,0,0-.05-1.4.987.987,0,0,0-.7-.3Z" transform="translate(95.029 1812)"/>
+    </g>
+    <g class="cls-7" transform="matrix(1, 0, 0, 1, 13475, -3805)">
+      <g id="Ellipse_20-2" data-name="Ellipse 20" class="cls-4" transform="translate(-13377 5056)">
+        <circle class="cls-5" cx="35" cy="35" r="35"/>
+        <circle class="cls-6" cx="35" cy="35" r="33.5"/>
+      </g>
+    </g>
+  </g>
+</svg>

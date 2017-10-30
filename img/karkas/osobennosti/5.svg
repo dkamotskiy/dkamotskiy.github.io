@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-7246 5198 50 50">
+  <defs>
+    <style>
+      .cls-1, .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-1 {
+        stroke: #95989a;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_213" data-name="Rectangle 213" class="cls-1" width="50" height="50" transform="translate(898 1247)"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_85" data-name="Mask Group 85" class="cls-2" transform="translate(-8144 3951)">
+    <g id="demontazsh" transform="translate(893.018 1241.988)">
+      <path id="Path_570" data-name="Path 570" class="cls-3" d="M49.58,29.892A19.583,19.583,0,0,0,18.187,14.406l-.72.54,1.08,1.441.72-.54A17.782,17.782,0,0,1,47.779,30.012v.36l-4.2-4.322-1.261,1.261,6,6.122,6.663-6.062-1.2-1.321Zm-1.261,1.02h.18l-.06.06Z"/>
+      <path id="Path_571" data-name="Path 571" class="cls-3" d="M10.444,30.252A19.6,19.6,0,0,0,30.012,49.58a19.838,19.838,0,0,0,11.525-3.721l.72-.54-1.08-1.441-.72.54A17.739,17.739,0,0,1,12.245,30.072v-.12l4.142,4.262,1.261-1.261-6-6.122L4.982,32.773l1.2,1.321Z"/>
+    </g>
+  </g>
+</svg>

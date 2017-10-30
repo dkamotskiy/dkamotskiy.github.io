@@ -1,522 +1,766 @@
-/*Стилизация планшетной версии*/
-@media screen and (min-width: 768px) and (max-width: 991px) and (min-height: 1000px) {
-	.jcarousel-control-next {
-		margin-top: -75px;
+/*Стилизация мобильной версии*/
+@media (max-width: 992px) {
+	#header, #header * {
+		background-color: #fcfcfc;
 	}
-	.display-tablet {
-		display: block;
-	}
-	.display-desktop {
-		display: none;
-	}
-	#ekran3 .display-mobile, #ekran4 .display-mobile {
-		display: none;
-	}
-	.not-tablet-displayed {
-		display: none;
-	}
-	.display-tablet .hr {
-		padding: 0 !important;
-	    border: none !important;
-	    border-radius: 0 !important;
-	}
-	.ourface {
-		margin-top: 60px;
-		padding-top: 0;
-	}
-	.zagolovok-ourface {
-		font: 18px;
-	} 
-	#ekran3 p {
-		font-size: 14px;
-	}
-	#ekran3 .glavtext {
-		margin-bottom: 40px;
-		font-size: 18px;
-	}
-	.row.display-tablet {
-		margin-top: 10px;
-		margin-bottom: 10px;
-	}
-	#ekran2 .row.display-tablet .col-sm-6 div {
-		padding: 10px;
-		border: 1px solid #D2D6D9;
-		border-radius: 2px;
-	}
-	#ekran3 button {
-		bottom: 50px;
-	}
-	#ekran3 {
-		padding-left: 15px;
-		padding-right: 15px;
-		padding-top: 30px;
-	}
-	#ekran3 p {
-		padding-left: 10px;
-		padding-right: 10px;	
-	}
-	#ekran4 .display-desktop {
-		display: block;
-	}
-	#ekran4 {
-		padding-left: 90px;
-		padding-right: 90px;
-		padding-top: 70px;
-	}
-	#ekran4 .jcarousel-wrapper, #ekran6 .jcarousel-wrapper {
-		margin-top: 170px;
-	}
-	.topp {
-		font-size: 20px;
-	}
-	#ekran5 {
-		padding-left: 40px;
-		padding-right: 40px;
-		padding-top: 50px;
-	}
-	#ekran5 .row {
-		margin-top: 30px;
-	}
-	.komfortno {
-		width: 100%;
-	}
-	#ekran6 .display-desktop {
-		display: block;
-	}
-	#ekran6 {
-		padding-left: 100px;
-		padding-right: 100px;
-		padding-top: 70px;
-	}
-	#ekran8 {
-		padding-left: 40px;
-		padding-right: 40px;
-	}
-	#ekran8 .row p.zagolovok-strategy {
-		font-size: 18px;
-	}
-	#ekran-new {
-		padding-left: 40px;
-		padding-right: 40px;
-		padding-top: 70px;
-	}
-	#ekran-new .row.display-tablet {
-		margin-top: 0;
-		margin-bottom: 0;
-	}
-	.tablet-border {
-		position: relative;
-		padding-top: 60px;
-		padding-bottom: 40px;
-		border-left: 1px solid #fff;
-		border-right: 1px solid #fff;
-		border-bottom: 1px solid #fff;
-	}
-	.tablet-border {
-		margin-bottom: 20px;
-	}
-	#ekran-new .row.sposoby-newblock.display-tablet {
-		margin-bottom: 20px;
-	}
-	#footer .display-mobile {
-		display: none;
-	}
-	#footer .display-desktop {
-		display: block;
-	}
-	#footer .col-sm-3 {
-		padding-left: 5px;
-		padding-right: 5px;
-	}
-	#footer .col-md-2.col-sm-2.text-center {
-		padding-left: 0;
-		padding-right: 0;
-	}
-	.ofis {
-		top: auto;
-	    bottom: 100px;
-	    right: 7%;
-	    width: 40%;
-	    min-height: 25%;
-	}
-	#ekran9 .forma {
-		top: auto;
-	    bottom: 100px;
-	    right: auto;
-	    left: 7%;
-	    width: 40%;
-	    min-height: 25%;
-	}
-	#ekran7 .ostavte {
-	    width: 90%;
-	    left: 5%;
-	    top: 40%;
-	}
-	.ostavte span:nth-child(1) {
-		width: 40%;
-    	text-align: center;
-    	left: 60%;
-	}
-	.ostavte br {
-		display: none;
-	}
-	.ostavte button {
-		height: 20%;
-		top: 40%;
-	}
-}
-
-
-
-/*Стилизация мобильной версии------------------------------------------------------------------------------------------*/
-@media (max-width: 767px) {
-	.portfolio-pic {
-	margin-bottom: 15px;
-	}
-	.display-tablet {
-		display: none;
+	#header {
+		line-height: 40px;
 	}
 	.display-mobile {
 		display: block;
 	}
 	.display-desktop {
+		display: none;
+	}
+	.display-tablet {
 		display: none;
 	}
 	.equal, .equal > div[class*='col-'] {
 		display: block;
 		flex: none;
 	}
-	#ekran2, #ekran3, #ekran4, #ekran6, #ekran8, #ekran-new, #ekran5 {
-		height: auto;
-		padding-top: 40px;
-	}
-	/*Общие элементы*/
-	.menu-button {
-		top: 15px;
-		right: 15px;
-	}*/
-	/*1 экран*/
-	/*.ekran1-footer-mountain, .ekran1-footer {
-		bottom: -60px;
-	}
-	.logo-ekran1 {
-		bottom: -60px;
-	}*/
-	#ekran1 {
-		overflow: hidden;
-	}
-	.logo-ekran1 {
-		width: 226px;
-		left: 50%;
-		margin-left: -113px;
-	}
-	.deviz {
-		font-size: 18px;
-		margin-left: 0;	
-		width: 100%;
-		bottom: 50px;
-		left: 0;
-	}
-	/*3 экран*/
-	#ekran3 {
-		padding-left: 15px;
-		padding-right: 15px;
-	}
-	#ekran3 h2 {
-		font-size: 26px;
-	}
-	#ekran3 p {
-		font-size: 14px;
-		padding-left: 0;
-		padding-right: 0;
-	}
-	.sdvig {
-		margin-left: 0;
-	}
-	.ourface {
-		margin-top: 50px;
-		margin-left: -15px;
-		margin-right: -15px;
-		margin-bottom: 50px;
-		padding-left: 10px;
-		padding-right: 10px;
-	}
-	.ourface h4 {
-		font-size: 22px;
-		margin-left: -65px;
-		top: 5px;
-	}
-	#ekran3 button {
-	    position: static;
-	    margin: 0 auto;
-	    margin-top: -25px;
-	    margin-bottom: 25px;
-	}
-	/*4 экран-------*/
-	#ekran4 {
-		padding-left: 20px;
-		padding-right: 20px;
-		height: auto;
-		padding-bottom: 5px;
-	} 
-	#ekran4 img.display-mobile {
-		padding-bottom: 5px;
-		display: block;
-		margin: 0 auto;
-	}
-	#ekran4 button.display-mobile {
-		margin-top: 15px !important;	
-		margin-bottom: 15px !important;	
-	}
-	/*Экран5---------*/
-	#ekran5 {
-		padding-left: 25px;
-		padding-right: 25px;
-		padding-bottom: 30px;
-	}
-	#ekran5 .container {
-		padding-left: 0;	
-		padding-right: 0;	
-
-	}
-	#ekran5 h3 {
-		font-size: 20px;
-		line-height: auto;
-	}
-	#ekran5 .col-md-2 {
-		padding-left: 0;
-		padding-right: 0;
-		margin-bottom: 25px;
-	}
-	.komfortno {
-		width: 100%;
-		font-size: 14px;
-		text-align: center;
-	}
-	.komfortno img {
-		max-width: 30px;
-	}
-	.zadacha {
-		font-size: 16px;
-	}
-	/*Экран6--------------*/
-
-	#images-ekran6, #dop-images-6 {
-		color: #fff;
-	}
-	#images-ekran6 .img, #dop-images-6 .img {
-		margin-bottom: 15px;
-	}
-	#ekran6 button.display-mobile, #ekran4 button.display-mobile {
-		display: block;
-	    margin: 0 auto;
-	    box-shadow: none;
-	    background-color: #66C8E5;
-	    border: none;
-	    border-radius: 3px;
-	    width: 170px;
-	    height: 34px;
-	    font-family: 'Open Sans Condensed', sans-serif;
-	    font-weight: 300;
-	    font-size: 18px;
-	    text-transform: uppercase;
-	    color: #fff;
-	    line-height: 1.5;
-	    letter-spacing: 0.05em;
-	    transition: 0.4s;
-	}
-	#ekran6 button.display-mobile:hover {
-		background-color: #66B2C8;
-		transition: 0.4s;
-	}
-	#dop-images-6 button {
-		margin-top: 15px;
-	}
-	/*Экран8--------*/
-	#ekran8 {
-		padding-left: 20px;
-		padding-right: 20px;
-		padding-bottom: 30px;
-	}
-	#ekran8 h3 {
-		font-size: 20px;
-		margin-bottom: 20px;
-	}
-	/*Экран новый----*/
-	#ekran-new {
-		padding-left: 20px;
-		padding-right: 20px;
-		padding-bottom: 20px;
-	}
-	#ekran-new .row {
-		margin-left: 0;
-		margin-right: 0;
-	}
-	#ekran-new h3 {
-		font-size: 20px;
-	}
-	#ekran-new h3:nth-child(1) {
-		margin-bottom: -13px;
-	}
-	#ekran-new .col-md-2, #ekran-new .col-md-3 {
-		margin-bottom: 15px;
-	}
-	/*Экран7---*/
-	#ekran7 {
-		position: static;
-		padding-top: 20%;
-		padding-left: 15px;
-		padding-right: 15px;
-	}
-	#ekran7 h3 {
-		font-size: 22px;
-		margin-left: 0;
-		position: static;
-	}
-	#ekran7 .ostavte {
-		width: 100%;
-		height: auto;
-		top: 0;
-		left: 0;
-		padding-left: 10px;
-		padding-right: 10px;
-		margin-top: 30px;
-		padding-top: 60px;
-		padding-bottom: 40px;
-		position: relative;
-	}
-	.ostavte input[type="text"] {
-		width: 100%;
-		margin-bottom: 20px;
-		position: static;
-	}
-	.ostavte button {
-		width: 170px;
+	#header nav {
+		padding-left: 0px;
+		padding-right: 0px;
 		height: 40px;
-		border-radius: 3px;
-		display: block;
-		margin: 0 auto;
-		position: static;
 	}
-	#ekran7 .ostavte-righttop, #ekran7 .ostavte-lefttop {
+	#header {
+		padding-left: 0px;
+		padding-right: 0px;
 	}
-	#ekran7 .ostavte span:nth-child(1) {
-		font-size: 16px;
-		max-width: 181px;
-		text-align: center;
-		margin-left: -90px;
+	.navbar-nav.mr-auto {
+		background-color: #fcfcfc;
+		padding-left: 0px;
 	}
-	.obrabotka {
-		margin-left: 0;
-		position: static;
-		bottom: 0;
+	.navbar-collapse {
+		/*margin-left: -20px;
+		margin-right: -20px;*/
+		line-height: 30px;
 	}
-	/*Последний экран*/
-	#ekran9 {
-		min-height: 1100px;
+	.navbar-brand {
+		line-height: 40px;
+		padding-top: 0;
+		padding-bottom: 0;
+		margin-left: 10px;
 	}
-	#map {
-		height: 100%;
+	.navbar {
+		padding: 0;
 	}
-	#footer .col-xs-12.display-mobile {
-		margin-bottom: 15px;
+	.navbar-collapse {
+		margin-left: -10px;
+    	width: 100%;
+    	margin-left: 0px;
+	    width: 100%;
+	    margin-right: 0px;
 	}
-	#footer .display-mobile {
-		text-align: center;
+	.navbar-toggler {
+		margin-right: 10px;
 	}
-	.display-mobile.row {
-		margin-top: 15px;
-	}
-	.display-mobile.row .col-xs-6 {
-		padding-left: 10%;
-	}
-	.display-mobile.row a {
-		display: block;
-		font-size: 12px;
-		color: #FFFFFF;
-		text-align: left;
-	}
-	#ekran9 .forma {	
-	    width: 86%;
-	    left: 7%;
-	    min-height: 1px;
-	    padding-left: 15px;
-	    padding-right: 15px;
-	    padding-top: 15px;
-	    padding-bottom: 5px;	
-	    top: auto;	
-	    bottom: 500px;	
-	}
-	.main-block-forma span:nth-child(1) {
-		margin-left: -60px;
-		font-size: 14px;
-
-	}
-	.main-block-forma input[type="text"] {
-		font-size: 14px;
-	}
-	#ekran9 .main-block-forma {
-		min-height: 1px;
-		width: 100%;
-		position: relative;	
-		left: 0;	
-	}
-	.ofis {
-		height: 280px;	
-		width: 86%;
-    	left: 7%;
-    	min-height: 1px;
-    	top: auto;	
-    	bottom: 200px;	
-	}
-	/*Формы*/
-	.obrabotka.display-mobile {
-		margin-top: 20px;	
-
-	}
-	.ostavte label {
-		margin-left: 30px;
-		margin: auto;
-		display: block;	
-		max-width: 220px;	
-	}
-	.obrabotka .label {
-		font-size: 12px;	
-	}
-	/*Боковое меню*/
-	.pushy-open-right .pushy-right {
-		width: 291px;	
-	}
-	#pushy-menu {
-		margin-right: 15px;	
-	}
-	#pushy-menu p {
-		margin-bottom: 11px;
-		font-size: 15px;		
-	}
-	.pushy-right img {
-		padding-bottom: 0;	
-	}
-	/*Экран 8*/
-	#ekran8 .col-md-3 {
-		margin-bottom: 15px;	
-	}
-	#footer .row {
-		margin-left: 0;
-		margin-right: 0;
-	}
+	#header nav li a {
+    padding-left: 15px;
+    padding-right: 0px;
 }
-
-
-/*Стилизация десктопной версии---------------------------------------------------------------*/
-@media (min-width: 992px) {
-	.display-tablet {
+	/*Страница "Бассейны"--------------------*/
+	#index {
+		-webkit-background-size: 200%;
+		background-size: 200%;
+		background-repeat: no-repeat;
+		-ms-background-position-y: center;
+		background-position-y: center;
+	}
+	#parallax {
+		height: 150px;
+	}
+	#header {
+		height: 40px;
+	}
+	#header img {
+		max-width: 60px;
+	}
+	.header-left {
+		line-height: 40px;
+	}
+	#top-menu {
 		display: none;
 	}
+	.proizvodstvo {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.zakazyvaya form {
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+	.ellipse {
+		display: none !important;
+	}
+	.header-right a.header-raschet {
+		display: none !important;
+	}
+	.header-right {
+		padding-top: 10px;
+		    margin-top: -23px;
+    width: 70%;
+    margin-right: -17px;
+	}
+	.hamburger {
+		max-width: 30px !important;
+		margin-top: -7px;
+    display: inline;
+	}
+	.header-mobile {
+		font-size: 20px;
+		margin-right: 10px;
+    display: inline !important;
+	}
+	.priyatnie {
+		margin-top: 40px;
+		min-height: 114px;
+		font-size: 16px;
+	}
+	.h3 {
+		font-size: 24px !important;
+	}
+	.hr {
+		width: 90px;
+	}
+	.proizvodstvo p {
+    	font-size: 14px;
+	}
+	.my-stroim {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.about-us-in-numbers p {
+		margin-bottom: 20px;
+	}
+	.about-us-in-numbers {
+		padding-bottom: 20px;
+	}
+	.block-my-stroim img {
+		max-width: 90px;
+	}
+	.p {
+		margin-top: 20px;
+	}
+	.stroim-basseyni {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.svoy-basseyn .h3 {
+		font-family: Comfortaa;
+		font-size: 24px;
+		font-weight: 600;
+		color: #00C2FF;
+	}
+	.stroim-basseyni {
+		padding-bottom: 20px;
+	}
+	.etapy-rabot img {
+		max-width: 100%;
+	}
+	.zakazyvaya p:nth-child(1) {
+    	font-size: 20px;
+	}
+	.zakazyvaya .row {
+		margin-top: 25px;
+	}
+	.svoy {
+		font-size: 20px;
+	}
+	.zakazyvaya .container {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.zakazyvaya input {
+		width: 100%;
+	}
+	.checkbox-custom {
+		float: left;
+	}
+	.label {
+		margin-top: -33px;
+		margin-left: 40px;
+		font-size: 14px;
+	}
+	.zakazyvaya textarea {
+		margin-bottom: 20px;
+	}
+	.pervy {
+		display: none;
+	}
+	.contacts .col-xs-2 {
+		width: 20%;
+	}
+	.contacts .col-xs-10 {
+		width: 80%;
+	}
+	.contacts {
+		background-color: #FCFCFC;
+	}
+	.contacts .blue-button {
+		display: none;
+	}
+	.map-nadpis {
+		position: static;
+		background-color: #FCFCFC;
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-bottom: 10px;
+		width: 100%;
+	}
+	.mt15 {
+		margin-top: 15px;
+	}
+	.pt30 {
+		padding-top: 30px;
+	}
+	#map {
+		min-height: 500px;
+	}
+	/*.row.second-footer-row {
+		font-size: 14px !important;
+	}*/
+	.rights {
+		    font-size: 12px;
+		    text-align: center;
+		    margin-top: 20px;
+		    color: #949799;
+	}
+	/*.row.second-footer-row .col-md-2 {
+		margin-bottom: 10px;
+	}
+	.second-footer-row img {
+		margin-bottom: 10px;
+	}
+	.social-footer {
+		position: absolute;
+	}
+	#footer {
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-bottom: 0;
+	}
+	#footer .col-md-2 {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.footer-w50 {
+		width: 49%;
+		display: inline-block;
+		padding-bottom: 15px;
+	}*/
+	.zakazyvaya .form-group {
+		width: 100%;
+	}
+	.zakazyvaya form {
+		margin-top: 15px;
+	}
+	#footer {
+		padding-top: 12px;
+	}
+	#footer .col-6, #footer .col-11 {
+		padding-left: 10px;
+		padding-right: 10px;
+		margin-bottom: 10px;
+	}
+	.row.second-footer-row {
+		font-size: 14px !important;
+	}
+	.row.second-footer-row .col-md-2 {
+		margin-bottom: 10px;
+	}
+	.row.second-footer-row .col-md-9 img {
+		margin-bottom: 25px;
+	}
+	.col-md-3.social-footer.display-mobile {
+		margin-top: 15px;
+		text-align: center;
+	}
+	/*Страница "Композитные бассейны"-----------*/
+	.kompozit-1 img, #spa .kompozit-1 img {
+		max-width: 100%;
+	}
+	.kompozit-1 {
+		margin-top: 40px;
+	}
+	.my-stroim .row {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	#kompozit .hr {
+		display: none;
+	}
+	.kompozit-1 .h3 {
+		margin-top: 15px;
+	}
+	.kompozit-1 .main-text {
+	    font-size: 15px;
+	    margin-left: 0;
+	    margin-right: 0;
+	    text-align: center;
+	    margin-top: 25px;
+	}
+	.osobennosti-kompozit .row {
+    	margin-bottom: 0px;
+	}
+	.what-a-price .h3 img {
+		display: none;
+	}
+	.what-a-price .h3 {
+		margin-bottom: 15px;
+	}
+	.osobennosti-kompozit .col-md-4 {
+		margin-bottom: 20px;
+	}
+	.what-a-price .col-6 {
+		padding-left: 5px;
+		padding-right: 5px;
+		padding-bottom: 10px;
+	}
+	.kompozitnyi-basseyn-cena {
+		font-size: 16px;
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.stoimost {
+		text-align: right !important;
+		padding-right: 10px;
+	}
+	.what-a-price .row {
+		font-size: 16px;
+	}
+	.nazvanie-tovara {
+		margin-top: 10px;
+	}
+	.tovar-look {
+		margin: auto;
+	}
+	.about-us-in-numbers {
+		padding-top: 0;
+	}
+	.etapy-rabot .h3 {
+		margin-bottom: 15px;
+	}
+	.social-footer {
+		right: 0;
+	}
+	.etapy-rabot {
+		height: 460px;
+	}
+	/*Страница "Производство"---------*/
+	.first-block {
+		margin-top: 40px;
+	}
+	#oborudovanie .first-block img {
+		max-width: 100%;
+	}
+	#oborudovanie .first-block h2 {
+		font-size: 16px;
+	}
+	#oborudovanie .first-block p {
+		font-size: 14px;
+	}
+	.oborudovanie-katalog .col-md-4 img {
+		max-width: 100%;
+	}
+	.tovar-look {
+		width: 100%;
+	}
+	.oborudovanie-katalog .col-6 {
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+	.oborudovanie-katalog .col-6 a {
+		display: inline-table;
+	    line-height: 25px;
+	    margin-top: 10px;
+	}
+	.oborudovanie-katalog .col-6 div {
+		padding-left: 5px;
+		padding-right: 5px;
+		height: 350px;
+	}
+	.oborudovanie-katalog .row {
+	margin-bottom: 10px;
+	}
+	#oborudovanie .zakazyvaya .row {
+		margin-left: auto;
+		margin-right: auto;
+	}
+	/*Страница "О компании"----------------*/
+	#about .first-block {
+		max-height: 115px;
+	}
+	#about .service-first-block .about-new-text1 {
+		font-size: 30px;
+		margin-bottom: 5px;
+	}
+	#about .service-first-block {
+		padding-top: 15px;
+	}
+	#about .service-first-block .about-new-text2 {
+		font-size: 25px;
+	}
+	.fz16-970 {
+		font-size: 14px !important;
+	}
+	#about .about-us-in-numbers {
+		padding-top: 20px;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	#about .about-us-in-numbers .fz18 {
+		font-size: 14px;
+		text-align: left;
+	}
+	.gendirektor {
+		margin-top: 20px;
+	}
+	.gendirektor .col-md-5 {
+		height: 170px;
+		margin-bottom: 10px;
+	}
+	#about .about-us-in-numbers .fz14 {
+		font-size: 14px !important;
+	}
+	#calculating .service-first-block p {
+		font-size: 16px;
+	}
+	#calculating .service-first-block br {
+		display: none;
+	}
+	/*Страница "Расчет стоимости--------------*/
+	#calculating .first-block {
+		max-height: 115px;
+		padding-top: 5px;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	#calculating .o-kompanii .fz16 {
+		margin-left: 0;
+		margin-right: 0;
+		font-size: 14px;
+		margin-bottom: 15px;
+	}
+	.raschet .top-raschet {
+		margin-top: 0px;
+	}
+	.raschet .top-raschet input {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	.down-raschet p {
+		margin-top: 10px;
+	}
+	#calculating .raschet .fz14.text-center {
+		margin-top: 20px;
+	}
+	.raschet .soglasie {
+		margin-top: 15px;
+	}
+	#calculating .tovar-look {
+		width: 200px;
+	}
+	.calculating-niz-text p.fz16 {
+		font-size: 14px;
+	}
+	#calculating .contacts {
+		padding-top: 0;
+	}
+	/*Страница "Химия"--------------*/
+	#chemistry .first-block {
+		max-height: 115px;
+		padding-top: 5px;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	#chemistry .service-first-block p {
+		font-size: 14px;
+	}
+	.prof-chemistry {
+		padding-top: 20px;
+	}
+	.prof-chemistry .col-md-5 div {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.prof-chemistry .col-md-5 div .blue-button {
+		max-width: 100%;
+		display: table-cell;
+		line-height: 25px;
+		padding-top: 3px;
+		margin-top: 10px;
+	}
+	#chemistry .zakazyvaya .container {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	/*Страница "Химия-Каталог"--------------*/
+	#chemistry-catalogue .first-block .properties {
+		margin-bottom: 20px;
+	}
+	#chemistry-catalogue .tovar-block button.tovar-look {
+		margin-bottom: 10px;
+	}
+	#chemistry-catalogue .modeli {
+		padding-bottom: 0;
+	}
+	#chemistry-item-card .tovar-look {
+		width: 200px;
+	}
+	#chemistry-item-card .same-items {
+		padding-bottom: 0;
+	}
+	/*Страница "Акции"----------------------*/
+	#news-page .kompozit-1 {
+		padding-top: 1px;
+	}
+	.news-main-block .fz16 {
+		margin-left: 0;
+		margin-right: 0;
+		font-size: 14px;
+	}
+	#news-page .news-main-block .fz16 {
+		margin-bottom: 0;
+	}
+	#news-page .contacts {
+		padding-top: 0;
+	}
+	/*Страница "Карточка акции"----------------------*/
+	#discount-card-page .discount-card-inner p {
+		font-size: 14px;
+	}
+	#discount-card-page .discount-card-inner p.fz24 {
+		font-size: 20px;
+	}
+	.photos-discount-card .col-md-2 {
+		width: 50%;
+		max-width: 50%;
+		flex: 0 0 50%;
+		margin-bottom: 14px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 7px;
+		padding-right: 7px;
+	}
+	#discount-card-page .photos-discount-card {
+		margin-bottom: 5px;
+	}
+	#discount-card-page .zakazyvaya form {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	#discount-card-page .zakazyvaya .form-group-dib {
+		width: 100% !important;
+	}
+	#discount-card-page .zakazyvaya label {
+		margin-top: 25px !important;
+	}
+	#discount-card-page .zakazyvaya form .fz24 {
+		width: 70%;
+		left: 15%;
+		text-align: center;
+		margin-left: 0;
+	}
+	#discount-card-page .zakazyvaya form:before, #discount-card-page .zakazyvaya form:after {
+		width: 10%;
+	}
+	/*Страница "Каркасные бассейны"------------------*/
+	.basseyn-type.row.display-desktop {
+		display: block;
+	}
+	.basseyn-type .col-md-2 {
+		max-width: 100%;
+		display: block;
+		margin-bottom: 10px;
+		width: 100%;
+	}
+	.basseyn-type .col-md-2 a {
+		margin: auto;
+	}
+	.what-a-price .col-6 {
+		padding-left: 7px;
+	}
+	.what-a-price .col-md-4 {
+		padding-bottom: 30px;
+	}
+	/*Страница "Карточка новости"------------------*/
+	.news-card img {
+		max-width: 100%;
+		margin-bottom: 15px;
+	}
+	.news-card p {
+		font-size: 14px;
+	}
+	.news-card .fz24 {
+		font-size: 20px;
+	}
+	#news-card .contacts {
+		padding-top: 0;
+	}
+	/*Страница "Оборудование"------------------*/
+	.oborudovanie-katalog .col-6 img {
+		max-width: 100%;
+	}
+	#oborudovanie-type1 .first-block p, #oborudovanie-type2 .first-block p {
+		font-size: 14px;
+	}
+	#oborudovanie-type1 .tovar-block {
+		padding: 35px;
+	}
+	#oborudovanie-type1 .contacts {
+		padding-top: 0;
+	}
+	#oborudovanie-type2 .first-block .row img {
+		margin-bottom: 15px;
+	}
+	/*Страница "Наши работы"------------------*/
+	#works .kompozit-1 .fz18 {
+		font-size: 14px;
+	}
+	#works .kompozit-1 .row .col-md-4 div p {
+		font-size: 13px;
+	}
+	.contacts .tovar-look {
+		width: 200px;
+	}
+	#carouselExampleIndicators .row {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.carousel-control-next img, .carousel-control-prev img {
+		width: 40px;
+	}
+	#works-example .carousel-indicators {
+		margin-top: 15px;
+	}
+	#works-example ol {
+		display: inline-block;
+	}
+	.carousel-indicators li {
+		position: static !important;
+		width: 47%;
+		height: auto;
+		display: inherit;
+	}
+	.carousel-indicators img {
+		max-width: 100%;
+		margin-left: auto;margin-right: auto;
+		margin-bottom: 0;
+	}
+	#carouselExampleIndicators .col-md-4 {
+		margin-left: 0;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.work-example .fz18 {
+		margin-left: 0;
+		margin-right: 0;
+		margin-bottom: 30px;
+		font-size: 14px;
+		margin-top: -15px;
+	}
+	/*Страница "Пленка"------------------*/
+	#plenka .kompozit-1 img, #polipropilen .kompozit-1 img {
+		max-width: 100%;
+	}
+	/*Страница "Сервис"------------------*/
+	#service .first-block {
+		height: 115px;
+		padding-top: 15px;
+	}
+	#service .service-first-block p {
+		font-size: 16px;
+	}
+	#service .ustanovka-i {
+		padding-bottom: 0;
+	}
+	.regular-inner-block {
+		max-width: 49%;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	.regular-obslujivanie:after, .regular-obslujivanie:before {
+		width: 10%;
+	}
+	.regular-obslujivanie {
+		padding-left: 10px;
+		padding-right: 10px;
+		font-size: 14px !important;
+	}
+	.maxw100 {
+		max-width: 100% !important;
+	}
+	.regular-obslujivanie p:nth-child(1) {
+		font-size: 20px;
+		margin-left: 0;
+		max-width: 70%;
+		left: 15%;
+		text-align: center;
+	}
+	.remont-obor .regular-obslujivanie p:nth-child(1) {
+		margin-left: 0;
+	}
+	.regular-obslujivanie:after, .regular-obslujivanie:before {
+		width: 10% !important;
+	}
+	#service .zakazyvaya .container {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	/*Страница СПА--------------------------------------*/
+	.spa-new-block .col-md-3 {
+		margin-bottom: 15px;
+	}
+	.spa-new-block p {
+		font-size: 14px;
+		margin-left: 0;
+		margin-right: 0;
+		text-align: left;
+	}
+	#zayavka-blue .modal-dialog, #zayavka .modal-dialog, #spasibo-za-zayavku .modal-dialog {
+		height: 100vh;
+		margin: 0;
+	}
+	#zayavka-blue .modal-content, #zayavka .modal-content, #spasibo-za-zayavku .modal-content {
+		width: 100%;
+		height: 100%;
+		padding-top: 40px;
+	}
+	#zayavka-blue .close {
+		right: 20px;
+	}
+	#zayavka-blue input[type="text"]:nth-child(1) {
+		margin-right: 0;
+	}
+	#zayavka-blue textarea {
+		width: 270px;
+	}
+	#zayavka-blue .dib, #zayavka .dib {
+		display: block;
+	}
+	#zayavka-blue label, #zayavka label {
+		margin-top: 20px;
+	}
+	#zayavka {
+		background-color: #fff;
+	}
+}
+/*Стилизация десктопной версии-----------------------------------------------------------------------------------------*/
+/*Стилизация десктопной версии-----------------------------------------------------------------------------------------*/
+/*Стилизация десктопной версии-----------------------------------------------------------------------------------------*/
+@media (min-width: 992px) {
 	.display-desktop {
 		display: block;
 	}
+	#footer .main-footer-row.display-desktop {
+		display: flex !important;
+	}
 	.display-mobile {
+		display: none !important;
+	}
+	.display-tablet {
 		display: none;
 	}
 	.equal, .equal > div[class*='col-'] {
@@ -527,374 +771,267 @@
 	    display: flex;
 	    flex:1 0 auto;
 	}
-	#ekran5 .col-md-2, #ekran-new .col-md-2 {
-		width: 20%;
+	.etapy-rabot .col-md-3 {
+		float: left;
+	}
+	.footer-w50 .col-md-2 {
+		max-width: 100%;
+	}
+	.row.second-footer-row.display-desktop {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
 	}
 }
-
-
-/*Стилизация десктопной версии 992-1200-----------------------------------------------------*/
-@media screen and (min-width: 992px) and (max-width: 1200px) {
-	/*Экран2*/
-	#ekran2 img {
-		width: 55px;
+/*Стилизация таблеточной версии*/
+@media screen and (min-width: 768px) and (max-width: 992px) {
+	.display-tablet {
+		display: block;
 	}
-	#ekran2 p {
-		margin-top: 5px;
-		margin-bottom: 5px;
+	.display-desktop {
+		display: none;
 	}
-	/*Экран3*/
-	#ekran3 h2 {
-		font-size: 38px;
+	.display-mobile {
+		display: none;
 	}
-	#ekran3 p {
-		font-size: 15px;
+	#footer .display-desktop {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
 	}
-	.ourface {
-		padding-top: 20px;
-
+	.map-nadpis {
+		position: absolute;
+	    right: 50px;
+	    top: 22%;
+	    background-color: #fff;
+	    z-index: 5;
+	    padding-left: 35px;
+	    padding-right: 35px;
+	    padding-top: 25px;
+	    padding-bottom: 36px;
+	    width: 300px;
+	    line-height: 1.4;
 	}
-	.ourface h4 {
-		font-size: 25px;
-		margin-left: -74px;
+	#footer .pt30 {
+		padding-top: 0;
 	}
-	#ekran3 .col-md-4 .zagolovok-ourface {
-		font-size: 17px;
+	#footer .mt15 {
+		margin-top: 0px;
 	}
-	#ekran3 .hr {
-		margin: 2px auto;
+	#footer a {
+		font-size: 12px;
 	}
-	#ekran3 .ourface p {
-		padding-left: 2%;
-		padding-right: 2%;
+	#index .about-us-in-numbers .display-desktop {
+		display: block !important;
 	}
-	/*Экран4*/
-	#ekran4 h3 {
-		margin-top: 30px;
-	}
-	#ekran4 .jcarousel-wrapper {
-		margin-top: 45px;
-	}
-	/*Экран5*/
-	#ekran5 .row {
-		margin-top: 40px;
-	}
-	.topp {
-		font-size: 18px;
-	}
-	/*Экран6*/
-	#ekran6 .jcarousel {
-		margin-top: 60px;
-	}
-	#ekran6 h3 {
-		margin-top: 30px;
-	}
-	.ostavte-lefttop, .ostavte-righttop {
-		width: 15%;
-	}
-	/*Экран9*/
-	.sposoby-lt, .sposoby-rt {
-		width: 10%;
-	}
-	/*Боковое меню*/ 
-	#pushy-menu p {
-		margin-bottom: 16px;
-	}
-}
-
-/*Стилизация десктопной версии 1280-----------------------------------------------------------------*/
-@media screen and (min-width: 1250px) and (max-width: 1320px) and (min-height: 1000px) {
-	#ekran2 {
-		padding-top: 8%;
-	}
-	#ekran2 h3 {
-		margin-bottom: 50px;
-	}
-	#ekran2 img {
-		width: 100px;
-	}
-	#ekran2 .col-md-4 div {
-		padding-top: 19px;
-	    padding-bottom: 20px;
-	    padding-left: 10px;
-	    padding-right: 10px;
-	}
-	#ekran3 {
-		padding-top: 8%;
-	}
-	.ourface {
-		padding-top: 30px;
-		padding-bottom: 30px;
-	}
-	.ourface img {
-		width: 50px;
-	}
-	#ekran3 .col-md-4 .zagolovok-ourface {
-		margin-top: 10px;
+	.obvodka {
 		margin-bottom: 10px;
 	}
-	#ekran3 button {
-		bottom: 50px;
+	.p {
+		margin-left: 0;
+		margin-right: 0;
 	}
-	#ekran4 {
-		padding-top: 10%;
+	.block-my-stroim img {
+		float: none;
+		margin: auto;
+		display: block;
 	}
-	#ekran4 .jcarousel-wrapper {
-		margin-top: 100px;
+	.block-my-stroim-zagolovok {
+		text-align: center;
 	}
-	#ekran5 {
-		padding-top: 8%;
+	.stroim-basseyni .col-md-4 .inner {
+		height: 515px;
 	}
-	#ekran5 .row {
-		margin-top: 100px;
+	.stroim-basseyni .col-md-4 .inner .blue-button {
+		width: 163px;
 	}
-	#ekran6 {
-		padding-top: 10%;
+	.stroim-basseyni .col-md-4 p:nth-child(1) {
+		font-size: 16px;
 	}
-	#ekran6 .jcarousel {
-		margin-top: 130px;
+	.etapy-rabot {
+		height: auto !important;
 	}
-	#ekran9 .forma, .ofis {
-		min-height: 25%;
+	.etapy-rabot img {
+		max-width: 50%;
 	}
-	.ofis {
-		top: 40%;
+	.zakazyvaya form {
+		margin: auto !important;
 	}
-	#ekran8 h3 {
-		margin-top: 100px;
-		margin-bottom: 100px;
+	.label {
+		margin-top: -11px;
 	}
-	#ekran-new {
-		padding-top: 200px;
+	.down-raschet .label2 {
+		display: inline;
 	}
-	#ekran-new .spospo {
-		margin-top: 100px;
+	.down-raschet .fz18 {
+		font-size: 13px;
 	}
-	.ostavte button {
-		height: 20%;
-		top: 40%;
+	#chemistry .service-first-block p {
+		display: none;
 	}
-}
-/*Стилизация десктопной версии 1920---------------------------------*/
-@media screen and (min-width: 1800px) {
-	.firma, .direktor {
-		font-size: 18px;
+	.prof-chemistry .col-md-5 div .blue-button {
+		line-height: 40px;
+		padding-top: 0;
+		margin: auto;
+		display: block;
 	}
-	#ekran4 .portfolio-pic h5 {
-		font-size: 20px;
+	#chemistry-catalogue .tovar-look {
+		font-size: 13px;
 	}
-	#ekran2 {
-		padding-top: 50px;
+	#chemistry-item-card .tovar-look {
+		width: 130px;
 	}
-	#ekran2 h3, #ekran4 h3 {
-		font-size: 42px;
-		margin-bottom: 50px;
+	.etap-selector p, .etap-selector-remont p, .etap-selector-remont2 p, .big-selector-etap-selector p {
+		top: 25% !important;
+		font-size: 14px;
 	}
-	#ekran2 img {
-		width: 105px;
+	.etap-selector, .big-selector-etap-selector, .etap-selector-remont, .etap-selector-remont2 {
+		overflow: hidden;
 	}
-	#ekran2 .col-md-4 div {
-		padding-top: 17px;
-		padding-bottom: 34px;
+	.round {
+		position: absolute;
+	    right: 0px;
+	    top: -1px;
+	    width: 58px;
+	    height: 58px;
+	    z-index: 10;
 	}
-	#ekran2 button, #ekran3 button {
-		width: 200px;
-		height: 40px;
-		margin-top: 20px;
+	#karkas .about-us-in-numbers .about-us-numbers, #kompozit .about-us-in-numbers .about-us-numbers, #plenka .about-us-in-numbers .about-us-numbers, #spa .about-us-in-numbers .about-us-numbers {
+		display: block;
 	}
-	#ekran2 .ekran3-zagolovok {
-		font-size: 20px;
+	#kompozit .tovar-block, #kompozit-item-card .tovar-block, #oborudovanie-type1 .tovar-block {
+		padding-left: 10px;
+		padding-right: 10px;
 	}
-	#ekran2 p {
-		font-size: 18px;
+	#kompozit .tovar-block .tovar-price, #kompozit .tovar-block .properties, #kompozit-item-card .tovar-block .tovar-price, #kompozit-item-card .tovar-block .properties, #oborudovanie-type1 .tovar-price, #oborudovanie-type1 .properties {
+		font-size: 14px;
 	}
-	#ekran3 {
-		padding-left: 140px;
-		padding-right: 140px;
-		padding-top: 20px;
-	}
-	#ekran3 h2 {
-		font-size: 62px;
-	}
-	#ekran3 p {
-		font-size: 24px;
-	}
-	#ekran3 .number {
-		font-size: 54px !important;
-	}
-	#ekran3 .verh {
-		font-size: 21px;
-		top: 10px;
-		left: 85px;
-	}
-	#ekran3 .niz {
-		font-size: 21px;
-		top: 30px;
-		left: 85px;
-	}
-	#ekran3 .verh1, #ekran3 .niz1 {
-		left: 50px;
-	}
-	#ekran3 .col-md-3 img {
-	    position: absolute;
-	    left: 30px;
-	    top: -21px;
-	    width: 107px;
-	}
-	.sdvig {
-		margin-left: 60px;
-		margin-top: 50px;
-	}
-	.ourface {
-		margin-top: 200px;
-		padding-top: 40px;
-		padding-bottom: 25px;
-	}
-	#ekran3 button {
-		bottom: 35px;
-	}
-	.ourface img {
-		width: 42px;
-	}
-	#ekran4 {
-		padding-top: 60px;
-		padding-left: 140px;
-		padding-right: 140px;
-	}
-	#ekran3 .col-md-4 .zagolovok-ourface {
-		font-size: 24px;
-	}
-	#ekran3 .col-md-4 p {
-		font-size: 18px;
-	}
-	#ekran5 {
-		padding-left: 140px;
-		padding-right: 140px;
-		padding-top: 60px;
-	}
-	#ekran5 h3 {
-		font-size: 42px;
-	}
-	#ekran5 .row {
-		margin-top: 150px;
-	}
-	.topp {
-		font-size: 24px;
-	}
-	.downp {
-		font-size: 18px;
-	}
-	.komfortno img {
-		max-width: 84px;
-	}
-	.komfortno {
-		font-size: 42px;
-	}
-	.zadacha {
-		margin-top: 100px;
-	}
-	#ekran6 h3 {
-		font-size: 42px;
-		margin-bottom: 70px;
-	}
-	#ekran6 {
-		padding-top: 100px;
-	}
-	#ekran8 {
-		padding-left: 140px;
-		padding-right: 140px;
-		padding-top: 70px;
-	}
-	#ekran8 h3 {
-		font-size: 42px;
-		margin-bottom: 50px;
-	}
-	#ekran8 .row img {
-		width: 56px;
-	}
-	#ekran8 .row p.zagolovok-strategy {
-		font-size: 24px;
-	}
-	#ekran8 .row .hr {
-		width: 70px;
-	}
-	#ekran8 .row p {
-		font-size: 18px;
-	}
-	#ekran-new {
-		padding-left: 140px;
-		padding-right: 140px;
-		padding-top: 140px;
-	}
-	#ekran-new h3 {
-		font-size: 42px;
-		margin-bottom: 45px;
-	}
-	#ekran-new .row img {
-		width: 70px;
-	}
-	.borderr p {
-		font-size: 24px;
-	}
-	#ekran-new .row.sposoby-newblock img {
-		width: 55px;
-	}
-	.sposoby-newblock .hr {
-		width: 70px;
-	}
-	#ekran-new .text-center {
-		font-size: 18px;
-	}
-	#ekran-new .sposoby-new-zagolovok {
-		font-size: 24px;
-	}
-	#ekran7 h3 {
-		font-size: 47px;
-		margin-left: -268px;
-	}
-	.main-block-forma input[type="text"] {
-		height: 37px;
-		font-size: 20px;
+	#kompozit-item-card .way {
 		margin-bottom: 20px;
 	}
-	.send-map {
-		width: 204px;
-		height: 48px;
+	#oborudovanie-type1 .tovar-look, #oborudovanie-type2 .tovar-look {
+		width: 200px;
 	}
-	#ekran9 .forma, .ofis {
-		min-height: 31%;
+	.opisanie-chemistry-type1 {
+		margin-left: 15px;
+		margin-right: 15px;
 	}
-	.main-block-forma span:nth-child(1) {
-    position: absolute;
-    font-size: 24px;
-    font-weight: 300;
-    left: 50%;
-    top: -15px;
-    margin-left: -106px;
+	.carousel-indicators li {
+		width: 46%;
 	}
-	#ekran9 .main-block-forma {
-		padding-top: 35px;
-		padding-bottom: 35px;
+	#works-example .carousel-indicators {
+		margin-top: 0;
 	}
-	.send-map {
-		margin-top: 40px;
+	#service .basseyn-type button {
+		margin-left: auto;
+		margin-right: auto;
 	}
-	.deviz {
-		font-size: 42px;
-		margin-left: -400px;
+	.regular-inner-block {
+		width: 49%;
 	}
-	/*Боковое меню*/
-	.pushy-open-right .pushy-right {
-		width: 562px;
+	.regular-obslujivanie p:nth-child(1) {
+		left: 33%;
 	}
-	.pushy-right img {
-		max-width: 296px;
+}
+/*Стилизация 1024 */
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+	#header nav li a {
+	    padding-left: 7px;
+	    padding-right: 7px;
+	    font-size: 14px;
 	}
-	#pushy-menu {
-		margin-right:135px;
+	/*Страница "Бассейны"------------------------------------------------------------*/
+	#header {
+		padding-left: 15px;
+		padding-right: 15px;
 	}
-	#pushy-menu p {
-		font-size: 21px;
-		margin-bottom: 25px;
+	#top-menu a {
+		padding: 0 6px;
+	}
+	#header img {
+		max-width: 120px;
+	}
+	.w20 {
+		width: 165px;
+	}
+	.about-us-numbers {
+		padding-left: 85px;
+	}
+	.w20 span {
+		font-size: 14px;
+	}
+	.ellipse {
+    	margin-left: 122px !important;
+	}
+	#footer .second-footer-row {
+		font-size: 13px;
+	}
+	#footer .second-footer-row br {
+		display: none;
+	}
+	.social-footer img {
+		max-width: 27px;
+	}
+	.map-nadpis {
+		right: 60px;
+	}
+	/*Страница "Композитные бассейны"------------------------------------------------------------*/
+	.basseyn-type a {
+		width: 175px;
+	}
+	.etap-selector.active:before {
+		width: 290px;
+	    background-repeat: no-repeat;
+	    background-position-y: 0px;
+	    background-size: 120%;
+	}
+	.etap-selector {
+		font-size: 13px;
+	}
+	.about-us-in-numbers .about-us-numbers {
+		margin-left: 0;
+	}
+	.second-footer-row .col-md-9 {
+		font-size: 13px !important;
+	}
+	.proizvodstvo {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	.raschet .top-raschet label {
+		min-width: 75px;
+	}
+	.down-raschet .label2 {
+		display: inline;
+	}
+	#calculating .fz14.text-center {
+		margin-top: 20px;
+	}
+	#chemistry-catalogue .tovar-look {
+		width: 180px;
+	}
+	.t5 {
+		top: 12px !important;
+	}
+	.carousel-indicators img {
+		margin-bottom: 0px !important;
+		    max-width: 130px;
+	}
+	.carousel-indicators li {
+		height: auto !important;
+		margin-bottom: 10px;
+	}
+	.carousel-indicators li[data-slide-to="2"], .carousel-indicators li[data-slide-to="5"] {
+		top: 255px;
+	}
+	.carousel-indicators li[data-slide-to="1"], .carousel-indicators li[data-slide-to="4"] {
+		top: 130px;
+	}
+	.ustanovka-i2 .basseyn-type button {
+		width: 180px;
 	}
 }

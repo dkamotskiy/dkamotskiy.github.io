@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+*{
+	outline: none !important;
+}
+
+a{
+	color: inherit;
+	text-decoration: none;
+	transition: all 0.3s ease;
+}
+
+a:hover{
+	color: #0094FF;
+}
+body {
+	height: 100vh;
+}
+html, body{
+	margin: 0;
+	padding: 0;
+	font-family: "Segoe UI", sans-serif;
+	background: #FFF;
+	overflow: hidden;
+	font-size: 16px;
+}
+
+h1,h2,h3,h4,h5,h6{
+	display: block;
+	width: 100%;
+}
+
+.container{
+	position: relative;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	align-items: center;
+	margin: auto;
+	width: 100%;
+}
+
+canvas{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+header, footer{
+	position: relative;
+	z-index: 1;
+	background-color: #FFF;
+	/*padding: 5px;*/
+}
+
+header .phone,
+footer .phone{
+	margin-left: auto;
+	font-weight: 400;
+	font-size: 20px;
+	color: #B3B3B3;
+}
+
+header{
+	padding-bottom: 20px
+}
+
+footer{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding-top: 20px;
+}
+
+.logo, .logo svg{
+	width: 150px
+}
+
+.logo{
+	margin-right: 20px;
+}
+
+ul.menu{
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	font-weight: 100;
+	color: #949799;
+	margin: 0;
+	margin-right: 20px;
+	padding: 0;
+	list-style: none;
+	border-bottom: 1px solid #F2F2F2;
+}
+
+ul.menu li{
+	padding: 17px 13px;
+}
+
+ul.menu li:first-child{
+	padding-left: 0;
+}
+
+ul.menu li:last-child{
+	padding-right: 0;
+}
+
+h2.slogan{
+	font-weight: 300;
+	font-size: 30px;
+	text-transform: uppercase;
+	text-align: center;
+	color: #00C2FF;
+	margin-top: 17vh;
+	position: relative;
+	z-index: 1;
+}
+
+#debug{
+	position: fixed;
+	left: 0;
+	top: 0;
+	padding: 10px;
+	background-color: #FFF;
+	border: 1px solid #ccc;
+	z-index: 99;
+}
+@media (max-width: 500px) {
+	h2.slogan {
+		font-size: 22px;
+	}
+}
+.header-mobile.display-mobile {
+	display: inline;
+    float: right;
+    position: relative;
+    right: 0;
+    margin-left: auto;
+    margin-right: 72px;
+}
+.navbar-toggler {
+	position: absolute !important;
+    right: 0 !important;
+}
+.navbar {
+	position: relative !important;
+}
+.header-right {
+	padding-top: 0 !important;
+}

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-11501 5235 50 50">
+  <defs>
+    <style>
+      .cls-1, .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-1 {
+        stroke: #95989a;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_204" data-name="Rectangle 204" class="cls-1" width="50" height="50" transform="translate(98 1207)"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_41" data-name="Mask Group 41" class="cls-2" transform="translate(-11599 4028)">
+    <g id="Безымянный-1" transform="translate(98 1207)">
+      <path id="Path_278" data-name="Path 278" class="cls-3" d="M456.23,570.82H428.361a22.249,22.249,0,0,1-22.131-22.131V520.82h1.639v27.869a20.5,20.5,0,0,0,20.492,20.492H456.23Z" transform="translate(-406.23 -520.82)"/>
+      <path id="Path_279" data-name="Path 279" class="cls-3" d="M453.279,563.443H429.508a18.855,18.855,0,0,1-18.852-18.852V520.82H412.3V544.59A17.211,17.211,0,0,0,429.508,561.8h23.771Z" transform="translate(-403.279 -520.82)"/>
+      <path id="Path_280" data-name="Path 280" class="cls-3" d="M450.656,556.885h-20A16.092,16.092,0,0,1,414.59,540.82v-20h1.639v20a14.447,14.447,0,0,0,14.426,14.426h20Z" transform="translate(-400.656 -520.82)"/>
+      <path id="Path_281" data-name="Path 281" class="cls-3" d="M448.689,551.967H431.475a13.923,13.923,0,0,1-13.935-13.934V520.82h1.639v17.213a12.385,12.385,0,0,0,12.3,12.3h17.213Z" transform="translate(-398.689 -520.82)"/>
+      <path id="Path_282" data-name="Path 282" class="cls-3" d="M446.721,547.049H432.3a11.754,11.754,0,0,1-11.8-11.8V520.82h1.639v14.426A10.215,10.215,0,0,0,432.3,545.41h14.426Z" transform="translate(-396.721 -520.82)"/>
+    </g>
+  </g>
+</svg>

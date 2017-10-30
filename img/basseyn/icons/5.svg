@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-12983 5237 88 88">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f2f2f2;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        fill: #3e97db;
+      }
+
+      .cls-4, .cls-6 {
+        fill: none;
+      }
+
+      .cls-4 {
+        stroke: #fff;
+        stroke-width: 3px;
+      }
+
+      .cls-5 {
+        stroke: none;
+      }
+
+      .cls-7 {
+        filter: url(#Ellipse_24);
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_100" data-name="Rectangle 100" class="cls-1" width="44" height="44" transform="translate(98 1815)"/>
+    </clipPath>
+    <filter id="Ellipse_24" x="-12983" y="5237" width="88" height="88" filterUnits="userSpaceOnUse">
+      <feOffset dx="3" dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_579" data-name="Group 579" transform="translate(-13475 3805)">
+    <g id="Mask_Group_20" data-name="Mask Group 20" class="cls-2" transform="translate(414 -364)">
+      <g id="noun_556864_cc" transform="translate(92.917 1804.606)">
+        <path id="Path_42" data-name="Path 42" class="cls-3" d="M26.943,26.451l.547-.547v6.121a.82.82,0,1,0,1.64,0V25.85l.547.547a.792.792,0,0,0,1.148,0l.055-.055a.847.847,0,0,0-.109-1.148l-1.913-1.913a.858.858,0,0,0-1.2,0l-1.913,1.913a.852.852,0,0,0-.109,1.148.95.95,0,0,0,1.312.109Z"/>
+        <path id="Path_43" data-name="Path 43" class="cls-3" d="M23.445,29.894a2.362,2.362,0,0,1-2.186-2.459.841.841,0,0,0-.82-.82H8.908a.841.841,0,0,0-.82.82A2.362,2.362,0,0,1,5.9,29.894a.841.841,0,0,0-.82.82v8.362c0,5.793,8.853,10.22,9.236,10.384a.811.811,0,0,0,.71,0c.383-.164,9.236-4.591,9.236-10.384V30.714A.841.841,0,0,0,23.445,29.894Zm-.82,9.181c0,4.208-6.34,7.87-7.979,8.744-1.585-.874-7.979-4.536-7.979-8.744V31.424a3.93,3.93,0,0,0,2.9-3.17h10.11a4.01,4.01,0,0,0,2.9,3.17v7.651Z"/>
+        <path id="Path_44" data-name="Path 44" class="cls-3" d="M48.366,16.887,34.43,15.248h-.164l-19.4,1.64a.831.831,0,0,0-.765.82v7.269h1.64v-6.5h0L33.5,16.942h0v21.97h0l-7.6-.6v.765a5,5,0,0,1-.055.874l8.416.71h.164l13.936-1.64a.747.747,0,0,0,.71-.82V17.707A.784.784,0,0,0,48.366,16.887ZM40.5,38.256h0l-5.3.6h0V17h0l5.3.6h0Zm6.941-.82h0l-5.3.6h0V17.816h0l5.3.6h0Z"/>
+        <path id="Path_45" data-name="Path 45" class="cls-3" d="M19.456,33.993,14.1,39.349l-2.787-2.787a.792.792,0,0,0-1.148.055.83.83,0,0,0,0,1.093L13.553,41.1a.792.792,0,0,0,1.148,0l5.957-5.957a.832.832,0,0,0-1.2-1.148Z"/>
+      </g>
+    </g>
+    <g class="cls-7" transform="matrix(1, 0, 0, 1, 13475, -3805)">
+      <g id="Ellipse_24-2" data-name="Ellipse 24" class="cls-4" transform="translate(-12977 5243)">
+        <circle class="cls-5" cx="35" cy="35" r="35"/>
+        <circle class="cls-6" cx="35" cy="35" r="33.5"/>
+      </g>
+    </g>
+  </g>
+</svg>

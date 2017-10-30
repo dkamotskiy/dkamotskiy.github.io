@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-13304 7566 124 190">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #eaeff2;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3, .cls-5 {
+        fill: #3e97db;
+      }
+
+      .cls-4, .cls-9 {
+        fill: none;
+      }
+
+      .cls-4 {
+        stroke: #3e97db;
+      }
+
+      .cls-5 {
+        font-size: 18px;
+        font-family: SegoeUI, Segoe UI;
+      }
+
+      .cls-6 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-7 {
+        fill: #fcfcfc;
+      }
+
+      .cls-8 {
+        stroke: none;
+      }
+
+      .cls-10 {
+        filter: url(#Subtraction_3);
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_151" data-name="Rectangle 151" class="cls-1" width="54" height="54" transform="translate(98 2960)"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x2="0" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#00c2ff"/>
+      <stop offset="1" stop-color="#3e97db"/>
+    </linearGradient>
+    <filter id="Subtraction_3" x="-13304" y="7567" width="124" height="124" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_572" data-name="Group 572" transform="translate(-13475 4568)">
+    <g id="Mask_Group_27" data-name="Mask Group 27" class="cls-2" transform="translate(109 72)">
+      <g id="_1" data-name="1" transform="translate(94.595 2956.625)">
+        <path id="Path_224" data-name="Path 224" class="cls-3" d="M34.966,5.412h-13.5v12.77h1.824V7.236H55.581V37.764H23.291V32.777H21.466v6.811H57.405V5.412H34.966Z"/>
+        <path id="Path_225" data-name="Path 225" class="cls-3" d="M12.831,5.716A6.872,6.872,0,1,0,19.7,12.588,6.826,6.826,0,0,0,12.831,5.716Zm0,11.919a5.047,5.047,0,1,1,5.047-5.047A5.035,5.035,0,0,1,12.831,17.635Z"/>
+        <path id="Path_226" data-name="Path 226" class="cls-3" d="M25.784,28.946h.243a6.233,6.233,0,0,0,6.02-6.2V20.98H10.52a7.124,7.124,0,0,0-7.115,7.115V38.311a3.85,3.85,0,0,0,3.223,3.77v9.486a3.789,3.789,0,0,0,3.77,3.77h4.865a3.789,3.789,0,0,0,3.77-3.77V28.946ZM17.27,27.122V51.568a1.959,1.959,0,0,1-1.946,1.946H10.459a1.959,1.959,0,0,1-1.946-1.946V40.318H7.3a1.959,1.959,0,0,1-1.946-1.946V28.095A5.294,5.294,0,0,1,10.642,22.8h19.7a4.427,4.427,0,0,1-4.378,4.318Z"/>
+        <rect id="Rectangle_152" data-name="Rectangle 152" class="cls-3" width="2.432" height="6.872" transform="translate(32.534 26.635)"/>
+        <rect id="Rectangle_153" data-name="Rectangle 153" class="cls-3" width="2.432" height="11.554" transform="translate(39.527 22.014)"/>
+        <rect id="Rectangle_154" data-name="Rectangle 154" class="cls-3" width="2.432" height="20.128" transform="translate(46.459 13.378)"/>
+      </g>
+    </g>
+    <g id="Symbol_27_2" data-name="Symbol 27 – 2" transform="translate(-300)">
+      <g id="Ellipse_20" data-name="Ellipse 20" class="cls-4" transform="translate(522 3146)">
+        <circle class="cls-8" cx="11.5" cy="11.5" r="11.5"/>
+        <circle class="cls-9" cx="11.5" cy="11.5" r="11"/>
+      </g>
+      <text id="_1-2" data-name="1" class="cls-5" transform="translate(529 3164)"><tspan x="0" y="0">1</tspan></text>
+      <path id="Union_2" data-name="Union 2" class="cls-6" d="M-4163.628-3675.443A60.1,60.1,0,0,1-4213-3734.5a60.067,60.067,0,0,1,60-60,60.067,60.067,0,0,1,60,60,60.1,60.1,0,0,1-49.37,59.057l-5.9,8.853-4.727,7.09ZM-4208-3734.5a55.064,55.064,0,0,0,55,55,55.063,55.063,0,0,0,55-55,55.062,55.062,0,0,0-55-55A55.063,55.063,0,0,0-4208-3734.5Z" transform="translate(4686.001 6792.5)"/>
+      <g class="cls-10" transform="matrix(1, 0, 0, 1, 13775, -4568)">
+        <path id="Subtraction_3-2" data-name="Subtraction 3" class="cls-7" d="M-4157-3686.6a53.061,53.061,0,0,1-53-53,53.061,53.061,0,0,1,53-53,53.06,53.06,0,0,1,53,53A53.06,53.06,0,0,1-4157-3686.6Zm0-98a45.051,45.051,0,0,0-45,45,45.051,45.051,0,0,0,45,45,45.05,45.05,0,0,0,45-45A45.051,45.051,0,0,0-4157-3784.6Z" transform="translate(-9085 11365.6)"/>
+      </g>
+      <g id="Ellipse_31" data-name="Ellipse 31" class="cls-4" transform="translate(530 3181)">
+        <circle class="cls-8" cx="3.5" cy="3.5" r="3.5"/>
+        <circle class="cls-9" cx="3.5" cy="3.5" r="3"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,317 +1,432 @@
-//Логотип
-$(window).load(function(){
-$(".logo-ekran1").delay(0).animate({bottom: "50%"}, 2500);
-});
-//Инициализация свайпа карусели
-$('.jcarousel')
-    .jcarousel()       // init jcarousel
-    .jcarouselSwipe(); // init jcarouselSwipe
-// Инициализация скроллинга
-$(document).ready(function() {
-                if ($(window).width() > 76){
-                  $('#fullpage').fullpage({
-    anchors:['firstSlide','secondSlide','3rdSlide','4thSlide','5thSlide','6thSlide','7thSlide','8thSlide','newSlide','9thSlide'],
-    sectionSelector: '.vertical-scrolling',
-    slideSelector: '.horizontal-scrolling',
-    controlArrows: false,
-    navigation:true,
-    navigationPosition:'left',
-    overflowScroll:true,
-    // navigationTooltips
-    scrollOverflow:true,
-    normalScrollElements: '',
-    afterLoad:function(link,index) {
-// первый слайд
-        if(index == 1) {
-          $(".menu-button").css({'color':'#fff'});
-          $(".bar").css({'background-color':'#fff'});
-          $("#fp-nav ul li a span").css({'background-color':'#fff'});
-          $("#fp-nav ul li a span").css({'border':'1px solid #fff'});
-          $("#fp-nav ul li:hover a span").css({'border':'1px solid #fff'});
-          $("#fp-nav ul li a.active span").css({'border':'1px solid #fff'});
-          $("#top").css({'display':'none'});
-        }
-        if(link == 'firstSlide') {
-         $(".menu-button").css({'color':'#fff'});
-         $(".bar").css({'background-color':'#fff'});
-         $("#fp-nav ul li a span").css({'background-color':'#fff'});
-         $("#fp-nav ul li a span").css({'border':'1px solid #fff'});
-         $("#fp-nav ul li:hover a span").css({'border':'1px solid #fff'});
-         $("#fp-nav ul li a.active span").css({'border':'1px solid #fff'});
-         $("#top").css({'display':'none'});
-        }
-// второй слайд
-        if(index == 2) {
-          $(".menu-button").css({'color':'black'});
-          $(".bar").css({'background-color':'black'});
-          $("#fp-nav ul li a span").css({'background-color':'#95989A'});
-          $("#fp-nav ul li a span").css({'border':'1px solid #95989A'});
-          $("#fp-nav ul li:hover a span").css({'border':'1px solid #95989A'});
-          $("#fp-nav ul li a.active span").css({'border':'1px solid #95989A'});
-          $("#top").css({'display':'block'});
-        }
-        if(link == 'secondSlide') {
-         $(".menu-button").css({'color':'black'});
-         $(".bar").css({'background-color':'black'});
-         $("#fp-nav ul li a span").css({'background-color':'#95989A'});
-         $("#fp-nav ul li a span").css({'border':'1px solid #95989A'});
-         $("#fp-nav ul li:hover a span").css({'border':'1px solid #95989A'});
-         $("#fp-nav ul li a.active span").css({'border':'1px solid #95989A'});
-         $("#top").css({'display':'block'});
-        }
-// третий слайд
-        if(index == 3) {
-          $(".menu-button").css({'color':'#fff'});
-          $(".bar").css({'background-color':'#fff'});
-          $("#fp-nav ul li a span").css({'background-color':'#fff'});
-          $("#fp-nav ul li a span").css({'border':'1px solid #fff'});
-          $("#fp-nav ul li:hover a span").css({'border':'1px solid #fff'});
-          $("#fp-nav ul li a.active span").css({'border':'1px solid #fff'});
-        }
-        if(link == '3rdSlide') {
-         $(".menu-button").css({'color':'#fff'});
-         $(".bar").css({'background-color':'#fff'});
-         $("#fp-nav ul li a span").css({'background-color':'#fff'});
-         $("#fp-nav ul li a span").css({'border':'1px solid #fff'});
-          $("#fp-nav ul li:hover a span").css({'border':'1px solid #fff'});
-          $("#fp-nav ul li a.active span").css({'border':'1px solid #fff'});
-        }  
-// 4 слайд
-        if(index == 4) {
-          $(".menu-button").css({'color':'#000'});
-          $(".bar").css({'background-color':'#000'});
-          $("#fp-nav ul li a span").css({'background-color':'#95989A'});
-          $("#fp-nav ul li a span").css({'border':'1px solid #95989A'});
-          $("#fp-nav ul li:hover a span").css({'border':'1px solid #95989A'});
-          $("#fp-nav ul li a.active span").css({'border':'1px solid #95989A'});
-        }
-        if(link == '4thSlide') {
-         $(".menu-button").css({'color':'#000'});
-         $(".bar").css({'background-color':'#000'});
-         $("#fp-nav ul li a span").css({'background-color':'#95989A'});
-         $("#fp-nav ul li a span").css({'border':'1px solid #95989A'});
-          $("#fp-nav ul li:hover a span").css({'border':'1px solid #95989A'});
-          $("#fp-nav ul li a.active span").css({'border':'1px solid #95989A'});
-        }  
-// 5 слайд
-        if(index == 5) {
-          $(".menu-button").css({'color':'#fff'});
-          $(".bar").css({'background-color':'#fff'});
-          $("#fp-nav ul li a span").css({'background-color':'#fff'});
-          $("#fp-nav ul li a span").css({'border':'1px solid #fff'});
-          $("#fp-nav ul li:hover a span").css({'border':'1px solid #fff'});
-          $("#fp-nav ul li a.active span").css({'border':'1px solid #fff'});
-        }
-        if(link == '5thSlide') {
-         $(".menu-button").css({'color':'#fff'});
-         $(".bar").css({'background-color':'#fff'});
-         $("#fp-nav ul li a span").css({'background-color':'#fff'});
-         $("#fp-nav ul li a span").css({'border':'1px solid #fff'});
-          $("#fp-nav ul li:hover a span").css({'border':'1px solid #fff'});
-          $("#fp-nav ul li a.active span").css({'border':'1px solid #fff'});
-        } 
-// 6 слайд
-        if(index == 6) {
-          $(".menu-button").css({'color':'#000'});
-          $(".bar").css({'background-color':'#000'});
-          $("#fp-nav ul li a span").css({'background-color':'#95989A'});
-          $("#fp-nav ul li a span").css({'border':'1px solid #95989A'});
-          $("#fp-nav ul li:hover a span").css({'border':'1px solid #95989A'});
-          $("#fp-nav ul li a.active span").css({'border':'1px solid #95989A'});
-        }
-        if(link == '6thSlide') {
-         $(".menu-button").css({'color':'#000'});
-         $(".bar").css({'background-color':'#000'});
-         $("#fp-nav ul li a span").css({'background-color':'#95989A'});
-          $("#fp-nav ul li:hover a span").css({'border':'1px solid #95989A'});
-          $("#fp-nav ul li a.active span").css({'border':'1px solid #95989A'});
-        } 
-// 7 слайд
-        if(index == 7) {
-          $(".menu-button").css({'color':'#fff'});
-          $(".bar").css({'background-color':'#fff'});
-          $("#fp-nav ul li a span").css({'background-color':'#fff'});
-          $("#fp-nav ul li a span").css({'border':'1px solid #fff'});
-          $("#fp-nav ul li:hover a span").css({'border':'1px solid #fff'});
-          $("#fp-nav ul li a.active span").css({'border':'1px solid #fff'});
-        }
-        if(link == '7thSlide') {
-         $(".menu-button").css({'color':'#fff'});
-         $(".bar").css({'background-color':'#fff'});
-         $("#fp-nav ul li a span").css({'background-color':'#fff'});
-         $("#fp-nav ul li a span").css({'border':'1px solid #fff'});
-          $("#fp-nav ul li:hover a span").css({'border':'1px solid #fff'});
-          $("#fp-nav ul li a.active span").css({'border':'1px solid #fff'});
-        }       
-      }
-    // другие опции
-});
-                }
-         else   {
-            }
+document.write("<script src='js/jQuery.scrollSpeed.js' type='text/javascript' charset='utf-8'></s"+"cript>");
+//GoogleMap--------------------------------------------------------------------------
+                                    function initMap() {
+                    var uluru = {lat: 54.744494, lng: 55.997060};
 
-});
-// Появление левой кнопки
-$(document).ready(function(){
-$( "#ekran4 .jcarousel-control-next" ).click(function() {
-    $("#ekran4 .jcarousel-control-prev").attr("style","display:block");
-});  
-});
-$(document).ready(function(){
-$( "#ekran6 .jcarousel-control-next" ).click(function() {
-    $("#ekran6 .jcarousel-control-prev").attr("style","display:block");
-});  
-});
-// Смена свойств кнопки "Меню при скролле"
-// var target = $('#ekran2');
-// var targetPos = target.offset().top;
-// var winHeight = $(window).height();
-// var scrollToElem = targetPos - winHeight;
-// $(window).scroll(function(){
-//   var winScrollTop = $(this).scrollTop();
-//   if(winScrollTop > scrollToElem){
-//    $(".menu-button").attr("style","background-color:#000;");
-//   }
-// });
-// var target = $('#ekran3');
-// var targetPos = target.offset().top;
-// var winHeight = $(window).height();
-// var scrollToElem = targetPos - winHeight;
-// $(window).scroll(function(){
-//   var winScrollTop = $(this).scrollTop();
-//   if(winScrollTop > scrollToElem){
-//    $(".menu-button").css({'color':'#000'});
-//   }
-// });
-// var target = $('#ekran3');
-// var targetPos = target.offset().top;
-// var winHeight = $(window).height();
-// var scrollToElem = targetPos - winHeight;
-// $(window).scroll(function(){
-//   var winScrollTop = $(this).scrollTop();
-//   if(winScrollTop > scrollToElem){
-//    $(".menu-button").css({'color':'#fff'});
-//   }
-// });
-// var target = $('#ekran3');
-// var targetPos = target.offset().top;
-// var winHeight = $(window).height();
-// var scrollToElem = targetPos - winHeight;
-// $(window).scroll(function(){
-//   var winScrollTop = $(this).scrollTop();
-//   if(winScrollTop > scrollToElem){
-//    $(".menu-button").css({'color':'#000'});
-//   }
-// });
-
-// //скролл
-// $(window).scroll(function(){
-//   var offset = $('.white').offset(),
-//       offsetwb = $('.white + .black').offset();
-//   if ($(this).scrollTop() > offset.top && $(this).scrollTop() < offsetwb.top) {
-//     $('.menu-button').css('background-color','black !important');
-//   }
-//   else {
-//     $('.menu-button').css('background-color','white !important');
-//   }
-// });
-// Маска
-jQuery(function($){
-   $("#phone-form").mask("+7 (999) 999-9999");
-   $("#phone-forma2").mask("+7 (999) 999-9999");
-});
-//GoogleMap
-                  function initMap() {
-                    var uluru = {lat: 54.736908, lng: 55.987691};
                     var map = new google.maps.Map(document.getElementById('map'), {
                       zoom: 15,
                       center: uluru,
                       scrollwheel: false,
                       minZoom: 10,
-                      styles: [
-            {elementType: 'geometry', stylers: [{color: '#0A3848'}]},
-            {elementType: 'labels.text.stroke', stylers: [{color: '#0A3848'}]},
-            {elementType: 'labels.text.fill', stylers: [{color: '#746855'}]},
-            {
-              featureType: 'administrative.locality',
-              elementType: 'labels.text.fill',
-              stylers: [{color: '#d59563'}]
-            },
-            {
-              featureType: 'poi',
-              elementType: 'labels.text.fill',
-              stylers: [{color: '#d59563'}]
-            },
-            {
-              featureType: 'poi.park',
-              elementType: 'geometry',
-              stylers: [{color: '#263c3f'}]
-            },
-            {
-              featureType: 'poi.park',
-              elementType: 'labels.text.fill',
-              stylers: [{color: '#6b9a76'}]
-            },
-            {
-              featureType: 'road',
-              elementType: 'geometry',
-              stylers: [{color: '#38414e'}]
-            },
-            {
-              featureType: 'road',
-              elementType: 'geometry.stroke',
-              stylers: [{color: '#212a37'}]
-            },
-            {
-              featureType: 'road',
-              elementType: 'labels.text.fill',
-              stylers: [{color: '#9ca5b3'}]
-            },
-            {
-              featureType: 'road.highway',
-              elementType: 'geometry',
-              stylers: [{color: '#746855'}]
-            },
-            {
-              featureType: 'road.highway',
-              elementType: 'geometry.stroke',
-              stylers: [{color: '#1f2835'}]
-            },
-            {
-              featureType: 'road.highway',
-              elementType: 'labels.text.fill',
-              stylers: [{color: '#f3d19c'}]
-            },
-            {
-              featureType: 'transit',
-              elementType: 'geometry',
-              stylers: [{color: '#2f3948'}]
-            },
-            {
-              featureType: 'transit.station',
-              elementType: 'labels.text.fill',
-              stylers: [{color: '#d59563'}]
-            },
-            {
-              featureType: 'water',
-              elementType: 'geometry',
-              stylers: [{color: '#17263c'}]
-            },
-            {
-              featureType: 'water',
-              elementType: 'labels.text.fill',
-              stylers: [{color: '#515c6d'}]
-            },
-            {
-              featureType: 'water',
-              elementType: 'labels.text.stroke',
-              stylers: [{color: '#17263c'}]
-            }
-          ],
+                      
             disableDefaultUI: true,
                     });
+                    var image = 'img/marker.png';
                     var marker = new google.maps.Marker({
                       position: uluru,
-                      map: map
+                      map: map,
+                      icon: image
                     });
+
                   }
+// Увеличение чисел на странице "Бассейны"
+// $(document).ready(function(){
+//     var show = true;
+//     var countbox = ".proizvodstvo";
+//     $(window).on("scroll load resize", function(){
+ 
+//         if(!show) return false;                   // Отменяем показ анимации, если она уже была выполнена
+ 
+//         var w_top = $(window).scrollTop();        // Количество пикселей на которое была прокручена страница
+//         var e_top = $(countbox).offset().top;     // Расстояние от блока со счетчиками до верха всего документа
+ 
+//         var w_height = $(window).height();        // Высота окна браузера
+//         var d_height = $(document).height();      // Высота всего документа
+ 
+//         var e_height = $(countbox).outerHeight(); // Полная высота блока со счетчиками
+ 
+//         if(w_top + 200 >= e_top || w_height + w_top == d_height || e_height + e_top < w_height){
+//             $(".spincrement").spincrement({
+//                 thousandSeparator: "",
+//                 duration: 2200
+//             });
+ 
+//             show = false;
+//         }
+//     });
+// });
+// Анимация фишек в разделе "Этапы"
+$(document).ready(function(){
+    var show = true;
+    var countbox = ".etapy-rabot";
+    $(window).on("scroll load resize", function(){
+ 
+        if(!show) return false;                   // Отменяем показ анимации, если она уже была выполнена
+ 
+        var w_top = $(window).scrollTop();        // Количество пикселей на которое была прокручена страница
+        var e_top = $(countbox).offset().top;     // Расстояние от блока со счетчиками до верха всего документа
+ 
+        var w_height = $(window).height();        // Высота окна браузера
+        var d_height = $(document).height();      // Высота всего документа
+ 
+        var e_height = $(countbox).outerHeight(); // Полная высота блока со счетчиками
+ 
+        if(w_top + 400 >= e_top || w_height + w_top == d_height || e_height + e_top < w_height){
+            $('#animate-1').addClass('animated flipInX'); 
+  $('#animate-text-1').addClass('animated zoomIn'); 
+  $('#animate-2').css('animation-delay', '1s').addClass('animated flipInX'); 
+  $('#animate-text-2').css('animation-delay', '1s').addClass('animated zoomIn'); 
+  $('#animate-3').css('animation-delay', '2s').addClass('animated flipInX'); 
+   $('#animate-text-3').css('animation-delay', '2s').addClass('animated zoomIn'); 
+  $('#animate-4').css('animation-delay', '3s').addClass('animated flipInX'); 
+   $('#animate-text-4').css('animation-delay', '3s').addClass('animated zoomIn'); 
+        }
+    });
+});
+// Появление левой кнопки--------------------------------------------------------------------------
+$(document).ready(function(){
+  $(".latest-works .jcarousel-control-prev").attr("style","display:none");
+$( ".latest-works .jcarousel-control-next" ).click(function() {
+    $(".latest-works .jcarousel-control-prev").attr("style","display:block");
+});  
+});
+$(document).ready(function(){
+  $(".novosti .jcarousel-control-prev").attr("style","display:none");
+$( ".novosti .jcarousel-control-next" ).click(function() {
+    $(".novosti .jcarousel-control-prev").attr("style","display:block");
+});  
+});
+$(document).ready(function(){
+  $(".dealers .jcarousel-control-prev").attr("style","display:none");
+$( ".dealers .jcarousel-control-next" ).click(function() {
+    $(".dealers .jcarousel-control-prev").attr("style","display:block");
+});  
+});
+$(document).ready(function(){
+  $(".docs .jcarousel-control-prev").attr("style","display:none");
+$( ".docs .jcarousel-control-next" ).click(function() {
+    $(".docs .jcarousel-control-prev").attr("style","display:block");
+});  
+});
+$(document).ready(function(){
+  $(".talking-about-us .jcarousel-control-prev").attr("style","display:none");
+$( ".talking-about-us .jcarousel-control-next" ).click(function() {
+    $(".talking-about-us .jcarousel-control-prev").attr("style","display:block");
+});  
+});
+// Маска-----------------------------------------------------------
+jQuery(function($){
+   $("#phone-form").mask("+7 (999) 999-9999");
+});
+jQuery(function($){
+   $("#phone-form2").mask("+7 (999) 999-9999");
+});
+// Нажатия на блоке "Этапы"
+$(document).ready(function(){
+$(".etap-selector").click(function() {
+    $('.etap-zagolovok').css("display","none");
+    $('.etap-time span').css("display","none");
+    $('.etap-text').css("display","none");
+    $('.etap-img').css("display","none");
+    $('.etap-promyvka').css("display","none");
+    $('.etap-selector').removeClass("active");
+    $(this).addClass("active");
+});  
+});
+$(document).ready(function(){
+$(".etap-selector1").click(function() {
+    $('.etap1').css("display","inline-block");
+});  
+});
+$(document).ready(function(){
+$(".etap-selector2").click(function() {
+    $('.etap2').css("display","inline-block");
+});  
+});
+$(document).ready(function(){
+$(".etap-selector3").click(function() {
+    $('.etap3').css("display","inline-block");
+});  
+});
+$(document).ready(function(){
+$(".etap-selector4").click(function() {
+    $('.etap4').css("display","inline-block");
+});  
+});
+$(document).ready(function(){
+$(".etap-selector5").click(function() {
+    $('.etap5').css("display","inline-block");
+});  
+});
+$(document).ready(function(){
+$(".etap-selector6").click(function() {
+    $('.etap6').css("display","inline-block");
+});  
+});
+$(document).ready(function(){
+$(".etap-selector7").click(function() {
+    $('.etap7').css("display","inline-block");
+});  
+});
+$(document).ready(function(){
+$(".etap-selector8").click(function() {
+    $('.etap8').css("display","inline-block");
+});  
+});
+
+
+// Нажатия на блоке РЕМОНТ ОБОРУДОВАНИЯ БАССЕЙНОВ
+
+
+$(document).ready(function(){
+$(".etap-selector-remont").click(function() {
+    $('.etap-selector-remont').removeClass("active");
+    $('.etap-promyvka').css("display","none");
+    $('.etap-img-remont').css("display","none");
+    $('.remont-opisanie').css("display","none");
+    $(this).addClass("active");
+});  
+});
+$(document).ready(function(){
+$(".etap-selector1-remont").click(function() {
+    $('.etap1-remont').css("display","inline-block");
+    $('.remont-opisanie1').css("display","none");
+});  
+});
+$(document).ready(function(){
+$(".etap-selector2-remont").click(function() {
+    $('.etap2-remont').css("display","inline-block");
+    $('.remont-opisanie2').css("display","inline-block");
+});  
+});
+$(document).ready(function(){
+$(".etap-selector3-remont").click(function() {
+    $('.etap3-remont').css("display","inline-block");
+     $('.remont-opisanie3').css("display","inline-block");
+});  
+});
+
+
+// Нажатия на блоке РЕМОНТ БАССЕЙНОВ
+
+
+$(document).ready(function(){
+$(".etap-selector-remont2").click(function() {
+    $('.etap-selector-remont2').removeClass("active");
+    $('.etap-promyvka2').css("display","none");
+    $(this).addClass("active");
+    $('.remont2-opisanie').css("display","none");
+     $('.etap-img-remont2').css("display","none");
+});  
+});
+$(document).ready(function(){
+$(".etap-selector1-remont2").click(function() {
+    $('.etap1-remont2').css("display","inline-block");
+    $('.remont2-opisanie1').css("display","inline-block");
+    $('.etap1-remont2').css("display","inline-block");
+});  
+});
+$(document).ready(function(){
+$(".etap-selector2-remont2").click(function() {
+    $('.etap2-remont2').css("display","inline-block");
+    $('.remont2-opisanie2').css("display","inline-block");
+    $('.etap2-remont2').css("display","inline-block");
+});  
+});
+
+
+// Нажатия на странице "наши работы"
+
+
+$(document).ready(function(){
+$("#works .basseyn-type a").click(function() {
+    $('#works .basseyn-type a').removeClass("active");
+    $('.works-fade').css("display","none");
+    $(this).addClass("active");
+});  
+});
+$(document).ready(function(){
+$("#selector-works-1").click(function() {
+    $('.kompozit-works').css("display","block");
+});  
+});
+$(document).ready(function(){
+$("#selector-works-2").click(function() {
+    $('.polipropilen-works').css("display","block");
+});  
+});
+$(document).ready(function(){
+$("#selector-works-3").click(function() {
+    $('.karkas-works').css("display","block");
+});  
+});
+$(document).ready(function(){
+$("#selector-works-4").click(function() {
+    $('.plenka-works').css("display","block");
+});  
+});
+$(document).ready(function(){
+$("#selector-works-5").click(function() {
+    $('.spa-works').css("display","block");
+});  
+});
+// Всплытие окна "Спасибо за заявку" на белой модалке
+$(document).ready(function(){
+$('#send').click(function() {
+    if($(this).hasClass("disabled"))
+        {}
+    else {
+    $('#zayavka').modal('hide');
+    $("body").attr("style","padding-right:0px");
+    $('#spasibo-za-zayavku').modal('show');
+    }
+});
+});
+// Всплытие окна "Спасибо за заявку" на белой модалке
+$(document).ready(function(){
+$('#send-blue').click(function() {
+    if($(this).hasClass("disabled"))
+        {}
+    else {
+    $('#zayavka-blue').modal('hide');
+    $("body").attr("style","padding-right:0px");
+    $('#spasibo-za-zayavku').modal('show');
+    }
+});
+});
+
+
+// Всплытие окна "Спасибо за заявку" на блоке "Заказывая у нас..."
+
+
+$(document).ready(function(){
+$('#send-zakazyvaya').click(function() {
+    if($(this).hasClass("disabled"))
+        {}
+    else {
+    $('#spasibo-za-zayavku').modal('show');
+    }
+});
+});
+
+
+
+
+
+
+// Огромный скрипт для огромного блока
+
+
+
+// Нажатия основных кнопок
+$(document).ready(function(){
+$("#service .basseyn-type button").click(function() {
+    $('#service .basseyn-type button').removeClass("active");
+    $(this).addClass("active");
+    $('.big-selector').removeClass("active");
+    $('.bs-etap1').addClass("active");
+    $('.bs-etap2').removeClass("active");
+    $('.bs-etap3').removeClass("active");
+    $('.bs-etap4').removeClass("active");
+    $('.bs-etap5').removeClass("active");
+    $('.bs-etap6').removeClass("active");
+    $('.bs-etap7').removeClass("active");
+    $('.bs-etap8').removeClass("active");
+    $('.big-selector-etap-selector').removeClass("active");
+    $('.big-selector-etap-selector1').addClass("active");
+});  
+});
+// Композитные бассейны big-selector-button-1
+$(document).ready(function(){
+$("#big-selector-button-1").click(function() {
+    $('.kompozit-big-selector').addClass("active");
+});  
+});
+// ПОЛИПРОПИЛЕНОВЫЕ бассейны big-selector-button-2
+$(document).ready(function(){
+$("#big-selector-button-2").click(function() {
+    $('.polipropilen-big-selector').addClass("active");
+});  
+});
+// КАРКАСНЫЕ бассейны big-selector-button-3
+$(document).ready(function(){
+$("#big-selector-button-3").click(function() {
+    $('.karkas-big-selector').addClass("active");
+});  
+});
+// ПЛЕНОЧНЫЕ бассейны big-selector-button-4
+$(document).ready(function(){
+$("#big-selector-button-4").click(function() {
+    $('.plenka-big-selector').addClass("active");
+});  
+});
+// СПА бассейны big-selector-button-5
+$(document).ready(function(){
+$("#big-selector-button-5").click(function() {
+    $('.spa-big-selector').addClass("active");
+});  
+});
+
+
+
+// Нажатия кнопок внутри
+
+$(document).ready(function(){
+$(".big-selector-etap-selector").click(function() {
+    $('.big-selector-etap-selector').removeClass("active");
+    $('.bs-etap1').removeClass("active");
+    $('.bs-etap2').removeClass("active");
+    $('.bs-etap3').removeClass("active");
+    $('.bs-etap4').removeClass("active");
+    $('.bs-etap5').removeClass("active");
+    $('.bs-etap6').removeClass("active");
+    $('.bs-etap7').removeClass("active");
+    $('.bs-etap8').removeClass("active");
+});  
+});
+
+$(document).ready(function(){
+$(".big-selector-etap-selector1").click(function() {
+    $(this).addClass("active");
+    $('.bs-etap1').addClass("active");
+});  
+});
+
+$(document).ready(function(){
+$(".big-selector-etap-selector2").click(function() {
+    $(this).addClass("active");
+    $('.bs-etap2').addClass("active");
+});  
+});
+
+$(document).ready(function(){
+$(".big-selector-etap-selector3").click(function() {
+    $(this).addClass("active");
+    $('.bs-etap3').addClass("active");
+});  
+});
+
+$(document).ready(function(){
+$(".big-selector-etap-selector4").click(function() {
+    $(this).addClass("active");
+    $('.bs-etap4').addClass("active");
+});  
+});
+
+$(document).ready(function(){
+$(".big-selector-etap-selector5").click(function() {
+    $(this).addClass("active");
+    $('.bs-etap5').addClass("active");
+});  
+});
+
+$(document).ready(function(){
+$(".big-selector-etap-selector6").click(function() {
+    $(this).addClass("active");
+    $('.bs-etap6').addClass("active");
+});  
+});
+
+$(document).ready(function(){
+$(".big-selector-etap-selector7").click(function() {
+    $(this).addClass("active");
+    $('.bs-etap7').addClass("active");
+});  
+});
+
+$(document).ready(function(){
+$(".big-selector-etap-selector8").click(function() {
+    $(this).addClass("active");
+    $('.bs-etap8').addClass("active");
+});  
+});

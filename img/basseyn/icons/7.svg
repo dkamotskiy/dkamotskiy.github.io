@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-12583 5050 88 88">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f2f2f2;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        fill: #3e97db;
+      }
+
+      .cls-4, .cls-6 {
+        fill: none;
+      }
+
+      .cls-4 {
+        stroke: #fff;
+        stroke-width: 3px;
+      }
+
+      .cls-5 {
+        stroke: none;
+      }
+
+      .cls-7 {
+        filter: url(#Ellipse_28);
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_100" data-name="Rectangle 100" class="cls-1" width="44" height="44" transform="translate(98 1815)"/>
+    </clipPath>
+    <filter id="Ellipse_28" x="-12583" y="5050" width="88" height="88" filterUnits="userSpaceOnUse">
+      <feOffset dx="3" dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_581" data-name="Group 581" transform="translate(-13475 3805)">
+    <g id="Mask_Group_25" data-name="Mask Group 25" class="cls-2" transform="translate(814 -551)">
+      <path id="time" class="cls-3" d="M25.287,3.287a22,22,0,1,0,22,22A22.016,22.016,0,0,0,25.287,3.287Zm0,42.483A20.483,20.483,0,1,1,45.77,25.287,20.527,20.527,0,0,1,25.287,45.77ZM37.678,24.529H26.046V9.508a.759.759,0,1,0-1.517,0V25.287a.778.778,0,0,0,.759.759H37.678a.759.759,0,0,0,0-1.517Z" transform="translate(94.713 1811.713)"/>
+    </g>
+    <g class="cls-7" transform="matrix(1, 0, 0, 1, 13475, -3805)">
+      <g id="Ellipse_28-2" data-name="Ellipse 28" class="cls-4" transform="translate(-12577 5056)">
+        <circle class="cls-5" cx="35" cy="35" r="35"/>
+        <circle class="cls-6" cx="35" cy="35" r="33.5"/>
+      </g>
+    </g>
+  </g>
+</svg>
