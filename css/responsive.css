@@ -379,7 +379,7 @@
 	.oborudovanie-katalog .col-6 div {
 		padding-left: 5px;
 		padding-right: 5px;
-		height: 350px;
+		height: auto;
 	}
 	.oborudovanie-katalog .row {
 	margin-bottom: 10px;
@@ -509,8 +509,20 @@
 	#chemistry-item-card .tovar-look {
 		width: 200px;
 	}
+	#chemistry-item-card .modeli img, #chemistry-item-card .same-items img, #oborudovanie-type1 .same-items img, #kompozit-item-card .first-block .col-md-4 img {
+		max-width: 200px;
+	}
+	#kompozit-item-card .first-block .col-md-4 img {
+		margin-bottom: 15px;
+	}
+	#kompozit-item-card .modeli .hr {
+		margin-bottom: 20px;
+	}
 	#chemistry-item-card .same-items {
 		padding-bottom: 0;
+	}
+	#chemistry-item-card .modeli .hr {
+		margin-bottom: 0;
 	}
 	/*Страница "Акции"----------------------*/
 	#news-page .kompozit-1 {
@@ -601,7 +613,7 @@
 	}
 	/*Страница "Оборудование"------------------*/
 	.oborudovanie-katalog .col-6 img {
-		max-width: 100%;
+		max-width: 200px;
 	}
 	#oborudovanie-type1 .first-block p, #oborudovanie-type2 .first-block p {
 		font-size: 14px;
@@ -738,13 +750,144 @@
 		width: 270px;
 	}
 	#zayavka-blue .dib, #zayavka .dib {
-		display: block;
+		display: block !important;
+	}
+	.form-group-dib {
+		display: block !important;
 	}
 	#zayavka-blue label, #zayavka label {
 		margin-top: 20px;
 	}
 	#zayavka {
 		background-color: #fff;
+	}
+	#index .priyatnie {
+		padding-top: 15px;
+	}
+	#index .about-us-in-numbers {
+		padding-top: 15px;
+	}
+	#index .about-us-in-numbers .display-tablet {
+		display: block;
+	}
+	.etapy-rabot {
+		height: auto;
+	}
+	#kompozit-item-card .modeli {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	#kompozit-item-card .way {
+		margin-bottom: 21px;
+	}
+	#kompozit-item-card .tovar-look {
+		width: 200px;
+	}
+	.oborudovanie-katalog .col-6 a {
+		line-height: 40px;
+	}
+	.okz {
+		min-height: 50px;
+	}
+	#oborudovanie .svoy.text-center {
+		margin-top: 25px;
+	}
+	#service .basseyn-type button {
+		margin: auto;
+	}
+	.process .container {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.etap-selector, .etap-selector-remont, .etap-selector-remont2, .big-selector-etap-selector {
+		width: 280px;
+		overflow: hidden;
+		-ms-background-position-x: -49px;
+		background-position-x: -49px;
+		-ms-background-position-y: 0;
+		background-position-y: 0;
+		margin-left: auto;
+		margin-right: auto;
+		font-size: 14px;
+	}
+	.etap-selector p, .etap-selector-remont p, .etap-selector-remont2 p, .big-selector-etap-selector p {
+		top: 20px;
+	}
+	.t5 {
+    	top: 11px !important;
+	}
+	.etap-zagolovok, .bs-etap-zagolovok {
+		float: none;
+		margin-top: 15px;
+		color: #3E97DB;
+	}
+	.etap-time, .big-selector-etap-time {
+		float: none;
+		margin-top: 5px;
+		margin-bottom: 10px;
+		color: #3E97DB;
+	}
+	.round {
+		top: 0;
+		right: 0;
+		width: 57px;
+		height: 57px;
+	}
+	.warantee.row {
+		display: none;
+	}
+	.process .etap2, .process .etap3, .process .etap4, .process .etap5, .process .etap6, .process .etap7, .process .etap8 {
+		display: inline-block;
+	}
+	.process .kompozitnyi-basseyn-cena, .ustanovka-i2 .kompozitnyi-basseyn-cena, .obslujivanie .kompozitnyi-basseyn-cena, .remont-obor .kompozitnyi-basseyn-cena, .remont-basseynov .kompozitnyi-basseyn-cena {
+		display: none;
+	}
+	.remont-basseynov .fz16-970 {
+		margin-bottom: 15px;
+	}
+	.regular-obslujivanie {
+		margin-bottom: 20px;
+	}
+	.remont-opisanie {
+		margin-top: 15px;
+	}
+	.process .hr {
+		margin-bottom: 20px;
+	}
+	.process .col-md-4, .process .col-md-8 {
+		max-width: 100%;
+		flex: 0 0 100%;
+	}
+	#kompozit .process .hr {
+		display: block;
+	}
+	.ustanovka-i2 .etap2, .ustanovka-i2 .etap3, .ustanovka-i2 .etap4, .ustanovka-i2 .etap5, .ustanovka-i2 .etap6, .ustanovka-i2 .etap7, .ustanovka-i2 .etap8 {
+		display: inline-block;
+	}
+	.remont2-opisanie {
+		margin-top: 15px;
+	}
+	.etap2-remont, .etap2-remont2 {
+		display: block;
+	}
+	#collapseRemont23 .etap3-remont {
+		display: block;
+	}
+	.remont-obor, .remont-basseynov {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.remont2-opisanie {
+		display: none !important;
+	}
+	#collapseRemont32 .remont2-opisanie, #collapseRemont31 .remont2-opisanie {
+		display: block !important;
+	}
+	.jcarousel-control-next img, .jcarousel-control-prev img {
+		height: 100px;
+	}
+	.not-comp {
+		display: none !important;
 	}
 }
 /*Стилизация десктопной версии-----------------------------------------------------------------------------------------*/
@@ -784,6 +927,9 @@
 		display: -o-flex;
 		display: flex;
 	}
+	#collapseEtap1, #collapseEtap2, #collapseEtap3, #collapseEtap4, #collapseEtap5, #collapseEtap6, #collapseEtap7, #collapseEtap8, #collapseEtap21, #collapseEtap22, #collapseEtap23, #collapseEtap24, #collapseEtap25, #collapseEtap26, #collapseEtap27, #collapseEtap28, #collapseEtap31, #collapseEtap32, #collapseEtap33, #collapseEtap34, #collapseEtap35, #collapseEtap36, #collapseEtap37, #collapseEtap41, #collapseEtap42, #collapseEtap43, #collapseEtap44, #collapseEtap45, #collapseEtap46, #collapseEtap51, #collapseEtap52, #collapseEtap53, #collapseRemont1,  #collapseRemont2, #collapseRemont3, #collapseRemont4, #collapseRemont5, #collapseRemont6, #collapseRemont7, #collapseRemont21, #collapseRemont22, #collapseRemont23, #collapseRemont31, #collapseRemont32 {
+		display: none;
+	}
 }
 /*Стилизация таблеточной версии*/
 @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -796,12 +942,11 @@
 	.display-mobile {
 		display: none;
 	}
+	#footer .display-mobile {
+		display: none !important;
+	}
 	#footer .display-desktop {
-		display: -webkit-flex;
-		display: -moz-flex;
-		display: -ms-flex;
-		display: -o-flex;
-		display: flex;
+		display: none !important;
 	}
 	.map-nadpis {
 		position: absolute;
@@ -936,6 +1081,87 @@
 	.regular-obslujivanie p:nth-child(1) {
 		left: 33%;
 	}
+	.carousel-indicators li {
+		margin-bottom: 6px;
+	}
+	
+	.process .container {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.etap-selector, .etap-selector-remont, .etap-selector-remont2, .big-selector-etap-selector {
+		width: 280px;
+		overflow: hidden;
+		-ms-background-position-x: -49px;
+		background-position-x: -49px;
+		-ms-background-position-y: 0;
+		background-position-y: 0;
+		margin-left: auto;
+		margin-right: auto;
+		font-size: 14px;
+	}
+	.etap-selector p, .etap-selector-remont p, .etap-selector-remont2 p, .big-selector-etap-selector p {
+		top: 20px;
+	}
+	.t5 {
+    	top: 11px !important;
+	}
+	.etap-zagolovok, .bs-etap-zagolovok {
+		float: none;
+		margin-top: 15px;
+		color: #3E97DB;
+	}
+	.etap-time, .big-selector-etap-time {
+		float: none;
+		margin-top: 5px;
+		margin-bottom: 10px;
+		color: #3E97DB;
+	}
+	.round {
+		top: 0;
+		right: 0;
+		width: 57px;
+		height: 57px;
+	}
+	.warantee.row {
+		display: none;
+	}
+	.process .etap2, .process .etap3, .process .etap4, .process .etap5, .process .etap6, .process .etap7, .process .etap8 {
+		display: inline-block;
+	}
+	.process .kompozitnyi-basseyn-cena {
+		display: none !important;
+	}
+	.process .hr {
+		margin-bottom: 20px;
+	}
+	.ustanovka-i2 .big-selector .col-md-4, .remont-basseynov .row .col-md-4, .obslujivanie .row .col-md-4, .remont-obor .row .col-md-4 {
+		max-width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		flex: 0 0 100%;
+	}
+	#footer .row.main-footer-row.display-mobile {
+		display: block !important;
+	}
+	#footer .row.second-footer-row.display-desktop {
+		display: block !important;
+	}
+	#footer .row.second-footer-row.display-desktop .col-md-2, #footer .row.second-footer-row.display-desktop .col-md-6, #footer .row.second-footer-row.display-desktop .col-md-9 {
+		max-width: 100%;
+		flex: 0 0 100%;
+		text-align: center;
+	}
+	.row.second-footer-row .col-md-9 img {
+		float: none;
+		margin-bottom: 0;
+	}
+	#footer .col-md-3.social-footer.display-desktop {
+		display: block !important;
+		margin: auto;
+		margin-top: 15px;
+		text-align: center;
+	}
 }
 /*Стилизация 1024 */
 @media screen and (min-width: 992px) and (max-width: 1200px) {
@@ -989,8 +1215,22 @@
 	    background-position-y: 0px;
 	    background-size: 120%;
 	}
-	.etap-selector {
+	.etap-selector, .etap-selector-remont, .etap-selector-remont2 {
 		font-size: 13px;
+		
+	}
+	#service .etap-selector, #service .etap-selector-remont, #service .etap-selector-remont2 {
+		overflow: hidden;
+		background-position-x: -39px;
+
+	}
+	#service .round {
+		position: absolute;
+	    right: -1px;
+	    top: -1px;
+	    width: 57px;
+	    height: 57px;
+	    z-index: 10;
 	}
 	.about-us-in-numbers .about-us-numbers {
 		margin-left: 0;
@@ -1033,5 +1273,19 @@
 	}
 	.ustanovka-i2 .basseyn-type button {
 		width: 180px;
+	}
+	.block-my-stroim img {
+		max-width: 80px;
+	}
+	.block-my-stroim-zagolovok {
+		font-size: 16px;
+	}
+}
+@media screen and (min-width: 460px) and (max-width: 768px) {
+	#zayavka .label, #zayavka-blue .label {
+		margin-top: -13px;
+	}
+	#zayavka-blue .form-group button {
+		margin-top: 20px;
 	}
 }
