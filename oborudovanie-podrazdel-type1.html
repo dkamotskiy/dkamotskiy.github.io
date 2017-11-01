@@ -128,9 +128,10 @@
       </div>
 </div>
 <!-- Контакты============================= -->
-  <div class="container-fluid contacts bg">
+  <div class="container-fluid contacts">
     <div class="h3">КОНТАКТЫ</div>
     <div class="hr"></div>
+    <div id="map"></div>
     <div class="map-nadpis">
        <div class="row">
          <div class="col-md-2 col-xs-2">
@@ -142,7 +143,7 @@
          <div class="col-md-2 col-xs-2">
           <img src="img/basseyn/mail.svg" alt="" class="img-fluid">
         </div>
-        <div class="col-md-10 col-xs-10">2627372@mail.ru</div>
+        <div class="col-md-10 col-xs-10"><a href="mailto:2627372@mail.ru">2627372@mail.ru</a></div>
        </div> 
        <div class="row">
          <div class="col-md-2 col-xs-2">
@@ -150,10 +151,10 @@
         </div>
         <div class="col-md-10 col-xs-10">
           <p class="fw400">Отдел продаж:</p>
-          <p>+7(347) 262-73-72</p>
-          <p>+7(927) 30-99-099</p>
+          <p><a href="tel:83472627372">+7(347) 262-73-72</a></p>
+          <p><a href="tel:89273099099">+7(927) 30-99-099</a></p>
           <p class="fw400">Технический отдел:</p>
-          <p>+7(937) 83-15-484</p>
+          <p><a href="tel:89378315484">+7(937) 83-15-484</a></p>
         </div>
        </div>
        <div class="row">
@@ -166,8 +167,6 @@
        </div>
        <button type="button" class="tovar-look" data-toggle="modal" data-target="#zayavka-blue">ОСТАВИТЬ ЗАЯВКУ</button>
     </div>
-    <div id="map"></div>
-    
   </div>
 <!-- Футер============================================ -->
   <div id="footer" class="container-fluid bg">
@@ -283,8 +282,8 @@
               <a href="#"><img src="img/social/instagram.svg" alt=""></a>
             </div>
         <div class="col-md-2"><img src="img/basseyn/1/time.svg" alt="" class="img-fluid">Пн-Пт, 9:00–18:00</div>
-        <div class="col-md-2"><img src="img/basseyn/1/mail.svg" alt="" class="img-fluid">2627372@mail.ru</div>
-        <div class="col-md-2"><img src="img/basseyn/1/call.svg" alt="" class="img-fluid">8 (347) 26-27-372</div>
+        <div class="col-md-2"><img src="img/basseyn/1/mail.svg" alt="" class="img-fluid"><a href="mailto:2627372@mail.ru">2627372@mail.ru</a></div>
+        <div class="col-md-2"><img src="img/basseyn/1/call.svg" alt="" class="img-fluid"><a href="tel:83472627372">8 (347) 26-27-372</a></div>
         <div class="col-md-6">
           <div class="row">
             <div class="col-md-9"><img src="img/basseyn/1/location.svg" alt="" class="img-fluid">450001, Респ. Башкортостан, г. Уфа, ул. Комсомольская, д.23, АТК <br> Комсомольский, эт. 4, оф. 14-2</div>
@@ -299,8 +298,8 @@
 <!-- Вторая линия-мобилка==================================================== -->
       <div class="row second-footer-row display-mobile">
         <div class="col-md-2"><img src="img/basseyn/1/time.svg" alt="" class="img-fluid">Пн-Пт, 9:00–18:00</div>
-        <div class="col-md-2"><img src="img/basseyn/1/mail.svg" alt="" class="img-fluid">2627372@mail.ru</div>
-        <div class="col-md-2"><img src="img/basseyn/1/call.svg" alt="" class="img-fluid">8 (347) 26-27-372</div>
+        <div class="col-md-2"><img src="img/basseyn/1/mail.svg" alt="" class="img-fluid"><a href="mailto:2627372@mail.ru">2627372@mail.ru</a></div>
+        <div class="col-md-2"><img src="img/basseyn/1/call.svg" alt="" class="img-fluid"><a href="tel:83472627372">8 (347) 26-27-372</a></div>
         <div class="col-md-6">
           <div class="row">
             <div class="col-md-9"><img src="img/basseyn/1/location.svg" alt="" class="img-fluid">450001, Респ. Башкортостан, г. Уфа, ул. Комсомольская, д.23, АТК <br> Комсомольский, эт. 4, оф. 14-2</div>
@@ -322,7 +321,7 @@
   </div>
 <!-- Всплывающие окна================================= -->
 <!-- Отправить заявку================================= -->
-<div class="modal fade" id="zayavka" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="zayavka" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="false">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -353,7 +352,7 @@
   </div>
 </div>
 <!-- Спасибо за заявку================================= -->
-<div class="modal fade" id="spasibo-za-zayavku" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="spasibo-za-zayavku" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="false">
   <div class="modal-dialog" role="document">
     <div class="modal-content thanks-for-zayavka">
       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -366,7 +365,7 @@
   </div>
 </div>
 <!-- Отправить заявку - синяя================================= -->
-<div class="modal fade" id="zayavka-blue" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="zayavka-blue" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="false">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -399,6 +398,7 @@
 	<script src="js/jcarousel.responsive.js"></script>
 	<script src="js/jquery.jcarousel.js"></script>
   <script src="js/jcarousel-swipe.js"></script>
+  <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
   <script src="js/jquery.spincrement.js"></script>
   <script src="js/jquery.maskedinput.js"></script>

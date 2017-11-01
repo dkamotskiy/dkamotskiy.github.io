@@ -115,7 +115,7 @@
 	}
 	.priyatnie {
 		margin-top: 40px;
-		min-height: 114px;
+		min-height: 180px;
 		font-size: 16px;
 	}
 	.h3 {
@@ -390,7 +390,7 @@
 	}
 	/*Страница "О компании"----------------*/
 	#about .first-block {
-		max-height: 115px;
+		max-height: 180px;
 	}
 	#about .service-first-block .about-new-text1 {
 		font-size: 30px;
@@ -432,7 +432,7 @@
 	}
 	/*Страница "Расчет стоимости--------------*/
 	#calculating .first-block {
-		max-height: 115px;
+		max-height: 180px;
 		padding-top: 5px;
 		padding-left: 0;
 		padding-right: 0;
@@ -470,7 +470,7 @@
 	}
 	/*Страница "Химия"--------------*/
 	#chemistry .first-block {
-		max-height: 115px;
+		max-height: 180px;
 		padding-top: 5px;
 		padding-left: 0;
 		padding-right: 0;
@@ -482,8 +482,14 @@
 		padding-top: 20px;
 	}
 	.prof-chemistry .col-md-5 div {
-		padding-left: 0;
-		padding-right: 0;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+	#oborudovanie .oborudovanie-katalog .col-6 img {
+		max-width: 100%;
+	}
+	#oborudovanie .oborudovanie-katalog .col-6 a {
+		line-height: 25px;
 	}
 	.prof-chemistry .col-md-5 div .blue-button {
 		max-width: 100%;
@@ -679,7 +685,7 @@
 	}
 	/*Страница "Сервис"------------------*/
 	#service .first-block {
-		height: 115px;
+		height: 180px;
 		padding-top: 15px;
 	}
 	#service .service-first-block p {
@@ -784,7 +790,7 @@
 		width: 200px;
 	}
 	.oborudovanie-katalog .col-6 a {
-		line-height: 40px;
+		line-height: 69px;
 	}
 	.okz {
 		min-height: 50px;
@@ -828,10 +834,10 @@
 		color: #3E97DB;
 	}
 	.round {
-		top: 0;
-		right: 0;
-		width: 57px;
-		height: 57px;
+		top: -3px;
+	    right: -6px;
+	    width: 68px;
+	    height: 68px;
 	}
 	.warantee.row {
 		display: none;
@@ -888,6 +894,13 @@
 	}
 	.not-comp {
 		display: none !important;
+	}
+	#calculating .label {
+		margin-left: 50px;
+	}
+	.latest-works {
+		padding-left: 30px;
+		padding-right: 30px;
 	}
 }
 /*Стилизация десктопной версии-----------------------------------------------------------------------------------------*/
@@ -1162,6 +1175,25 @@
 		margin-top: 15px;
 		text-align: center;
 	}
+	.stroim-basseyni .col-md-4 p:nth-child(1) {
+		min-height: 60px;
+		margin-bottom: 10px;
+	}
+	#chemistry-item-card .same-items img, #oborudovanie-type1 .same-items img {
+		max-width: 100%;
+	}
+	#chemistry-item-card .modeli .tovar-look {
+		width: 200px;
+	}
+	#contacts .map-nadpis, #news-page .map-nadpis, #news-card .map-nadpis, #oborudovanie-type1 .map-nadpis {
+		top: 16%;
+	}
+	#discount-card-page .zakazyvaya button {
+		width: 200px;
+	}
+	#kompozit-item-card .same-items .tovar-look {
+		width: 130px;
+	}
 }
 /*Стилизация 1024 */
 @media screen and (min-width: 992px) and (max-width: 1200px) {
@@ -1280,9 +1312,26 @@
 	.block-my-stroim-zagolovok {
 		font-size: 16px;
 	}
+	.etap-selector, .etap-selector-remont, .etap-selector-remont2, .big-selector-etap-selector {
+		overflow: hidden;
+		-ms-background-position-x: -39px;
+		background-position-x: -39px;
+	}
+	.etap-selector:before, .etap-selector-remont:before, .etap-selector-remont2:before, .big-selector-etap-selector:before {
+		top: 0;
+		
+	}
+	.round {
+		position: absolute;
+	    right: -6px;
+	    top: -4px;
+	    width: 69px;
+	    height: 69px;
+	    z-index: 10;
+	}
 }
 @media screen and (min-width: 460px) and (max-width: 768px) {
-	#zayavka .label, #zayavka-blue .label {
+	#zayavka .label, #zayavka-blue .label, #calculating .label {
 		margin-top: -13px;
 	}
 	#zayavka-blue .form-group button {

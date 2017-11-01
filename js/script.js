@@ -19,6 +19,10 @@ document.write("<script src='js/jQuery.scrollSpeed.js' type='text/javascript' ch
                     });
 
                   }
+// Инициализация свайпа каруселей
+$('.jcarousel')
+    .jcarousel()       // init jcarousel
+    .jcarouselSwipe(); // init jcarouselSwipe
 // Увеличение чисел на странице "Бассейны"
 // $(document).ready(function(){
 //     var show = true;
@@ -326,7 +330,7 @@ $('#send').click(function() {
     else {
     $('#zayavka').modal('hide');
     $("body").attr("style","padding-right:0px");
-    $('#spasibo-za-zayavku').modal('show');
+    $('#spasibo-za-zayavku').modal('show').delay(5000).modal('hide');
     }
 });
 });
@@ -338,7 +342,7 @@ $('#send-blue').click(function() {
     else {
     $('#zayavka-blue').modal('hide');
     $("body").attr("style","padding-right:0px");
-    $('#spasibo-za-zayavku').modal('show');
+    $('#spasibo-za-zayavku').modal('show').delay(5000).modal('hide');
     }
 });
 });
@@ -352,7 +356,7 @@ $('#send-zakazyvaya').click(function() {
     if($(this).hasClass("disabled"))
         {}
     else {
-    $('#spasibo-za-zayavku').modal('show');
+    $('#spasibo-za-zayavku').modal('show').delay(5000).modal('hide');
     }
 });
 });
