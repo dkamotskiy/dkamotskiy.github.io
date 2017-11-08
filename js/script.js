@@ -1,678 +1,262 @@
-document.write("<script src='js/jQuery.scrollSpeed.js' type='text/javascript' charset='utf-8'></s"+"cript>");
-//GoogleMap--------------------------------------------------------------------------
-                                    function initMap() {
-                    var uluru = {lat: 54.744494, lng: 55.997060};
-
-                    var map = new google.maps.Map(document.getElementById('map'), {
-                      zoom: 15,
-                      center: uluru,
-                      scrollwheel: false,
-                      minZoom: 10,
-                      
-            disableDefaultUI: true,
-                    });
-                    var image = 'img/marker.png';
-                    var marker = new google.maps.Marker({
-                      position: uluru,
-                      map: map,
-                      icon: image
-                    });
-
-                  }
-// Инициализация свайпа каруселей
-$('.jcarousel')
-    .jcarousel()       // init jcarousel
-    .jcarouselSwipe(); // init jcarouselSwipe
-// Увеличение чисел на странице "Бассейны"
-// $(document).ready(function(){
-//     var show = true;
-//     var countbox = ".proizvodstvo";
-//     $(window).on("scroll load resize", function(){
- 
-//         if(!show) return false;                   // Отменяем показ анимации, если она уже была выполнена
- 
-//         var w_top = $(window).scrollTop();        // Количество пикселей на которое была прокручена страница
-//         var e_top = $(countbox).offset().top;     // Расстояние от блока со счетчиками до верха всего документа
- 
-//         var w_height = $(window).height();        // Высота окна браузера
-//         var d_height = $(document).height();      // Высота всего документа
- 
-//         var e_height = $(countbox).outerHeight(); // Полная высота блока со счетчиками
- 
-//         if(w_top + 200 >= e_top || w_height + w_top == d_height || e_height + e_top < w_height){
-//             $(".spincrement").spincrement({
-//                 thousandSeparator: "",
-//                 duration: 2200
-//             });
- 
-//             show = false;
-//         }
-//     });
-// });
-// Анимация фишек в разделе "Этапы"
-// $(document).ready(function(){
-//     var show = true;
-//     var countbox = ".etapy-rabot";
-//     $(window).on("scroll load resize", function(){
- 
-//         if(!show) return false;                   // Отменяем показ анимации, если она уже была выполнена
- 
-//         var w_top = $(window).scrollTop();        // Количество пикселей на которое была прокручена страница
-//         var e_top = $(countbox).offset().top;     // Расстояние от блока со счетчиками до верха всего документа
- 
-//         var w_height = $(window).height();        // Высота окна браузера
-//         var d_height = $(document).height();      // Высота всего документа
- 
-//         var e_height = $(countbox).outerHeight(); // Полная высота блока со счетчиками
- 
-//         if(w_top + 400 >= e_top || w_height + w_top == d_height || e_height + e_top < w_height){
-//             $('#animate-1').addClass('animated flipInX'); 
-//   $('#animate-text-1').addClass('animated zoomIn'); 
-//   $('#animate-2').css('animation-delay', '1s').addClass('animated flipInX'); 
-//   $('#animate-text-2').css('animation-delay', '1s').addClass('animated zoomIn'); 
-//   $('#animate-3').css('animation-delay', '2s').addClass('animated flipInX'); 
-//    $('#animate-text-3').css('animation-delay', '2s').addClass('animated zoomIn'); 
-//   $('#animate-4').css('animation-delay', '3s').addClass('animated flipInX'); 
-//    $('#animate-text-4').css('animation-delay', '3s').addClass('animated zoomIn'); 
-//         }
-//     });
-// });
-// Появление левой кнопки--------------------------------------------------------------------------
+// Инициализация свайпа каруселей----------------------------------
+// $('.jcarousel')
+//     .jcarousel()       // init jcarousel
+//     .jcarouselSwipe(); // init jcarouselSwipe
 $(document).ready(function(){
-  $(".latest-works .jcarousel-control-prev").attr("style","display:none");
-$( ".latest-works .jcarousel-control-next" ).click(function() {
-    $(".latest-works .jcarousel-control-prev").attr("style","display:block");
-});  
-});
-$(document).ready(function(){
-  $(".novosti .jcarousel-control-prev").attr("style","display:none");
-$( ".novosti .jcarousel-control-next" ).click(function() {
-    $(".novosti .jcarousel-control-prev").attr("style","display:block");
-});  
-});
-$(document).ready(function(){
-  $(".dealers .jcarousel-control-prev").attr("style","display:none");
-$( ".dealers .jcarousel-control-next" ).click(function() {
-    $(".dealers .jcarousel-control-prev").attr("style","display:block");
-});  
-});
-$(document).ready(function(){
-  $(".docs .jcarousel-control-prev").attr("style","display:none");
-$( ".docs .jcarousel-control-next" ).click(function() {
-    $(".docs .jcarousel-control-prev").attr("style","display:block");
-});  
-});
-$(document).ready(function(){
-  $(".talking-about-us .jcarousel-control-prev").attr("style","display:none");
-$( ".talking-about-us .jcarousel-control-next" ).click(function() {
-    $(".talking-about-us .jcarousel-control-prev").attr("style","display:block");
-});  
-});
+      $('.single-item').slick({
+        swipe: false,
+        prevArrow: '<button type="button" class="slick-prev"></button>',
+        nextArrow: '<button type="button" class="slick-next"></button>',
+        dots: true
+      });
+    });
 // Маска-----------------------------------------------------------
-
 jQuery(function($){
    $("#phone-form").mask("+7 (999) 999-9999");
 });
-jQuery(function($){
-   $("#phone-form2").mask("+7 (999) 999-9999");
+// Кнопка хедера---------------------------------------------------
+$(document).ready(function(){
+$( ".hamburger" ).click(function() {
+    $(this).toggleClass("is-active");
+});  
+});
+// Появление меню при скролле вверх--------------------------------
+$(document).ready(function() {
+	
+	var header = $("header"); // Меню
+	var scrollPrev = 0 // Предыдущее значение скролла
+	
+	$(window).scroll(function() {
+		var scrolled = $(window).scrollTop(); // Высота скролла в px
+		var firstScrollUp = false; // Параметр начала сколла вверх
+		var firstScrollDown = false; // Параметр начала сколла вниз
+		
+		// Если скроллим
+		if ( scrolled > 0 ) {
+			// Если текущее значение скролла > предыдущего, т.е. скроллим вниз
+			if ( scrolled > scrollPrev ) {
+				firstScrollUp = false; // Обнуляем параметр начала скролла вверх
+				// Если меню видно
+				if ( scrolled < header.height() + header.offset().top ) {
+					// Если только начали скроллить вниз
+					if ( firstScrollDown === false ) {
+						var topPosition = header.offset().top; // Фиксируем текущую позицию меню
+						header.css({
+							"top": topPosition + "px"
+						});
+						firstScrollDown = true;
+					}
+					// Позиционируем меню абсолютно
+					header.css({
+						"position": "absolute"
+					});
+				// Если меню НЕ видно
+				} else {
+					// Позиционируем меню фиксированно вне экрана
+					header.css({
+						"position": "fixed",
+						"top": "-" + header.height() + "px"
+					});
+				}
+				
+			// Если текущее значение скролла < предыдущего, т.е. скроллим вверх
+			} else {
+				firstScrollDown = false; // Обнуляем параметр начала скролла вниз
+				// Если меню не видно
+				if ( scrolled > header.offset().top ) {
+					// Если только начали скроллить вверх
+					if ( firstScrollUp === false ) {
+						var topPosition = header.offset().top; // Фиксируем текущую позицию меню
+						header.css({
+							"top": topPosition + "px"
+						});
+						firstScrollUp = true;
+					}
+					// Позиционируем меню абсолютно
+					header.css({
+						"position": "absolute"
+					});
+				} else {
+					// Убираем все стили
+					header.removeAttr("style");
+				}
+			}
+			// Присваеваем текущее значение скролла предыдущему
+			scrollPrev = scrolled;
+		}	
+	});			
+});
+// Разворот текста-----------------------------
+var maxc = 200,
+    crop = '<span class="crop">...</span>';
+$('.process .text').each(function(){
+  var text = $(this),
+      html = text.html(),
+      html_hide = '<span class="hide">' + html.substring(maxc) + '</span>',
+      html_show = '<span class="show">' + html.substring(0, maxc) + '</span>';
+  text.html(html_show + crop + html_hide);
+});
+$('.process .row button').click(function(){
+  $(".show").parent('.process .text').addClass('more');
+  $(this).css("display", "none");
 });
 
-// Нажатия на блоке "Этапы"--------------------------------------
-
-$(function() {
-    if($(window).width()>992) {
-        $(document).ready(function(){
-        $(".etap-selector").click(function() {
-            $('.etap-zagolovok').css("display","none");
-            $('.etap-time span').css("display","none");
-            $('.etap-text').css("display","none");
-            $('.etap-img').css("display","none");
-            $('.etap-promyvka').css("display","none");
-            $('.etap-selector').removeClass("active");
-            $(this).addClass("active");
-        });  
-        });
-        $(document).ready(function(){
-        $(".etap-selector1").click(function() {
-            $('.etap1').css("display","inline-block");
-        });  
-        });
-        $(document).ready(function(){
-        $(".etap-selector2").click(function() {
-            $('.etap2').css("display","inline-block");
-        });  
-        });
-        $(document).ready(function(){
-        $(".etap-selector3").click(function() {
-            $('.etap3').css("display","inline-block");
-        });  
-        });
-        $(document).ready(function(){
-        $(".etap-selector4").click(function() {
-            $('.etap4').css("display","inline-block");
-        });  
-        });
-        $(document).ready(function(){
-        $(".etap-selector5").click(function() {
-            $('.etap5').css("display","inline-block");
-        });  
-        });
-        $(document).ready(function(){
-        $(".etap-selector6").click(function() {
-            $('.etap6').css("display","inline-block");
-        });  
-        });
-        $(document).ready(function(){
-        $(".etap-selector7").click(function() {
-            $('.etap7').css("display","inline-block");
-        });  
-        });
-        $(document).ready(function(){
-        $(".etap-selector8").click(function() {
-            $('.etap8').css("display","inline-block");
-        });  
-        });
-    }
-}); 
-
-// Те же нажатия, только на мобилке
-
-$(function() {
-    if($(window).width()<992) {
-        $(document).ready(function(){
-        $(".etap-selector").click(function() {
-            $('.etap-selector').removeClass("active");
-            $(this).addClass("active");
-        });  
-        });
-    }
-}); 
-
-// Нажатия на блоке РЕМОНТ ОБОРУДОВАНИЯ БАССЕЙНОВ
-
-
-$(document).ready(function(){
-$(".etap-selector-remont").click(function() {
-    $('.etap-selector-remont').removeClass("active");
-    $(this).addClass("active");
-});  
+var maxc = 200,
+    crop = '<span class="crop">...</span>';
+$('.uslugi .text').each(function(){
+  var text = $(this),
+      html = text.html(),
+      html_hide = '<span class="hide">' + html.substring(maxc) + '</span>',
+      html_show = '<span class="show">' + html.substring(0, maxc) + '</span>';
+  text.html(html_show + crop + html_hide);
+});
+$('.uslugi button').click(function(){
+  $(".show").parent('.uslugi .text').addClass('more');
+  $(".uslugi").css("padding-bottom", "30px");
+  $(this).css("display", "none");
 });
 
-$(function() {
-    if($(window).width()>992) {
-        $(document).ready(function(){
-$(".etap-selector-remont").click(function() {
-    $('.etap-promyvka').css("display","none");
-    $('.etap-img-remont').css("display","none");
-    $('.remont-opisanie').css("display","none");
-});  
+var maxc = 150,
+    crop = '<span class="crop">...</span>';
+$('.result .text').each(function(){
+  var text = $(this),
+      html = text.html(),
+      html_hide = '<span class="hide">' + html.substring(maxc) + '</span>',
+      html_show = '<span class="show">' + html.substring(0, maxc) + '</span>';
+  text.html(html_show + crop + html_hide);
 });
-$(document).ready(function(){
-$(".etap-selector1-remont").click(function() {
-    $('.etap1-remont').css("display","inline-block");
-    $('.remont-opisanie1').css("display","inline-block");
-});  
-});
-$(document).ready(function(){
-$(".etap-selector2-remont").click(function() {
-    $('.etap2-remont').css("display","inline-block");
-    $('.remont-opisanie2').css("display","inline-block");
-});  
-});
-$(document).ready(function(){
-$(".etap-selector3-remont").click(function() {
-    $('.etap3-remont').css("display","inline-block");
-     $('.remont-opisanie3').css("display","inline-block");
-});  
-});
-    }
-}); 
-
-
-// Нажатия на блоке РЕМОНТ БАССЕЙНОВ
-
-
-$(document).ready(function(){
-$(".etap-selector-remont2").click(function() {
-    $('.etap-selector-remont2').removeClass("active");
-    $('.etap-promyvka2').css("display","none");
-    $(this).addClass("active");
-    $('.remont2-opisanie').css("display","none");
-     $('.etap-img-remont2').css("display","none");
-});  
-});
-$(document).ready(function(){
-$(".etap-selector1-remont2").click(function() {
-    $('.etap1-remont2').css("display","inline-block");
-    $('.remont2-opisanie1').css("display","inline-block");
-    $('.etap1-remont2').css("display","inline-block");
-});  
-});
-$(document).ready(function(){
-$(".etap-selector2-remont2").click(function() {
-    $('.etap2-remont2').css("display","inline-block");
-    $('.remont2-opisanie2').css("display","inline-block");
-    $('.etap2-remont2').css("display","inline-block");
-});  
+$('.result button').click(function(){
+  $(".show").parent('.result .text').addClass('more');
+  $(".result").css("padding-bottom", "30px");
+  $(this).css("display", "none");
 });
 
-$(function() {
-    if($(window).width()>992) {
-        $(document).ready(function(){
-$(".etap-selector-remont").click(function() {
-    $('.etap-promyvka').css("display","none");
-    $('.etap-img-remont').css("display","none");
-    $('.remont-opisanie').css("display","none");
-});  
+var maxc = 150,
+    crop = '<span class="crop">...</span>';
+$('.feedbackn .text').each(function(){
+  var text = $(this),
+      html = text.html(),
+      html_hide = '<span class="hide">' + html.substring(maxc) + '</span>',
+      html_show = '<span class="show">' + html.substring(0, maxc) + '</span>';
+  text.html(html_show + crop + html_hide);
 });
-$(document).ready(function(){
-$(".etap-selector1-remont").click(function() {
-    $('.etap1-remont').css("display","inline-block");
-    $('.remont-opisanie1').css("display","inline-block");
-});  
+$('.feedbackn button').click(function(){
+  $(".show").parent('.feedbackn .text').addClass('more');
+  $(".feedbackn").css("padding-bottom", "30px");
+  $(".feedbackn p").css("padding-bottom", "15px");
+  $(this).css("display", "none");
 });
-$(document).ready(function(){
-$(".etap-selector2-remont").click(function() {
-    $('.etap2-remont').css("display","inline-block");
-    $('.remont-opisanie2').css("display","inline-block");
-});  
-});
-$(document).ready(function(){
-$(".etap-selector3-remont").click(function() {
-    $('.etap3-remont').css("display","inline-block");
-     $('.remont-opisanie3').css("display","inline-block");
-});  
-});
-    }
-}); 
 
-
-// Нажатия на странице "наши работы"
-
-
-$(document).ready(function(){
-$("#works .basseyn-type a").click(function() {
-    $('#works .basseyn-type a').removeClass("active");
-    $('.works-fade').css("display","none");
-    $(this).addClass("active");
-});  
+var maxc = 150,
+    crop = '<span class="crop">...</span>';
+$('.krutoy .text').each(function(){
+  var text = $(this),
+      html = text.html(),
+      html_hide = '<span class="hide">' + html.substring(maxc) + '</span>',
+      html_show = '<span class="show">' + html.substring(0, maxc) + '</span>';
+  text.html(html_show + crop + html_hide);
 });
-$(document).ready(function(){
-$("#selector-works-1").click(function() {
-    $('.kompozit-works').css("display","flex");
-});  
+$('.krutoy button').click(function(){
+  $(".show").parent('.krutoy .text').addClass('more');
+  $(this).css("display", "none");
 });
+// Запрет прокрутки-----------------------------
+$('#header-menu').on('show.bs.collapse', function () {
+  $("body").css("overflow", "hidden");
+  $("#nelogop").html("Закрыть");
+})
+$('#header-menu').on('hidden.bs.collapse', function () {
+  $("body").css("overflow", "auto");
+  $("#nelogop").html("МЕНЮ");
+})
+// Сосоеп-----------------------------------------
+$('.cocoen').cocoen();
+// Всплытие окна "Спасибо за заявку"--------------
 $(document).ready(function(){
-$("#selector-works-2").click(function() {
-    $('.polipropilen-works').css("display","flex");
-});  
-});
-$(document).ready(function(){
-$("#selector-works-3").click(function() {
-    $('.karkas-works').css("display","flex");
-});  
-});
-$(document).ready(function(){
-$("#selector-works-4").click(function() {
-    $('.plenka-works').css("display","flex");
-});  
-});
-$(document).ready(function(){
-$("#selector-works-5").click(function() {
-    $('.spa-works').css("display","flex");
-});  
-});
-// Всплытие окна "Спасибо за заявку" на белой модалке
-$(document).ready(function(){
-$('#send').click(function() {
+$('#uznat button').click(function() {
     if($(this).hasClass("disabled"))
         {}
     else {
-    $('#zayavka').modal('hide');
+    $('#uznat').modal('hide');
     $("body").attr("style","padding-right:0px");
-    $('#spasibo-za-zayavku').modal('show').delay(5000).modal('hide');
+    $('#spasibo').modal('show');
+      window.setTimeout(function(){
+     $('#spasibo').modal('hide');
+  }, 4000);
     }
 });
 });
-// Всплытие окна "Спасибо за заявку" на синей модалке
+// Переключения этапов боковыми кнопками---------
 $(document).ready(function(){
-$('#send-blue').click(function() {
-    if($(this).hasClass("disabled"))
-        {}
-    else {
-    $('#zayavka-blue').modal('hide');
-    $("body").attr("style","padding-right:0px");
-    $('#spasibo-za-zayavku').modal('show').delay(5000).modal('hide');
-    }
-});
-});
-
-
-// Всплытие окна "Спасибо за заявку" на блоке "Заказывая у нас..."
-
-
-$(document).ready(function(){
-$('#send-zakazyvaya').click(function() {
-    if($(this).hasClass("disabled"))
-        {}
-    else {
-    $('#spasibo-za-zayavku').modal('show').delay(5000).modal('hide');
-    }
-});
-});
-
-
-
-
-
-
-// Огромный скрипт для огромного блока
-
-
-
-// // Нажатия основных кнопок
-$(document).ready(function(){
-$("#service .basseyn-type button").click(function() {
-    $('#service .basseyn-type button').removeClass("active");
-    $(this).addClass("active");
-    $('.big-selector').removeClass("active");
-    $('.bs-etap1').addClass("active");
-    $('.bs-etap2').removeClass("active");
-    $('.bs-etap3').removeClass("active");
-    $('.bs-etap4').removeClass("active");
-    $('.bs-etap5').removeClass("active");
-    $('.bs-etap6').removeClass("active");
-    $('.bs-etap7').removeClass("active");
-    $('.bs-etap8').removeClass("active");
-    $('.etap-selector').removeClass("active");
-    $('.etap-selector1').addClass("active");
+$( ".cb1 .after" ).click(function() {
+     $('#collapseTwo').collapse('show'); 
 });  
 });
-// Композитные бассейны big-selector-button-1
 $(document).ready(function(){
-$("#big-selector-button-1").click(function() {
-    $('.kompozit-big-selector').addClass("active");
+$( ".cb2 .after" ).click(function() {
+     $('#collapseThree').collapse('show'); 
 });  
 });
-// ПОЛИПРОПИЛЕНОВЫЕ бассейны big-selector-button-2
 $(document).ready(function(){
-$("#big-selector-button-2").click(function() {
-    $('.polipropilen-big-selector').addClass("active");
+$( ".cb3 .after" ).click(function() {
+     $('#collapseFour').collapse('show'); 
 });  
 });
-// КАРКАСНЫЕ бассейны big-selector-button-3
 $(document).ready(function(){
-$("#big-selector-button-3").click(function() {
-    $('.karkas-big-selector').addClass("active");
+$( ".cb4 .after" ).click(function() {
+     $('#collapseFive').collapse('show'); 
 });  
 });
-// ПЛЕНОЧНЫЕ бассейны big-selector-button-4
 $(document).ready(function(){
-$("#big-selector-button-4").click(function() {
-    $('.plenka-big-selector').addClass("active");
-});  
-});
-// СПА бассейны big-selector-button-5
-$(document).ready(function(){
-$("#big-selector-button-5").click(function() {
-    $('.spa-big-selector').addClass("active");
-});  
-});
-
-$(function() {
-    if($(window).width()>992) {
-        // Новые скрипты для нажатий на странице "Сервис"
-
-// Композитные бассейны----------------------------------------------------------------------------------------------
-
-$(document).ready(function(){
-$(".kompozit-big-selector .etap-selector").click(function() {
-    $('.kompozit-big-selector .bs-etap-zagolovok').removeClass("active");
-    $('.kompozit-big-selector .big-selector-etap-time span').removeClass("active");
-    $('.kompozit-big-selector .bs-etap-img').removeClass("active");
-    $('.kompozit-big-selector .bs-etap-text').removeClass("active");
-
+$( ".cb5 .after" ).click(function() {
+     $('#collapseSix').collapse('show'); 
 });  
 });
 
 $(document).ready(function(){
-$(".kompozit-big-selector .etap-selector1").click(function() {
-    $('.kompozit-big-selector .bs-etap1').addClass("active");
-
+$( ".cb2 .before" ).click(function() {
+     $('#collapseOne').collapse('show'); 
 });  
 });
 $(document).ready(function(){
-$(".kompozit-big-selector .etap-selector2").click(function() {
-    $('.kompozit-big-selector .bs-etap2').addClass("active");
-
+$( ".cb3 .before" ).click(function() {
+     $('#collapseTwo').collapse('show'); 
 });  
 });
 $(document).ready(function(){
-$(".kompozit-big-selector .etap-selector3").click(function() {
-    $('.kompozit-big-selector .bs-etap3').addClass("active");
-
+$( ".cb4 .before" ).click(function() {
+     $('#collapseThree').collapse('show'); 
 });  
 });
 $(document).ready(function(){
-$(".kompozit-big-selector .etap-selector4").click(function() {
-    $('.kompozit-big-selector .bs-etap4').addClass("active");
-
+$( ".cb5 .before" ).click(function() {
+     $('#collapseFour').collapse('show'); 
 });  
 });
 $(document).ready(function(){
-$(".kompozit-big-selector .etap-selector5").click(function() {
-    $('.kompozit-big-selector .bs-etap5').addClass("active");
-
+$( ".cb6 .before" ).click(function() {
+     $('#collapseFive').collapse('show'); 
+});  
+});
+// Нажатие на пункт меню "Контакты"
+$(document).ready(function(){
+$( "#contacts-link" ).click(function() {
+     $('#header-menu').collapse('hide'); 
+     $(".hamburger").toggleClass("is-active");
 });  
 });
 $(document).ready(function(){
-$(".kompozit-big-selector .etap-selector6").click(function() {
-    $('.kompozit-big-selector .bs-etap6').addClass("active");
+  $("#header-menu").on("click","a#contacts-link", function (event) {
+    //отменяем стандартную обработку нажатия по ссылке
+    event.preventDefault();
 
-});  
+    //забираем идентификатор бока с атрибута href
+    var id  = $(this).attr('href'),
+
+    //узнаем высоту от начала страницы до блока на который ссылается якорь
+      top = $(id).offset().top;
+    
+    //анимируем переход на расстояние - top за 1500 мс
+    $('body,html').animate({scrollTop: top}, 1500);
+  });
 });
-$(document).ready(function(){
-$(".kompozit-big-selector .etap-selector7").click(function() {
-    $('.kompozit-big-selector .bs-etap7').addClass("active");
-
-});  
-});
-
-// Полипропиленовые бассейны----------------------------------------------------------------------------------------------
-
-$(document).ready(function(){
-$(".polipropilen-big-selector .etap-selector").click(function() {
-    $('.polipropilen-big-selector .bs-etap-zagolovok').removeClass("active");
-    $('.polipropilen-big-selector .big-selector-etap-time span').removeClass("active");
-    $('.polipropilen-big-selector .bs-etap-img').removeClass("active");
-    $('.polipropilen-big-selector .bs-etap-text').removeClass("active");
-
-});  
-});
-
-$(document).ready(function(){
-$(".polipropilen-big-selector .etap-selector1").click(function() {
-    $('.polipropilen-big-selector .bs-etap1').addClass("active");
-
-});  
-});
-$(document).ready(function(){
-$(".polipropilen-big-selector .etap-selector2").click(function() {
-    $('.polipropilen-big-selector .bs-etap2').addClass("active");
-
-});  
-});
-$(document).ready(function(){
-$(".polipropilen-big-selector .etap-selector3").click(function() {
-    $('.polipropilen-big-selector .bs-etap3').addClass("active");
-
-});  
-});
-$(document).ready(function(){
-$(".polipropilen-big-selector .etap-selector4").click(function() {
-    $('.polipropilen-big-selector .bs-etap4').addClass("active");
-
-});  
-});
-$(document).ready(function(){
-$(".polipropilen-big-selector .etap-selector5").click(function() {
-    $('.polipropilen-big-selector .bs-etap5').addClass("active");
-
-});  
-});
-$(document).ready(function(){
-$(".polipropilen-big-selector .etap-selector6").click(function() {
-    $('.polipropilen-big-selector .bs-etap6').addClass("active");
-
-});  
-});
-$(document).ready(function(){
-$(".polipropilen-big-selector .etap-selector7").click(function() {
-    $('.polipropilen-big-selector .bs-etap7').addClass("active");
-
-});  
-});
-$(document).ready(function(){
-$(".polipropilen-big-selector .etap-selector8").click(function() {
-    $('.polipropilen-big-selector .bs-etap8').addClass("active");
-
-});  
-});
-
-// Каркасные бассейны----------------------------------------------------------------------------------------------
-
-$(document).ready(function(){
-$(".karkas-big-selector .etap-selector").click(function() {
-    $('.karkas-big-selector .bs-etap-zagolovok').removeClass("active");
-    $('.karkas-big-selector .big-selector-etap-time span').removeClass("active");
-    $('.karkas-big-selector .bs-etap-img').removeClass("active");
-    $('.karkas-big-selector .bs-etap-text').removeClass("active");
-
-});  
-});
-
-$(document).ready(function(){
-$(".karkas-big-selector .etap-selector1").click(function() {
-    $('.karkas-big-selector .bs-etap1').addClass("active");
-
-});  
-});
-$(document).ready(function(){
-$(".karkas-big-selector .etap-selector2").click(function() {
-    $('.karkas-big-selector .bs-etap2').addClass("active");
-
-});  
-});
-$(document).ready(function(){
-$(".karkas-big-selector .etap-selector3").click(function() {
-    $('.karkas-big-selector .bs-etap3').addClass("active");
-
-});  
-});
-$(document).ready(function(){
-$(".karkas-big-selector .etap-selector4").click(function() {
-    $('.karkas-big-selector .bs-etap4').addClass("active");
-
-});  
-});
-$(document).ready(function(){
-$(".karkas-big-selector .etap-selector5").click(function() {
-    $('.karkas-big-selector .bs-etap5').addClass("active");
-
-});  
-});
-$(document).ready(function(){
-$(".karkas-big-selector .etap-selector6").click(function() {
-    $('.karkas-big-selector .bs-etap6').addClass("active");
-
-});  
-});
-$(document).ready(function(){
-$(".karkas-big-selector .etap-selector7").click(function() {
-    $('.karkas-big-selector .bs-etap7').addClass("active");
-
-});  
-});
-
-// Пленочные бассейны----------------------------------------------------------------------------------------------
-
-$(document).ready(function(){
-$(".plenka-big-selector .etap-selector").click(function() {
-    $('.plenka-big-selector .bs-etap-zagolovok').removeClass("active");
-    $('.plenka-big-selector .big-selector-etap-time span').removeClass("active");
-    $('.plenka-big-selector .bs-etap-img').removeClass("active");
-    $('.plenka-big-selector .bs-etap-text').removeClass("active");
-
-});  
-});
-
-$(document).ready(function(){
-$(".plenka-big-selector .etap-selector1").click(function() {
-    $('.plenka-big-selector .bs-etap1').addClass("active");
-
-});  
-});
-$(document).ready(function(){
-$(".plenka-big-selector .etap-selector2").click(function() {
-    $('.plenka-big-selector .bs-etap2').addClass("active");
-
-});  
-});
-$(document).ready(function(){
-$(".plenka-big-selector .etap-selector3").click(function() {
-    $('.plenka-big-selector .bs-etap3').addClass("active");
-
-});  
-});
-$(document).ready(function(){
-$(".plenka-big-selector .etap-selector4").click(function() {
-    $('.plenka-big-selector .bs-etap4').addClass("active");
-
-});  
-});
-$(document).ready(function(){
-$(".plenka-big-selector .etap-selector5").click(function() {
-    $('.plenka-big-selector .bs-etap5').addClass("active");
-
-});  
-});
-$(document).ready(function(){
-$(".plenka-big-selector .etap-selector6").click(function() {
-    $('.plenka-big-selector .bs-etap6').addClass("active");
-
-});  
-});
-
-// СПА бассейны----------------------------------------------------------------------------------------------
-
-$(document).ready(function(){
-$(".spa-big-selector .etap-selector").click(function() {
-    $('.spa-big-selector .bs-etap-zagolovok').removeClass("active");
-    $('.spa-big-selector .big-selector-etap-time span').removeClass("active");
-    $('.spa-big-selector .bs-etap-img').removeClass("active");
-    $('.spa-big-selector .bs-etap-text').removeClass("active");
-
-});  
-});
-
-$(document).ready(function(){
-$(".spa-big-selector .etap-selector1").click(function() {
-    $('.spa-big-selector .bs-etap1').addClass("active");
-
-});  
-});
-$(document).ready(function(){
-$(".spa-big-selector .etap-selector2").click(function() {
-    $('.spa-big-selector .bs-etap2').addClass("active");
-
-});  
-});
-$(document).ready(function(){
-$(".spa-big-selector .etap-selector3").click(function() {
-    $('.spa-big-selector .bs-etap3').addClass("active");
-
-});  
-});
-
-    }
-}); 
