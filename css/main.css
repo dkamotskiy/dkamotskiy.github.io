@@ -1,6 +1,5 @@
 /*Подключение шрифтов*/
-@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400&subset=cyrillic-ext');
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500&subset=cyrillic,cyrillic-ext');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900');
 @font-face {
 	font-family: 'Rain';
 	src: url('../fonts/Rain.eot?') format('eot'), 
@@ -8,9 +7,9 @@
 	     url('../fonts/Rain.ttf')  format('truetype');
 	}
 /*Основной шрифт*/
-body, h3 {
-	font-family: 'Roboto', sans-serif;
-    font-weight: 200;
+body {
+	font-family: Roboto;
+    font-weight: 300;
 }
 a {
     color: #1a1a1a;
@@ -21,112 +20,6 @@ background: inherit; /* Safari */
 }
 ::-moz-selection {
 background: inherit; /* Firefox */
-}
-@-webkit-keyframes rotate_bottom {
-  0% {
-    -webkit-transform: rotate(-180deg);
-    transform: rotate(-180deg);
-  }
-
-  50% {
-    -webkit-transform: rotate(-360deg);
-    transform: rotate(-360deg);
-  }
-
-  to {
-    -webkit-transform: rotate(-540deg);
-    transform: rotate(-540deg);
-  }
-}
-
-@-moz-keyframes rotate_bottom {
-  0% {
-    -moz-transform: rotate(-180deg);
-    transform: rotate(-180deg);
-  }
-
-  50% {
-    -moz-transform: rotate(-360deg);
-    transform: rotate(-360deg);
-  }
-
-  to {
-    -moz-transform: rotate(-540deg);
-    transform: rotate(-540deg);
-  }
-}
-@keyframes rotate_bottom {
-  0% {
-    -webkit-transform: rotate(-180deg);
-    -moz-transform: rotate(-180deg);
-    transform: rotate(-180deg);
-  }
-
-  50% {
-    -webkit-transform: rotate(-360deg);
-    -moz-transform: rotate(-360deg);
-    transform: rotate(-360deg);
-  }
-
-  to {
-    -webkit-transform: rotate(-540deg);
-    -moz-transform: rotate(-540deg);
-    transform: rotate(-540deg);
-  }
-}
-
-@-webkit-keyframes rotate_bottom-left {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-
-  50% {
-    -webkit-transform: rotate(180deg);
-    transform: rotate(180deg);
-  }
-
-  to {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-
-@-moz-keyframes rotate_bottom-left {
-  0% {
-    -moz-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-
-  50% {
-    -moz-transform: rotate(180deg);
-    transform: rotate(180deg);
-  }
-
-  to {
-    -moz-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes rotate_bottom-left {
-  0% {
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-
-  50% {
-    -webkit-transform: rotate(180deg);
-    -moz-transform: rotate(180deg);
-    transform: rotate(180deg);
-  }
-
-  to {
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
 }
 p {
 	margin-bottom: 0;
@@ -150,37 +43,6 @@ input::-webkit-inner-spin-button {
 .jcarousel-control-prev, .jcarousel-control-next {
 	box-shadow: none;
 }
-/*Стилизация чекбокса--------*/
-.checkbox {
-    display: none;
-}
-.checkbox-custom {
-    position: relative;      /* Обязательно задаем, чтобы мы могли абсолютным образом позиционировать псевдоэлемент внютри нашего кастомного чекбокса */
-    width: 14px;             /* Обязательно задаем ширину */
-    height: 14px;            /* Обязательно задаем высоту */
-    border: 1px solid #000;
-    border-radius: 0px;
-}
-.checkbox-custom,
-.label {
-    display: inline-block;
-    vertical-align: middle;
-    font-size: 12px;
-    margin-right: 10px;
-}
-.checkbox:checked + .checkbox-custom::before {
-    content: "";    
-    display: block;         
-    position: absolute;     
-    top: 2px;
-    right: 2px;
-    bottom: 2px;
-    left: 2px;
-    background-image: url(../img/galochka.png); 
-    -webkit-background-size: cover;
-        background-size: cover;
-    border-radius: 2px;
-}
 /*Плейсхолдеры--------------------------*/
 input[type="text"]::-webkit-input-placeholder {
 	
@@ -199,945 +61,666 @@ input[type="text"]:-ms-input-placeholder {
 input [type="text"] {
 	
 }
-/*Хедер=================================================================================*/
-header {
-    background-image: url(../img/header-bg.jpg);
-    height: 125px;
-    position: fixed;
+.faded {
+    position: relative;
+}
+.faded:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
     left: 0;
-    right: 0;
+    top: 0;
+    background-color: rgba(0,0,0,0.6);
+}
+.faded * {
+    position: relative;
+    z-index: 10;
+}
+button {
+    cursor: pointer;
+}
+/*Хедер----------------------------------------------------------------*/
+.header {
+    position: absolute;
+    left: 0;
     top: 0;
     width: 100%;
-    z-index: 5;
-}
-header .row {
-    margin-left: 0;
-    margin-right: 0;
-}
-#header-menu {
-    margin-top: 125px;
-    position: fixed;
-    background-color: #fff;
-    width: 100%;
+    height: 50px;
+    background-color: rgba(0,0,0,0.3);
     z-index: 10;
-    padding-top: 17px;
-    padding-bottom: 30px;
-    background-image: url(../img/revuse_back.jpg);
-    height: 100vh;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+    color: #fff !important;
+    padding-top: 5px;
 }
-#header-menu a {
-    display: block;
-    text-align: center;
-    font-size: 19px;
-    font-weight: 500;
+.header a {
     color: #fff;
-    width: 230px;
-    background-color: #468B98;
-    padding-top: 6px;
-    padding-bottom: 6px;
-    margin-bottom: 5px;
-    margin-left: auto;
-    margin-right: auto;
+    font-weight: 500;
 }
-#header-menu a.first-link {
-    font-size: 16px;
+.header a:hover {
     text-decoration: none;
 }
-#header-menu a.first-link span {
-    border-bottom: 1px dashed #333;
-
+.icon {
+    max-width: 15px;
+    display: inline-block;
+    margin-right: 15px;
 }
-#header-menu a.first-link img {
-    margin-right: 20px;
+.header button {
+    display: block;
+    background: transparent;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    font-weight: 300;
+    font-size: 12px;
+    margin-top: -4px;
+    border-bottom: 1px dashed #fff;
 }
-#header-menu .row {
-    margin-left: 0;
+.header .text-center {
+    line-height: 43px;
+    font-size: 30px;
+    font-weight: 200;
+}
+.header p {
+    font-weight: 500;
+}
+.header .text-right button {
+    margin-left: auto;
+}
+.header .text-right p, .header .text-right img {
+    display: inline;
+}
+.header .text-right img {
     margin-right: 0;
-    font-size: 14px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    margin-left: 15px;
 }
-#header-menu .row a {
+/*Слайдер--------------------------------------------------------------*/
+.slider {
+    height: 680px;
+}
+.slider-parent {
     padding-left: 0;
     padding-right: 0;
 }
-.logo a {
-    margin: auto;
-    display: block;
+.slider1 {
+    background-image: url(../img/slider1.jpg);
+    padding-top: 200px;
+}
+.slider2 {
+    background-image: url(../img/slider2.jpg);
+    padding-top: 200px;
+}
+.slider3 {
+    background-image: url(../img/slider3.jpg);
+    padding-top: 200px;
+}
+.slider4 {
+    background-image: url(../img/slider4.jpg);
+    padding-top: 200px;
+}
+.slider-inner {
+    color: #fff;
+}
+h1 {
+    position: absolute;
+    z-index: 20;
     color: #fff;
     font-weight: 400;
-    text-align: center;
-}
-.logo div {
-    flex: 0 0 100%;
-}
-.logo img {
-    max-height: 70px;
-    margin-top: 7px;
-}
-.logo {
-    max-height: 106px;
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-top: 5px;
-}
-.nelogo {
-   padding-left: 5px;
-   padding-right: 5px;
-}
-.nelogo p {
-    color: #fff;
-    text-align: center;
-    font-size: 13px;
-}
-.nelogo img {
-    margin: 20px auto;
-    display: block;
-}
-.first {
-    height: 100vh;
-    background-image: url(../img/back.jpg);
-    /*position: relative;*/
-}
-.top-text {
-    position: absolute;
-    top: 26%;
+    top: 120px;
     width: 100%;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
-    background-image: url(../img/top_text.png);
-    left: 0;
-    background-size: 100% 100%;
-}
-.top-text p {
     text-align: center;
-    top: 3px;
-    color: #fff;
-    font-size: 8.5vw;
-    display: block;
-    margin: auto;
-    line-height: 1.7;
 }
-.car-left {
-    position: absolute;
-    bottom: 75px;
-    max-width: 320px;
-    left: 0;
+.slider h3 {
+    max-width: 500px;
+    font-size: 44px;
+    margin-bottom: 30px;
 }
-.first .zakazat-zvonok {
-    position: absolute;
-    bottom: 3%;
-    left: 50%;
-    margin-left: -135px;  
+.slider p {
+    max-width: 400px;
 }
-.zakazat-zvonok {
-    line-height: 1.5;
-    width: 270px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    background-color: #C80200;
+.slider a, .zayavka button, #exampleModal button[type="submit"] {
+    font-weight: 500;
     font-size: 20px;
+    padding: 10px 20px;
+    margin-top: 30px;
+    display: inline-block;
+    border: 3px solid #EAB300;
+    border-radius: 36px;
+    transition: 0.4s;
+    background-color: #eab300;
     color: #fff;
-    text-transform: uppercase;
-    font-stretch: condensed;
-    font-weight: 300;
-    border-radius: 5px;
 }
-.disc-left {
-    position: absolute;
-    bottom: 83px;
-    width: 157px;
-    margin-top: 27px;
-    left: 42px;
-    -webkit-animation: rotate_bottom-left 5s linear infinite;
-    -moz-animation: rotate_bottom-left 5s linear infinite;
-    animation: rotate_bottom-left 5s linear infinite;
-}
-.mobile, .mobile:hover, .mobile:active, .mobile:visited {
-    text-align: center;
-    color: #fff;
-    font-size: 26px;
-    font-weight: 400;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+.slider a:hover, .zayavka button:hover, #exampleModal button[type="submit"]:hover {
+    background: transparent;
+    color: #EAB300;
+    transition: 0.4s;
     text-decoration: none;
 }
-#index-blur {
-/*    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: 10;
-*/
-}
-#uznat {
-    background-color: #fff;
-}
-#uznat .modal-content {
-    background-color: rgba(255,255,255,0.6);
-}
-/*Процесс восстановления---*/
-.process {
-    background-image: url(../img/scroll_back2.jpg);
-    color: #fff;
-    padding-top: 30px;
-}
-.process .card {
-    background-color: transparent;
-    border: none;
-}
-.process .card a {
-    color: #fff;
-}
-.level-back {
-    width: 263px;
-    margin-left: 17px;
-}
-.number-back {
-    position: absolute;
-    left: 0;
-    top: 0;
-    max-height: 44px;
-}
-.scenes {
-    position: relative; 
-    -webkit-background-size: 100% 100%;
-    background-size: 250px 100%;
-    background-repeat: no-repeat;
-    background-position-x: right;
-    display: table;
-    margin: auto;
-}
-.scenes p {
-    
-    font-size: 14px;
-    position: absolute;
-    top: 7px;
-    left: 77px;
-    max-width: 187px;
-    color: #fff;
-    font-weight: 300;
-}
-.process .card-body img {
-    margin: 0 auto;
-    display: block;
-    max-width: 270px;
-}
-.process .card-body {
-    position: relative;
-    pointer-events: none;
-}
-.process .card-body .after {
-    content: "";
-    position: absolute;
-    right: 0;
-    top: 50%;
-    margin-top: -35px;
-    width: 37px;
-    height: 70px;
-    background-image: url(../img/right.svg);
-    -webkit-background-size: cover;
-    background-size: cover;
-    pointer-events: all;
-}
-.process .card-body .before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 50%;
-    margin-top: -35px;
-    width: 37px;
-    height: 70px;
-    background-image: url(../img/left.svg);
-    -webkit-background-size: cover;
-    background-size: cover;
-    pointer-events: all;
-}
-.process h5.h5 {
-    background-image: url(../img/title_back.png);
-    -webkit-background-size: 100% 100%;
-    background-size: 100% 100%;
-    font-size: 17px;
-    text-align: center;
-    padding-top: 7px;
-    padding-bottom: 7px;
-    margin-bottom: 15px;
-}
-.process .row {
-    margin-top: 25px;
-    padding-bottom: 30px;
-    position: relative;
-}
-.process .row p {
-    padding-left: 15px;
-    padding-right: 15px;
-    font-size: 14px;
-    font-weight: 400;
-    background-image: url(../img/top_text.png);
-    -webkit-background-size: 100% 100%;
-    background-size: 100% 100%;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 15px;
-    padding-bottom: 30px;
-}
-.dalee {
-    position: absolute;
-    font-size: 16px;
-    color: #fff;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    /*background: linear-gradient(to bottom, rgba(70, 129, 147, 0.03), rgba(35, 65, 74,0.8) 25%);*/
-    /*display: none;*/
+.carousel-indicators li, .carousel-indicators li.active, .jcarousel-pagination a {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    margin-left: 4px;
+    margin-right: 4px;
+    border: 2px solid #eab300;
     background: transparent;
-    bottom: 16px;
-}
-.dalee span {
-    border-bottom: 1px dashed #fff;
-}
-.text .show {
-  cursor:pointer;
-}
-.text .hide {
-  display:none;
-}
-.text.more .show {
-  cursor:auto;
-}
-.text.more .hide {
-  display:inline;
-}
-.text.more .crop {
-  display:none;
-}
-/*Наши услуги--------------*/
-.uslugi {
-    background-color: #e3e3e3;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    text-align: center;
     position: relative;
 }
-.uslugi img {
-    display: block;
-    margin: 0 auto;
+.carousel-indicators li.active:after, .jcarousel-pagination a.active:after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    left: 2px;
+    top: 2px;
+    background-color: #eab300;
+    border-radius: 50%;
 }
-.uslugi h3 {
-    background: url(../img/download_01.png);
-    -webkit-background-size: contain;
-    background-size: 100% 100%;
+.carousel-control-prev img {
+    max-width: 60px;
+    margin-left: -100px;
+}
+.carousel-control-next img {
+    max-width: 60px;
+    margin-right: -100px;
+}
+/*Кнауф------------------------------------------------------*/
+.styazhka {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    position: relative;
+    background: #FBFBFB;
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.33);
+    z-index: 10;
+}
+h2 {
+    font-weight: 200;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+.styazhka p {
+    font-size: 20px;
     margin-bottom: 20px;
 }
-.uslugi .row {
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-.uslugi .row p {
-    font-weight: 400;
-    text-transform: uppercase;
-    min-height: 75px;
-}
-.uslugi .row .col-8 p {
-    min-height: 0px;
-}
-.uslugi .row a, .uslugi .row a:active, .uslugi .row a:focus, .uslugi .row a:visited {
-    font-size: 14px;
-    border-bottom: 1px dashed #333;
-    padding-bottom: 2px;
-    text-decoration: none;
-    color: inherit;
-}
-.uslugi .row a:hover {
-    border-bottom: 1px dashed transparent;
-}
-.uslugi-text {
-    margin-top: 30px;
-    font-size: 14px;
-    display: block;
-    background-image: url(../img/top_text.png);
-    background-size: 100% 100%;
-    color: #fff;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 20px;
-    padding-bottom: 30px;
-    background-repeat: repeat-y;
-    text-align: left;
-}
-.feedback-img {
-    background-image: url(../img/video-thumbnail.jpg);
-    margin-right: 10px;
-    margin-bottom: 10px;
-}
-.feedback-img img {
-    max-width: 130px;
-}
-.otzyv {
-    margin-bottom: 15px;
-}
-.otzyv img {
-    max-width: 130px;
-    height: auto;
-    float: left;
-    margin-right: 10px;
-    margin-bottom: 10px;
-}
-.otzyv .name {
-    font-size: 20px;
-}
-.otzyv img {
-    position: relative;
-    display: block;
-}
-.otzyv img::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    background-color: rgba(0,0,0,1);
-}
-.name {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-.text-feedback {
-    font-size: 14px;
-}
-.poop {
-    margin-bottom: 15px;
-
-}
-.poop1 {
+.styazhka .row {
     margin-top: 50px;
 }
-/*Cтраница "Ремонт"------------------------------------------------------------------------*/
-/*Cтраница "Ремонт"------------------------------------------------------------------------*/
-/*Cтраница "Ремонт"------------------------------------------------------------------------*/
-.remont-first-block {
-    background-image: url(../img/remont_back.jpg);
-    height: 70vh;
+.styazhka .row img {
+    max-width: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+p.styazhka-zagolovok {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center;
     position: relative;
+    padding-bottom: 5px;
+}
+p.styazhka-zagolovok:after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 1px;
+    left: 50%;
+    bottom: 0;
+    margin-left: -50px;
+    background-color: #eab300;
+}
+p.styazhka-text {
+    font-size: 14px;
+    text-align: center;
+    color: #707070;
+}
+.knauf-logo {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 50px;
+}
+.styazhka .row .col-md-6 img {
+    max-width: 100%;
+}
+.video {
+    background-image: url(../img/video.jpg);
+    width: 400px;
+    height: 266px;
+    margin: auto;
+    position: relative;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.37);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.37);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.37);
+    outline: none;
+}
+.video-parent {
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
     display: flex;
-    padding-top: 120px;
-
 }
-.remont-first-block h1 {
-    display: block;
-    margin: auto;
-    width: 100%;
-    left: 10%;
-    top: 30%;
+.video:after {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    left: 50%;
+    top: 50%;
+    margin-top: -60px;
+    margin-left: -60px;
+    background-image: url(../img/play-button.svg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    transition: 0.4s;
+}
+.video:hover:after {
+    transform: scale(1.2);
+    transition: 0.4s;
+}
+/*Наши услуги-------------------------------------------------*/
+.uslugi {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    position: relative;
+    background: #FFF;
+}
+.uslugi-main-text {
+    font-size: 20px;
+    margin-bottom: 40px;
     text-align: center;
+}
+.uslugi .row img {
+    /*filter: grayscale(80%);*/
+    cursor: pointer;
+    transition: 0.3s;
+}
+.uslugi .row img:hover {
+    filter: none;
+    transition: 0.3s;
+}
+.uslugi .row .row p {
     color: #fff;
-    background-image: url(../img/sand_plash.png);
-    -webkit-background-size: 100% 100%;
-    background-size: 100% 100%;
+    position: relative;
+    z-index: 10;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 600;
 }
-.remont-second {
-    padding-top: 30px;
-    padding-bottom: 30px;
+.uslugi .row .row {
+    margin-bottom: 30px;
 }
-.remont-second p {
-    margin-bottom: 15px;
+.uslugi .col-md-3 div, .uslugi .col-md-6 div {
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.35);
+-moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.35);
+box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.35);
+    height: 100%;
+    padding: 25px;
+    min-height: 250px;
+    position: relative;
 }
-.card-header {
-    background-color: transparent;
-    border-bottom: none;
+.uslugi .col-md-3 div:after, .uslugi .col-md-6 div:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
 }
-.card {
-    margin-left: -15px;
-    margin-right: -15px;
+.bg1 {
+    background-image: url(../img/dizain-intererov.jpg);
 }
-.card .col-4 {
-    padding-left: 5px;
-    padding-right: 5px;
-    font-size: 14px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+.bg2 {
+    background-image: url(../img/2.jpg);
 }
-.top-item {
-    background-color: #e8e8e8;
+.bg3 {
+    background-image: url(../img/Kak-kleit-oboi-na-gipsokarton6.jpg);
 }
-.card a, .card a:active, .card a:focus, .card a:visited {
-    color: #333;
-    text-decoration: none;
+.bg4 {
+    background-image: url(../img/3.jpg);
 }
-.remont-second .zakazat-zvonok {
-    margin-top: 30px;
+.bg5 {
+    background-image: url(../img/natjazhnye-potolki-sao.jpg);
+}
+.bg6 {
+    background-image: url(../img/vybor-laminata.jpg);
+}
+.uslugi button {
+    position: relative;
+    z-index: 10;
+    margin-top: 20px;
+    background: transparent;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    cursor: pointer;
+}
+.pa {
+    box-shadow: none !important;
+    height: auto !important;
+    background: transparent !important;
+    padding: 0 !important;
+    min-height: 0 !important;
+    position: absolute !important;
+    left: 25px !important;
+    bottom: 25px !important;
+    right: 25px;
+}
+.pa:after {
+    display: none !important;
+}
+/*Портфолио------------------------------------------------------*/
+.portfolio {
+    box-shadow: 0px -3px 5px 0px rgba(0,0,0,0.33);
+    padding-top: 50px;
+    padding-bottom: 80px;
+    position: relative;
+    z-index: 10;
+    background-color: #fbfbfb;
+}
+.jcarousel-control-next {
+    background-image: url(../img/right-arrow.svg);
+}
+/*Оставить заявку------------------------------------------------*/
+.zayavka {
+    min-height: 580px;
+    background-image: url(../img/bg-zayavka.jpg);
+    position: relative;
+    z-index: 10;
+    margin-top: -1px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.zayavka:after {
+/*    background-color: rgba(255,255,255,0.9);*/
+background: linear-gradient(to bottom, rgba(251,251,251,1), rgba(255,255,255,0.7))
+}
+.worker {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.zayavka .container {
+    padding-left: 300px;
+}
+.zayavka form {
+    max-width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 116px;
+    background: rgba(255,255,255,0.5);
+    padding: 30px;
+    border-radius: 10px;
+}
+.zayavka form input[type="text"], .modal-body form input[type="text"] {
+    width: 100%;
+    height: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #787878;
+    color: #000;
+    outline: none;
+    background: rgba(255,255,255,0.5);
+    font-family: Roboto;
+}
+.zayavka input[type="text"]::-webkit-input-placeholder, .modal-body input[type="text"]::-webkit-input-placeholder {
+    font-family: Roboto;
+    font-size: 14px;    
+}
+.zayavka input[type="text"]::-moz-placeholder {
+    font-family: Roboto;
+    font-size: 14px;    
+}
+/* Firefox 19+ */
+.zayavka input[type="text"]:-moz-placeholder {
+    font-family: Roboto;
+    font-size: 14px;    
+}
+/* Firefox 18- */
+.zayavka input[type="text"]:-ms-input-placeholder {
+    font-family: Roboto;
+    font-size: 14px;    
+}
+label {
+    font-size: 10px;
+    display: inline;
+    margin-left: 20px;
+}
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #787878;
+    background: rgba(255,255,255,0.5);
+    outline:none;
+    border-radius: 3px;
+    position: relative;
+    vertical-align: middle;
+}
+input[type="checkbox"]:checked:after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-image: url(../img/checked.svg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    left: 1px;
+    top: 1px;
+}
+.zayavka button {
+    margin-top: 0;
     margin-left: auto;
     margin-right: auto;
     display: block;
+    padding-left: 50px;
+    padding-right: 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-bottom: -15px;
 }
-
-/*Модальное окно "Узнать цену----------------------------------------------*/
-#uznat .modal-dialog {
-    margin: 0;
-}
-#uznat .modal-content {
-    height: 100vh;
-    border-radius: 0;
-    padding-top: 100px;
-    text-align: center;
-    padding-left: 25px;
-    padding-right: 25px;
-}
-#uznat .modal-content input {
-    margin: 0 auto;
-    border-radius: 0;
-}
-#uznat .modal-content .close {
-    font-size: 40px;
-    position: absolute;
-    top: 10px;
-    right: 20px;
-}
-#uznat .modal-content p {
-    font-size: 24px;
-    margin-bottom: 30px;
-}
-#uznat input[type="text"] {
-    border:1px solid #262626;
-}
-#uznat input[type="text"]::-webkit-input-placeholder {
-    font-family: Roboto;
-    font-size: 16px;
-}
-#uznat input[type="text"]::-moz-placeholder {
-    font-family: Roboto;
-    font-size: 16px;
-}
-/* Firefox 19+ */
-#uznat input[type="text"]:-moz-placeholder {
-    font-family: Roboto;
-    font-size: 16px;
-}
-/* Firefox 18- */
-#uznat input[type="text"]:-ms-input-placeholder {
-    font-family: Roboto;
-    font-size: 16px;
-}
-#uznat input [type="text"] {
-    font-family: Roboto;
-    font-size: 16px;
-}
-#uznat .has-error input {
-    -webkit-box-shadow: 0px 0px 5px 3px rgba(176,0,0,0.45);
-    -moz-box-shadow: 0px 0px 5px 3px rgba(176,0,0,0.45);
-    box-shadow: 0px 0px 5px 3px rgba(176,0,0,0.45);
-}
-#uznat button[type="submit"] {
-    position: absolute;
-    bottom: 3%;
-    left: 50%;
-    margin-left: -135px;
-}
-#uznat .label {
-    display: inline;
-}
-#uznat label {
-    text-align: left;
-    font-size: 13px;
-    margin-top: 20px;
-}
-.our-works {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    background-image: url(../img/beton.jpg);
-    color: #fff;
-}
-.our-works h3 {
-    text-align: center;
-    margin-bottom: 30px;
+/*Контакты-------------------------------------------------------*/
+#map {
+    min-height: 700px;
 }
 .contacts {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    background-image: url(../img/back.jpg);
-    color: #fff;
+    padding-left: 0;
+    padding-right: 0;
+    position: relative;
 }
-.contacts-main-block img {
-    max-width: 24px;
-   
+.contacts h2 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    top: 50px;
+    margin-left: auto;
 }
 .contacts-main-block {
-     background-color: rgba(39, 39, 39,0.7);
-     padding: 24px 38px;
+    position: absolute;
+    width: 300px;
+    height: 540px;
+    right: 50px;
+    background: #eab300;
+    top: 85px;
+    padding: 20px;
+    color: #fff;
+    z-index: 10;
+}
+.contacts-main-block p:first-child {
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.contacts-main-block:after {
+    content: "";
+    position: absolute;
+    width: 310px;
+    height: 550px;
+    border:2px solid #eab300;
+    left: -5px;
+    top: -5px;
+    z-index: 5;
+}
+.contacts-main-block * {
+    position: relative;
+    z-index: 1000;
 }
 .contacts-main-block a {
     color: #fff;
+    margin-bottom: 10px;
+    padding-left: 30px;
+
 }
-.contacts h6 {
-    margin-bottom: 20px;
+.one-line-a, .two-lines-a {
+    padding-left: 30px;
+    -webkit-background-size: 10px 10px;
+    background-size: 16px 16px;
+    -ms-background-position-x: 5px;
+    background-position-x: 5px;
+    -ms-background-position-y: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    margin-bottom: 10px;
+    display: block;
 }
-.contacts button {
-    width: 238px;
+.one-line-a1 {
+    background-image: url(../img/telephone.svg);
 }
-.contacts p {
-    font-weight: 300;
+.contacts-main-block button {
     margin-bottom: 15px;
-}
-.contacts p img {
-    margin-right: 15px;
-}
-.img-contacts {
-    margin: 25px auto;
     display: block;
-}
-#map {
-    margin-bottom: 25px;
-    margin-top: 25px;
-}
-
-.contacts .zakazat-zvonok {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-.footer {
-    background-color: #171717;
-    font-size: 19px;
-    color: #fff;
-    font-weight: 400;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-.result {
-    padding-top: 20px;
-    background-image: url(../img/beton.jpg);
-    padding-bottom: 30px;
-    position: relative;
-}
-h6 {
-    text-align: center;
-    font-size: 26px;
-    color: #fff;
-    background-image: url(../img/garant_back.png);
-    -webkit-background-size: 100% 100%;
-    background-size: 100% 100%;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    font-weight: 400;
-}
-.result h6 {
-    margin-bottom: 37px;
-}
-.krutoy h6 {
-    font-weight: 200;
-    font-size: 21px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
-.cocoen-drag::before {
+    width: 250px;
+    background: transparent;
     border: 2px solid #fff;
-    content: '< >';
-    height: 22px;
-    left: 50%;
-    margin-left: -15px;
-    margin-top: -9px;
-    position: absolute;
-    top: 50%;
-    width: 32px;
-    background: #5A5854;
+    margin-top: 15px;
     color: #fff;
-    font-weight: 500;
-    padding-top: 9px;
-    padding-left: 4px;
-    font-family: Roboto;
+    border-radius: 30px;
+    height: 40px;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
 }
-.cocoen {
-    position: relative;
+.one-line-a3 {
+    background-image: url(../img/close-envelope1.svg);
 }
-.cocoen:before {
-    content: "До";
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    background-color: rgba(83, 83, 83, 0.6);
-    color: #fff;
-    z-index: 1000;
-    padding: 15px 13px;
-    border-radius: 2px;
+.one-line-a2 {
+    background-image: url(../img/whatsapp.svg);
 }
-.cocoen:after {
-    content: "После";
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    background-color: rgba(83, 83, 83, 0.6);
-    color: #fff;
-    z-index: 1000;
-    padding: 15px 13px;
-    border-radius: 2px;
+.one-line-a4 {
+    background-image: url(../img/home.svg);
 }
-.slick-prev {
-    position: absolute;
-    left: -15px;
-    z-index: 1;
-    top: 27%;
-    background: url(../img/left.svg);
-    -webkit-background-size: cover;
-    background-size: cover;
-    width: 37px;
-    height: 70px;
-}
-.slick-list.draggable {
-    border: 2px solid #fff;
-}
-.slick-next {
-    position: absolute;
-    right: -15px;
-    z-index: 1;
-    top: 27%;
-    background: url(../img/right.svg);
-    -webkit-background-size: cover;
-    background-size: cover;
-    width: 37px;
-    height: 70px;
-}
-.feedbackn .slick-next {
-    right: 0;
-}
-.feedbackn .slick-prev {
-    left: 0;
-}
-.slick-dots li {
-    display: inline-block;
-    padding-left: 5px;
-    padding-right: 5px;
-}
-.slick-dots li button {
-    height: 15px;
-    width: 15px;
-    border-radius: 50%;
-    background-color: #fff;
-    border:2px solid #535353;
-    font-size: 0;
-    line-height: 0;
-    color: transparent;
-}
-.slick-dots .slick-active button {
-    position: relative;
-}
-.slick-dots .slick-active button:after {
-    position: absolute;
-    content: "";
-    width: 10px;
-    height: 9px;
-    background-color: #535353;
-    left: 1px;
-    top: 1px;
-    z-index: 10;
-    border-radius: 50%;
-}
-
-.slick-dots {
-    margin: auto;
-    width: 100%;
-    text-align: center;
-    padding-left: 0;
+.fz14 {
+    font-size: 14px;
     margin-top: 10px;
 }
-.result .text {
-    color: #fff;
-    font-size: 14px;
-    font-weight: 300;
-    margin-top: 35px;
-    background-image: url(../img/top_text.png);
-    -webkit-background-size: 100% 100%;
-    background-size: 100% 100%;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 15px;
-    padding-bottom: 30px;
+.two-lines-a {
+    background-image: url(../img/maps-and-flags.svg);
 }
-/*Отзывы - новый блок-------------------------*/
-.feedbackn {
-    padding-top: 20px;
-    padding-bottom: 30px;
-    background-image: url(../img/revuse_back.jpg);
-    position: relative;
-    font-size: 14px;
-    color: #fff;
-    padding-left: 0;
-    padding-right: 0;
+img[src="https://maps.gstatic.com/mapfiles/api-3/images/google_white5.png"], .gmnoprint, a[target="_new"] {
+    display: none;
 }
-.feedbackn .row {
-    /*margin-left: 0;
-    margin-right: 0;*/
-    padding-left: 25px;
-    padding-right: 25px;
-    margin-bottom: 15px;
-}
-.feedbackn .row .col-6 {
-    padding-left: 5px;
-    padding-right: 5px;
-
-}
-.feedbackn .row .col-6 p {
-    margin-left: 5px;
-}
-.feedbackn .slick-list.draggable {
-    padding-top: 24px;
-    /*padding-left: 15px;
-    padding-right: 15px;*/
-    background-color: rgba(46, 46, 46,0.4);
-    padding-bottom: 10px;
-}
-.feedbackn .video {
-    border:1px solid #000;
-}
-.feedbackn .slick-list {
-    font-size: 14px;
-}
-.feedbackn img {
-    margin: 0 auto;
-}
-.feedbackn .row a {
-    position: relative;
-    display: block;
-}
-.feedbackn .row a:after {
-    content: "";
+/*Футер--------------------------------------------------------------*/
+footer {
     position: absolute;
-    background-image: url(../img/ic_play_arrow_24px.svg);
-    -webkit-background-size: cover;
-    background-size: cover;
-    width: 27px;
-    height: 34px;
-    left: 50%;
-    top: 50%;
-    margin-top: -17px;
-    margin-left: -13px;
-}
-.feedbackn .gray {
-    border:1px solid #95989A;
-}
-.feedbackn p.text {
-    margin-left: 15px;
-    margin-right: 15px;
-    margin-top: 15px;
-    background-image: url(../img/top_text.png);
-    -webkit-background-size: 100% 100%;
-    background-size: 100% 100%;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 15px;
-    padding-bottom: 30px;
-}
-/*Крутой тюнинг дисков--------------------------------*/
-.krutoy {
-    background-image: url(../img/tapki.jpg);
-    padding-top: 20px;
-    -ms-background-position: top left;
-    background-position: top left;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.4));
+    line-height: 40px;
+    text-align: center;
     color: #fff;
-    overflow: hidden;
-    position: relative;
+    font-weight: 600;
 }
-.planka {
-    background-image: url(../img/cool_plash.svg);
-    -webkit-background-size: 100% 100%;
-    background-size: 100% 100%;
-    font-size: 16px;
-    background-repeat: no-repeat;
-    width: 212px;
-    height: 69px;
+/*Модальное окно-----------------------------------------------------*/
+.modal-content {
+    width: 360px;
     margin-left: auto;
-    padding-left: 26px;
-    margin-right: -33px;
+    margin-right: auto;
+    height: 360px;
+    padding: 30px;
+}
+.modal-body {
+    padding: 0;
+}
+.modal-body h3 {
+    text-align: center;
+    font-weight: 200;
+    margin-bottom: 30px;
+}
+.modal-body button[type="submit"] {
+    text-transform: uppercase !important;
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+.close {
+    position: absolute;
+    right: -15px;
+    top: -15px;
+}
+.has-error input {
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(191,0,0,1);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(191,0,0,1);
+    box-shadow: 0px 0px 5px 0px rgba(191,0,0,1);
+}
+/*Кнопка "Заказать звонок"-------------------------------------------*/
+.fixed-button {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    z-index: 100;
+    border-radius: 35px 0 0 35px;
+    width: 145px;
+    line-height: 28px;
+    color: #fff;
+    font-size: 23px;
+    letter-spacing: -0.8px;
+    background: #eab300;
+    padding-left: 18px;
+    font-weight: 200;
+    display: none;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+}
+.dn {
+    display: none;
+}
+.portfolio li p {
+    margin-top: 0;
+    line-height: 30px;
+    min-height: 60px;
+    text-align: center;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.portfolio li {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.portfolio li div {
+    box-shadow: 0px 5px 16px -1px rgba(0,0,0,0.23);
     margin-bottom: 10px;
 }
-.planki {
-    margin-top: 90px;
-    margin-bottom: 40px;
+.discont {
+    margin-top: 150px;
 }
-.krutoy .text {
-    background-color: rgba(38, 38, 38,0.9);
-    margin-left: -15px;
-    margin-right: -15px;
-    padding: 20px 15px;
-    font-size: 14px;
-}
-.krutoy .dalee {
-        background: linear-gradient(to bottom, rgba(70, 129, 147, 0.03), rgba(28, 28, 28,0.9) 25%);
-        bottom: 0;
-}
-.single-item {
-    position: relative;
-}
-.read_more {
-    display: inline;
-}
-/*Модальное окно "Спасибо за заявку"--------------------*/
-#spasibo .modal-content {
-    text-align: center;
-    width: 100%;
-    height: 100vh;
-    padding-top: 100px;
-}
-#spasibo .modal-content img {
-    max-width: 60%;
-}
-#spasibo .modal-content p {
-    font-size: 20px;
-}
-#spasibo .modal-content p.text-center {
-    font-size: 34px;
-    text-transform: uppercase;
-    margin-top: 20px;
-    margin-bottom: 40px;
-}
-#spasibo .modal-dialog {
-    margin: 0;
-    width: 100%;
-}
-#spasibo img {
-    margin: 0 auto;
-}
-/*Полировка-----------------------------------------------------------*/
-#polirovka .remont-first-block {
-    background-image: url(../img/polish_back.jpg);
-}
-/*Покраска-----------------------------------------------------------*/
-#pokraska .remont-first-block {
-    background-image: url(../img/color_back.jpg);
-}
-#pokraska h1 {
-    font-size: 2.3em;
-}
-/*Ремонт мото-дисков-----------------------------------------------------------*/
-#moto .remont-first-block {
-    background-image: url(../img/moto_back_header.jpg);
-}
-#moto h1 {
-    font-size: 2em;
-}
-/*ПЕСКОСТРУЙНАЯ ОБРАБОТКА ДИСКОВ-----------------------------------------------------------*/
-#obrabotka .remont-first-block {
-    background-image: url(../img/sand_back.jpg);
-}
-#obrabotka h1 {
-    font-size: 1.8em;
-}
-/*Цены-----------------------------------------------------------*/
-#prices .remont-first-block {
-    background-image: url(../img/back.jpg);
-}
-.pinned {
-    width: 50%;
-}
-div.table-wrapper div.scrollable {
-    margin-left: 50%;
+.discont h2 {
+    margin-bottom: 0;
 }

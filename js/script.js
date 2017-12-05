@@ -1,262 +1,219 @@
-// Инициализация свайпа каруселей----------------------------------
-// $('.jcarousel')
-//     .jcarousel()       // init jcarousel
-//     .jcarouselSwipe(); // init jcarouselSwipe
-$(document).ready(function(){
-      $('.single-item').slick({
-        swipe: false,
-        prevArrow: '<button type="button" class="slick-prev"></button>',
-        nextArrow: '<button type="button" class="slick-next"></button>',
-        dots: true
-      });
-    });
+// Инициализация свайпа каруселей
+$('.jcarousel')
+    .jcarousel()       // init jcarousel
+    .jcarouselSwipe(); // init jcarouselSwipe
 // Маска-----------------------------------------------------------
 jQuery(function($){
-   $("#phone-form").mask("+7 (999) 999-9999");
+   $(".phone-input").mask("+7 (999) 999-9999");
 });
-// Кнопка хедера---------------------------------------------------
-$(document).ready(function(){
-$( ".hamburger" ).click(function() {
-    $(this).toggleClass("is-active");
-});  
-});
-// Появление меню при скролле вверх--------------------------------
-$(document).ready(function() {
-	
-	var header = $("header"); // Меню
-	var scrollPrev = 0 // Предыдущее значение скролла
-	
-	$(window).scroll(function() {
-		var scrolled = $(window).scrollTop(); // Высота скролла в px
-		var firstScrollUp = false; // Параметр начала сколла вверх
-		var firstScrollDown = false; // Параметр начала сколла вниз
-		
-		// Если скроллим
-		if ( scrolled > 0 ) {
-			// Если текущее значение скролла > предыдущего, т.е. скроллим вниз
-			if ( scrolled > scrollPrev ) {
-				firstScrollUp = false; // Обнуляем параметр начала скролла вверх
-				// Если меню видно
-				if ( scrolled < header.height() + header.offset().top ) {
-					// Если только начали скроллить вниз
-					if ( firstScrollDown === false ) {
-						var topPosition = header.offset().top; // Фиксируем текущую позицию меню
-						header.css({
-							"top": topPosition + "px"
-						});
-						firstScrollDown = true;
-					}
-					// Позиционируем меню абсолютно
-					header.css({
-						"position": "absolute"
-					});
-				// Если меню НЕ видно
-				} else {
-					// Позиционируем меню фиксированно вне экрана
-					header.css({
-						"position": "fixed",
-						"top": "-" + header.height() + "px"
-					});
-				}
-				
-			// Если текущее значение скролла < предыдущего, т.е. скроллим вверх
-			} else {
-				firstScrollDown = false; // Обнуляем параметр начала скролла вниз
-				// Если меню не видно
-				if ( scrolled > header.offset().top ) {
-					// Если только начали скроллить вверх
-					if ( firstScrollUp === false ) {
-						var topPosition = header.offset().top; // Фиксируем текущую позицию меню
-						header.css({
-							"top": topPosition + "px"
-						});
-						firstScrollUp = true;
-					}
-					// Позиционируем меню абсолютно
-					header.css({
-						"position": "absolute"
-					});
-				} else {
-					// Убираем все стили
-					header.removeAttr("style");
-				}
-			}
-			// Присваеваем текущее значение скролла предыдущему
-			scrollPrev = scrolled;
-		}	
-	});			
-});
-// Разворот текста-----------------------------
-var maxc = 200,
-    crop = '<span class="crop">...</span>';
-$('.process .text').each(function(){
-  var text = $(this),
-      html = text.html(),
-      html_hide = '<span class="hide">' + html.substring(maxc) + '</span>',
-      html_show = '<span class="show">' + html.substring(0, maxc) + '</span>';
-  text.html(html_show + crop + html_hide);
-});
-$('.process .row button').click(function(){
-  $(".show").parent('.process .text').addClass('more');
-  $(this).css("display", "none");
-});
+// Карта
+//GoogleMap--------------------------------------------------------------------------
+                  function initMap() {
+                    var uluru = {lat: 54.752301, lng: 55.985875};
+                    var map = new google.maps.Map(document.getElementById('map'), {
+                      zoom: 16,
+                      center: uluru,
+                      scrollwheel: false,
+                      minZoom: 10,
 
-var maxc = 200,
-    crop = '<span class="crop">...</span>';
-$('.uslugi .text').each(function(){
-  var text = $(this),
-      html = text.html(),
-      html_hide = '<span class="hide">' + html.substring(maxc) + '</span>',
-      html_show = '<span class="show">' + html.substring(0, maxc) + '</span>';
-  text.html(html_show + crop + html_hide);
-});
-$('.uslugi button').click(function(){
-  $(".show").parent('.uslugi .text').addClass('more');
-  $(".uslugi").css("padding-bottom", "30px");
-  $(this).css("display", "none");
-});
-
-var maxc = 150,
-    crop = '<span class="crop">...</span>';
-$('.result .text').each(function(){
-  var text = $(this),
-      html = text.html(),
-      html_hide = '<span class="hide">' + html.substring(maxc) + '</span>',
-      html_show = '<span class="show">' + html.substring(0, maxc) + '</span>';
-  text.html(html_show + crop + html_hide);
-});
-$('.result button').click(function(){
-  $(".show").parent('.result .text').addClass('more');
-  $(".result").css("padding-bottom", "30px");
-  $(this).css("display", "none");
-});
-
-var maxc = 150,
-    crop = '<span class="crop">...</span>';
-$('.feedbackn .text').each(function(){
-  var text = $(this),
-      html = text.html(),
-      html_hide = '<span class="hide">' + html.substring(maxc) + '</span>',
-      html_show = '<span class="show">' + html.substring(0, maxc) + '</span>';
-  text.html(html_show + crop + html_hide);
-});
-$('.feedbackn button').click(function(){
-  $(".show").parent('.feedbackn .text').addClass('more');
-  $(".feedbackn").css("padding-bottom", "30px");
-  $(".feedbackn p").css("padding-bottom", "15px");
-  $(this).css("display", "none");
-});
-
-var maxc = 150,
-    crop = '<span class="crop">...</span>';
-$('.krutoy .text').each(function(){
-  var text = $(this),
-      html = text.html(),
-      html_hide = '<span class="hide">' + html.substring(maxc) + '</span>',
-      html_show = '<span class="show">' + html.substring(0, maxc) + '</span>';
-  text.html(html_show + crop + html_hide);
-});
-$('.krutoy button').click(function(){
-  $(".show").parent('.krutoy .text').addClass('more');
-  $(this).css("display", "none");
-});
-// Запрет прокрутки-----------------------------
-$('#header-menu').on('show.bs.collapse', function () {
-  $("body").css("overflow", "hidden");
-  $("#nelogop").html("Закрыть");
-})
-$('#header-menu').on('hidden.bs.collapse', function () {
-  $("body").css("overflow", "auto");
-  $("#nelogop").html("МЕНЮ");
-})
-// Сосоеп-----------------------------------------
-$('.cocoen').cocoen();
-// Всплытие окна "Спасибо за заявку"--------------
-$(document).ready(function(){
-$('#uznat button').click(function() {
-    if($(this).hasClass("disabled"))
-        {}
-    else {
-    $('#uznat').modal('hide');
-    $("body").attr("style","padding-right:0px");
-    $('#spasibo').modal('show');
-      window.setTimeout(function(){
-     $('#spasibo').modal('hide');
-  }, 4000);
+                      styles: [
+    {
+        "featureType": "water",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#e9e9e9"
+            },
+            {
+                "lightness": 17
+            }
+        ]
+    },
+    {
+        "featureType": "landscape",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#f5f5f5"
+            },
+            {
+                "lightness": 20
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "color": "#ffffff"
+            },
+            {
+                "lightness": 17
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway",
+        "elementType": "geometry.stroke",
+        "stylers": [
+            {
+                "color": "#ffffff"
+            },
+            {
+                "lightness": 29
+            },
+            {
+                "weight": 0.2
+            }
+        ]
+    },
+    {
+        "featureType": "road.arterial",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#ffffff"
+            },
+            {
+                "lightness": 18
+            }
+        ]
+    },
+    {
+        "featureType": "road.local",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#ffffff"
+            },
+            {
+                "lightness": 16
+            }
+        ]
+    },
+    {
+        "featureType": "poi",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#f5f5f5"
+            },
+            {
+                "lightness": 21
+            }
+        ]
+    },
+    {
+        "featureType": "poi.park",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#dedede"
+            },
+            {
+                "lightness": 21
+            }
+        ]
+    },
+    {
+        "elementType": "labels.text.stroke",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "color": "#ffffff"
+            },
+            {
+                "lightness": 16
+            }
+        ]
+    },
+    {
+        "elementType": "labels.text.fill",
+        "stylers": [
+            {
+                "saturation": 36
+            },
+            {
+                "color": "#333333"
+            },
+            {
+                "lightness": 40
+            }
+        ]
+    },
+    {
+        "elementType": "labels.icon",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "transit",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#f2f2f2"
+            },
+            {
+                "lightness": 19
+            }
+        ]
+    },
+    {
+        "featureType": "administrative",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "color": "#fefefe"
+            },
+            {
+                "lightness": 20
+            }
+        ]
+    },
+    {
+        "featureType": "administrative",
+        "elementType": "geometry.stroke",
+        "stylers": [
+            {
+                "color": "#fefefe"
+            },
+            {
+                "lightness": 17
+            },
+            {
+                "weight": 1.2
+            }
+        ]
     }
-});
-});
-// Переключения этапов боковыми кнопками---------
-$(document).ready(function(){
-$( ".cb1 .after" ).click(function() {
-     $('#collapseTwo').collapse('show'); 
-});  
-});
-$(document).ready(function(){
-$( ".cb2 .after" ).click(function() {
-     $('#collapseThree').collapse('show'); 
-});  
-});
-$(document).ready(function(){
-$( ".cb3 .after" ).click(function() {
-     $('#collapseFour').collapse('show'); 
-});  
-});
-$(document).ready(function(){
-$( ".cb4 .after" ).click(function() {
-     $('#collapseFive').collapse('show'); 
-});  
-});
-$(document).ready(function(){
-$( ".cb5 .after" ).click(function() {
-     $('#collapseSix').collapse('show'); 
-});  
-});
-
-$(document).ready(function(){
-$( ".cb2 .before" ).click(function() {
-     $('#collapseOne').collapse('show'); 
-});  
-});
-$(document).ready(function(){
-$( ".cb3 .before" ).click(function() {
-     $('#collapseTwo').collapse('show'); 
-});  
-});
-$(document).ready(function(){
-$( ".cb4 .before" ).click(function() {
-     $('#collapseThree').collapse('show'); 
-});  
-});
-$(document).ready(function(){
-$( ".cb5 .before" ).click(function() {
-     $('#collapseFour').collapse('show'); 
-});  
-});
-$(document).ready(function(){
-$( ".cb6 .before" ).click(function() {
-     $('#collapseFive').collapse('show'); 
-});  
-});
-// Нажатие на пункт меню "Контакты"
-$(document).ready(function(){
-$( "#contacts-link" ).click(function() {
-     $('#header-menu').collapse('hide'); 
-     $(".hamburger").toggleClass("is-active");
-});  
-});
-$(document).ready(function(){
-  $("#header-menu").on("click","a#contacts-link", function (event) {
-    //отменяем стандартную обработку нажатия по ссылке
-    event.preventDefault();
-
-    //забираем идентификатор бока с атрибута href
-    var id  = $(this).attr('href'),
-
-    //узнаем высоту от начала страницы до блока на который ссылается якорь
-      top = $(id).offset().top;
-    
-    //анимируем переход на расстояние - top за 1500 мс
-    $('body,html').animate({scrollTop: top}, 1500);
+],
+            disableDefaultUI: true,
+                    });
+                    var image = 'img/marker.png';
+                    var marker = new google.maps.Marker({
+                      position: uluru,
+                      map: map,
+                      icon: image
+                    });
+                  }
+// Кнопка Вверх
+  var top_show = 150; // В каком положении полосы прокрутки начинать показ кнопки "Наверх"
+  var delay = 1000; // Задержка прокрутки
+  $(document).ready(function() {
+    $(window).scroll(function () { // При прокрутке попадаем в эту функцию
+      /* В зависимости от положения полосы прокрукти и значения top_show, скрываем или открываем кнопку "Наверх" */
+      if ($(this).scrollTop() > top_show) $('.fixed-button').fadeIn();
+      else $('.fixed-button').fadeOut();
+    });
+    $('#top').click(function () { // При клике по кнопке "Наверх" попадаем в эту функцию
+      /* Плавная прокрутка наверх */
+      $('body, html').animate({
+        scrollTop: 0
+      }, delay);
+    });
   });
-});
